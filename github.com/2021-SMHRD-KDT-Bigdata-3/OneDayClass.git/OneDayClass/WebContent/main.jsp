@@ -89,8 +89,7 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg">
-		<!--data-setbg="img/page-bg/back_sample.jpg" 배경이미지-->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/ii.jpg" >
 		<div class="container">
 			<!-- <div class="site-breadcrumb">
 				<a href="#">메인</a>
@@ -220,7 +219,7 @@
 								<div class="ca-pic set-bg" data-setbg="img/authors/4.jpg"></div>
 								<p>William Parker, <span>Developer</span></p>
 							</div>
-						</div>
+						</div> 
 					</div>
 				</div>
 				<!-- course -->
