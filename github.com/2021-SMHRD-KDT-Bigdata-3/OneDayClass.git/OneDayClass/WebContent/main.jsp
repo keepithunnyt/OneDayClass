@@ -39,7 +39,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/LOGO1.png" alt="">
+						<img src="img/LOGO.png" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -359,7 +359,7 @@
 						<ul class="contact-list">
 							<li>원데이클래스 개인 맞춤형 추천</li>
 							<li>제목/내용/지역/강사 등 검색 기능</li>
-							<li>카데고리별 강좌 조회 및 분류 기능</li>
+							<li>카테고리별 강좌 조회 및 분류 기능</li>
 						</ul>
 					</div>
 					<!--<div class="widget-item">
