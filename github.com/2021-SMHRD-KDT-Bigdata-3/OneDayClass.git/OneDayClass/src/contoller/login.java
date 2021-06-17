@@ -23,7 +23,7 @@ public class login extends HttpServlet {
 
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
-		String op = request.getParameter("op");
+		String op = (String)request.getParameter("op");
 		
 		if(op.equals("user")) {
 			USERSDAO dao = new USERSDAO();
@@ -32,11 +32,12 @@ public class login extends HttpServlet {
 			if(dto != null) {
 				System.out.println("로그인 성공!");
 				HttpSession session = request.getSession();
-				session.setAttribute("NICK", dto.getId());
+				session.setAttribute("type", op);
+				session.setAttribute("login", dto);
 				response.sendRedirect("main.jsp");
 			}else {
 				System.out.println("로그인 실패!");
-				response.sendRedirect("login_form.jsp");
+				response.sendRedirect("login_main.html");
 			}
 			
 		}else {
@@ -46,13 +47,15 @@ public class login extends HttpServlet {
 			if(dto != null) {
 				System.out.println("로그인 성공!");
 				HttpSession session = request.getSession();
-				session.setAttribute("NICK", dto.getTeacher_id());
+				session.setAttribute("type", op);
+				session.setAttribute("login", dto);
 				response.sendRedirect("main.jsp");
 			}else {
 				System.out.println("로그인 실패!");
-				response.sendRedirect("login_form.jsp");
+				response.sendRedirect("login_main.html");
 			}
 		}
+		
 		
 		
 		

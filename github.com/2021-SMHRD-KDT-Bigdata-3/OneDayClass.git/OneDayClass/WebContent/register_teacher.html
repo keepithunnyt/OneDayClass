@@ -17,18 +17,41 @@
 							<h2>강사 회원가입</h2>
 							<p>회원이 되어 내가 원하는 원데이클래스를 개설하세요</p>
 						</div>
-						<form class="contact-form">
-							<input type="text" class="id" placeholder="아이디를 입력하세요"> <input
-								type="password" class="pw" placeholder="비밀번호를 입력하세요"> <input
-								type="text" class="name" placeholder="이름을 입력하세요"> <input
-								type="text" class="tel" placeholder="전화번호를 입력하세요"> <input
+						<form action="TEACHERS_join" class="contact-form">
+							<input type="text" class="id" placeholder="아이디를 입력하세요" name="id"> 
+							<input type="password" class="pw" placeholder="비밀번호를 입력하세요" name="pw"> 
+							<input type="text" class="name" placeholder="이름을 입력하세요" name="name"> 
+							<input type="text" class="tel" placeholder="전화번호를 입력하세요" name="tel"> 
+								<input
 								type="button" class="site-btn" id="write" value="작성 완료"
-								onClick="alert('회원가입이 완료되었습니다.')"> <input type="button"
+								> <input type="button"
 								class="site-btn" id="main" value="메인으로"
 								onClick="location.href='main.jsp'">
 						</form>
 					</div>
 			 </div>
 	</section>
+	
+	<script src="js/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$('#write').on('click', function(){
+			let id = $('.id').val();
+			let pw = $('.pw').val();
+			let name = $('.name').val();
+			let tel = $('.tel').val();
+			if(id != "" && pw != "" && name != "" && tel != ""){
+				$('#write').attr('type', 'submit' )
+			}else if(id == ""){
+				alert('아이디를 입력해주세요')
+			}else if(pw == ""){
+				alert('비밀번호를 입력해주세요')
+			}else if(name == ""){
+				alert('이름을 입력해주세요')
+			}else if( tel == ""){
+				alert('전화번호를 입력해주세요')
+			}
+		});
+	</script>
+	
 </body>
 </html>

@@ -38,11 +38,11 @@ public class TEACHERS_join extends HttpServlet {
 			request.setAttribute("tel", tel);
 			
 																//로그인 페이지로 이동
-			RequestDispatcher rd = request.getRequestDispatcher("courses.html");
+			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
 			rd.forward(request, response);
 
 		}else {
-			response.sendRedirect("join.jsp");
+			response.sendRedirect("register_teacher.html");
 		}	
 	}
 

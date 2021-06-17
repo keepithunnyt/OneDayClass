@@ -42,7 +42,7 @@ public class USERS_join extends HttpServlet {
 			rd.forward(request, response);
 
 		}else {
-			response.sendRedirect("join.jsp");
+			response.sendRedirect("register_user.html");
 		}
 
 	}

@@ -1,3 +1,5 @@
+<%@page import="DTO.TEACHERSDTO"%>
+<%@page import="DTO.USERSDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -28,6 +30,20 @@
 
 </head>
 <body>
+	<% 
+		USERSDTO user = null;
+		TEACHERSDTO teacher = null;
+		String op = null;
+		if(session.getAttribute("type") != null){
+			op = (String)session.getAttribute("type");
+			if(op.equals("user")){
+				user = (USERSDTO)session.getAttribute("login");
+			}else{
+				teacher = (TEACHERSDTO) session.getAttribute("login");
+			}
+		}
+	%>
+
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
@@ -46,9 +62,16 @@
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
+					<% if (user == null && teacher == null) {%>
 					<a href="login_main.html" class="site-btn header-btn">로그인</a>
 					<a href="register_main.html" class="site-btn2 header-btn">회원가입</a>
-					<a href="mypage_main.html" class="site-btn2 header-btn">마이페이지</a>
+					<%}else if(user != null && op.equals("user")){ %>
+					<a href="logout" class="site-btn header-btn">로그아웃</a>
+					<a href="mypage_user.html" class="site-btn2 header-btn">마이페이지</a>
+					<%}else if(op.equals("teacher") && teacher != null){ %>
+					<a href="logout" class="site-btn header-btn">로그아웃</a>
+					<a href="mypage_teacher.html" class="site-btn2 header-btn">마이페이지</a>
+					<%} %>
 					<!--<nav class="main-menu">
 						<ul>
 							<li><a href="index.html">메인</a></li>
