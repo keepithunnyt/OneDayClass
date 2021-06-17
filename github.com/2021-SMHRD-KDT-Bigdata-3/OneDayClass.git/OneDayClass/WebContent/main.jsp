@@ -102,7 +102,7 @@
 							<input type="text" placeholder="검색할 내용을 입력하세요">
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->
 							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
-							<input type="button" class="site-btn" id="search" value="과정 찾아보기" onClick="location.href='#'"> 
+							<input type="button" class="site-btn" id="search" value="과정 찾아보기" onClick="alert('0건의 과정이 검색되었습니다.')"> 
 						</form>
 					</div>
 				</div>
