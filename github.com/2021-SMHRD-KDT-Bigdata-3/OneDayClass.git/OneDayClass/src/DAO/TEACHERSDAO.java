@@ -108,14 +108,14 @@ public class TEACHERSDAO {
 				}	
 
 				//업데이트	
-				public int update(String pw,String address) {
+				public int update(String pw,String tel) {
 					
 					//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 					try{
 						conn();
 						
 						//sql 작성
-						String sql="update TEACHERS set pw=?, address=?";
+						String sql="update TEACHERS set pw=?, tel=?";
 							
 						
 						//PreparedStatement 객체 생성
@@ -123,7 +123,7 @@ public class TEACHERSDAO {
 						
 						//바인드 변수(?) 채우기					
 						pst.setString(1,pw);
-						pst.setString(2,address);
+						pst.setString(2,tel);
 						
 						
 						//sql문 실행
