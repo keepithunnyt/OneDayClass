@@ -400,8 +400,8 @@
 					<li><a href="#">Register</a></li>
 					<li><a href="#">Privacy</a></li>
 				</ul>
-				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This webpage is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.smhrd.com" target="_blank">±Ú∏¬√„«ÿ¡∂(∞°∏Ì)</a>
+			    <div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This webpage is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.smhrd.or.kr" target="_blank">±Ú∏¬√„«ÿ¡∂(∞°∏Ì)</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 			</div>
 		</div>
