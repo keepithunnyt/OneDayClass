@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<title>취미저격 - 원데이클래스 추천 서비스</title>
-	<meta charset="UTF-8">
+	<meta charset="euc-kr">
 	<meta name="description" content="WebUni Education Template">
 	<meta name="keywords" content="webuni, education, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,8 +46,8 @@
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
-					<a href="login_form.html" class="site-btn header-btn">로그인</a>
-					<a href="register_form.html" class="site-btn2 header-btn">회원가입</a>
+					<a href="login_form.jsp" class="site-btn header-btn">로그인</a>
+					<a href="register_form.jsp" class="site-btn2 header-btn">회원가입</a>
 					<!--<nav class="main-menu">
 						<ul>
 							<li><a href="index.html">메인</a></li>
