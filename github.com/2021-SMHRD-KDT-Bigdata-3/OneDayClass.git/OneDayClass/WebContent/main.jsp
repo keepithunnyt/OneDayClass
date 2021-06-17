@@ -66,7 +66,7 @@
 					<a href="login_main.html" class="site-btn header-btn">로그인</a>
 					<a href="register_main.html" class="site-btn2 header-btn">회원가입</a>
 	
-					<% }else if(user != null && op.equals("user")){ %>
+					<% }else if(user != null && op.equals("user")){ %> 
 						<% if(user.getId().equals("admin")){ %>
 							<a href="logout" class="site-btn header-btn">로그아웃</a>
 							<a href="#" class="site-btn2 header-btn">회원관리</a>
@@ -101,7 +101,7 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg"> <!--data-setbg="img/icon.png" >-->
+	<div class="page-info-section set-bg" data-setbg="img/icon.png" >
 		<div class="container">
 			<!-- <div class="site-breadcrumb">
 				<a href="#">메인</a>
