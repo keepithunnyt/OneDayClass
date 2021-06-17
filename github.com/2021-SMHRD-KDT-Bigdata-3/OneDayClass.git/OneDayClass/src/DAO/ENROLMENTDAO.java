@@ -5,15 +5,16 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import DTO.TEACHERSDTO;
-import DTO.USERSDTO;
+import DTO.ENROLMENTDTO;
 
-public class TEACHERSDAO {
+
+
+public class ENROLMENTDAO {
 	Connection conn = null;
 	PreparedStatement pst = null;
 	int cnt = 0;
 	ResultSet rs = null;
-   TEACHERSDTO dto = null;
+	ENROLMENTDTO dto = null;
 	
 	//데이터베이스 연결
 		public void conn() {
@@ -45,85 +46,84 @@ public class TEACHERSDAO {
 		}//메소드끝		
 		
 		//회원가입 
-		public int insert_teachers(String id, String pw, String name, String tel) {
+		public int insert_users(String id,  String state) {
 		
 			//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 			try{
 				conn();
 				//sql 작성
-				String sql="insert into TEACHERS values (?,?,?,?)";
+				String sql="insert into ENROLMENT(ID,  dates, state) values (?,sysdate,?)";
 				
 				//PreparedStatement 객체 생성
 				pst = conn.prepareStatement(sql);
 				
 				//바인드 변수(?) 채우기
 				pst.setString(1,id);
-				pst.setString(2,pw);
-				pst.setString(3,name);
-				pst.setString(4,tel);
+				pst.setString(2,state);
+			
 				
 				//sql문 실행
 				 cnt = pst.executeUpdate();
 						
 			}catch(Exception e){
 				e.printStackTrace();
-				System.out.println("가입 실패");
+				System.out.println("수강상태 실패");
 			}finally{
 				close();
 			}
 			return cnt;
 		}// 메소드끝		
 		
-		// 로그인
-				public TEACHERSDTO login(String id, String pw) {
-
-					try {
-						conn();
-
-						String sql = "select * from teachers where teacher_id=? and teacher_pw=?";
-
-						pst = conn.prepareStatement(sql);
-
-						pst.setString(1, id);
-						pst.setString(2, pw);
-
-						rs = pst.executeQuery();
-						if (rs.next()) {
-							String get_id = rs.getString("teacher_id");
-							String get_pw = rs.getString("teacher_pw");
-							String get_name = rs.getString("teacher_name");
-							String get_tel = rs.getString("tel");
-						
-							
-							
-							dto = new TEACHERSDTO(get_id, get_pw, get_name, get_tel);
-						}
-					} catch (Exception e) {
-						System.out.println("로그인 실패");
-						e.printStackTrace();
-					} finally {
-						close();
-					}
-					return dto;
-				}	
+//		// 로그인
+//				public ENROLMENTDTO login(String id, String pw) {
+//
+//					try {
+//						conn();
+//
+//						String sql = "select * from users where id=? and pw=?";
+//
+//						pst = conn.prepareStatement(sql);
+//
+//						pst.setString(1, id);
+//						pst.setString(2, pw);
+//
+//						rs = pst.executeQuery();
+//						if (rs.next()) {
+//							String get_id = rs.getString("id");
+//							String get_pw = rs.getString("pw");
+//							String get_name = rs.getString("name");
+//							String get_address = rs.getString("address");
+//							String get_recomm = rs.getString("recomm");
+//							
+//							
+//							dto = new USERSDTO(get_id, get_pw, get_name, get_address ,get_recomm);
+//						}
+//					} catch (Exception e) {
+//						System.out.println("로그인 실패");
+//						e.printStackTrace();
+//					} finally {
+//						close();
+//					}
+//					return dto;
+//				}	
 
 				//업데이트	
-				public int update(String pw,String tel) {
+				public int update(int Class_id) {
 					
 					//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 					try{
 						conn();
 						
 						//sql 작성
-						String sql="update TEACHERS set pw=?, tel=?";
+						String sql="update ENROLMENT set class_id=?";
 							
 						
 						//PreparedStatement 객체 생성
 						pst = conn.prepareStatement(sql);
 						
 						//바인드 변수(?) 채우기					
-						pst.setString(1,pw);
-						pst.setString(2,tel);
+						pst.setInt(1, Class_id);
+						
 						
 						
 						//sql문 실행
@@ -142,20 +142,20 @@ public class TEACHERSDAO {
 				}
 				// delect 메소드
 
-				public int delete(String id) {
+				public int delete(int class_id) {
 					
 					//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 					try{
 						conn();
 						
 						//sql 작성
-						String sql="delete from TEACHERS where id = ?";
+						String sql="delete from ENROLMENT where class_id = ?";
 						
 						//PreparedStatement 객체 생성
 						pst = conn.prepareStatement(sql);
 						
 						//바인드 변수(?) 채우기
-						pst.setString(1,id);
+						pst.setInt(1, class_id);
 						
 						//sql문 실행
 						cnt = pst.executeUpdate();
