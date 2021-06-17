@@ -13,52 +13,48 @@ import DAO.USERSDAO;
 import DTO.TEACHERSDTO;
 import DTO.USERSDTO;
 
-
 @WebServlet("/login")
 public class login extends HttpServlet {
-	
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 		request.setCharacterEncoding("euc-kr");
 
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
-		String op = (String)request.getParameter("op");
-		
-		if(op.equals("user")) {
+		String op = (String) request.getParameter("op");
+
+		if (op.equals("user")) {
 			USERSDAO dao = new USERSDAO();
 			USERSDTO dto = dao.login(id, pw);
-			
-			if(dto != null) {
+
+			if (dto != null) {
 				System.out.println("로그인 성공!");
 				HttpSession session = request.getSession();
 				session.setAttribute("type", op);
 				session.setAttribute("login", dto);
 				response.sendRedirect("main.jsp");
-			}else {
+			} else {
 				System.out.println("로그인 실패!");
 				response.sendRedirect("login_main.html");
 			}
-			
-		}else {
+
+		} else {
 			TEACHERSDAO dao = new TEACHERSDAO();
 			TEACHERSDTO dto = dao.login(id, pw);
-			
-			if(dto != null) {
+
+			if (dto != null) {
 				System.out.println("로그인 성공!");
 				HttpSession session = request.getSession();
 				session.setAttribute("type", op);
 				session.setAttribute("login", dto);
 				response.sendRedirect("main.jsp");
-			}else {
+			} else {
 				System.out.println("로그인 실패!");
 				response.sendRedirect("login_main.html");
 			}
 		}
-		
-		
-		
-		
 
 	}
 

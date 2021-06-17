@@ -62,15 +62,27 @@
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
-					<% if (user == null && teacher == null) {%>
+					<%if (user == null && teacher == null) {%>
 					<a href="login_main.html" class="site-btn header-btn">로그인</a>
 					<a href="register_main.html" class="site-btn2 header-btn">회원가입</a>
-					<%}else if(user != null && op.equals("user")){ %>
-					<a href="logout" class="site-btn header-btn">로그아웃</a>
-					<a href="mypage_user.jsp" class="site-btn2 header-btn">마이페이지</a>
+	
+					<% }else if(user != null && op.equals("user")){ %>
+						<% if(user.getId().equals("admin")){ %>
+							<a href="logout" class="site-btn header-btn">로그아웃</a>
+							<a href="#" class="site-btn2 header-btn">회원관리</a>
+						<%} else { %>
+							<a href="logout" class="site-btn header-btn">로그아웃</a>
+							<a href="mypage_user.jsp" class="site-btn2 header-btn">마이페이지</a>
+						<% } %>
+					
 					<%}else if(op.equals("teacher") && teacher != null){ %>
-					<a href="logout" class="site-btn header-btn">로그아웃</a>
-					<a href="mypage_teacher.jsp" class="site-btn2 header-btn">마이페이지</a>
+						<% if(teacher.getTeacher_id().equals("admin")){ %>
+							<a href="logout" class="site-btn header-btn">로그아웃</a>
+							<a href="#" class="site-btn2 header-btn">회원관리</a>
+						<%} else { %>
+							<a href="logout" class="site-btn header-btn">로그아웃</a>
+							<a href="mypage_teacher.jsp" class="site-btn2 header-btn">마이페이지</a>
+						<% } %>
 					<%} %>
 					<!--<nav class="main-menu">
 						<ul>
