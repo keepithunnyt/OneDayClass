@@ -117,15 +117,15 @@
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".category1">운동</li>
-				<li class="control" data-filter=".category2">공예</li>
-				<li class="control" data-filter=".category3">패션/뷰티</li>
-				<li class="control" data-filter=".category4">사진/영상</li>
-				<li class="control" data-filter=".category5">기타</li>
+				<li class="control" data-filter=".sports">운동</li>
+				<li class="control" data-filter=".arts">공예</li>
+				<li class="control" data-filter=".beautys">패션/뷰티</li>
+				<li class="control" data-filter=".medias">사진/영상</li>
+				<li class="control" data-filter=".etc">기타</li>
 			</ul>                                       
 			<div class="row course-items-area">
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 category1">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/1.jpg">
 							<div class="price">1달라</div>
@@ -144,7 +144,7 @@
 					</div>
 				</div>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 category2">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
 							<div class="price">2달라</div>
@@ -163,7 +163,7 @@
 					</div>
 				</div>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 category3">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/3.jpg">
 							<div class="price">3달라</div>
@@ -182,7 +182,7 @@
 					</div>
 				</div>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 category4">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/4.jpg">
 							<div class="price">4달라</div>
@@ -201,7 +201,7 @@
 					</div>
 				</div>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 category5">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 beautys">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/5.jpg">
 							<div class="price">5달라</div>
@@ -220,7 +220,7 @@
 					</div>
 				</div>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 category6">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 medias">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/6.jpg">
 							<div class="price">6달라</div>
@@ -239,7 +239,7 @@
 					</div>
 				</div>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 category7">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/7.jpg">
 							<div class="price">7달라</div>
@@ -258,7 +258,7 @@
 					</div>
 				</div>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 category8">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
 							<div class="price">8달라</div>
