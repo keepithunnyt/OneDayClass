@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>취미저격 - 원데이클래스 추천 서비스</title>
-	<meta charset="euc-kr">
+	<title>하루클래스-나를 위한 시간</title>
+	<meta charset="UTF-8">
 	<meta name="description" content="WebUni Education Template">
 	<meta name="keywords" content="webuni, education, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="googleapis.css" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -39,15 +39,16 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/logo_sample2.png" alt="">
+						<img src="img/LOGO1.png" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
-					<a href="login_form.jsp" class="site-btn header-btn">로그인</a>
-					<a href="register_form.jsp" class="site-btn2 header-btn">회원가입</a>
+					<a href="login_main.html" class="site-btn header-btn">로그인</a>
+					<a href="register_main.html" class="site-btn2 header-btn">회원가입</a>
+					<a href="mypage_main.html" class="site-btn2 header-btn">마이페이지</a>
 					<!--<nav class="main-menu">
 						<ul>
 							<li><a href="index.html">메인</a></li>
@@ -65,7 +66,8 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg" data-setbg="img/page-bg/back_sample.jpg">
+	<div class="page-info-section set-bg">
+		<!--data-setbg="img/page-bg/back_sample.jpg" 배경이미지-->
 		<div class="container">
 			<!-- <div class="site-breadcrumb">
 				<a href="#">메인</a>
@@ -99,7 +101,8 @@
 							</select>
 							<input type="text" placeholder="검색할 내용을 입력하세요">
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->
-							<button class="site-btn btn-dark">과정 찾아보기</button>
+							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
+							<input type="button" class="site-btn" id="search" value="과정 찾아보기" onClick="location.href='#'"> 
 						</form>
 					</div>
 				</div>
@@ -114,11 +117,11 @@
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".category1">카테고리1</li>
-				<li class="control" data-filter=".category2">카테고리2</li>
-				<li class="control" data-filter=".category3">카테고리3</li>
-				<li class="control" data-filter=".category4">카테고리4</li>
-				<li class="control" data-filter=".category5">카테고리5</li>
+				<li class="control" data-filter=".category1">운동</li>
+				<li class="control" data-filter=".category2">공예</li>
+				<li class="control" data-filter=".category3">패션/뷰티</li>
+				<li class="control" data-filter=".category4">사진/영상</li>
+				<li class="control" data-filter=".category5">기타</li>
 			</ul>                                       
 			<div class="row course-items-area">
 				<!-- course -->

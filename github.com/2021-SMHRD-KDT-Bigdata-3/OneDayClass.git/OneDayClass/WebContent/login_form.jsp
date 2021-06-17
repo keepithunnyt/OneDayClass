@@ -26,7 +26,7 @@
 		<button type="submit" class="btn">로그인</button>
 		
 		<div class="bottomText">
-			계정이 없다면? <a href="register_form.jsp">회원가입</a>
+			계정이 없다면? <a href="register_main.jsp">회원가입</a>
 		</div>
 		<br>
 		<div class="bottomText">

@@ -26,6 +26,7 @@
   .registerForm h2{
     text-align: center;
     margin: 30px;
+    color: #685338;
   }
   
   .idForm{
@@ -91,47 +92,49 @@
     background: none;
   }
   
-  .btn {
+  .edit {
     position:relative;
     left:20%;
     transform: translateX(-50%);
     margin-bottom: 40px;
     width:40%;
     height:40px;
-    background:indianred;
+    background:#FEA698;
     background-position: left;
     background-size: 200%;
-    color:whitesmoke;
+    color:#685338;
     font-weight: bold;
     border:none;
     cursor:pointer;
     transition: 0.4s;
     display:inline;
+    border-radius: 12px;
   }
   
   .btn:hover {
     background-position: right;
   }
 
-  .btn2 {
+  .select {
     position:relative;
     left:20%;
     transform: translateX(-50%);
     margin-bottom: 40px;
     width:40%;
     height:40px;
-    background: linear-gradient(125deg, #81ecec, #a85ce7,#81ecec);
+    background:#FEA698;
     background-position: left;
     background-size: 200%;
-    color:whitesmoke;
+    color:#685338;
     font-weight: bold;
     border:none;
     cursor:pointer;
     transition: 0.4s;
     display:inline;
+    border-radius: 12px;
   }
   
-  .btn2:hover {
+  .select:hover {
     background-position: right;
   }
   
