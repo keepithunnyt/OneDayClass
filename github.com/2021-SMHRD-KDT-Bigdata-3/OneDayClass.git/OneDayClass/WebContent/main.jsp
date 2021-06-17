@@ -66,8 +66,7 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg">
-		<!--data-setbg="img/page-bg/back_sample.jpg" 배경이미지-->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/ii.jpg" >
 		<div class="container">
 			<!-- <div class="site-breadcrumb">
 				<a href="#">메인</a>

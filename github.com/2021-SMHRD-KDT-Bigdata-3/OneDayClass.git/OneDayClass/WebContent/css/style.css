@@ -170,7 +170,7 @@ ol {
 	border: 3px solid #FEA698;
 	padding: 15px 10px;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 18px;
 	position: relative;
 	color: #424242;
 	cursor: pointer;
@@ -709,8 +709,9 @@ ol {
 	border: none;
 	font-size: 14px;
 	font-weight: 500;
-	background: #edf4f6;
+	background: white;
 	border-radius: 12px;
+	border:2px solid #FEA698;
 }
 
 .signup-form select[name=division]:focus,
