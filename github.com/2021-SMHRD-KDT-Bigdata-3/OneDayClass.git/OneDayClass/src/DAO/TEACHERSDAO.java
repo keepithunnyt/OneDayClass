@@ -115,7 +115,7 @@ public class TEACHERSDAO {
 						conn();
 						
 						//sql 累己
-						String sql="update TEACHERS set pw=?, tel=?";
+						String sql="update TEACHERS set teacher_pw=?, tel=?";
 							
 						
 						//PreparedStatement 按眉 积己

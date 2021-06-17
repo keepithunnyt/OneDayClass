@@ -1,16 +1,20 @@
+<%@page import="DTO.USERSDTO"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-</head>
-<body>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/owl.carousel.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/style2.css" />
 	<link rel="stylesheet" href="css/style3.css" />
-
+</head>
+<body>
+	<% USERSDTO user = (USERSDTO)session.getAttribute("login"); %>	
 	<section class="contact-page spad pb-0">
 		<div class="container">
 			<div class="row">
@@ -18,21 +22,15 @@
 					<div class="contact-form-warp">
 						<div class="section-title text-white text-left">
 							<h2>개인정보 수정</h2>
-							<p>맞춤형 원데이클래스를 추천받기 위해 정확한 정보를 입력해주세요</p>
+							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
 						</div>
-						<form class="contact-form">
-							<h3>회원 정보</h3>
-							<br> <input type="text" class="id" placeholder="아이디 표출 코드">
-							<input type="text" class="name" placeholder="이름 표출 코드"> <input
-								type="password" class="pw" placeholder="비밀번호를 입력하세요"> <select
-								name="reco">
-								<option value="recolist">원하는 추천 항목을 선택하세요</option>
-								<option value="reco2">JAVA</option>
-								<option value="reco2">PYTHON</option>
-								<option value="reco3">JAVASCRIPTS</option>
-								<option value="reco4">HTML/CSS</option>
-							</select> <input type="button" class="site-btn" id="edit" value="수정 완료"
-								onClick="alert('정보 수정이 완료되었습니다.')"> <br> <br>
+						<form action="USERS_update" class="contact-form">
+							<h3>수강생 정보</h3>
+							<br> <input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id">
+							<input type="password" class="pw" value=<%=user.getPw() %> name="pw">
+							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name"> 
+							<input type="text" class="address" value=<%=user.getAddress() %> name="address"> 
+							 <input type="submit" class="site-btn" id="edit" value="수정 완료"> <br> <br>
 							<h3>수강 중인 강좌</h3>
 							<br> <input type="text" class="class_id"
 								placeholder="강의 아이디 표출 코드"> <input type="text"
@@ -47,4 +45,5 @@
 				</div>
 	</section>
 </body>
+</html>
 </html>

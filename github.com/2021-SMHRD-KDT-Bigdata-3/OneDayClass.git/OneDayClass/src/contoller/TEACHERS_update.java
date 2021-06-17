@@ -28,7 +28,7 @@ public class TEACHERS_update extends HttpServlet {
 				
 				//수정해야할 사용자의 정보를 알기위해 세션값 가져오기
 				HttpSession session = request.getSession();
-				TEACHERSDTO t_dto = (TEACHERSDTO)session.getAttribute("TEACHERS");
+				TEACHERSDTO t_dto = (TEACHERSDTO)session.getAttribute("login");
 				
 				TEACHERSDAO t_dao = new TEACHERSDAO();
 				int cnt = t_dao.update(pw, tel);
@@ -36,11 +36,12 @@ public class TEACHERS_update extends HttpServlet {
 				if(cnt>0){
 					System.out.println("회원 정보 수정 성공");
 					TEACHERSDTO t_dto2 =new TEACHERSDTO(t_dto.getTeacher_id(), pw, t_dto.getTeacher_name(), tel);
-					session.setAttribute("TEACHERS", t_dto2);				
-					response.sendRedirect("main.jsp");
+					session.setAttribute("login", t_dto2);				
+					response.sendRedirect("mypage_teacher.jsp");
 					
 				}else {
 					System.out.println("회원 정보 수정 실패");
+					response.sendRedirect("mypage_teacher.jsp");
 				}	
 		
 		

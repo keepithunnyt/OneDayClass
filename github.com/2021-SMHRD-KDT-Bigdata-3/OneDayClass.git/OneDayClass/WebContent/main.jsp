@@ -67,10 +67,10 @@
 					<a href="register_main.html" class="site-btn2 header-btn">회원가입</a>
 					<%}else if(user != null && op.equals("user")){ %>
 					<a href="logout" class="site-btn header-btn">로그아웃</a>
-					<a href="mypage_user.html" class="site-btn2 header-btn">마이페이지</a>
+					<a href="mypage_user.jsp" class="site-btn2 header-btn">마이페이지</a>
 					<%}else if(op.equals("teacher") && teacher != null){ %>
 					<a href="logout" class="site-btn header-btn">로그아웃</a>
-					<a href="mypage_teacher.html" class="site-btn2 header-btn">마이페이지</a>
+					<a href="mypage_teacher.jsp" class="site-btn2 header-btn">마이페이지</a>
 					<%} %>
 					<!--<nav class="main-menu">
 						<ul>
@@ -89,7 +89,7 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg" data-setbg="img/page-bg/ii.jpg" >
+	<div class="page-info-section set-bg" data-setbg="img/icon.png" >
 		<div class="container">
 			<!-- <div class="site-breadcrumb">
 				<a href="#">메인</a>

@@ -1,15 +1,21 @@
+<%@page import="DTO.TEACHERSDTO"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-</head>
-<body>
+<title>Insert title here</title>
+<meta charset="EUC-KR">
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/owl.carousel.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/style2.css" />
 	<link rel="stylesheet" href="css/style3.css" />
+</head>
+<body>	
+	<% TEACHERSDTO teacher = (TEACHERSDTO)session.getAttribute("login"); %>	
 	<section class="contact-page spad pb-0">
 		<div class="container">
 			<div class="row">
@@ -19,19 +25,13 @@
 							<h2>개인정보 수정</h2>
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
 						</div>
-						<form class="contact-form">
+						<form action="TEACHERS_update" class="contact-form">
 							<h3>강사 정보</h3>
-							<br> <input type="text" class="id" placeholder="아이디 표출 코드">
-							<input type="password" class="pw" placeholder="비밀번호를 입력하세요">
-							<input type="text" class="name" placeholder="이름 표출 코드"> <select
-								name="make">
-								<option value="make">개설할 강좌의 종류를 선택하세요</option>
-								<option value="java">JAVA</option>
-								<option value="pyton">PYTHON</option>
-								<option value="javascr">JAVASCRIPTS</option>
-								<option value="htmlcss">HTML&CSS</option>
-							</select> <input type="button" class="site-btn" id="edit" value="수정 완료"
-								onClick="alert('정보 수정이 완료되었습니다.')"> <br> <br>
+							<br> <input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id">
+							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
+							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
+							<input type="text" class="tel" value=<%=teacher.getTel() %> name="tel"> 
+							 <input type="submit" class="site-btn" id="edit" value="수정 완료"> <br> <br>
 							<h3>개설 중인 강좌</h3>
 							<br> <input type="text" class="class_id"
 								placeholder="강의 아이디 표출 코드"> <input type="text"
