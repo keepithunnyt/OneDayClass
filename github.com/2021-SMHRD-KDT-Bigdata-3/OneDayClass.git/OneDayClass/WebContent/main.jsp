@@ -39,7 +39,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/LOGO1.png" alt="">
+						<img src="img/LOGO.png" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -197,7 +197,7 @@
 								<div class="ca-pic set-bg" data-setbg="img/authors/4.jpg"></div>
 								<p>William Parker, <span>Developer</span></p>
 							</div>
-						</div>
+						</div> 
 					</div>
 				</div>
 				<!-- course -->
