@@ -101,7 +101,18 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg"> <!-- data-setbg="img/icon.png" -->
+	<div class="page-info-section set-bg"> <!--   data-setbg="img/icon.png">-->
+		<div class="container">
+			<!-- <div class="site-breadcrumb">
+				<a href="#">메인</a>
+				<span>개설 강좌</span>
+			</div> -->
+		</div>
+	</div>
+	<!-- Page info end -->
+	
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/icon.png">
 		<div class="container">
 			<!-- <div class="site-breadcrumb">
 				<a href="#">메인</a>
