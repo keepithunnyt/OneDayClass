@@ -47,7 +47,7 @@ public class REVIEWDAO {
 		}//메소드끝		
 		
 		//회원가입 
-		public int insert_users(String id, int rating, String comm) {
+		public int insert_review(String id, int rating, String comm) {
 		
 			//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 			try{
