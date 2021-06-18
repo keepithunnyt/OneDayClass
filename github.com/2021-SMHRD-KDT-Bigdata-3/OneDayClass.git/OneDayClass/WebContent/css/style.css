@@ -429,6 +429,25 @@ ol {
   Search section
 ---------------------*/
 
+.section-title {
+	text-align: center;
+	padding: 0 110px;
+	margin-bottom: 110px;
+}
+
+.section-title h2 {
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 25px;
+	
+
+}
+
+.section-title p {
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
 .search-warp {
 	background: white;
 	padding-top: 60px;
@@ -512,7 +531,8 @@ ol {
 .search-section.ss-other-page .course-search-form select[name=search]:focus {
 	border-bottom: none;
 }
-
+.search-section> .container> .row {  justify-content: center;
+}
 /*------------------
   Course section
 ---------------------*/
@@ -920,7 +940,7 @@ ol {
 =======================*/
 
 .page-info-section {
-	height: 443px;
+	height: 300px;
 }
 
 .site-breadcrumb {
@@ -2015,15 +2035,16 @@ ol {
 	border: 3px solid #FEA698;
 	padding: 15px 10px;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 16px;
 	position: relative;
 	color: #424242;
 	cursor: pointer;
 	background: white; 
+	justify-content: center;
 }
 
 .site-btn:hover {
-	color: #fff;
+	color: #FEA698;
 }
 
 .site-btn.btn-dark {
@@ -2055,7 +2076,7 @@ ol {
 }
 
 .site-btn2:hover {
-	color: #fff;
+	color: #FEA698;
 }
 
 .site-btn2.btn-dark {
@@ -2761,7 +2782,7 @@ ol {
 =======================*/
 
 .page-info-section {
-	height: 443px;
+	height: 300px;
 }
 
 .site-breadcrumb {

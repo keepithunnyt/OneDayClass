@@ -117,14 +117,15 @@
 	<br>
 	<br>
 	<section class="search-section ss-other-page">
-		<div class="container">
+		<div class="container"style="text-align: center;">
 			<div class="search-warp">
-				<div class="section-title text-white">
-					<h2><span>다양한 강좌를 찾아보세요</span></h2>
+				<div class="section-title text-white" style="text-align: center;">
 				</div>
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
 						<!-- search form -->
+						<h2><span>다양한 강좌를 찾아보세요</span></h2>
+						<br><br>
 						<form class="course-search-form">
 							<select name="search">
 								<option value="select">항목 선택</option>
