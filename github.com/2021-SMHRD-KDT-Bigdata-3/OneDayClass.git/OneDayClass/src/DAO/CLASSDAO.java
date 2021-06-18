@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import DTO.CLASSDTO;
+import DTO.TEACHERSDTO;
 
 
 public class CLASSDAO {
@@ -14,7 +15,7 @@ public class CLASSDAO {
 	int cnt = 0;
 	ResultSet rs = null;
     CLASSDTO dto = null;
-	
+	TEACHERSDTO t_dto = null;
 	//데이터베이스 연결
 		public void conn() {
 			try {
@@ -147,4 +148,44 @@ public class CLASSDAO {
 					}
 					return cnt;
 				}
+				
+
+				// 클레스 번호로 찾기
+					public CLASSDTO allselect(int  id) {
+		
+						try {
+								conn();
+		
+							String sql = "select * from class where id=? ";
+	
+							pst = conn.prepareStatement(sql);
+		
+								pst.setInt(1, id);
+								
+		
+								rs = pst.executeQuery();
+								if (rs.next()) {
+									int get_id = rs.getInt("id");
+									String get_teacher_id = rs.getString("teacher_id");
+									String get_title = rs.getString("title");
+									String get_content = rs.getString("content");
+									String get_time = rs.getString("time");
+									String get_place = rs.getString("place");
+									String get_category = rs.getString("category");
+									String get_image = rs.getString("image");
+								    
+									
+									
+								dto = new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_place, get_category, get_image);
+								}
+							} catch (Exception e) {
+								System.out.println("로그인 실패");
+								e.printStackTrace();
+						} finally {
+								close();
+						}
+						return dto;
+						}				
+				
+				
 }
