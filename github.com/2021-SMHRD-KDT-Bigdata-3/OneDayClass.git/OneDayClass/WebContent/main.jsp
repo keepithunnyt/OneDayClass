@@ -101,7 +101,7 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg" data-setbg="img/icon.png" >
+	<div class="page-info-section set-bg"> <!-- data-setbg="img/icon.png" -->
 		<div class="container">
 			<!-- <div class="site-breadcrumb">
 				<a href="#">∏ﬁ¿Œ</a>

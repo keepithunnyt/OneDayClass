@@ -25,12 +25,13 @@
   
   .loginForm h2{
     text-align: center;
-    margin: 30px;
-    color: #685338;
+    margin: 50px;
+    color:#424242;
+    font-size:50px;
   }
   
   .division{
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #FEA698;
     margin: 30px;
     padding: 10px 10px;
   }

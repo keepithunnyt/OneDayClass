@@ -25,7 +25,7 @@ h5,
 h6 {
 	margin: 0;
 	font-weight: 600;
-	color: #685338;
+	color: #424242;
 }
 
 h1 {
@@ -117,6 +117,8 @@ ol {
 	font-size: 48px;
 	font-weight: 600;
 	margin-bottom: 25px;
+	
+
 }
 
 .section-title p {
@@ -153,7 +155,7 @@ ol {
 }
 
 .rating .is-fade {
-	color: #e0e3e4;
+	color: #e0e3e4; 
 }
 
 /*---------------------
@@ -175,6 +177,7 @@ ol {
 	color: #424242;
 	cursor: pointer;
 	background: white;
+	
 	
 	
 }
@@ -531,7 +534,7 @@ ol {
 
 .course-item .course-thumb .price {
 	font-size: 14px;
-	color: #685338;
+	color: #424242;
 	font-weight: 600;
 	background: white;
 	border:2px solid #FAE0C7;
@@ -705,7 +708,7 @@ ol {
 	width: 100%;
 	padding: 0 30px;
 	margin-bottom: 27px;
-	float: left;
+	float: center;
 	border: none;
 	font-size: 14px;
 	font-weight: 500;
@@ -729,6 +732,11 @@ ol {
 .contact-form select[name=locate]:focus,
 .contact-form textarea:focus {
 	border-bottom: 2px solid #d82a4e;
+}
+
+.contact-page > .container > .row{
+	justify-content: center;
+	align-items: center;
 }
 
 .signup-form input[type=file],
@@ -772,7 +780,7 @@ ol {
 ---------------------*/
 
 .footer-section {
-	border-top: 3px solid #685338;
+	border-top: 3px solid #FEA698;
 }
 
 .footer-warp {
@@ -799,7 +807,7 @@ ol {
 	margin-bottom: 10px;
 	font-size: 14px;
 	font-weight: 500;
-	color: #878787;
+	color: darkgray;
 }
 
 .widget-item ul li:last-child {
@@ -828,7 +836,7 @@ ol {
 	left: -5px;
 	top: 6px;
 	border-radius: 50%;
-	background: #d82a4e;
+	background: #685338;
 }
 
 .footer-newslatter {
@@ -1254,7 +1262,7 @@ ol {
 ---------------------*/
 
 .contact-form-warp {
-	background: #FEA698;
+	background:white;
 	padding: 45px 47px;
 }
 
