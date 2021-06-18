@@ -162,9 +162,9 @@ ol {
   Commom elements
 -----------------------*/
 
-/* buttons */
+/* buttons */ 
 
-.site-btn {
+.site-btn { 
 	border-radius: 12px;
 	display: inline-block;
 	min-width: 150px;
@@ -177,9 +177,7 @@ ol {
 	color: #424242;
 	cursor: pointer;
 	background: white;
-	
-	
-	
+	left: 100px;
 }
 
 .site-btn:hover {
