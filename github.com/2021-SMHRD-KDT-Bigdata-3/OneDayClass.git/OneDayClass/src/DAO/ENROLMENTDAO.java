@@ -5,7 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import DTO.CLASSDTO;
 import DTO.ENROLMENTDTO;
+import DTO.USERSDTO;
 
 
 
@@ -15,7 +17,8 @@ public class ENROLMENTDAO {
 	int cnt = 0;
 	ResultSet rs = null;
 	ENROLMENTDTO dto = null;
-	
+	USERSDTO u_dto = null;
+	CLASSDTO c_dto = null;
 	//데이터베이스 연결
 		public void conn() {
 			try {
@@ -45,21 +48,22 @@ public class ENROLMENTDAO {
 			}
 		}//메소드끝		
 		
-		//회원가입 
-		public int insert_users(String id,  String state) {
+		//수강신청
+		public int insert( String state) {
 		
 			//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 			try{
 				conn();
 				//sql 작성
-				String sql="insert into ENROLMENT(ID,  dates, state) values (?,sysdate,?)";
+				String sql="insert into ENROLMENT(ID,  class_id, state) values (?,?,sysdate,?)";
 				
 				//PreparedStatement 객체 생성
 				pst = conn.prepareStatement(sql);
 				
 				//바인드 변수(?) 채우기
-				pst.setString(1,id);
-				pst.setString(2,state);
+				pst.setString(1,u_dto.getId());
+				pst.setInt(2,c_dto.getId());
+				pst.setString(3,state);
 			
 				
 				//sql문 실행

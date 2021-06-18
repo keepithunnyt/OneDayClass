@@ -75,7 +75,7 @@ public class NOTICEDAO {
 			return cnt;
 		}// 메소드끝		
 		
-//		// 로그인
+//		// 로그인 
 //				public USERSDTO login(String id, String pw) {
 //
 //					try {
