@@ -26,21 +26,50 @@
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
 						</div>
 						<form action="TEACHERS_update" class="contact-form">
-							<h3>강사 정보</h3>
+							<h3>개인 정보</h3>
 							<br> <input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id">
 							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
 							<input type="text" class="tel" value=<%=teacher.getTel() %> name="tel"> 
-							 <input type="submit" class="site-btn" id="edit" value="수정 완료"> <br> <br>
-							<h3>개설 중인 강좌</h3>
-							<br> <input type="text" class="class_id"
-								placeholder="강의 아이디 표출 코드"> <input type="text"
-								class="class_name" placeholder="강의 이름 표출 코드"> <input
-								type="text" class="class_title" placeholder="강의 제목 표출 코드">
-							<input type="text" class="class_date"
-								onfocus="(this.type = 'date')" placeholder="강의 날짜 표출 코드">
-							<input type="button" class="site-btn" id="main" value="메인으로"
-								onClick="location.href='main.jsp'">
+							 <input type="submit" class="site-btn" id="edit" value="수정 완료"> 
+							 <input type="button" class="site-btn" id="main" value="메인으로" onClick="location.href='main.jsp'">
+								<br> <br>
+					<h3>강좌 정보</h3>
+					<br>
+					<table border="1" bordercolor="#FEA698" width="150%" height="200%" cellspacing="100">
+                    <thead>
+                    <tr align="center" bgcolor="white">
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>제목</th>
+                    <th>카테고리</th>
+                    <th>날짜</th>
+                    <th></th>
+               		</tr>
+           		    </thead>
+		            <tbody>
+        	        <tr align="center" bgcolor="white">
+                    <td>smart</td>
+                    <td>안현진</td>
+                    <td>기획총괄</td>
+                    <td>JAVA</td>
+                    <td>2021/06/18</td>
+                    <td> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
+            	    </tr>
+               		<tr align="center" bgcolor="white">
+                    <td>develop</td>
+                    <td>강하형</td>
+                    <td>개발총괄</td>
+                    <td>PYTHON</td> 
+                    <td>2021/06/18</td>
+                    <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
+                </tr>
+            </tbody>
+        </table>
+         <br>
+        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher3.jsp'">
+        <input type="button" class="site-btn4" id="leave" value="회원 탈퇴" onClick="location.href='mypage_teacher3.jsp'">
+							
 						</form>
 					</div>
 				</div>
