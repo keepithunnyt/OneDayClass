@@ -113,6 +113,7 @@
   
   .btn:hover {
     background-position: right;
+    color:#FEA698;
   }
 
   .select {
@@ -136,6 +137,7 @@
   
   .select:hover {
     background-position: right;
+    color:#FEA698;
   }
   
   .bottomText {

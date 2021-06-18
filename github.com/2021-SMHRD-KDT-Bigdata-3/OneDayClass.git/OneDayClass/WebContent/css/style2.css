@@ -87,8 +87,14 @@
     border-radius: 12px;
   }
   
+  .submit:hover {
+    background-position: right;
+    color:#FEA698;
+  }
+  
   .btn:hover {
     background-position: right;
+    color:#FEA698;
   }
   
   .bottomText {
