@@ -31,12 +31,12 @@
 							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
 							<input type="text" class="tel" value=<%=teacher.getTel() %> name="tel"> 
-							 <input type="submit" class="site-btn" id="edit" value="수정 완료"> 
-							 <input type="button" class="site-btn" id="main" value="메인으로" onClick="location.href='main.jsp'">
+							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> 
+							 <input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
 								<br> <br>
 					<h3>강좌 정보</h3>
 					<br>
-					<table border="1" bordercolor="#FEA698" width="150%" height="200%" cellspacing="100">
+					<div class="tableone"><table border="2" bordercolor="#FEA698" width="150%" height="200%" cellspacing="100">
                     <thead>
                     <tr align="center" bgcolor="white">
                     <th>아이디</th>
@@ -66,6 +66,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
          <br>
         <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher3.jsp'">
         <input type="button" class="site-btn4" id="leave" value="회원 탈퇴" onClick="location.href='mypage_teacher3.jsp'">

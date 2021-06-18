@@ -59,7 +59,8 @@
             </tbody>
         </table>
         <br>
-        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher3.jsp'">
+        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher3.jsp'"> &nbsp; 
+        <input type="button" class="site-btn4" id="enroll" value="회원 탈퇴" onClick="location.href='main.jsp'" >
 						</form>
 					</div>
 				</div>
