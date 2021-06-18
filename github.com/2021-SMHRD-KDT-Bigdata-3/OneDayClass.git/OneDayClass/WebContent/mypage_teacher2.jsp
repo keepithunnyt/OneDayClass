@@ -52,7 +52,7 @@
                     <td>develop</td>
                     <td>강하형</td>
                     <td>개발총괄</td>
-                    <td>PYTHON</td>
+                    <td>PYTHON</td> 
                     <td>2021/06/18</td>
                     <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
                 </tr>
