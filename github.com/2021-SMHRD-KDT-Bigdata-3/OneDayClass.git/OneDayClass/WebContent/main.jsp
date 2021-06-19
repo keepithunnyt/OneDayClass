@@ -460,7 +460,7 @@
 								<div class="ca-pic set-bg" data-setbg="img/authors/5.jpg"></div>
 								<p>William Parker, <span>Developer</span></p>
 							</div>
-						</div>
+						</div> 
 					</div>
 				</div>
 				<!-- course -->

@@ -16,7 +16,7 @@
 <style>
 		.tabletwo > table tr{
 			height: 30px;
-		}
+		} 
 		.tabletwo > table{
 			width:600px;
 			border: 2px solid #FEA698;
