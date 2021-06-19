@@ -147,3 +147,11 @@
   .tableone{
   border-radius:9px;
   }
+  
+  .input-file-btn{
+  padding: 6px 25px;
+  background-color:#FEA698;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
