@@ -317,7 +317,7 @@
 						</div>
 					</div>
 				</div>
-				<%} %> 
+				<%} %>
 				<!-- course -->
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
