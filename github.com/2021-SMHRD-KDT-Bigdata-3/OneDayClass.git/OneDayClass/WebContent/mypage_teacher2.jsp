@@ -27,9 +27,9 @@
 						</div>
 						
 						<form action="TEACHERS_update" class="contact-form">
-						<h3>수강 등록</h3>
+						<h4>수강 등록</h4>
 						<br>
-						<select name="make" style="width:200px; height:50px;">
+						<select name="make" style="width:250px; height:50px;">
                         <option value="category">개설할 강좌 종류</option>
                         <option value="sports">운동</option>
                         <option value="arts">공예</option>
@@ -37,9 +37,9 @@
                         <option value="medias">사진 영상</option>
                         <option value="etc">기타</option>
                         </select>
-						<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name" style="width:200px; height:50px;"> 
-						<input type="text" class="class_id" placeholder="강좌 이름을 입력하세요" style="width:405px; height:50px;">
-						<textarea placeholder="강좌 내용을 입력하세요" style="width:405px; height:200px;"></textarea>
+						<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name" style="width:250px; height:50px;"> 
+						<input type="text" class="class_id" placeholder="강좌 이름을 입력하세요" style="width:505px; height:50px;">
+						<textarea placeholder="강좌 내용을 입력하세요" style="width:505px; height:300px;"></textarea>
 						<br>
 						<label class="site-btn3" for="input-file">파일 첨부</label>
 						<input type="file" id="input-file" style={{display:"none"}}>
