@@ -26,26 +26,26 @@
   .loginForm h2{
     text-align: center;
     margin: 50px;
-    color:#424242;
+    color:#0D3B66;
     font-size:50px;
   }
   
   .division{
     border-bottom: 2px solid #FEA698;
     margin: 30px;
-    padding: 10px 40px;
+    padding: 10px 10px;
   }
 
   .idForm{
     border-bottom: 2px solid #FEA698;
     margin: 30px;
-    padding: 10px 40px;
+    padding: 10px 10px;
   }
   
   .passForm{
     border-bottom: 2px solid #FEA698;
     margin: 30px;
-    padding: 10px 40px;
+    padding: 10px 10px;
   }
   
   .id {
