@@ -150,7 +150,7 @@ public class CLASSDAO {
 
 	public ArrayList<CLASSDTO> Select_class(String teacher_id) {
 
-		// 런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
+		// 런타임  오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 		try {
 			conn(); 
 			// sql 작성

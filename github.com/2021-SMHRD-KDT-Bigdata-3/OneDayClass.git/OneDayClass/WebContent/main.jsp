@@ -295,7 +295,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
-							<%--<div class="price"></div> --%>
+							<%--<div class="price" ></div> --%>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
