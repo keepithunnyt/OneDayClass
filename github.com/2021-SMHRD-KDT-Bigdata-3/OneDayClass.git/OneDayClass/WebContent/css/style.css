@@ -1952,7 +1952,7 @@ h5,
 h6 {
 	margin: 0;
 	font-weight: 600;
-	color: #424242;
+	color: #0D3B66;
 }
 
 h1 {
@@ -2074,7 +2074,7 @@ ol {
 .text-white span,
 .text-white li,
 .text-white a {
-	color:#424242;
+	color:#0D3B66;
 }
 
 .rating i {
@@ -2101,7 +2101,7 @@ ol {
 	font-weight: 600;
 	font-size: 16px;
 	position: relative;
-	color: #424242;
+	color: #0D3B66;
 	cursor: pointer;
 	background: white; 
 	justify-content: center;
@@ -2133,7 +2133,7 @@ ol {
 	font-weight: 600;
 	font-size: 16px;
 	position: relative;
-	color: #424242;
+	color: #0D3B66;
 	cursor: pointer;
 	background:white;
 	
@@ -2459,7 +2459,7 @@ ol {
 
 .course-item .course-thumb .price {
 	font-size: 14px;
-	color: #424242;
+	color: #0D3B66;
 	font-weight: 600;
 	background: white;
 	border:2px solid #FAE0C7;
@@ -2568,7 +2568,7 @@ ol {
 	display: inline-block;
 	font-size: 18px;
 	font-weight: 600;
-	color: #424242;
+	color: #0D3B66;
 	padding: 12px 10px 5px;
 	margin: 0 10px;
 	border-bottom: 4px solid transparent;
@@ -2761,7 +2761,7 @@ ol {
 	left: -5px;
 	top: 6px;
 	border-radius: 50%;
-	background: #685338;
+	background: #0D3B66;
 }
 
 .footer-newslatter {
