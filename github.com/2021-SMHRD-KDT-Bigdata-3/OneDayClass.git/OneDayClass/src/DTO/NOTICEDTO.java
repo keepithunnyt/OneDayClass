@@ -1,5 +1,5 @@
 package DTO;
-
+ 
 public class NOTICEDTO {
 	private String n_title;
 	private String content;

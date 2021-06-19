@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/style2.css" />
 	<link rel="stylesheet" href="css/style3.css" />
-</head>
+</head> 
 <body>	
 	<% TEACHERSDTO teacher = (TEACHERSDTO)session.getAttribute("login"); %>	
 	<section class="contact-page spad pb-0">

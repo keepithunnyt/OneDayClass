@@ -16,7 +16,7 @@ import DAO.USERSDAO;
 @WebServlet("/CLASS_insert")
 public class CLASS_insert extends HttpServlet {
 	
-
+ 
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		

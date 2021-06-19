@@ -1,5 +1,5 @@
 package DTO;
-
+ 
 public class TEACHERSDTO {
 	private String teacher_id;
 	private String teacher_pw;
@@ -14,7 +14,7 @@ public class TEACHERSDTO {
 		this.teacher_name = teacher_name;
 		this.tel = tel;
 	}
-
+ //정주  바보 >_-
   
 	public String getTeacher_id() { 
 		return teacher_id;

@@ -6,7 +6,7 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="./css/style2.css">
-
+ 
 </head>
 
 <body width="100%" height="100%">

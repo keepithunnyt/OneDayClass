@@ -1,5 +1,5 @@
 package DTO;
-
+ 
 public class CLASSDTO {
 	private int class_id;
 	private String teacher_id;

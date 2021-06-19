@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import DAO.USERSDAO;
 
-
+ 
 @WebServlet("/USERS_delete")
 public class USERS_delete extends HttpServlet {
 
