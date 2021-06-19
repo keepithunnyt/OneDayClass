@@ -19,7 +19,7 @@
 		} 
 		.tabletwo > table{
 			width:600px;
-			border: 2px solid #FEA698;
+			border: 3px solid #FEA698;
 			border-collapse: separate;
 			border-radius: 12px;
 			padding:10px;
@@ -33,23 +33,23 @@
 		
 		}
 		th {
-        color : #FEA698;
+        color : #0D3B66;
         font-size : 20px;
         
       }
       td.teacher {
-        color : #8B4513;
+        color : #0D3B66;
         font-size : 16px;
         font-weight: bold;
       }
       td {
-        color : #8B4513;
+        color : #0D3B66;
         font-size : 16px;
         
       }
       th.title{
       	font-size : 24px;
-      	color: #CD5C5C;
+      	color: indianred;
       }
 	</style>
 </head>
@@ -79,15 +79,11 @@
 	<td colspan = '2'>
 	<img alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
 	</tr>
-	<tr>
-
-
 
 	<tr bgcolor="white">
 	<th colspan = '2'><%=c_dto.getCategory() %></th>
 	</tr>
 
-	
 	
 	<tr>
 	<th class ='title' colspan = '2'><%=c_dto.getTitle() %></th>
@@ -102,7 +98,6 @@
 
 	</tr>
 	
-	
 	<tr align="center" bgcolor="white">
 		<td colspan = "2" style = "font-weight: bold;">강좌 소개</td>
 		
@@ -110,19 +105,17 @@
 	<tr><td colspan = "2"><%=c_dto.getContent() %></td></tr>
 
 
-	
 	<tr align="center" bgcolor="white">
 		<td style = "font-weight: bold;">시간</td>
 		<td><%=c_dto.getTime() %></td>
 	</tr>
 
-	
 	<tr align="center" bgcolor="white">
 		<td style = "font-weight: bold;">비용</td>
 		<td><%=c_dto.getPrice() %></td>
 	</tr>
 	<tr></tr>
-	<tr><td colspan = "2" align = "center" style = "color: #FEA698; font-weight: bold;"><a href="#">문의하기</a></td></tr>
+	<!-- <tr><td colspan = "2" align = "center" style = "color: #FEA698; font-weight: bold;"><a href="#">문의하기</a></td></tr> -->
 	</table>
 </div>
 
