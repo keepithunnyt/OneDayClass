@@ -34,7 +34,7 @@
                         <option value="sports">운동</option>
                         <option value="arts">공예</option>
                         <option value="beautys">패션/뷰티</option>
-                        <option value="medias">사진 영상</option>
+                        <option value="medias">사진/영상</option>
                         <option value="etc">기타</option>
                         </select>
 						<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name" style="width:250px; height:50px;"> 
