@@ -113,7 +113,7 @@
 		</div>
 	</div>
 	<!-- Page info end -->
-	 <div class="page-info-section set-bg" data-setbg="img/icon2.jpg">
+	 <div class="page-info-section set-bg" data-setbg="img/sample_banner.jpg">
 	 <div class="container">
 	 
 			<!-- <div class="site-breadcrumb">
