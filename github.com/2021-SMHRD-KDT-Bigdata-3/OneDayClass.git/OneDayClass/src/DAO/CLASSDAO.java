@@ -50,21 +50,20 @@ public class CLASSDAO {
 	}// 메소드끝
 
 	// 회원가입
-	public int insert_class(String id, String title, String content, String time, String price, String category,
+	public int insert_class(String teacher_id, String title, String content, String time, String price, String category,
 			String image) {
 
 		// 런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 		try {
 			conn();
 			// sql 작성
-			String sql = "insert into class(teacher_id,title,content,time,price,category,image) "
-					+ "values(CLASS_CID_SEQ.Nextval,?,?,?,?,?,?,?)";
+			String sql = "insert into class values(CLASS_CID_SEQ.Nextval,?,?,?,?,?,?,?)";
 
 			// PreparedStatement 객체 생성
 			pst = conn.prepareStatement(sql);
 
 			// 바인드 변수(?) 채우기
-			pst.setString(1, id);
+			pst.setString(1, teacher_id);
 			pst.setString(2, title);
 			pst.setString(3, content);
 			pst.setString(4, time);
@@ -167,9 +166,15 @@ public class CLASSDAO {
 
 			classArray = new ArrayList<CLASSDTO>();
 			while (rs.next()) {
-				CLASSDTO classDto = new CLASSDTO(rs.getInt("class_id"), rs.getString("teacher_id"),
-						rs.getString("title"), rs.getString("content"), rs.getString("time"), rs.getString("price"),
-						rs.getString("category"), rs.getString("image"));
+				CLASSDTO classDto = new CLASSDTO(
+						rs.getInt("class_id"),
+						rs.getString("teacher_id"),
+						rs.getString("title"),
+						rs.getString("content"),
+						rs.getString("time"),
+						rs.getString("price"),
+						rs.getString("category"),
+						rs.getString("image"));
 				classArray.add(classDto);
 			}
 
