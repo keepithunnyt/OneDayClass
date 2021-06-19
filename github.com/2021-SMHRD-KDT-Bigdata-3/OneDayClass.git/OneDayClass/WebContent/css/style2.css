@@ -33,26 +33,26 @@
   .division{
     border-bottom: 2px solid #FEA698;
     margin: 30px;
-    padding: 10px 10px;
+    padding: 10px 40px;
   }
 
   .idForm{
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #FEA698;
     margin: 30px;
-    padding: 10px 10px;
+    padding: 10px 40px;
   }
   
   .passForm{
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #FEA698;
     margin: 30px;
-    padding: 10px 10px;
+    padding: 10px 40px;
   }
   
   .id {
     width: 100%;
     border:none;
     outline:none;
-    color: #636e72;
+    color: #424242;
     font-size:16px;
     height:25px;
     background: none;
@@ -62,7 +62,7 @@
     width: 100%;
     border:none;
     outline:none;
-    color: #636e72;
+    color: #424242;
     font-size:16px;
     height:25px;
     background: none;

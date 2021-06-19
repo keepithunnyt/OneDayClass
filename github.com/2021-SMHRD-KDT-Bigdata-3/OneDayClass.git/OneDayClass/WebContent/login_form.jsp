@@ -6,6 +6,7 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="./css/style2.css">
+
 </head>
 
 <body width="100%" height="100%">
@@ -17,7 +18,7 @@
 			<option value="user" class="user">일반</option>
 		</select>
 		<div class="idForm">
-			<input type="text" class="id" placeholder="아이디를 입력하세요" name="id">
+			<input type="text" class="id" placeholder="아이디를 입력하세요" name="id" >
 		</div>
 		<div class="passForm">
 			<input type="password" class="pw" placeholder="비밀번호를 입력하세요" name="pw">
