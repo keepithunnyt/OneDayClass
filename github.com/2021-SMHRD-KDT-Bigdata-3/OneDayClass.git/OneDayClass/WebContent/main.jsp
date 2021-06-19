@@ -113,7 +113,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/test2.png" alt="">
+						<a href="main.jsp"><img class = 'logo' src="img/test2.png"></a> 
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>

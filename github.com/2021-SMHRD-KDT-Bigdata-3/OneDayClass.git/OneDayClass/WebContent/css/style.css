@@ -59,7 +59,12 @@ p {
 	line-height: 2.2;
 	font-weight: 500;
 }
-
+img.logo{
+	max-width: 100%;
+}
+img.logo2{
+	max-width : 100px;
+}
 img {
 	max-width: 100%;
 
