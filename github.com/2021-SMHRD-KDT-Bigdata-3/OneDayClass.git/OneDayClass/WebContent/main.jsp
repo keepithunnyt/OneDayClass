@@ -356,28 +356,32 @@
 				<li class="control" data-filter=".certificate">자격증</li>
 				<li class="control" data-filter=".finance">제테크</li>
 				<li class="control" data-filter=".beautys">뷰티</li>
-			</ul>                                       
+			</ul>   
+			                                   
 			<div class="row course-items-area" >
 				<%for(int i = 0; i < arr.size(); i++){  %>
+				<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr.get(i).getId());%> 
 				<!-- course -->
 				 
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
 					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
+						<a href=<%=url %> ><div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
 						</div>
+						</a>
 						<div class="course-info">
 							<div class="course-text">
-							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr.get(i).getId());%>
+							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>
 							
 							
 								
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>
+							
 							<div class="course-author">
 								
-								<div  class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+								<div></div>
 								
 								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>
@@ -385,188 +389,11 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
 				<%} %>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
-							<div class="price">2달라</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>허경영과 축지법 하기</h5>
-								<p>북쪽에 장군님도 하신다는 셀럽 필수 능력!</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="img/authors/2.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="img/courses/3.jpg">
-							<div class="price">3달라</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>이준석 당대표와 점심식사</h5>
-								<p>자칭 워렌 버핏을 꿈꾸는 야망가와의 식사!</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="img/authors/3.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="img/courses/4.jpg">
-							<div class="price">4달라</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>전광훈 목사와 태극기집회</h5>
-								<p>방역 수칙과는 대척점에 있는 자가격리 직행 티켓!</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="img/authors/4.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div> 
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 beautys">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="img/courses/5.jpg">
-							<div class="price">5달라</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>빅데이터 과정 수강</h5>
-								<p>스몰데이터는 왜 없을까? 그 궁금증을 해결해 준다!</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="img/authors/5.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div> 
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 medias">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="img/courses/6.jpg">
-							<div class="price">6달라</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>인공지능 과정 수강</h5>
-								<p>내 머리가 나쁜 이유를 기계를 통해 밝히다!</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="img/authors/6.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="img/courses/7.jpg">
-							<div class="price">7달라</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>쿠팡맨 배송 교육</h5>
-								<p>로켓 타고 배송한다는 쿠팡맨의 배송 현장을 가다!</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="img/authors/7.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
-							<div class="price">8달라</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>맨투맨 판매 교육</h5>
-								<p>생존 창업의 기본 중에 기본을 배우다!</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="img/authors/8.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="featured-courses">
-				<div class="featured-course course-item">
-					<div class="course-thumb set-bg" data-setbg="img/courses/f-1.jpg">
-						<div class="price">4딸라</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6 offset-lg-6 pl-0">
-							<div class="course-info">
-								<div class="course-text">
-									<div class="fet-note">추천 강좌</div>
-									<h5>하형이와 함께하는 즐거운 크롤링</h5>
-									<p>크롤링~ 롤링~ 롤링~ 저절로 노래가 나올 정도의 여유 가득한 데이터 수집의 달인!</p>
-									<div class="students">120 Students</div>
-								</div>
-								<div class="course-author">
-									<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
-									<p>강하형, <span>프로젝트 실무 총괄</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="featured-course course-item">
-					<div class="course-thumb set-bg" data-setbg="img/courses/f-2.jpg">
-						<div class="price">4딸라</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6 pr-0">
-							<div class="course-info">
-								<div class="course-text">
-									<div class="fet-note">추천 강좌</div>
-									<h5>현진이와 함께하는 하드 코딩</h5>
-									<p>코딩이 먹는 거라고요? 먹고 살 수 있는 겁니다! 리얼 생존 코딩의 진수!</p>
-									<div class="students">120 Students</div>
-								</div>
-								<div class="course-author">
-									<div class="ca-pic set-bg" data-setbg="img/authors/2.jpg"></div>
-									<p>안현진, <span>프로젝트 기획 총괄</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+
 	<!-- course section end -->
 
 
