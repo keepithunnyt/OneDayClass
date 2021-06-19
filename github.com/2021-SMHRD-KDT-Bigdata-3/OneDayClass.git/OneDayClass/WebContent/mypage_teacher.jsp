@@ -1,3 +1,6 @@
+<%@page import="DTO.CLASSDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="DAO.CLASSDAO"%>
 <%@page import="DTO.TEACHERSDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -28,8 +31,10 @@
 	</style>
 </head>
 <body>	
-	<% //TEACHERSDTO teacher = (TEACHERSDTO)session.getAttribute("login");
-	TEACHERSDTO teacher = new TEACHERSDTO("123","123","123","123");
+	<% 
+	TEACHERSDTO teacher = (TEACHERSDTO)session.getAttribute("login");
+	CLASSDAO dao = new CLASSDAO();
+	ArrayList<CLASSDTO> classArray = dao.Select_class(Integer.parseInt(teacher.getTeacher_id()));
 	%>	
 	<section class="contact-page spad pb-0">
 		<div class="container" >
@@ -41,7 +46,7 @@
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
 						</div>
 						<form action="TEACHERS_update" class="contact-form">
-							<h3>개인 정보</h3>
+							<h3>개인 정보 수정</h3>
 							<br> <input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id">
 							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
@@ -56,30 +61,39 @@
                     <thead>
                     <tr align="center" bgcolor="white">
                     <th>아이디</th>
-                    <th>이름</th>
                     <th>제목</th>
                     <th>카테고리</th>
-                    <th>날짜</th>
+                    <th>가격</th>
                     <th></th>
                		</tr>
            		    </thead>
 		            <tbody>
         	        <tr align="center" bgcolor="white">
                     <td>smart</td>
-                    <td>안현진</td>
                     <td>기획총괄</td>
                     <td>JAVA</td>
                     <td>2021/06/18</td>
                     <td> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
-            	    </tr>
+            	</tr>
                		<tr align="center" bgcolor="white">
                     <td>develop</td>
-                    <td>강하형</td>
                     <td>개발총괄</td>
                     <td>PYTHON</td> 
                     <td>2021/06/18</td>
                     <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
                 </tr>
+                <%if(classArray != null) {%>
+                <%for(int i = 0; i < classArray.size(); i++){ %>
+                	
+               		<tr align="center" bgcolor="white">
+                    <td> <%=classArray.get(i).getId() %> </td>
+                    <td> <%=classArray.get(i).getTitle() %> </td>
+                    <td> <%=classArray.get(i).getCategory() %></td> 
+              	    <td> <%=classArray.get(i).getPlace() %></td>
+                    <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
+                </tr>
+                	
+                <%} }%>
             </tbody>
         </table>
         </div>

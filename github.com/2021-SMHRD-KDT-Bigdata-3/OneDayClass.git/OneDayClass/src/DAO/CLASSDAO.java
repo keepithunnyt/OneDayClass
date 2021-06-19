@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 import DTO.CLASSDTO;
 
@@ -14,6 +15,7 @@ public class CLASSDAO {
 	int cnt = 0;
 	ResultSet rs = null;
     CLASSDTO dto = null;
+    ArrayList<CLASSDTO> classArray = null;
 	
 	//데이터베이스 연결
 		public void conn() {
@@ -147,4 +149,39 @@ public class CLASSDAO {
 					}
 					return cnt;
 				}
+				
+		public ArrayList<CLASSDTO> Select_class(int teacher_id) {
+		
+			//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
+			try{
+				conn();
+				//sql 작성
+				String sql="select * from class where teacher_id = ?";
+				
+				//PreparedStatement 객체 생성
+				pst = conn.prepareStatement(sql);
+				
+				//바인드 변수(?) 채우기
+				pst.setInt(1,teacher_id);
+				
+				//sql문 실행
+				rs = pst.executeQuery(sql);
+				
+				classArray = new ArrayList<CLASSDTO>();
+				while(rs.next()) {
+					CLASSDTO classDto = new CLASSDTO(rs.getInt("class_id"),
+							rs.getString("teacher_id"), rs.getString("title")
+							, rs.getString("content"), rs.getString("time"),
+							rs.getString("price"), rs.getString("category"), rs.getString("image"));
+					classArray.add(classDto);
+				}
+						
+			}catch(Exception e){
+				e.printStackTrace();
+				System.out.println("불러오기 실패");
+			}finally{
+				close();
+			}
+			return classArray;
+		}// 메소드끝	
 }
