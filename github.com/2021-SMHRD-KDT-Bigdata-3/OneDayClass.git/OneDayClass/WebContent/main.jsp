@@ -18,7 +18,7 @@
 	<meta name="keywords" content="webuni, education, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link href="img/favi con.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="googleapis.css" rel="stylesheet">
@@ -29,53 +29,164 @@
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
-
+ 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
 	<style>
-	* {margin:0;padding:0;}
-	.section input[id*="slide"] {display:none;}
-	.section .slidewrap {max-width:100%;margin:0 auto;}
-	.section .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;}
-	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
-	.section .slidelist > li > a {display:block;position:relative;}
-	.section .slidelist > li > a img {width:100%;}
-	.section .slidelist label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
-	.section .slidelist .textbox {position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1.6;text-align:center;}
-	.section .slidelist .textbox h3 {font-size:36px;color:#fff;;transform:translateY(30px);transition:all .5s;}
-	.section .slidelist .textbox p {font-size:16px;color:#fff;opacity:0;transform:translateY(30px);transition:all .5s;}
-	
-	/* input에 체크되면 슬라이드 효과 */
-	.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
-	.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
-	.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+		* {
+			margin: 0;
+			padding: 0;
+		}
 
-	/* input에 체크되면 텍스트 효과 */
-	.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
-	.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
-	.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
-	.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
-	.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
-	.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+		ul,
+		li {
+			list-style: none;
+		}
 
-	/* 좌,우 슬라이드 버튼 */
-	.slide-control > div {display:none;}
-	.section .left {left:30px;background:url('./img/left.png') center center / 100% no-repeat;}
-	.section .right {right:30px;background:url('./img/right.png') center center / 100% no-repeat;}
-	.section input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
-	.section input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
-	.section input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+		#slide {
+			height: 300px;
+			position: relative;
+			overflow: hidden;
+		}
 
-	/* 페이징 */
-	.slide-pagelist {text-align:center;padding:10px;}
-	.slide-pagelist > li {display:inline-block;vertical-align:middle;}
-	.slide-pagelist > li > label {display:block;padding:2px ;border-radius:30px;background:#FEA698;margin:5px 5px;cursor:pointer; width:20px;height:5px;}
-	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#F36652;}
-	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#F36652;}
-	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#F36652;}
+		#slide ul {
+			width: 500%;
+			height: 100%;
+
+		}
+
+		#slide ul:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		#slide li {
+			float: left;
+			width: 20%;
+			height: 100%;
+		}
+
+		#slide li:nth-child(1) {
+			background: #faa;
+		}
+
+		#slide li:nth-child(2) {
+			background: #ffa;
+		}
+
+		#slide li:nth-child(3) {
+			background: #9ee4da;
+		}
+
+		#slide li:nth-child(4) {
+			background: #b8b8ff;
+		}
+
+		#slide li:nth-child(5) {
+			background: #faa;
+		}
+
+		#slide input {
+			display: none;
+		}
+
+		#slide label {
+			display: inline-block;
+			vertical-align: middle;
+			width: 10px;
+			height: 10px;
+			border: 2px solid #666;
+			background: #fff;
+			transition: 0.3s;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+
+		#slide .pos {
+			text-align: center;
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			width: 100%;
+			text-align: center;
+		}
+
+
+		#pos1:checked~ul {
+			margin-left: 0%;
+			transition: 1s;
+		}
+
+		#pos2:checked~ul {
+			margin-left: -100%;
+			transition: 1s;
+		}
+
+		#pos3:checked~ul {
+			margin-left: -200%;
+			transition: 1s;
+		}
+
+		#pos4:checked~ul {
+			margin-left: -300%;
+			transition: 1s;
+		}
+
+		#pos1:checked~ul {
+			animation: toFirst 0.5s linear;
+		}
+
+		#pos1:checked~.pos>label:nth-child(1) {
+			background: #666;
+		}
+
+		#pos2:checked~.pos>label:nth-child(2) {
+			background: #666;
+		}
+
+		#pos3:checked~.pos>label:nth-child(3) {
+			background: #666;
+		}
+
+		#pos4:checked~.pos>label:nth-child(4) {
+			background: #666;
+		}
+
+		#pos5:checked~.pos>label:nth-child(1) {
+			background: #666;
+		}
+
+
+		@keyframes toFirst {
+			0% {
+				margin-left: -300%;
+			}
+
+			50% {
+				margin-left: -350%;
+			}
+
+			99% {
+				margin-left: -400%;
+			}
+
+			100% {
+				margin-left: 0%;
+			}
+		}
 	</style>
 
 </head>
@@ -113,7 +224,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/test2.png" alt="">
+						<a href="main.jsp"><img class = 'logo' src="img/test2.png"></a> 
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -171,71 +282,29 @@
 	<!-- Page info end -->
 	
 	<!-- Page info 2 -->
-	 <div class="section">
-	<input type="radio" name="slide" id="slide01" checked>
-	<input type="radio" name="slide" id="slide02">
-	<input type="radio" name="slide" id="slide03">
-	<div class="slidewrap">
+	<div id="slide">
+		<input type="radio" name="pos" id="pos1" checked>
+		<input type="radio" name="pos" id="pos2">
+		<input type="radio" name="pos" id="pos3">
+		<input type="radio" name="pos" id="pos4">
+
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 		
-		<ul class="slidelist">
-			<!-- 슬라이드 영역 -->
-			<li class="slideitem">
-				<a>
-					<div class="textbox">
-						<h3>첫번째 슬라이드</h3>
-						<p>샘플1</p>
-					</div>
-					<img src="./img/sample_banner1.jpg">
-				</a>
-			</li>
-			<li class="slideitem">
-				<a>
-					
-					<div class="textbox">
-						<h3>두번째 슬라이드</h3>
-						<p>샘플2</p>
-					</div>
-					<img src="./img/sample_banner2.jpg">
-				</a>
-			</li>
-			<li class="slideitem">
-				<a>
-					
-					<div class="textbox">
-						<h3>두번째 슬라이드</h3>
-						<p>샘플1</p>
-					</div>
-					<img src="./img/sample_banner1.jpg">
-				</a>
-			</li class="slideitem">
-
-			<!-- 좌,우 슬라이드 버튼 -->
-			<div class="slide-control">
-				<div>
-					<label for="slide03" class="left"></label>
-					<label for="slide02" class="right"></label>
-				</div>
-				<div>
-					<label for="slide01" class="left"></label>
-					<label for="slide03" class="right"></label>
-				</div>
-				<div>
-					<label for="slide02" class="left"></label>
-					<label for="slide01" class="right"></label>
-				</div>
-			</div>
-
-		</ul>
-		<!-- 페이징 -->
-		<ul class="slide-pagelist">
-			<li><label for="slide01"></label></li>
-			<li><label for="slide02"></label></li>
-			<li><label for="slide03"></label></li>
-		</ul>
+		<p class="pos">
+			<label for="pos1"></label>
+			<label for="pos2"></label>
+			<label for="pos3"></label>
+			<label for="pos4"></label>
+		</p>
 	</div>
-
+</body></html>
 	
-</div>
 		<!-- Page info end -->
 
 
@@ -391,7 +460,7 @@
 								<div class="ca-pic set-bg" data-setbg="img/authors/5.jpg"></div>
 								<p>William Parker, <span>Developer</span></p>
 							</div>
-						</div>
+						</div> 
 					</div>
 				</div>
 				<!-- course -->
