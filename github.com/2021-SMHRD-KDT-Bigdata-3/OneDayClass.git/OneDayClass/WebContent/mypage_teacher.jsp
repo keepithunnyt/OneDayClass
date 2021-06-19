@@ -84,8 +84,8 @@
         </table>
         </div>
          <br>
-        <input type="button" class="site-btn4" id="enroll" value="¼ö°­ µî·Ï" onClick="location.href='mypage_teacher3.jsp'">
-        <input type="button" class="site-btn4" id="leave" value="È¸¿ø Å»Åð" onClick="location.href='mypage_teacher3.jsp'">
+        <input type="button" class="site-btn4" id="enroll" value="¼ö°­ µî·Ï" onClick="location.href='mypage_teacher2.jsp'">
+        <input type="button" class="site-btn4" id="leave" value="È¸¿ø Å»Åð" onClick="location.href='mypage_teacher2.jsp'">
 							
 						</form>
 					</div>
