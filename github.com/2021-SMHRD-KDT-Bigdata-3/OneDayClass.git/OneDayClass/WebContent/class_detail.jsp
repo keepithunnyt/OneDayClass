@@ -112,7 +112,7 @@
 	<tr align="center" bgcolor="white">
 		<td style = "font-weight: bold;">½Ã°£</td>
 		<td><%=c_dto.getTime() %></td>
-	</tr>
+	</tr> 
 	
 
 	
