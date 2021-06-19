@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-lg-8">
 					<div class="contact-form-warp">
-						<div class="section-title text-white text-left">
+						<div class="section-title text-white">
 						<h2>마이페이지</h2>
 						<p>원데이클래스 강좌 개설을 위한 정보를 입력해주세요</p>
 						</div>
@@ -29,9 +29,18 @@
 						<form action="TEACHERS_update" class="contact-form">
 						<h3>수강 등록</h3>
 						<br>
-						<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
-						<input type="text" class="class_id" placeholder="강좌 이름을 입력하세요">
-						<textarea placeholder="강좌 내용을 입력하세요"></textarea>
+						<select name="make" style="width:200px; height:50px;">
+                        <option value="category">개설할 강좌 종류</option>
+                        <option value="sports">운동</option>
+                        <option value="arts">공예</option>
+                        <option value="beautys">패션/뷰티</option>
+                        <option value="medias">사진 영상</option>
+                        <option value="etc">기타</option>
+                        </select>
+						<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name" style="width:200px; height:50px;"> 
+						<input type="text" class="class_id" placeholder="강좌 이름을 입력하세요" style="width:405px; height:50px;">
+						<textarea placeholder="강좌 내용을 입력하세요" style="width:405px; height:200px;"></textarea>
+						<br>
 						<label class="site-btn3" for="input-file">파일 첨부</label>
 						<input type="file" id="input-file" style={{display:"none"}}>
 						<input type="submit" class="site-btn4" id="enroll2" value="등록 완료">
