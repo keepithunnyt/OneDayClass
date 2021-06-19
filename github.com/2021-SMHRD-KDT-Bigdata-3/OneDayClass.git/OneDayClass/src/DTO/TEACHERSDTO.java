@@ -14,7 +14,7 @@ public class TEACHERSDTO {
 		this.teacher_name = teacher_name;
 		this.tel = tel;
 	}
-
+ //정주  바보 >_-
   
 	public String getTeacher_id() { 
 		return teacher_id;
