@@ -614,11 +614,7 @@ ol {
 }
 
 .course-item .course-thumb .price {
-	font-size: 14px;
-	color: #424242;
-	font-weight: 600;
-	background: white;
-	border:2px solid #FAE0C7;
+
 	display: inline-block;
 	padding: 13px 19px;
 	margin: 14px;
@@ -2459,10 +2455,6 @@ ol {
 
 .course-item .course-thumb .price {
 	font-size: 14px;
-	color: #0D3B66;
-	font-weight: 600;
-	background: white;
-	border:2px solid #FAE0C7;
 	display: inline-block;
 	padding: 13px 19px;
 	margin: 14px;

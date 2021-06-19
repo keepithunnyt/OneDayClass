@@ -88,11 +88,11 @@
 		}
 
 		#slide li:nth-child(3) {
-			background: #faF;
+			background: #9ee4da;
 		}
 
 		#slide li:nth-child(4) {
-			background: #aaf;
+			background: #b8b8ff;
 		}
 
 		#slide li:nth-child(5) {

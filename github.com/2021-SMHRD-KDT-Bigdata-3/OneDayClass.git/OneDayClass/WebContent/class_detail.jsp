@@ -7,6 +7,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+
 </head>
 <body>
 <% 
@@ -15,47 +16,33 @@
 	
 	CLASSDTO c_dto = c_dao.allselect(class_id);
 %>
-<fieldset>
-<legend>강의 상세</legend>
+<h2>강의 상세</h2>
 <form>
-<table>
-	<tr>
-		<td>클래스번호</td>
+<table	>
+	<tr align="center" bgcolor="white" color="">
+		<td>클래스명</td>
 		<td><%=c_dto.getId() %></td>
-	</tr>
-	<tr>
+		<td>카테고리</td>
+		<td><%=c_dto.getCategory() %></td>
 		<td>강사명</td>
 		<td><%=c_dto.getTeacher_id() %></td> 
+	</tr>
+	<tr>
+		<td>시간</td>
+		<td><%=c_dto.getTime() %></td>
+		<td>비용</td>
+		<td><%=c_dto.getPrice() %></td>
 	</tr>
 	<tr>
 		<td>내용</td>
 		<td><%=c_dto.getContent() %></td>
 	</tr>
 	<tr>
-		<td>시간</td>
-		<td><%=c_dto.getTime() %></td>
-	</tr>
-	<tr>
-		<td>비용</td>
-		<td><%=c_dto.getPrice() %></td>
-	</tr>
-	<tr>
-		<td>카테고리</td>
-		<td><%=c_dto.getCategory() %></td>
-	</tr>
-	<tr>
 		<td>이미지</td>
 		<td> <img alt="뭔가 안됐음" src=<%=c_dto.getImage() %>> </td>
-		
 	</tr>
 	
-
-
-
-
-
 </table>
 </form>
-</fieldset>
 </body>
 </html>
