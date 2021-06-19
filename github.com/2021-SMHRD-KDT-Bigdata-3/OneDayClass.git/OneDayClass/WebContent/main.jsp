@@ -1,7 +1,12 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="DAO.CLASSDAO"%>
+<%@page import="DTO.CLASSDTO"%>
 <%@page import="DTO.TEACHERSDTO"%>
 <%@page import="DTO.USERSDTO"%>
+
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,6 +49,12 @@
 				teacher = (TEACHERSDTO) session.getAttribute("login");
 			}
 		}
+		CLASSDAO c_dao = new CLASSDAO();
+		
+		ArrayList<CLASSDTO> arr = new ArrayList<CLASSDTO>();
+		arr = c_dao.alldata();
+	    
+		
 	%>
 
 	<!-- Page Preloder -->
@@ -201,25 +212,34 @@
 				<li class="control" data-filter=".etc">기타</li>
 			</ul>                                       
 			<div class="row course-items-area">
+				<%for(int i = 0; i < arr.size(); i++){ %>
 				<!-- course -->
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="img/courses/1.jpg">
+						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
 							<div class="price">1달라</div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
-								<h5>허경영과 공중부양 하기</h5>
+							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr.get(i).getId());%>
+							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>
+							
+							
 								<p>중력을 거스르는 그와 과학의 정면 승부!</p>
 								<div class="students">120 Students</div>
 							</div>
 							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+								
+								<div  class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+								
+								
 								<p>William Parker, <span>Developer</span></p>
+								
 							</div>
 						</div>
 					</div>
 				</div>
+				<%} %>
 				<!-- course -->
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">

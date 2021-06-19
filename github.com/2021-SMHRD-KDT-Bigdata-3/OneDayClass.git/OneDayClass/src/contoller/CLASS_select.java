@@ -32,7 +32,7 @@ public class CLASS_select extends HttpServlet {
 		//session°´Ã¼ »ý¼º
 		HttpSession session = request.getSession();
 		session.setAttribute("CLASS", c_dto);
-		response.sendRedirect("main.jsp");
+		response.sendRedirect("class_datil.jsp");
 		
 		
 	}

@@ -1,33 +1,33 @@
 package DTO;
 
 public class CLASSDTO {
-	private int id;
+	private int class_id;
 	private String teacher_id;
 	private String title;
 	private String content;
 	private String time;
-	private String place;
+	private String price;
 	private String category;
 	private String image;
 	
 	public CLASSDTO(int id, String teacher_id, String title, String content, String time, String place,
 			String category, String image) {
-		this.id = id;
+		this.class_id = id;
 		this.teacher_id = teacher_id;
 		this.title = title;
 		this.content = content;
 		this.time = time;
-		this.place = place;
+		this.price = place;
 		this.category = category;
 		this.image = image;
 	}
 
 	public int getId() {
-		return id;
+		return class_id;
 	}
 
 	public void setId(int id) {
-		this.id = id;
+		this.class_id = id;
 	}
 
 	public String getTeacher_id() {
@@ -62,12 +62,12 @@ public class CLASSDTO {
 		this.time = time;
 	}
 
-	public String getPlace() {
-		return place;
+	public String getPrice() {
+		return price;
 	}
 
-	public void setPlace(String place) {
-		this.place = place;
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
 	public String getCategory() {
