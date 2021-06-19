@@ -183,7 +183,7 @@ public class TEACHERSDAO {
 						
 						rs = pst.executeQuery();
 						if (rs.next()) {
-							get_id = rs.getString("teacher_name");
+							get_id = rs.getString("teacher_name"); 
 						}
 					} catch (Exception e) {
 						System.out.println("로그인 실패");

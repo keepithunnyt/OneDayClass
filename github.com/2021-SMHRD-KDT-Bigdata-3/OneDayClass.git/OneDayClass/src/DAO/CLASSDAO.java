@@ -213,7 +213,7 @@ public class CLASSDAO {
 									String get_price = rs.getString("price");
 									String get_category = rs.getString("category");
 									String get_image = rs.getString("image");
-								    
+								     
 									System.out.println(get_teacher_id);
 									
 						arr.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category, get_image)); 

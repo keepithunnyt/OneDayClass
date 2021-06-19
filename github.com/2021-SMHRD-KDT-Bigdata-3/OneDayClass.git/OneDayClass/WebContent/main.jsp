@@ -291,7 +291,7 @@
 			<div class="row course-items-area" >
 				<%for(int i = 0; i < arr.size(); i++){ %>
 				<!-- course -->
-				
+				 
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>

@@ -25,7 +25,7 @@
 	</tr>
 	<tr>
 		<td>강사명</td>
-		<td><%=c_dto.getTeacher_id() %></td>
+		<td><%=c_dto.getTeacher_id() %></td> 
 	</tr>
 	<tr>
 		<td>내용</td>
