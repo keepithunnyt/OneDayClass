@@ -28,8 +28,8 @@
 	</style>
 </head>
 <body>	
-	<% //TEACHERSDTO teacher = (TEACHERSDTO)session.getAttribute("login");
-	TEACHERSDTO teacher = new TEACHERSDTO("123","123","123","123");
+	<% 
+	TEACHERSDTO teacher = (TEACHERSDTO)session.getAttribute("login");
 	%>	
 	<section class="contact-page spad pb-0">
 		<div class="container" >

@@ -1,3 +1,4 @@
+<%@page import="DAO.TEACHERSDAO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="DAO.CLASSDAO"%>
 <%@page import="DTO.CLASSDTO"%>
@@ -50,10 +51,11 @@
 			}
 		}
 		CLASSDAO c_dao = new CLASSDAO();
-		
+		TEACHERSDAO t_dao = new TEACHERSDAO();
 		ArrayList<CLASSDTO> arr = new ArrayList<CLASSDTO>();
 		arr = c_dao.alldata();
 	    
+		
 		
 	%>
 
@@ -205,19 +207,23 @@
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".sports">운동</li>
 				<li class="control" data-filter=".arts">공예</li>
-				<li class="control" data-filter=".beautys">패션/뷰티</li>
-				<li class="control" data-filter=".medias">사진/영상</li>
-				<li class="control" data-filter=".etc">기타</li>
+				<li class="control" data-filter=".medias">사진</li>
+				<li class="control" data-filter=".sport">운동</li>
+				<li class="control" data-filter=".food">요리</li>
+				<li class="control" data-filter=".music">음악</li>
+				<li class="control" data-filter=".certificate">자격증</li>
+				<li class="control" data-filter=".finance">제테크</li>
+				<li class="control" data-filter=".beautys">뷰티</li>
 			</ul>                                       
-			<div class="row course-items-area">
+			<div class="row course-items-area" >
 				<%for(int i = 0; i < arr.size(); i++){ %>
 				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
+				
+				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
-							<div class="price">1달라</div>
+							<%--<div class="price"></div> --%>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -225,15 +231,15 @@
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>
 							
 							
-								<p>중력을 거스르는 그와 과학의 정면 승부!</p>
-								<div class="students">120 Students</div>
+								
+								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>
 							<div class="course-author">
 								
 								<div  class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
 								
 								
-								<p>William Parker, <span>Developer</span></p>
+								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>
 								
 							</div>
 						</div>

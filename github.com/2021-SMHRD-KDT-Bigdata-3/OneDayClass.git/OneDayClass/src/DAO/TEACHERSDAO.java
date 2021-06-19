@@ -168,5 +168,30 @@ public class TEACHERSDAO {
 					}
 					return cnt;
 				}
+				
+				// 로그인
+				public String who(String id) {
+					String get_id = "";
+					try {
+						conn();
+
+						String sql = "select teacher_name from teachers where teacher_id=?";
+
+						pst = conn.prepareStatement(sql);
+
+						pst.setString(1, id);
+						
+						rs = pst.executeQuery();
+						if (rs.next()) {
+							get_id = rs.getString("teacher_name");
+						}
+					} catch (Exception e) {
+						System.out.println("로그인 실패");
+						e.printStackTrace();
+					} finally {
+						close();
+					}
+					return get_id;
+				}	
 						
 }
