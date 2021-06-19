@@ -32,7 +32,7 @@
 	<style>
 	* {margin:0;padding:0;}
 	.section input[id*="slide"] {display:none;}
-	.section .slidewrap {max-width:1920px;margin:0 auto;}
+	.section .slidewrap {max-width:100%;margin:0 auto;}
 	.section .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;}
 	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
 	.section .slidelist > li > a {display:block;position:relative;}
