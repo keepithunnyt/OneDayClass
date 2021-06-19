@@ -27,7 +27,7 @@
 						</div>
 						
 						<form action="TEACHERS_update" class="contact-form">
-						<h3>수강 등록</h4>
+						<h4>수강 등록</h4>
 						<br>
 						<select name="make" style="width:250px; height:50px;">
                         <option value="category">개설할 강좌 종류</option>
