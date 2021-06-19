@@ -46,20 +46,24 @@
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
 						</div>
 						<form action="TEACHERS_update" class="contact-form">
+<<<<<<< HEAD
 							<h3>개인 정보 수정</h3>
+=======
+							<h4>개인 정보</h4>
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 							<br> <input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id">
 							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
 							<input type="text" class="tel" value=<%= teacher.getTel() %> name="tel"> 
 							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> 
 							 <input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
-								<br> <br>
-					<h3>강좌 정보</h3>
+								<br><br><br><br>
+					<h4>강좌 정보</h4>
 					<br>
 					<div class="tableone">
 					<table>
                     <thead>
-                    <tr align="center" bgcolor="white">
+                    <tr align="center" bgcolor="white" color="">
                     <th>아이디</th>
                     <th>제목</th>
                     <th>카테고리</th>
@@ -98,8 +102,8 @@
         </table>
         </div>
          <br>
-        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher3.jsp'">
-        <input type="button" class="site-btn4" id="leave" value="회원 탈퇴" onClick="location.href='mypage_teacher3.jsp'">
+        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">
+        <input type="button" class="site-btn4" id="leave" value="회원 탈퇴" onClick="location.href='mypage_teacher2.jsp'">
 							
 						</form>
 					</div>

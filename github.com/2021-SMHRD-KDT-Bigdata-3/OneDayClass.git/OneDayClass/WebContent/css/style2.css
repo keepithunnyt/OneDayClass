@@ -26,7 +26,7 @@
   .loginForm h2{
     text-align: center;
     margin: 50px;
-    color:#424242;
+    color:#0D3B66;
     font-size:50px;
   }
   
@@ -37,13 +37,13 @@
   }
 
   .idForm{
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #FEA698;
     margin: 30px;
     padding: 10px 10px;
   }
   
   .passForm{
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #FEA698;
     margin: 30px;
     padding: 10px 10px;
   }
@@ -52,7 +52,7 @@
     width: 100%;
     border:none;
     outline:none;
-    color: #636e72;
+    color: #424242;
     font-size:16px;
     height:25px;
     background: none;
@@ -62,7 +62,7 @@
     width: 100%;
     border:none;
     outline:none;
-    color: #636e72;
+    color: #424242;
     font-size:16px;
     height:25px;
     background: none;

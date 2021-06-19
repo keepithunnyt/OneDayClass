@@ -782,6 +782,7 @@ ol {
 .contact-form select[name=make],
 .contact-form input[type=text],
 .contact-form input[type=email],
+.contact-form input[type=file],
 .contact-form input[type=password],
 .contact-form select[name=locate],
 .contact-form textarea {
@@ -810,6 +811,7 @@ ol {
 .contact-form input[type=text]:focus,
 .contact-form input[type=email]:focus,
 .contact-form input[type=password]:focus,
+.contact-form input[type=file]:focus,
 .contact-form select[name=locate]:focus,
 .contact-form textarea:focus {
 	border-bottom: 2px solid #d82a4e;
@@ -1950,7 +1952,7 @@ h5,
 h6 {
 	margin: 0;
 	font-weight: 600;
-	color: #424242;
+	color: #0D3B66;
 }
 
 h1 {
@@ -2072,7 +2074,7 @@ ol {
 .text-white span,
 .text-white li,
 .text-white a {
-	color:#424242;
+	color:#0D3B66;
 }
 
 .rating i {
@@ -2099,7 +2101,7 @@ ol {
 	font-weight: 600;
 	font-size: 16px;
 	position: relative;
-	color: #424242;
+	color: #0D3B66;
 	cursor: pointer;
 	background: white; 
 	justify-content: center;
@@ -2131,7 +2133,7 @@ ol {
 	font-weight: 600;
 	font-size: 16px;
 	position: relative;
-	color: #424242;
+	color: #0D3B66;
 	cursor: pointer;
 	background:white;
 	
@@ -2457,7 +2459,7 @@ ol {
 
 .course-item .course-thumb .price {
 	font-size: 14px;
-	color: #424242;
+	color: #0D3B66;
 	font-weight: 600;
 	background: white;
 	border:2px solid #FAE0C7;
@@ -2566,7 +2568,7 @@ ol {
 	display: inline-block;
 	font-size: 18px;
 	font-weight: 600;
-	color: #424242;
+	color: #0D3B66;
 	padding: 12px 10px 5px;
 	margin: 0 10px;
 	border-bottom: 4px solid transparent;
@@ -2628,7 +2630,7 @@ ol {
 .contact-form select[name=locate],
 .contact-form textarea {
 	height: 50px;
-	width: 100%;
+	width: 505px;
 	padding: 0 30px;
 	margin-bottom: 27px;
 	float: center;
@@ -2759,7 +2761,7 @@ ol {
 	left: -5px;
 	top: 6px;
 	border-radius: 50%;
-	background: #685338;
+	background: #0D3B66;
 }
 
 .footer-newslatter {

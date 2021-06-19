@@ -26,7 +26,7 @@
   .registerForm h2{
     text-align: center;
     margin: 30px;
-    color: 424242;
+    color: #0D3B66;
   }
   
   .idForm{
@@ -102,7 +102,7 @@
     background:#FEA698;
     background-position: left;
     background-size: 200%;
-    color:#424242;
+    color:#0D3B66;
     font-weight: bold;
     border:none;
     cursor:pointer;
@@ -126,7 +126,7 @@
     background:white;
     background-position: left;
     background-size: 200%;
-    color:#424242;
+    color:#0D3B66;
     font-weight: bold;
     border:3px solid #FEA698;
     cursor:pointer;
@@ -147,3 +147,11 @@
   .tableone{
   border-radius:9px;
   }
+  
+  .input-file-btn{
+  padding: 6px 25px;
+  background-color:#FEA698;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
