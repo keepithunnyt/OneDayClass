@@ -66,10 +66,10 @@
 	/* ÆäÀÌÂ¡ */
 	.slide-pagelist {text-align:center;padding:10px;}
 	.slide-pagelist > li {display:inline-block;vertical-align:middle;}
-	.slide-pagelist > li > label {display:block;padding:5px 30px;border-radius:30px;background:#ccc;margin:5px 5px;cursor:pointer;}
-	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#999;}
-	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#999;}
-	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#999;}
+	.slide-pagelist > li > label {display:block;padding:2px ;border-radius:30px;background:#FEA698;margin:5px 5px;cursor:pointer; width:20px;height:5px;}
+	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#F36652;}
+	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#F36652;}
+	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#F36652;}
 	</style>
 
 </head>
