@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <style>
-    *{margin:0;padding:0;}
-    ul,li{list-style:none;}
-    .slide{height:300px;overflow:hidden;}
-    .slide ul{width:calc(100% * 4);display:flex;animation:slide 8s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
-    .slide li{width:calc(100% / 4);height:300px;}
-    .slide li:nth-child(1){background:rgb(205, 229, 215);}
-    .slide li:nth-child(2){background:rgb(222, 214, 209);}
-    .slide li:nth-child(3){background:rgb(222, 214, 209);}
-    .slide li:nth-child(4){background:rgb(238, 198, 202);}
-    @keyframes slide {
-      0% {margin-left:0;} /* 0 ~ 10  : 정지 */
-      10% {margin-left:0;} /* 10 ~ 25 : 변이 */
-      25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
-      35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
-      50% {margin-left:-200%;}
-      60% {margin-left:-200%;}
-      75% {margin-left:-300%;}
-      85% {margin-left:-300%;}
-      100% {margin-left:0;}
-    }
-  </style>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.slider { display: inline-block; position: relative; overflow: hidden; width: 160px; height: 120px; }
+		.slider img { width: 100%; height: auto; }
+		/* ---------------------------------------------------------- */
+		/* Initial                                                    */
+		/* ---------------------------------------------------------- */
+		.slider .sliderL { position: absolute; left: -100%; }
+		.slider .sliderL:nth-of-type(1) { animation: sliderL 18s ease -1s infinite; }
+		.slider .sliderL:nth-of-type(2) { animation: sliderL 18s ease  2s infinite; }
+		.slider .sliderL:nth-of-type(3) { animation: sliderL 18s ease  5s infinite; }
+		.slider .sliderL:nth-of-type(4) { animation: sliderL 18s ease  8s infinite; }
+		.slider .sliderL:nth-of-type(5) { animation: sliderL 18s ease 11s infinite; }
+		.slider .sliderL:nth-of-type(6) { animation: sliderL 18s ease 14s infinite; }
+		
+		@keyframes sliderL {
+			0%       { left: -100%; }
+		    5.55556% { left:    0%; }
+		    16.66667% { left:    0%; }
+		    22.22222% { left:  100%; }
+		    100%       { left:  100%; } 
+		}
+	</style>
 </head>
 <body>
-  <div class="slide">
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
+	<div class="slider">
+		<img class="sliderL" alt src="http://placehold.jp/ff0000/ffffff/160x120.png?text=1"> <!-- 빨간 -->
+		<img class="sliderL" alt src="http://placehold.jp/00ff00/ffffff/160x120.png?text=2"> <!-- 초록 -->
+		<img class="sliderL" alt src="http://placehold.jp/0000ff/ffffff/160x120.png?text=3"> <!-- 파란 -->
+		<img class="sliderL" alt src="http://placehold.jp/ffff00/ffffff/160x120.png?text=4"> <!-- 노란 -->
+		<img class="sliderL" alt src="http://placehold.jp/00ffff/ffffff/160x120.png?text=5"> <!-- 하늘 -->
+		<img class="sliderL" alt src="http://placehold.jp/ff00ff/ffffff/160x120.png?text=6"> <!-- 보라 -->
+	</div>
 </body>
 </html>
