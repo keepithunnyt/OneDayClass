@@ -182,7 +182,7 @@ ol {
 }
 
 .site-btn:hover {
-	color: #fff;
+	color:#FEA698;
 }
 
 .site-btn.btn-dark {
@@ -214,7 +214,7 @@ ol {
 }
 
 .site-btn2:hover {
-	color: #fff;
+	color: #FEA698;
 }
 
 .site-btn2.btn-dark {
@@ -222,6 +222,68 @@ ol {
 }
 
 .site-btn2.btn-fade {
+	background: #e4edef;
+	color: #1f1f1f;
+}
+
+/* buttons */
+
+.site-btn3 {
+	border-radius: 12px;
+	display: inline-block;
+	min-width: 100px;
+	text-align: center;
+	border: none;
+	padding: 5px 5px;
+	font-weight: 600;
+	font-size: 14px;
+	position: relative; 
+	color: #424242;
+	cursor: pointer;
+	background:white;
+	
+}
+
+.site-btn3:hover {
+	color: #FEA698;
+}
+
+.site-btn3.btn-dark {
+	background: #000;
+}
+
+.site-btn3.btn-fade {
+	background: #e4edef;
+	color: #1f1f1f;
+}
+
+/* buttons */
+
+.site-btn4 {
+	border-radius: 12px;
+	display: inline-block;
+	min-width: 130px;
+	text-align: center;
+	border: 3px solid #FEA698;
+	padding: 10px 10px;
+	font-weight: 600;
+	font-size: 14px;
+	position: relative;
+	color: #424242;
+	cursor: pointer;
+	background:white;
+	
+}
+
+.site-btn4:hover {
+	color: #FEA698;
+}
+
+.site-btn4.btn-dark {
+	background: #000;
+}
+
+.site-btn4.btn-fade {
 	background: #e4edef;
 	color: #1f1f1f;
 }
@@ -940,7 +1002,7 @@ ol {
 =======================*/
 
 .page-info-section {
-	height: 300px;
+	height: 200px;
 }
 
 .site-breadcrumb {
@@ -2334,7 +2396,7 @@ ol {
 }
 
 .search-section.ss-other-page {
-	margin-top: -85px;
+	margin-top:0px;
 }
 
 .search-section.ss-other-page .search-warp {
@@ -2782,7 +2844,7 @@ ol {
 =======================*/
 
 .page-info-section {
-	height: 200px;
+	height: 300px;
 }
 
 .site-breadcrumb {

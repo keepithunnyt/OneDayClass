@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<title>하루클래스-나를 위한 시간</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="WebUni Education Template">
@@ -30,6 +31,7 @@
 
 </head>
 <body>
+
 	<% 
 		USERSDTO user = null;
 		TEACHERSDTO teacher = null;
@@ -101,8 +103,9 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg"> <!--   data-setbg="img/icon.png">-->
+	<div class="page-info-section set-bg" ><!--data-setbg="img/icon.png"  -->
 		<div class="container">
+		
 			<!-- <div class="site-breadcrumb">
 				<a href="#">메인</a>
 				<span>개설 강좌</span>
@@ -110,16 +113,44 @@
 		</div>
 	</div>
 	<!-- Page info end -->
-	
-	<!-- Page info -->
-	<div class="page-info-section set-bg" data-setbg="img/icon.png">
-		<div class="container">
+	 <div class="page-info-section set-bg" data-setbg="img/icon2.jpg">
+	 <div class="container">
+	 
 			<!-- <div class="site-breadcrumb">
 				<a href="#">메인</a>
 				<span>개설 강좌</span>
 			</div> -->
-		</div>
+	</div>		
 	</div>
+	<!-- Page info 배너 
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="http://placehold.it/300x100" style="width:100%">
+  <div class="text">Caption One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://placehold.it/300x100" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="http://placehold.it/300x100" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>-->
 	<!-- Page info end -->
 
 
