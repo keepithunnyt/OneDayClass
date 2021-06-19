@@ -62,6 +62,7 @@
 	//CLASSDTO c_dto = new CLASSDTO(1, "1", "안현진", "내용", "시간", "비용", "카테고리", "이미지");
 	
 %>
+
 <form>
 <br>
 <div class="home">
@@ -79,11 +80,13 @@
 	<img alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
 	</tr>
 	<tr>
-	</tr>
+
+
 
 	<tr bgcolor="white">
 	<th colspan = '2'><%=c_dto.getCategory() %></th>
 	</tr>
+
 	
 	
 	<tr>
@@ -96,9 +99,9 @@
 	</tr>
 	<tr>
 	<td colspan = "2"><hr style = "border: 1px solid #FEA698;"></td>
+
 	</tr>
 	
-
 	
 	<tr align="center" bgcolor="white">
 		<td colspan = "2" style = "font-weight: bold;">강좌 소개</td>
@@ -106,16 +109,12 @@
 	</tr>
 	<tr><td colspan = "2"><%=c_dto.getContent() %></td></tr>
 
-	
 
 	
 	<tr align="center" bgcolor="white">
 		<td style = "font-weight: bold;">시간</td>
 		<td><%=c_dto.getTime() %></td>
 	</tr>
-	
-
-	
 
 	
 	<tr align="center" bgcolor="white">
@@ -129,7 +128,9 @@
 
 
 
+
 </form>
+
 
 
 </body>
