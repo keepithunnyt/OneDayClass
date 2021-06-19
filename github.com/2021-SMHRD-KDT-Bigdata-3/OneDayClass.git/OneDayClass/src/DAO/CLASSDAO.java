@@ -165,7 +165,7 @@ public class CLASSDAO {
 				pst.setInt(1,teacher_id);
 				
 				//sql¹® ½ÇÇà
-				rs = pst.executeQuery(sql);
+				rs = pst.executeQuery();
 				
 				classArray = new ArrayList<CLASSDTO>();
 				while(rs.next()) {
