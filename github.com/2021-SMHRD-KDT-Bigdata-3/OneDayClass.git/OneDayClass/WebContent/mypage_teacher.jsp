@@ -24,7 +24,6 @@
 			border-collapse: separate;
 			border-radius: 12px;
 			padding:10px;
-			color:#424242;
 		}
 	</style>
 </head>
@@ -55,7 +54,7 @@
 					<div class="tableone">
 					<table>
                     <thead>
-                    <tr align="center" bgcolor="white" >
+                    <tr align="center" bgcolor="white" color="">
                     <th>아이디</th>
                     <th>이름</th>
                     <th>제목</th>
