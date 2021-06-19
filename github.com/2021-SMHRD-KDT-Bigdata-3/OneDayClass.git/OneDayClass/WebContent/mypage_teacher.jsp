@@ -54,7 +54,7 @@
 					<div class="tableone">
 					<table>
                     <thead>
-                    <tr align="center" bgcolor="white">
+                    <tr align="center" bgcolor="white" color="">
                     <th>아이디</th>
                     <th>이름</th>
                     <th>제목</th>
@@ -84,8 +84,8 @@
         </table>
         </div>
          <br>
-        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher3.jsp'">
-        <input type="button" class="site-btn4" id="leave" value="회원 탈퇴" onClick="location.href='mypage_teacher3.jsp'">
+        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">
+        <input type="button" class="site-btn4" id="leave" value="회원 탈퇴" onClick="location.href='mypage_teacher2.jsp'">
 							
 						</form>
 					</div>

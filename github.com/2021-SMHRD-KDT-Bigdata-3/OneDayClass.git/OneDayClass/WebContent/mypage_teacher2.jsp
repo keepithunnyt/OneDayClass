@@ -21,46 +21,30 @@
 			<div class="row">
 				<div class="col-lg-8">
 					<div class="contact-form-warp">
-						<div class="section-title text-white text-left">
-							<h2>개인정보 수정</h2>
-							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
+						<div class="section-title text-white">
+						<h2>마이페이지</h2>
+						<p>원데이클래스 강좌 개설을 위한 정보를 입력해주세요</p>
 						</div>
+						
 						<form action="TEACHERS_update" class="contact-form">
-					<h3>강사 정보</h3>
-					<br>
-					<table border="1" bordercolor="#FEA698" width="150%" height="200%" cellspacing="100">
-                    <thead>
-                    <tr align="center" bgcolor="white">
-                    <th>아이디</th>
-                    <th>이름</th>
-                    <th>제목</th>
-                    <th>카테고리</th>
-                    <th>날짜</th>
-                    <th></th>
-               		</tr>
-           		    </thead>
-		            <tbody>
-        	        <tr align="center" bgcolor="white">
-                    <td>smart</td>
-                    <td>안현진</td>
-                    <td>기획총괄</td>
-                    <td>JAVA</td>
-                    <td>2021/06/18</td>
-                    <td> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
-            	    </tr>
-               		<tr align="center" bgcolor="white">
-                    <td>develop</td>
-                    <td>강하형</td>
-                    <td>개발총괄</td>
-                    <td>PYTHON</td> 
-                    <td>2021/06/18</td>
-                    <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher3.jsp'"> &nbsp; 
-        <input type="button" class="site-btn4" id="enroll" value="회원 탈퇴" onClick="location.href='main.jsp'" >
+						<h3>수강 등록</h4>
+						<br>
+						<select name="make" style="width:250px; height:50px;">
+                        <option value="category">개설할 강좌 종류</option>
+                        <option value="sports">운동</option>
+                        <option value="arts">공예</option>
+                        <option value="beautys">패션/뷰티</option>
+                        <option value="medias">사진 영상</option>
+                        <option value="etc">기타</option>
+                        </select>
+						<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name" style="width:250px; height:50px;"> 
+						<input type="text" class="class_id" placeholder="강좌 이름을 입력하세요" style="width:505px; height:50px;">
+						<textarea placeholder="강좌 내용을 입력하세요" style="width:505px; height:300px;"></textarea>
+						<br>
+						<label class="site-btn3" for="input-file">파일 첨부</label>
+						<input type="file" id="input-file" style={{display:"none"}}>
+						<input type="submit" class="site-btn4" id="enroll2" value="등록 완료">
+						<input type="button" class="site-btn4" id="enroll3" value="등록 취소" onClick="location.href='mypage_teacher.jsp'">
 						</form>
 					</div>
 				</div>
