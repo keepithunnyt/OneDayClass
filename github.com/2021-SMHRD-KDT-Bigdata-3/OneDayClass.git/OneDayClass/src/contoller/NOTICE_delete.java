@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import DAO.NOTICEDAO;
 import DAO.TEACHERSDAO;
-
+ 
 
 @WebServlet("/NOTICE_delete")
 public class NOTICE_delete extends HttpServlet {

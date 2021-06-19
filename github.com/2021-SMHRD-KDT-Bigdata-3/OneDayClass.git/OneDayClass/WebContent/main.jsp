@@ -289,7 +289,7 @@
 				<li class="control" data-filter=".beautys">∫‰∆º</li>
 			</ul>                                       
 			<div class="row course-items-area" >
-				<%for(int i = 0; i < arr.size(); i++){ %>
+				<%for(int i = 0; i < arr.size(); i++){  %>
 				<!-- course -->
 				 
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">

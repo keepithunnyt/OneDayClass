@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
+<% 
 	CLASSDAO c_dao =  new CLASSDAO();
 	int class_id = Integer.parseInt(request.getParameter("class_id"));
 	

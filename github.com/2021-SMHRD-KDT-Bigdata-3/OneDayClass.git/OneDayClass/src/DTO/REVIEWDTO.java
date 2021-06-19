@@ -1,5 +1,5 @@
 package DTO;
-
+ 
 public class REVIEWDTO {
 	private String id;
 	private int Class_id;

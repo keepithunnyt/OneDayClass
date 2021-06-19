@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.CLASSDAO;
 import DAO.NOTICEDAO;
 
-
+ 
 @WebServlet("/NOTICE_insert")
 public class NOTICE_insert extends HttpServlet {
 

@@ -1,5 +1,5 @@
 package DTO;
-
+ 
 public class ENROLMENTDTO {
 	private String id;
 	private int class_id;

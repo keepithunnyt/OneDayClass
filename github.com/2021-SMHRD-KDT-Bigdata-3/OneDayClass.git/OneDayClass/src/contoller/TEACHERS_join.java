@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.TEACHERSDAO;
 import DAO.USERSDAO;
 
-
+ 
 @WebServlet("/TEACHERS_join")
 public class TEACHERS_join extends HttpServlet {
 	
