@@ -77,7 +77,7 @@ public class REVIEWDAO {
 		}// 메소드끝		
 		
 		// 로그인 리뷰 보기 나중
-//				public REVIEW login(String id, String pw) {
+//				public REVIEWDTO login(String id, String pw) {
 //
 //					try {
 //						conn();
