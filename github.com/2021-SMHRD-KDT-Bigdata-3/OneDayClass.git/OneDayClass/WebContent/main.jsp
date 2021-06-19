@@ -57,7 +57,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/LOGO.png" alt="">
+						<img src="img/test2.png" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -103,7 +103,7 @@
 
 
 	<!-- Page info 1 -->
-	<div class="page-info-section set-bg" data-setbg="img/sample_banner1.jpg">
+	<div class="page-info-section set-bg" ><!-- data-setbg="img/sample_banner1.jpg"> -->
 		<div class="container">
 		
 			<!-- <div class="site-breadcrumb">
