@@ -46,7 +46,6 @@
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
 						</div>
 						<form action="TEACHERS_update" class="contact-form">
-							<h3>개인 정보 수정</h3>
 							<h4>개인 정보</h4>
 							<br> <input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id">
 							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
@@ -69,7 +68,7 @@
                		</tr>
            		    </thead>
 		            <tbody>
-        	        <tr align="center" bgcolor="white">
+       	   		<!-- <tr align="center" bgcolor="white">
                     <td>smart</td>
                     <td>기획총괄</td>
                     <td>JAVA</td>
@@ -83,6 +82,7 @@
                     <td>2021/06/18</td>
                     <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
                 </tr>
+                 -->
                 <%if(classArray != null) {%>
                 <%for(int i = 0; i < classArray.size(); i++){ %>
                 	
