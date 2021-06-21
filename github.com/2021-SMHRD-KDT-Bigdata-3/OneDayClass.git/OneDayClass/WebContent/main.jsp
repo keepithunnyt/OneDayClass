@@ -37,156 +37,31 @@
 	
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-</head>
 
-<body>
+<!-- 메인 배경 -->
+	
 	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-
-		ul,
-		li {
-			list-style: none;
-		}
-
-		#slide {
-			height: 300px;
-			position: relative;
-			overflow: hidden;
-		}
-
-		#slide ul {
-			width: 500%;
-			height: 100%;
-
-		}
-
-		#slide ul:after {
-			content: "";
-			display: block;
-			clear: both;
-		}
-
-		#slide li {
-			float: left;
-			width: 20%;
-			height: 100%;
-		}
-
-		#slide li:nth-child(1) {
-			background: #faa;
-		}
-
-		#slide li:nth-child(2) {
-			background: #ffa;
-		}
-
-		#slide li:nth-child(3) {
-			background: #9ee4da;
-		}
-
-		#slide li:nth-child(4) {
-			background: #b8b8ff;
-		}
-
-		#slide li:nth-child(5) {
-			background: #faa;
-		}
-
-		#slide input {
-			display: none;
-		}
-
-		#slide label {
-			display: inline-block;
-			vertical-align: middle;
-			width: 10px;
-			height: 10px;
-			border: 2px solid #666;
-			background: #fff;
-			transition: 0.3s;
-			border-radius: 50%;
-			cursor: pointer;
-		}
-
-		#slide .pos {
-			text-align: center;
-			position: absolute;
-			bottom: 10px;
-			left: 0;
-			width: 100%;
-			text-align: center;
-		}
-
-
-		#pos1:checked~ul {
-			margin-left: 0%;
-			transition: 1s;
-		}
-
-		#pos2:checked~ul {
-			margin-left: -100%;
-			transition: 1s;
-		}
-
-		#pos3:checked~ul {
-			margin-left: -200%;
-			transition: 1s;
-		}
-
-		#pos4:checked~ul {
-			margin-left: -300%;
-			transition: 1s;
-		}
-
-		#pos1:checked~ul {
-			animation: toFirst 0.5s linear;
-		}
-
-		#pos1:checked~.pos>label:nth-child(1) {
-			background: #666;
-		}
-
-		#pos2:checked~.pos>label:nth-child(2) {
-			background: #666;
-		}
-
-		#pos3:checked~.pos>label:nth-child(3) {
-			background: #666;
-		}
-
-		#pos4:checked~.pos>label:nth-child(4) {
-			background: #666;
-		}
-
-		#pos5:checked~.pos>label:nth-child(1) {
-			background: #666;
-		}
-
-
-		@keyframes toFirst {
-			0% {
-				margin-left: -300%;
-			}
-
-			50% {
-				margin-left: -350%;
-			}
-
-			99% {
-				margin-left: -400%;
-			}
-
-			100% {
-				margin-left: 0%;
-			}
-		}
+	 *{margin:0;padding:0;}
+    ul,li{list-style:none;}
+    .slide{height:300px;overflow:hidden;}
+    .slide ul{position:relative;height:100%;}
+    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 8s infinite;}
+    .slide li:nth-child(1){background:#faa;animation-delay:0s}
+    .slide li:nth-child(2){background:#ffa;animation-delay:2s}
+    .slide li:nth-child(3){background:#9ee4da;animation-delay:4s}
+    .slide li:nth-child(4){background:#b8b8ff;animation-delay:6s}
+    .slide li:nth-child(4){background:#faa;animation-delay:8s}
+     /* 100 / 8 = 12.5 */
+    @keyframes fade {
+      0% {opacity:0;}
+      5% {opacity:1;}
+      25% {opacity:1;}
+      30% {opacity:0;}
+      100% {opacity:0;}
+    }
 	</style>
 
 </head>
@@ -281,30 +156,19 @@
 	</div>
 	<!-- Page info end -->
 	
-	<!-- Page info 2 -->
-	<div id="slide">
-		<input type="radio" name="pos" id="pos1" checked>
-		<input type="radio" name="pos" id="pos2">
-		<input type="radio" name="pos" id="pos3">
-		<input type="radio" name="pos" id="pos4">
-
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-		
-		<p class="pos">
-			<label for="pos1"></label>
-			<label for="pos2"></label>
-			<label for="pos3"></label>
-			<label for="pos4"></label>
-		</p>
-	</div>
-</body></html>
+	<!-- Page info 2  배너 -->
 	
+	<div id="slide" >
+	<div class="slide" >
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+</html>
 		<!-- Page info end -->
 
 
@@ -391,7 +255,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
-							<div class="price">2달라</div>
+							<div class="price"></div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -410,7 +274,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/3.jpg">
-							<div class="price">3달라</div>
+							<div class="price"></div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -429,7 +293,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/4.jpg">
-							<div class="price">4달라</div>
+							<div class="price"></div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -448,7 +312,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 beautys">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/5.jpg">
-							<div class="price">5달라</div>
+							<div class="price"></div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -467,7 +331,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 medias">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/6.jpg">
-							<div class="price">6달라</div>
+							<div class="price"></div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -486,7 +350,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/7.jpg">
-							<div class="price">7달라</div>
+							<div class="price"></div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -505,7 +369,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
-							<div class="price">8달라</div>
+							<div class="price"></div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -524,7 +388,7 @@
 			<div class="featured-courses">
 				<div class="featured-course course-item">
 					<div class="course-thumb set-bg" data-setbg="img/courses/f-1.jpg">
-						<div class="price">4딸라</div>
+						<div class="price"></div>
 					</div>
 					<div class="row">
 						<div class="col-lg-6 offset-lg-6 pl-0">
@@ -545,7 +409,7 @@
 				</div>
 				<div class="featured-course course-item">
 					<div class="course-thumb set-bg" data-setbg="img/courses/f-2.jpg">
-						<div class="price">4딸라</div>
+						<div class="price"></div>
 					</div>
 					<div class="row">
 						<div class="col-lg-6 pr-0">

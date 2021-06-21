@@ -10,14 +10,10 @@ HEAD
 /* Template default CSS
 /*----------------------------------------*/
 
-font-face{
-	font-family:'NanumSquareRoundB';
-	src:url(C:\Users\smhrd\Desktop\2차프로젝트\NanumFontSetup_TTF_SQUARE_ROUND);
-}
 html,
 body {
 	height: 100%;
-	font-family: NanumSquareRoundB;
+	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased; 
 }
@@ -2543,7 +2539,7 @@ ol {
 	padding: 4px 15px;
 	margin-bottom: 20px;
 	 border-radius: 12px;
-	 border : 2px solid #FEA698;
+	 border : 2px solid #FEA698
 }
 
 .course-item.featured-course .course-info .course-text {
