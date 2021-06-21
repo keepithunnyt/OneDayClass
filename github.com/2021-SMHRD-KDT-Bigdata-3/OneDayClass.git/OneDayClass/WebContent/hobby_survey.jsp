@@ -360,18 +360,12 @@ text-align:left;
 							</table>
 
 						</form>
-						<br><br>
+						<br>
 								<div class="btn" style="site-btn4: center;">
-								<input id='submit' type="submit" class="site-btn4" id="write" value="작성 완료" align="center"> &nbsp;
-
 								<input type="submit" class="site-btn4" id="write" value="작성 완료" align="center"> &nbsp;
-
 								<input type="button" class="site-btn4" id="main" value="메인으로" align="center" onClick="location.href='main.jsp'">
 
-								</div>
-						</form>  
-
-						</form> 	 
+							</div> 	 
 
 					</div>
 			 </div>
