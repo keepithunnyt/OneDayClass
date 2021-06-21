@@ -22,15 +22,17 @@
 					<div class="contact-form-warp">
 						<div class="section-title text-white text-left">
 							<h2>개인정보 수정</h2>
-							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
+							<p>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</p>
 						</div>
-						<form action="USERS_update" class="contact-form">
+						<form action="USERS_update" class="contact-form"> 
 							<h3>수강생 정보</h3>
 							<br> <input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id">
 							<input type="password" class="pw" value=<%=user.getPw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name"> 
 							<input type="text" class="address" value=<%=user.getAddress() %> name="address"> 
-							 <input type="submit" class="site-btn" id="edit" value="수정 완료"> <br> <br>
+							 <input type="submit" class="site-btn4" id="edit" value="수정 완료">
+							 <input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'">
+							 <br><br> 
 							<h3>수강 중인 강좌</h3>
 							<br> <input type="text" class="class_id"
 								placeholder="강의 아이디 표출 코드"> <input type="text"
@@ -38,7 +40,7 @@
 								type="text" class="class_title" placeholder="강의 제목 표출 코드">
 							<input type="text" class="class_date"
 								onfocus="(this.type = 'date')" placeholder="강의 날짜 표출 코드">
-							<input type="button" class="site-btn" id="main" value="메인으로"
+							<input type="button" class="site-btn4" id="main" value="메인으로"
 								onClick="location.href='main.jsp'">
 						</form>
 					</div>

@@ -116,6 +116,18 @@
 	</table>
 </div>
 
+<<<<<<< HEAD
 </form>
+=======
+</form>
+	<script>
+		// 클래스 신청버튼 클릭-> 로그인중이면 DB에 강의 집어넣기 아니면 로그인하게하기
+		
+	
+	
+	</script>
+
+
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 </body>
 </html>
