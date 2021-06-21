@@ -13,7 +13,7 @@ HEAD
 html,
 body {
 	height: 100%;
-	font-family: 'NanumSquareRoundB';
+	font-family:'NanumSquareRound';
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased; 
 }
@@ -27,6 +27,8 @@ h6 {
 	margin: 0;
 	font-weight: 600;
 	color: #424242;
+	font-family:'NanumSquareRound';
+	
 }
 
 h1 {
@@ -246,6 +248,7 @@ ol {
 	color: #424242;
 	cursor: pointer;
 	background:white;
+	font-family:'NanumSquareRound';
 	
 }
 
@@ -277,6 +280,7 @@ ol {
 	color: #0D3B66;
 	cursor: pointer;
 	background:white;
+	font-family:'NanumSquareRound'
 	
 }
 
@@ -530,9 +534,7 @@ ol {
 	padding: 44px 38px;
 }
 
-.course-search-form input[type=text],
-.course-search-form input[type=email],
-.course-search-form select[name=search] {
+.course-search-form input[type=text] {
 	height: 56px;
 	width: 36.6%;
 	padding: 0 30px;
@@ -544,9 +546,7 @@ ol {
 	border-radius: 12px;
 }
 
-.course-search-form input[type=text]:focus,
-.course-search-form input[type=email]:focus
-.course-search-form select[name=search]:focus {
+.course-search-form input[type=text]:focus {
 	border-bottom: 2px solid #d82a4e;
 }
 
@@ -593,9 +593,7 @@ ol {
 	padding: 0;
 }
 
-.search-section.ss-other-page .course-search-form input[type=text]:focus,
-.search-section.ss-other-page .course-search-form input[type=email]:focus,
-.search-section.ss-other-page .course-search-form select[name=search]:focus {
+.search-section.ss-other-page .course-search-form input[type=text]:focus {
 	border-bottom: none;
 }
 .search-section> .container> .row {  justify-content: center;
@@ -1640,9 +1638,7 @@ ol {
 	.intro-newslatter .site-btn {
 		min-width: 160px;
 	}
-	.course-search-form input[type=text],
-	.course-search-form input[type=email],
-	.course-search-form select[name=locate] {
+	.course-search-form input[type=text] {
 		width: 34.6%;
 	}
 	.course-search-form .site-btn {
@@ -1693,23 +1689,17 @@ ol {
 	.course-search-form {
 		text-align: center;
 	}
-	.course-search-form input[type=text],
-	.course-search-form input[type=email],
-	.course-search-form select[name=locate] {
+	.course-search-form input[type=text] {
 		width: 48.1%;
 		margin-bottom: 20px;
 	}
-	.course-search-form input[type=text].last-m,
-	.course-search-form input[type=email].last-m,
-	.course-search-form select[name=locate].last-m {
+	.course-search-form input[type=text].last-m{
 		margin-right: 0;
 	}
 	.search-section.ss-other-page .search-warp {
 		padding: 60px 30px 30px;
 	}
-	.search-section.ss-other-page .course-search-form input[type=text],
-	.search-section.ss-other-page .course-search-form input[type=email],
-	.search-section.ss-other-page .course-search-form select[name=locate] {
+	.search-section.ss-other-page .course-search-form input[type=text] {
 		width: 48.5%;
 	}
 	.course-item .course-thumb {
@@ -1804,9 +1794,7 @@ ol {
 	.search-warp {
 		padding: 40px 30px 30px;
 	}
-	.course-search-form input[type=text],
-	.course-search-form input[type=email],
-	.course-search-form select[name=locate] {
+	.course-search-form input[type=text] {
 		width: 100%;
 		margin-bottom: 20px;
 		margin-right: 0;
@@ -2076,6 +2064,7 @@ ol {
 .text-white li,
 .text-white a {
 	color:#0D3B66;
+	font-family:'NanumSquareRound';
 }
 
 .rating i {
@@ -2106,6 +2095,7 @@ ol {
 	cursor: pointer;
 	background: white; 
 	justify-content: center;
+	font-family:'NanumSquareRound';
 }
 
 .site-btn:hover {
@@ -2137,6 +2127,7 @@ ol {
 	color: #0D3B66;
 	cursor: pointer;
 	background:white;
+	font-family:'NanumSquareRound';
 	
 }
 
@@ -2371,9 +2362,7 @@ ol {
 	padding: 44px 38px;
 }
 
-.course-search-form input[type=text],
-.course-search-form input[type=email],
-.course-search-form select[name=search] {
+.course-search-form input[type=text] {
 	height: 56px;
 	width: 36.6%;
 	padding: 0 30px;
@@ -2385,9 +2374,7 @@ ol {
 	border-radius: 12px;
 }
 
-.course-search-form input[type=text]:focus,
-.course-search-form input[type=email]:focus
-.course-search-form select[name=search]:focus {
+.course-search-form input[type=text]:focus {
 	border-bottom: 2px solid #d82a4e;
 }
 
@@ -2434,9 +2421,7 @@ ol {
 	padding: 0;
 }
 
-.search-section.ss-other-page .course-search-form input[type=text]:focus,
-.search-section.ss-other-page .course-search-form input[type=email]:focus,
-.search-section.ss-other-page .course-search-form select[name=search]:focus {
+.search-section.ss-other-page .course-search-form input[type=text]:focus {
 	border-bottom: none;
 }
 
@@ -2482,6 +2467,7 @@ ol {
 	font-size: 18px;
 	font-weight: 600;
 	color: indianred;
+	font-family:'NanumSquareRound'
 }
 
 .course-item .course-info .course-author {
@@ -2539,7 +2525,8 @@ ol {
 	padding: 4px 15px;
 	margin-bottom: 20px;
 	 border-radius: 12px;
-	 border : 2px solid #FEA698
+	 border : 2px solid #FEA698;
+	 font-family:'NanumSquareRound';
 }
 
 .course-item.featured-course .course-info .course-text {
@@ -2574,6 +2561,7 @@ ol {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	font-family:'NanumSquareRound';
 }
 
 .course-filter li.mixitup-control-active {
@@ -2745,6 +2733,7 @@ ol {
 	margin-bottom: 27px;
 	position: relative;
 	padding-left: 10px;
+	font-family:'NanumSquareRound'
 }
 
 .widget-item ul.contact-list li:last-child {
@@ -2786,6 +2775,7 @@ ol {
 	margin-bottom: 0;
 	font-weight: 500;
 	font-style: italic;
+	font-family:'NanumSquareRound';
 }
 
 .footer-bottom {
@@ -3481,9 +3471,7 @@ ol {
 	.intro-newslatter .site-btn {
 		min-width: 160px;
 	}
-	.course-search-form input[type=text],
-	.course-search-form input[type=email],
-	.course-search-form select[name=locate] {
+	.course-search-form input[type=text] {
 		width: 34.6%;
 	}
 	.course-search-form .site-btn {
@@ -3534,23 +3522,17 @@ ol {
 	.course-search-form {
 		text-align: center;
 	}
-	.course-search-form input[type=text],
-	.course-search-form input[type=email],
-	.course-search-form select[name=locate] {
+	.course-search-form input[type=text] {
 		width: 48.1%;
 		margin-bottom: 20px;
 	}
-	.course-search-form input[type=text].last-m,
-	.course-search-form input[type=email].last-m,
-	.course-search-form select[name=locate].last-m {
+	.course-search-form input[type=text].last-m{
 		margin-right: 0;
 	}
 	.search-section.ss-other-page .search-warp {
 		padding: 60px 30px 30px;
 	}
-	.search-section.ss-other-page .course-search-form input[type=text],
-	.search-section.ss-other-page .course-search-form input[type=email],
-	.search-section.ss-other-page .course-search-form select[name=locate] {
+	.search-section.ss-other-page .course-search-form input[type=text] {
 		width: 48.5%;
 	}
 	.course-item .course-thumb {
@@ -3645,9 +3627,7 @@ ol {
 	.search-warp {
 		padding: 40px 30px 30px;
 	}
-	.course-search-form input[type=text],
-	.course-search-form input[type=email],
-	.course-search-form select[name=locate] {
+	.course-search-form input[type=text] {
 		width: 100%;
 		margin-bottom: 20px;
 		margin-right: 0;

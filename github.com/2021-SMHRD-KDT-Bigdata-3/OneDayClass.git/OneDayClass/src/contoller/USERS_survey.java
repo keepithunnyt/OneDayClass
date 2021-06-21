@@ -31,7 +31,7 @@ public class USERS_survey extends HttpServlet {
 		
 		USERSDAO u_dao = new USERSDAO();
 		u_dao.survey(id, result);
-		
+		System.out.println(result);
 		user.setRecomm(result);
 		session.setAttribute("login", user);
 		

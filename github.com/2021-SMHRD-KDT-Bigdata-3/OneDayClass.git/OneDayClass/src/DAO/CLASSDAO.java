@@ -256,5 +256,158 @@ public class CLASSDAO {
 		}
 		return arr;
 	}
+	
+	
+	// 클레스 제목 찾기
+		public ArrayList<CLASSDTO> title_select(String title) {
+			ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
+			CLASSDTO c_dto = null;
+			try {
+				conn();
 
+				String sql = "select * from class where title like'%"+title+"%' ";
+				
+				System.out.println(sql);
+				pst = conn.prepareStatement(sql);
+
+				
+				
+				System.out.println("검색됨");
+				rs = pst.executeQuery();
+				while (rs.next()) {
+					int get_id = rs.getInt("class_id");
+					String get_teacher_id = rs.getString("teacher_id");
+					String get_title = rs.getString("title");
+					String get_content = rs.getString("content");
+					String get_time = rs.getString("time");
+					String get_price = rs.getString("price");
+					String get_category = rs.getString("category");
+					String get_image = rs.getString("image");
+
+					arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
+							get_image));
+				}
+			} catch (Exception e) {
+				System.out.println("가져오기 실패");
+				e.printStackTrace();
+			} finally {
+				close();
+			}
+			return arr2;
+		}
+
+		
+		// 클레스 내용 찾기
+				public ArrayList<CLASSDTO> content_select(String content) {
+					ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
+					CLASSDTO c_dto = null;
+					try {
+						conn();
+
+						String sql = "select * from class where content like'%"+content+"%' ";
+						
+						System.out.println(sql);
+						pst = conn.prepareStatement(sql);
+
+						
+						
+						System.out.println("검색됨");
+						rs = pst.executeQuery();
+						while (rs.next()) {
+							int get_id = rs.getInt("class_id");
+							String get_teacher_id = rs.getString("teacher_id");
+							String get_title = rs.getString("title");
+							String get_content = rs.getString("content");
+							String get_time = rs.getString("time");
+							String get_price = rs.getString("price");
+							String get_category = rs.getString("category");
+							String get_image = rs.getString("image");
+
+							arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
+									get_image));
+						}
+					} catch (Exception e) {
+						System.out.println("가져오기 실패");
+						e.printStackTrace();
+					} finally {
+						close();
+					}
+					return arr2;
+				}
+				
+				// 클레스 강사 찾기
+				public ArrayList<CLASSDTO> teacher_select(String teacher) {
+					ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
+					CLASSDTO c_dto = null;
+					try {
+						conn();
+
+						String sql = "select * from class where teacher_id IN (select teacher_id from teachers where teacher_name LIKE '%"+teacher+"%') ";
+						 
+						System.out.println(sql);
+						pst = conn.prepareStatement(sql);
+
+						
+						
+						System.out.println("검색됨");
+						rs = pst.executeQuery();
+						while (rs.next()) {
+							int get_id = rs.getInt("class_id");
+							String get_teacher_id = rs.getString("teacher_id");
+							String get_title = rs.getString("title");
+							String get_content = rs.getString("content");
+							String get_time = rs.getString("time");
+							String get_price = rs.getString("price");
+							String get_category = rs.getString("category");
+							String get_image = rs.getString("image");
+
+							arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
+									get_image));
+						}
+					} catch (Exception e) {
+						System.out.println("가져오기 실패");
+						e.printStackTrace();
+					} finally {
+						close();
+					}
+					return arr2;
+				}
+				
+				// 클레스 비용 찾기
+				public ArrayList<CLASSDTO> price_select(String price) {
+					ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
+					CLASSDTO c_dto = null;
+					try {
+						conn();
+
+						String sql = "select * from class where price like'%"+price+"%' ";
+						
+						System.out.println(sql);
+						pst = conn.prepareStatement(sql);
+
+						
+						
+						System.out.println("검색됨");
+						rs = pst.executeQuery();
+						while (rs.next()) {
+							int get_id = rs.getInt("class_id");
+							String get_teacher_id = rs.getString("teacher_id");
+							String get_title = rs.getString("title");
+							String get_content = rs.getString("content");
+							String get_time = rs.getString("time");
+							String get_price = rs.getString("price");
+							String get_category = rs.getString("category");
+							String get_image = rs.getString("image");
+
+							arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
+									get_image));
+						}
+					} catch (Exception e) {
+						System.out.println("가져오기 실패");
+						e.printStackTrace();
+					} finally {
+						close();
+					}
+					return arr2;
+				}
 }

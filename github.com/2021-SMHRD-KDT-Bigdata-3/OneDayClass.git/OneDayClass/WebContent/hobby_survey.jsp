@@ -61,12 +61,21 @@ text-align:left;
 						<div class="section-title text-white text-left" style="text-align: center !important;" > 
 							<h2>취미 성향 조사</h2>
 							<h5>취미와 성향을 파악하여 최적의 원데이클래스를 추천해드립니다</h5>
+
 						</div>
 						<form action="survey" class="contact-form" > 
+
+						</div>
+						<form action="http://211.105.165.117:9000/survey" class="contact-form" method='POST'> 
+
 						<table>
 						<tr>
+
 							<p><h4>⊙성별</h4></p>
 						<form action="http://211.105.165.117:9000/survey" class="contact-form" method='POST'> 
+
+							<p><h4>⊙성별</h4></p>
+
 							<div>
 							<input type="radio" value="man" name="gender" class='gender'>남자
 							&emsp;
@@ -128,7 +137,10 @@ text-align:left;
 
 							</tr>
 							<tr>
+
 							<p><h4>⊙어떤 취미 활동을 원하시나요?</h4></p>
+
+							<%--<p><h4>⊙어떤 취미 활동을 원하시나요?</h4></p> --%>
 
 							<%-- 
 							<p><h4>어떤 취미 활동을 원하시나요?</h4></p>
@@ -356,16 +368,27 @@ text-align:left;
 							비동의&emsp;<input type="range" name="mbti_point12" min="1" max="5">&emsp;동의
 							</div>
 							<br>
+
 							<br>
+
+							<br>
+
 							</tr>
 							</table>
+
 						</form>
 						<br><br>
 								<div class="btn" style="site-btn4: center;">
 								<input id='submit' type="submit" class="site-btn4" id="write" value="작성 완료" align="center"> &nbsp;
+
+								<input type="submit" class="site-btn4" id="write" value="작성 완료" align="center"> &nbsp;
+
 								<input type="button" class="site-btn4" id="main" value="메인으로" align="center" onClick="location.href='main.jsp'">
+
 								</div>
 						</form>  
+
+						</form> 	 
 
 					</div>
 			 </div>
