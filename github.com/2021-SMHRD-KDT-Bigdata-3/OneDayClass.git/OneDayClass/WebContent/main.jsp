@@ -99,7 +99,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<a href="main.jsp"><img class = 'logo' src="img/test2.png"></a> 
+						<a href="main.jsp"><img class = 'logo' src="img/Logo.png"></a> 
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -145,7 +145,7 @@
 
 
 	<!-- Page info 1 -->
-	<div class="page-info-section set-bg" ><!-- data-setbg="img/sample_banner1.jpg"> -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/banner.png">
 		<div class="container">
 		
 			<!-- <div class="site-breadcrumb">
@@ -157,15 +157,16 @@
 	<!-- Page info end -->
 	
 	<!-- Page info 2  ¹è³Ê -->
-	
-	<div id="slide" >
-	<div class="slide" >
+
+	<div id="slide">
+	<div class="slide">
     <ul>
       <li></li>
       <li></li>
       <li></li>
       <li></li>
     </ul>
+  </div>
   </div>
 </body>
 </html>
@@ -437,9 +438,7 @@
 			</div>
 		</div>
 	</section>
-=======
 
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 	<!-- course section end -->
 
 
