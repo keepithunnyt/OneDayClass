@@ -24,7 +24,7 @@
 							<h2>개인정보 수정</h2>
 							<p>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</p>
 						</div>
-						<form action="USERS_update" class="contact-form">
+						<form action="USERS_update" class="contact-form"> 
 							<h3>수강생 정보</h3>
 							<br> <input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id">
 							<input type="password" class="pw" value=<%=user.getPw() %> name="pw">

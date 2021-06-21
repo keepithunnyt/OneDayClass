@@ -61,7 +61,7 @@ text-align:left;
 							<h2>취미 성향 조사</h2>
 							<h5>취미와 성향을 파악하여 최적의 원데이클래스를 추천해드립니다</h5>
 						</div>
-						<form action="survey" class="contact-form">
+						<form action="survey" class="contact-form"> 
 							<p><h4>성별</h4></p>
 							<div>
 							<input type="radio" value="man" name="gender">남자
