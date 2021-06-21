@@ -209,8 +209,36 @@
 		ArrayList<CLASSDTO> arr = new ArrayList<CLASSDTO>();
 		arr = c_dao.alldata();
 		ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
-	
+		arr2 = null;
 		
+		// 검색 기능 구현 한부분  (손 X)
+				request.setCharacterEncoding("euc-kr");
+				//join.jsp에서 보낸 값을 변수에 담기
+				String search1 = request.getParameter("search1");
+				System.out.println(search1);
+				String search2 = request.getParameter("search2");
+				System.out.println(search2);
+								
+				String search1_ = "";
+				if(search1 !=null)
+					search1_ = search1;
+				System.out.println(search1);
+				String search2_ ="";
+				if(search2 != null)
+					search2_ = search2;
+				System.out.println(search2_);
+				
+		if(search1_.equals("title")){			
+			arr2 = c_dao.title_select(search2_);			
+		}else if(search1_.equals("content")){
+			arr2 = c_dao.content_select(search2_);			
+		}else if(search1_.equals("teacher")){
+			arr2 = c_dao.teacher_select(search2_);			
+		}else if(search1_.equals("select")){
+			response.sendRedirect("main.jsp");
+			System.out.println("메인페이지로 이동됨");
+		}
+		//검색 기능 구현 한 부분
 	%>
 
 	<!-- Page Preloder -->
@@ -326,13 +354,13 @@
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
 							<select name="search1">
 								<option value="select">항목 선택</option>
-								<option value="title" >제목</option>
-								<option value="content" >내용</option>
+								<option value="title">제목</option>
+								<option value="content">내용</option>
 								<option value="teacher" >강사</option>
 								
 								
 							</select>
-							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" >
+							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" value="${param.search2 }"/>
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->
 							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
 							<input type="submit" class="site-btn" id="search" value="과정 찾아보기"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
@@ -361,85 +389,42 @@
 				<li class="control" data-filter=".beautys">뷰티</li>
 			</ul>                                       
 			<div class="row course-items-area" >
-				<%for(int i = 0; i < arr.size(); i++){  %>
+			<%if(arr2 != null){ %>
+				<%for(int i = 0; i < arr2.size(); i++){  %>
 				
 				
 				<!-- course -->
 				 
-				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr2.get(i).getCategory() %>">
 					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
+						<div class="course-thumb set-bg" data-setbg=<%=arr2.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
-							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr.get(i).getId());%>
-							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>
+							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr2.get(i).getId());%>
+							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
 							
 							
 								
-								<div class="students"><%=arr.get(i).getPrice() %></div>
+								<div class="students"><%=arr2.get(i).getPrice() %></div>
 							</div>
 							<div class="course-author">
 								
 								<div  class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
 								
 								
-								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>
+								<p><%=t_dao.who(arr2.get(i).getTeacher_id()) %><br> <span><%=arr2.get(i).getTime() %></span></p>
 								
 							</div>
 						</div>
 					</div>
 				</div>
 				<%} %>
-				
+				<%} %>
 
-		
-			<div class="featured-courses">
-				<div class="featured-course course-item">
-					<div class="course-thumb set-bg" data-setbg="img/courses/f-1.jpg">
-						<div class="price">4딸라</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6 offset-lg-6 pl-0">
-							<div class="course-info">
-								<div class="course-text">
-									<div class="fet-note">추천 강좌</div>
-									<h5>하형이와 함께하는 즐거운 크롤링</h5>
-									<p>크롤링~ 롤링~ 롤링~ 저절로 노래가 나올 정도의 여유 가득한 데이터 수집의 달인!</p>
-									<div class="students">120 Students</div>
-								</div>
-								<div class="course-author">
-									<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
-									<p>강하형, <span>프로젝트 실무 총괄</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="featured-course course-item">
-					<div class="course-thumb set-bg" data-setbg="img/courses/f-2.jpg">
-						<div class="price">4딸라</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6 pr-0">
-							<div class="course-info">
-								<div class="course-text">
-									<div class="fet-note">추천 강좌</div>
-									<h5>현진이와 함께하는 하드 코딩</h5>
-									<p>코딩이 먹는 거라고요? 먹고 살 수 있는 겁니다! 리얼 생존 코딩의 진수!</p>
-									<div class="students">120 Students</div>
-								</div>
-								<div class="course-author">
-									<div class="ca-pic set-bg" data-setbg="img/authors/2.jpg"></div>
-									<p>안현진, <span>프로젝트 기획 총괄</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+			
+	
 	</section>
 	<!-- course section end -->
 
