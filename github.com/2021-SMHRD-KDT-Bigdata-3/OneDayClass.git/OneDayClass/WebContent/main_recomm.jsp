@@ -357,8 +357,6 @@
 								<option value="title">제목</option>
 								<option value="content">내용</option>
 								<option value="teacher" >강사</option>
-								
-								
 							</select>
 							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 40px;" value="${param.search2 }"/>
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->

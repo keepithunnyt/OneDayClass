@@ -180,7 +180,7 @@
 			<div class="search-warp">
 				<div class="section-title text-white">
 				</div>
-				<div class="row" style="text-align: center;">
+				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
 						<!-- search form -->
 						<h2><span>다양한 강좌를 찾아보세요</span></h2>
