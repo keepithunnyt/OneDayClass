@@ -21,11 +21,11 @@
 	<link href="img/favi con.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
-	<link href="googleapis.css" rel="stylesheet">
+	<!--<link href="googleapis.css" rel="stylesheet">  -->
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="font/NanumFontSetup_TTF_SQUARE_ROUND.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
@@ -35,7 +35,6 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
-
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
