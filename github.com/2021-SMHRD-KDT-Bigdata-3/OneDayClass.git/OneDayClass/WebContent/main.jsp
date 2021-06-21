@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="font/NanumFontSetup_TTF_SQUARE_ROUND.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style3.css"/>
 
  
 	<!--[if lt IE 9]>
@@ -184,19 +185,18 @@
 						<!-- search form -->
 						<h2><span>다양한 강좌를 찾아보세요</span></h2>
 						<br><br>
-						<form action="main_recomm.jsp" method="get" class="course-search-form">
-							<select name="search1">
+						<form action="main_recomm.jsp" method="get" class="course-search-form"></form>
+						<select name="search1" style="width: 100px; height: 40px;">
 								<option value="select">항목 선택</option>
 								<option value="title" >제목</option>
 								<option value="content" >내용</option>
 								<option value="teacher" >강사</option>
-								
-								
-							</select>
-							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" >
-							<!-- <input type="text" class="last-m" placeholder="분류"> -->
-							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
-							<input type="submit" class="site-btn" id="search" value="과정 찾아보기"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
+						</select>
+						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 40px;">
+						&emsp;
+						<!-- <input type="text" class="last-m" placeholder="분류"> -->
+						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
+						<input type="submit" class="site-btn4" id="search" value="과정 찾아보기"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
 						</form>
 					</div>
 				</div>
