@@ -80,7 +80,6 @@
 	<th colspan = '2'><%=c_dto.getCategory() %></th>
 	</tr>
 
-	
 	<tr>
 	<th class ='title' colspan = '2'><%=c_dto.getTitle() %></th>
 	</tr>
@@ -100,7 +99,6 @@
 	</tr>
 	<tr><td colspan = "2"><%=c_dto.getContent() %></td></tr>
 
-
 	<tr align="center" bgcolor="white">
 		<td style = "font-weight: bold;">½Ã°£</td>
 		<td><%=c_dto.getTime() %></td>
@@ -118,12 +116,6 @@
 	</table>
 </div>
 
-
-
-
 </form>
-
-
-
 </body>
 </html>

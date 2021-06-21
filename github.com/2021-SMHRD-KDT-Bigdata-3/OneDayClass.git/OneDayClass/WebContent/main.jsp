@@ -83,22 +83,18 @@
 		ArrayList<CLASSDTO> arr = new ArrayList<CLASSDTO>();
 		arr = c_dao.alldata();
 	    
-		
-		
 	%>
-
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-
 	<!-- Header section -->
 	<header class="header-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<a href="main.jsp"><img class = 'logo' src="img/Logo.png"></a>   
+						<a href="main.jsp"><img src="img/Logo.png"></a>   
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -142,7 +138,6 @@
 	</header>
 	<!-- Header section end --> 
 
-
 	<!-- Page info 1 -->
 	<div class="page-info-section set-bg" data-setbg="img/page-bg/banner.png">
 		<div class="container">
@@ -156,7 +151,6 @@
 	<!-- Page info end -->
 	
 	<!-- Page info 2  ¹è³Ê -->
-
 	<div id="slide">
 	<div class="slide">
     <ul>
@@ -170,7 +164,6 @@
 </body>
 </html>
 		<!-- Page info end -->
-
 
 	<!-- search section -->
 	<br>
@@ -206,7 +199,6 @@
 	</section>
 	<!-- search section end -->
 
-
 	<!-- course section -->
 	<section class="course-section spad pb-0">
 		<div class="course-warp">
@@ -238,15 +230,12 @@
 							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>
 							
-							
-								
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>
 							
 							<div class="course-author">
 								
 								<div></div>
-								
 								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>
 								
@@ -257,7 +246,6 @@
 				</div>
 				<%} %>
 				<!-- course -->
-<<<<<<< HEAD
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
@@ -440,7 +428,6 @@
 
 	<!-- course section end -->
 
-
 	<!-- banner section -->
 	<!-- <section class="banner-section spad">
 		<div class="container">
@@ -454,7 +441,6 @@
 		</div>
 	</section> -->
 	<!-- banner section end -->
-
 
 	<!-- footer section -->
 	<footer class="footer-section spad pb-0">
@@ -522,7 +508,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer> 
 	<!-- footer section end -->
-
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
