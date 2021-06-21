@@ -63,19 +63,10 @@ text-align:left;
 							<h5>취미와 성향을 파악하여 최적의 원데이클래스를 추천해드립니다</h5>
 
 						</div>
-						<form action="survey" class="contact-form" > 
-
-						</div>
 						<form action="http://211.105.165.117:9000/survey" class="contact-form" method='POST'> 
-
 						<table>
 						<tr>
-
-							<p><h4>⊙성별</h4></p>
-						<form action="http://211.105.165.117:9000/survey" class="contact-form" method='POST'> 
-
-							<p><h4>⊙성별</h4></p>
-
+							<p><h5>⊙성별</h5></p>
 							<div>
 							<input type="radio" value="man" name="gender" class='gender'>남자
 							&emsp;
@@ -83,9 +74,9 @@ text-align:left;
 							</div>
 							<br>
 							<br>
-							<p><h4>⊙나이</h4></p>
+							<p><h5>⊙나이</h5></p>
 							<div>
-							<input type="radio" value="10s" name="age" >10대
+							<input type="radio" value="10s" name="age">10대
 							&emsp;
 							<input type="radio" value="20s" name="age">20대
 							&emsp;
@@ -99,7 +90,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙직업</h4></p>
+							<p><h5>⊙직업</h5></p>
 							<div>
 							<input type="radio" value="student" name="job">학생
 							&emsp;
@@ -115,7 +106,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙원데이클래스를 접해보셨나요?<br>그렇다면 몇 회 참여해보셨나요?</h4></p>
+							<p><h5>⊙원데이클래스를 접해보셨나요?<br>그렇다면 몇 회 참여해보셨나요?</h5></p>
 							<div>
 							<input type="radio" value="1" name="experience">1회
 							&emsp;
@@ -126,7 +117,7 @@ text-align:left;
 							<input type="radio" value="6" name="experience">6~7회
 							&emsp;
 							<input type="radio" value="8" name="experience">8~9회
-							&emsp;
+							<br>
 							<input type="radio" value="10" name="experience">10회 이상
 							&emsp;
 							<input type="radio" value="0" name="experience">없음
@@ -134,12 +125,8 @@ text-align:left;
 							</div>
 							<br>
 							<br>
-
 							</tr>
 							<tr>
-
-							<p><h4>⊙어떤 취미 활동을 원하시나요?</h4></p>
-
 							<%--<p><h4>⊙어떤 취미 활동을 원하시나요?</h4></p> --%>
 
 							<%-- 
@@ -173,7 +160,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙시간에 쫓겨도 절대 포기 할 수 없는 분야는?</h4></p>
+							<p><h5>⊙시간에 쫓겨도 절대 포기 할 수 없는 분야는?</h5></p>
 							<div>
 							<input type="checkbox" value="sleep" name="non_give_up">수면
 							&emsp;
@@ -188,14 +175,13 @@ text-align:left;
 							<input type="checkbox" value="meeting" name="non_give_up">지인과의 만남
 							&emsp;
 							<input type="checkbox" value="appearance" name="non_give_up">외모관리
-							&emsp;
 							<input type="button" class="site-btn3" value="선택 해제" onclick="deselect()">
 							</div>
 							<br>
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙취미 활동에 얼마나 시간을 들이시나요?</h4></p>
+							<p><h5>⊙취미 활동에 얼마나 시간을 들이시나요?</h5></p>
 							<div>
 							<input type="radio" value="1" name="hobby_time">1시간 미만
 							&emsp;
@@ -211,7 +197,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙유료로 취미생활/자기계발 분야시 선호하는 인원은?</h4></p>
+							<p><h5>⊙유료로 취미생활/자기계발 분야시 선호하는 인원은?</h5></p>
 							<div>
 							<input type="radio" value="1" name="Participants">혼자
 							&emsp;
@@ -224,14 +210,13 @@ text-align:left;
 							<input type="radio" value="10" name="Participants">10명 이상
 							&emsp;
 							<input type="radio" value="0" name="Participants">상관없음
-							&emsp;
 							<input type="button" class="site-btn3" value="선택 해제" onclick="deselect()">
 							</div>
 							<br>
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙나를 위해 취미생활에 얼마나 비용을 쓸 수 있나요?</h4></p>
+							<p><h5>⊙나를 위해 취미생활에 얼마나 비용을 쓸 수 있나요?</h5></p>
 							<div>
 							<input type="radio" value="10" name="hobby_money">10만원 이하
 							&emsp;
@@ -242,14 +227,13 @@ text-align:left;
 							<input type="radio" value="50" name="hobby_money">50~100만원 미만
 							&emsp;
 							<input type="radio" value="100" name="hobby_money">100만원 이상
-							&emsp;
 							<input type="button" class="site-btn3" value="선택 해제" onclick="deselect()">
 							</div>
 							<br>
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙취미 활동에 가장 걸림돌이 되는 것은 무엇인가요?</h4></p>
+							<p><h5>⊙취미 활동에 가장 걸림돌이 되는 것은 무엇인가요?</h5></p>
 							<div>
 							<input type="radio" value="10" name="obstacle">업무 등으로 인한 시간부족
 							&emsp;
@@ -264,7 +248,6 @@ text-align:left;
 							<input type="radio" value="100" name="obstacle">여가를 함께 즐길 사람이 없어서
 							&emsp;
 							<input type="radio" value="100" name="obstacle">여가 시설이 부족해서
-							&emsp;
 							<input type="button" class="site-btn3" value="선택 해제" onclick="deselect()">
 							</div>
 							<br>
@@ -272,10 +255,10 @@ text-align:left;
 							</div>
 							</tr>
 							<br>
-							<p><h4>※ 아래 문항은 1~5점 척도로 선택해주세요. ※</h4>(초기값 3점)</p>
+							<p><h5>※ 아래 문항은 1~5점 척도로 선택해주세요. ※</h5>(초기값 3점)</p>
 							</div>
 							<tr>
-							<p><h4>⊙다른사람들에게 자신을 소개하는 것을 어려워 하나요?</h4></p>
+							<p><h5>⊙다른사람들에게 자신을 소개하는 것을 어려워 하나요?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point1" min="1" max="5">&emsp;동의
 							</div>
@@ -283,7 +266,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙대게 의욕적이고 활동적인가요?</h4></p>
+							<p><h5>⊙대게 의욕적이고 활동적인가요?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point2" min="1" max="5">&emsp;동의
 							</div>
@@ -291,7 +274,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙친분이 없는 사람과 쉽게 친해지나요?</h4></p>
+							<p><h5>⊙친분이 없는 사람과 쉽게 친해지나요?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point3" min="1" max="5">&emsp;동의
 							</div>
@@ -299,7 +282,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙호기심이 많으시나요?</h4></p>
+							<p><h5>⊙호기심이 많으시나요?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point4" min="1" max="5">&emsp;동의
 							</div>
@@ -307,7 +290,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙대체로 상상보다는 경험에 더 의존하는 편입니까?</h4></p>
+							<p><h5>⊙대체로 상상보다는 경험에 더 의존하는 편입니까?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point5" min="1" max="5">&emsp;동의
 							</div>
@@ -315,7 +298,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙책, 예술 또는 영화 등 색다르고 다양한 해석이 <br> 가능한 것에 관심이 있습니까?</h4></p>
+							<p><h5>⊙책, 예술 또는 영화 등 색다르고 다양한 해석이 <br> 가능한 것에 관심이 있습니까?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point6" min="1" max="5">&emsp;동의
 							</div>
@@ -323,7 +306,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙상대방이 메신저를 재빨리 회신하지 않을 경우, <br> 본인이 말실수를 했는지 걱정하나요?</h4></p>
+							<p><h5>⊙상대방이 메신저를 재빨리 회신하지 않을 경우, <br> 본인이 말실수를 했는지 걱정하나요?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point7" min="1" max="5">&emsp;동의
 							</div>
@@ -331,7 +314,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙친구가 어떤 일로 슬퍼할 경우, 문제해결책을 <br> 제시하기보단 위로를 해주는 편이신가요?</h4></p>
+							<p><h5>⊙친구가 어떤 일로 슬퍼할 경우, 문제해결책을 <br> 제시하기보단 위로를 해주는 편이신가요?</h5></p>
 							<div style="color: #045FB4; font-weight: bold;">
 							비동의&emsp;<input type="range" name="mbti_point8" min="1" max="5">&emsp;동의
 							</div>
@@ -339,7 +322,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙다른사람의 참견을 싫어하나요?</h4></p>
+							<p><h5>⊙다른사람의 참견을 싫어하나요?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point9" min="1" max="5">&emsp;동의
 							</div>
@@ -347,7 +330,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙구체적인 계획을 갖고 시간을 보내기보다는 <br> 즉흥적으로 움직이나요?</h4></p>
+							<p><h5>⊙구체적인 계획을 갖고 시간을 보내기보다는 <br> 즉흥적으로 움직이나요?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point10" min="1" max="5">&emsp;동의
 							</div>
@@ -355,7 +338,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙자유를 즐기며 새로운 경험에 대해 개방적이신가요?</h4></p>
+							<p><h5>⊙자유를 즐기며 새로운 경험에 대해 개방적이신가요?</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point11" min="1" max="5">&emsp;동의
 							</div>
@@ -363,7 +346,7 @@ text-align:left;
 							<br>
 							</tr>
 							<tr>
-							<p><h4>⊙일정표를 만들어 잘 지킵니다.</h4></p>
+							<p><h5>⊙일정표를 만들어 잘 지킵니다.</h5></p>
 							<div>
 							비동의&emsp;<input type="range" name="mbti_point12" min="1" max="5">&emsp;동의
 							</div>
