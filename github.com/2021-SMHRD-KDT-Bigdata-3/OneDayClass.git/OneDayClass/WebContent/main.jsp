@@ -48,12 +48,11 @@
     ul,li{list-style:none;}
     .slide{height:300px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
-    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 8s infinite;}
+    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
     .slide li:nth-child(1){background:#faa;animation-delay:0s}
-    .slide li:nth-child(2){background:#ffa;animation-delay:2s}
-    .slide li:nth-child(3){background:#9ee4da;animation-delay:4s}
-    .slide li:nth-child(4){background:#b8b8ff;animation-delay:6s}
-    .slide li:nth-child(4){background:#faa;animation-delay:8s}
+    .slide li:nth-child(2){background:#ffa;animation-delay:5s}
+    .slide li:nth-child(3){background:#9ee4da;animation-delay:10s}
+    .slide li:nth-child(4){background:#b8b8ff;animation-delay:15s}
      /* 100 / 8 = 12.5 */
     @keyframes fade {
       0% {opacity:0;}
