@@ -25,7 +25,7 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="font/NanumFontSetup_TTF_SQUARE_ROUND.css"/>
+	<link rel="stylesheet" href="css/font.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 

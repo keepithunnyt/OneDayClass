@@ -44,14 +44,14 @@ font-weight: bold;
 text-align:left;
 }
 
-
 </style>
 </head>
 <body>
 <link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/font.css" />
 	<link rel="stylesheet" href="css/owl.carousel.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	
  
 	<section class="contact-page spad pb-0">
 		<div class="container" style="text-align: center;">
@@ -62,15 +62,11 @@ text-align:left;
 							<h2>취미 성향 조사</h2>
 							<h5>취미와 성향을 파악하여 최적의 원데이클래스를 추천해드립니다</h5>
 						</div>
-<<<<<<< HEAD
 						<form action="survey" class="contact-form" > 
 						<table>
 						<tr>
 							<p><h4>⊙성별</h4></p>
-=======
 						<form action="http://211.105.165.117:9000/survey" class="contact-form" method='POST'> 
-							<p><h4>성별</h4></p>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 							<div>
 							<input type="radio" value="man" name="gender" class='gender'>남자
 							&emsp;
@@ -129,14 +125,14 @@ text-align:left;
 							</div>
 							<br>
 							<br>
-<<<<<<< HEAD
+
 							</tr>
 							<tr>
 							<p><h4>⊙어떤 취미 활동을 원하시나요?</h4></p>
-=======
+
 							<%-- 
 							<p><h4>어떤 취미 활동을 원하시나요?</h4></p>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
+
 							<div>
 							<input type="radio" value="made" name="hobby_choice">공예/공방/목공(인테리어 소품, 도자기, 가죽, 자수, 향수, 캔들 등)
 							<br>
@@ -361,18 +357,16 @@ text-align:left;
 							</div>
 							<br>
 							<br>
-<<<<<<< HEAD
 							</tr>
 							</table>
-								<input type="button" class="site-btn4" id="write" value="작성 완료" align="center"> &nbsp;
+						</form>
+						<br><br>
+								<div class="btn" style="site-btn4: center;">
+								<input id='submit' type="submit" class="site-btn4" id="write" value="작성 완료" align="center"> &nbsp;
 								<input type="button" class="site-btn4" id="main" value="메인으로" align="center" onClick="location.href='main.jsp'">
-						
-						</form> 	 
-=======
-								<input id='submit' type="submit" class="site-btn4" id="write" value="작성 완료"> &nbsp;
-								<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
+								</div>
 						</form>  
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
+
 					</div>
 			 </div>
 	</section>

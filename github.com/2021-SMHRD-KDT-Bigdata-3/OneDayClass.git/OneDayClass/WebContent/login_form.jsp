@@ -6,7 +6,7 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="./css/style2.css">
-<link rel="stylesheet" href="font/NanumFontSetup_TTF_SQUARE_ROUND.css"/>
+<link rel="stylesheet" href="css/font.css"/>
  
 </head>
 
