@@ -1,0 +1,7 @@
+@charset "EUC-KR";
+@font-face{
+	font-family:'NanumSquareRoundB';
+	src: url('ttps://hangeul.naver.com/2017/nanum/NanumSquareRoundB.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}

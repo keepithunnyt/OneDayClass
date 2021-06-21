@@ -21,11 +21,11 @@
 	<link href="img/favi con.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
-	<link href="googleapis.css" rel="stylesheet">
+	<!--<link href="googleapis.css" rel="stylesheet">  -->
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="font/NanumFontSetup_TTF_SQUARE_ROUND.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
@@ -35,158 +35,30 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-</head>
 
-<body>
+<!-- 메인 배경 -->
+	
 	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-
-		ul,
-		li {
-			list-style: none;
-		}
-
-		#slide {
-			height: 300px;
-			position: relative;
-			overflow: hidden;
-		}
-
-		#slide ul {
-			width: 500%;
-			height: 100%;
-
-		}
-
-		#slide ul:after {
-			content: "";
-			display: block;
-			clear: both;
-		}
-
-		#slide li {
-			float: left;
-			width: 20%;
-			height: 100%;
-		}
-
-		#slide li:nth-child(1) {
-			background: #faa;
-		}
-
-		#slide li:nth-child(2) {
-			background: #ffa;
-		}
-
-		#slide li:nth-child(3) {
-			background: #9ee4da;
-		}
-
-		#slide li:nth-child(4) {
-			background: #b8b8ff;
-		}
-
-		#slide li:nth-child(5) {
-			background: #faa;
-		}
-
-		#slide input {
-			display: none;
-		}
-
-		#slide label {
-			display: inline-block;
-			vertical-align: middle;
-			width: 10px;
-			height: 10px;
-			border: 2px solid #666;
-			background: #fff;
-			transition: 0.3s;
-			border-radius: 50%;
-			cursor: pointer;
-		}
-
-		#slide .pos {
-			text-align: center;
-			position: absolute;
-			bottom: 10px;
-			left: 0;
-			width: 100%;
-			text-align: center;
-		}
-
-
-		#pos1:checked~ul {
-			margin-left: 0%;
-			transition: 1s;
-		}
-
-		#pos2:checked~ul {
-			margin-left: -100%;
-			transition: 1s;
-		}
-
-		#pos3:checked~ul {
-			margin-left: -200%;
-			transition: 1s;
-		}
-
-		#pos4:checked~ul {
-			margin-left: -300%;
-			transition: 1s;
-		}
-
-		#pos1:checked~ul {
-			animation: toFirst 0.5s linear;
-		}
-
-		#pos1:checked~.pos>label:nth-child(1) {
-			background: #666;
-		}
-
-		#pos2:checked~.pos>label:nth-child(2) {
-			background: #666;
-		}
-
-		#pos3:checked~.pos>label:nth-child(3) {
-			background: #666;
-		}
-
-		#pos4:checked~.pos>label:nth-child(4) {
-			background: #666;
-		}
-
-		#pos5:checked~.pos>label:nth-child(1) {
-			background: #666;
-		}
-
-
-		@keyframes toFirst {
-			0% {
-				margin-left: -300%;
-			}
-
-			50% {
-				margin-left: -350%;
-			}
-
-			99% {
-				margin-left: -400%;
-			}
-
-			100% {
-				margin-left: 0%;
-			}
-		}
+	 *{margin:0;padding:0;}
+    ul,li{list-style:none;}
+    .slide{height:300px;overflow:hidden;}
+    .slide ul{position:relative;height:100%;}
+    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
+    .slide li:nth-child(1){background:#faa;animation-delay:0s}
+    .slide li:nth-child(2){background:#ffa;animation-delay:5s}
+    .slide li:nth-child(3){background:#9ee4da;animation-delay:10s}
+    .slide li:nth-child(4){background:#b8b8ff;animation-delay:15s}
+     /* 100 / 8 = 12.5 */
+    @keyframes fade {
+      0% {opacity:0;}
+      5% {opacity:1;}
+      25% {opacity:1;}
+      30% {opacity:0;}
+      100% {opacity:0;}
+    }
 	</style>
 
 </head>
@@ -208,23 +80,25 @@
 		TEACHERSDAO t_dao = new TEACHERSDAO();
 		ArrayList<CLASSDTO> arr = new ArrayList<CLASSDTO>();
 		arr = c_dao.alldata();
+
 		ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
 	
 		
-	%>
 
+
+
+	%>
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-
 	<!-- Header section -->
 	<header class="header-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<a href="main.jsp"><img class = 'logo' src="img/test2.png"></a> 
+						<a href="main.jsp"><img src="img/Logo.png"></a>   
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -269,9 +143,8 @@
 	</header>
 	<!-- Header section end --> 
 
-
 	<!-- Page info 1 -->
-	<div class="page-info-section set-bg" ><!-- data-setbg="img/sample_banner1.jpg"> -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/banner.png">
 		<div class="container">
 		
 			<!-- <div class="site-breadcrumb">
@@ -282,32 +155,20 @@
 	</div>
 	<!-- Page info end -->
 	
-	<!-- Page info 2 -->
+	<!-- Page info 2  배너 -->
 	<div id="slide">
-		<input type="radio" name="pos" id="pos1" checked>
-		<input type="radio" name="pos" id="pos2">
-		<input type="radio" name="pos" id="pos3">
-		<input type="radio" name="pos" id="pos4">
-
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-		
-		<p class="pos">
-			<label for="pos1"></label>
-			<label for="pos2"></label>
-			<label for="pos3"></label>
-			<label for="pos4"></label>
-		</p>
-	</div>
-</body></html>
-	
+	<div class="slide">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  </div>
+</body>
+</html>
 		<!-- Page info end -->
-
 
 	<!-- search section -->
 	<br>
@@ -344,7 +205,6 @@
 	</section>
 	<!-- search section end -->
 
-
 	<!-- course section -->
 	<section class="course-section spad pb-0">
 		<div class="course-warp">
@@ -359,46 +219,173 @@
 				<li class="control" data-filter=".certificate">자격증</li>
 				<li class="control" data-filter=".finance">제테크</li>
 				<li class="control" data-filter=".beautys">뷰티</li>
-			</ul>                                       
+			</ul>   
+			                                   
 			<div class="row course-items-area" >
 				<%for(int i = 0; i < arr.size(); i++){  %>
-				
-				
-				<!-- course -->
-				 
+				<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr.get(i).getId());%> 
+				<!-- course -->				 
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
 					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
+						<a href=<%=url %> ><div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
+						</div>
+						</a>
+						<div class="course-info">
+							<div class="course-text">							
+							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
+								<div class="students"><%=arr.get(i).getPrice() %></div>
+							</div>							
+							<div class="course-author">								
+								<div></div>								
+								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
+							</div>
+						</div>
+					</div>					
+				</div>
+				<%} %>
+				
+				<!-- course -->
+
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
+							<div class="price"></div>
 						</div>
 						<div class="course-info">
 							<div class="course-text">
-							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr.get(i).getId());%>
-							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>
-							
-							
-								
-								<div class="students"><%=arr.get(i).getPrice() %></div>
+								<h5>허경영과 축지법 하기</h5>
+								<p>북쪽에 장군님도 하신다는 셀럽 필수 능력!</p>
+								<div class="students">120 Students</div>
 							</div>
 							<div class="course-author">
-								
-								<div  class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
-								
-								
-								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>
-								
+								<div class="ca-pic set-bg" data-setbg="img/authors/2.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<%} %>
-				
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/3.jpg">
+							<div class="price"></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>이준석 당대표와 점심식사</h5>
+								<p>자칭 워렌 버핏을 꿈꾸는 야망가와의 식사!</p>
+								<div class="students">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/3.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/4.jpg">
+							<div class="price"></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>전광훈 목사와 태극기집회</h5>
+								<p>방역 수칙과는 대척점에 있는 자가격리 직행 티켓!</p>
+								<div class="students">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/4.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div>
+						</div> 
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 beautys">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/5.jpg">
+							<div class="price"></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>빅데이터 과정 수강</h5>
+								<p>스몰데이터는 왜 없을까? 그 궁금증을 해결해 준다!</p>
+								<div class="students">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/5.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div>
+						</div> 
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 medias">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/6.jpg">
+							<div class="price"></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>인공지능 과정 수강</h5>
+								<p>내 머리가 나쁜 이유를 기계를 통해 밝히다!</p>
+								<div class="students">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/6.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/7.jpg">
+							<div class="price"></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>쿠팡맨 배송 교육</h5>
+								<p>로켓 타고 배송한다는 쿠팡맨의 배송 현장을 가다!</p>
+								<div class="students">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/7.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
+							<div class="price"></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>맨투맨 판매 교육</h5>
+								<p>생존 창업의 기본 중에 기본을 배우다!</p>
+								<div class="students">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/8.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		
 			<div class="featured-courses">
 				<div class="featured-course course-item">
 					<div class="course-thumb set-bg" data-setbg="img/courses/f-1.jpg">
-						<div class="price">4딸라</div>
+						<div class="price"></div>
 					</div>
 					<div class="row">
 						<div class="col-lg-6 offset-lg-6 pl-0">
@@ -419,7 +406,7 @@
 				</div>
 				<div class="featured-course course-item">
 					<div class="course-thumb set-bg" data-setbg="img/courses/f-2.jpg">
-						<div class="price">4딸라</div>
+						<div class="price"></div>
 					</div>
 					<div class="row">
 						<div class="col-lg-6 pr-0">
@@ -441,8 +428,8 @@
 			</div>
 		</div>
 	</section>
-	<!-- course section end -->
 
+	<!-- course section end -->
 
 	<!-- banner section -->
 	<!-- <section class="banner-section spad">
@@ -457,7 +444,6 @@
 		</div>
 	</section> -->
 	<!-- banner section end -->
-
 
 	<!-- footer section -->
 	<footer class="footer-section spad pb-0">
@@ -525,7 +511,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer> 
 	<!-- footer section end -->
-
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
