@@ -185,7 +185,7 @@
 						<!-- search form -->
 						<h2><span>다양한 강좌를 찾아보세요</span></h2>
 						<br><br>
-						<form action="main_recomm.jsp" method="get" class="course-search-form"></form>
+						<form action="main_recomm.jsp" method="get" class="course-search-form">
 						<select name="search1" style="width: 100px; height: 40px;">
 								<option value="select">항목 선택</option>
 								<option value="title" >제목</option>

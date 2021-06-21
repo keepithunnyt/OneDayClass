@@ -4,17 +4,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style2.css" />
+	<link rel="stylesheet" href="css/style3.css" />
 </head>
 <body>
 <% USERSDTO user = (USERSDTO)session.getAttribute("login"); %>
-<h1>회원탈퇴</h1>
-<h3>탈퇴하시면 복구못합니다</h3>
-<form action="USERS_delete" method="post">
-아이디를 입력하세요<input type="text" name="id">
-비밀번호를 입력하세요<input type="text" name="pw">	
-<input type="submit" value="탈퇴">
-</form>
+	<section class="contact-page spad pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="contact-form-warp">
+						<div class="section-title text-white text-left">
+							<h2>회원 탈퇴</h2>
+							<p>탈퇴하시면 복구 불가능하오니 신중하게 선택하시길바랍니다</p>
+						</div>
+						<form action="USERS_delete" class="contact-form" method="post"> 
+							<h3>아이디를 입력해주세요</h3>
+							<br> <input type="password" class="pw" name="id">
+							<h3>비밀번호를 입력해주세요</h3>
+							<br> <input type="password" class="pw" name="pw">
+				
+							 <input type="submit" class="site-btn4"  value="회원 탈퇴">
+							 <br><br> 
+													
+						</form>							
+					</div>
+				</div>
+	</section>
 </body>
 </html>
