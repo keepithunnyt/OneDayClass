@@ -44,6 +44,7 @@
 								onClick="location.href='main.jsp'">							
 						</form>
 							<form action="delete_page.jsp" method="post">
+							<br><br>
 							<input type="submit" class="site-btn4" value="È¸¿øÅ»Åð">
 								</form>
 							
