@@ -29,9 +29,10 @@ public class TEACHERS_update extends HttpServlet {
 				//수정해야할 사용자의 정보를 알기위해 세션값 가져오기
 				HttpSession session = request.getSession();
 				TEACHERSDTO t_dto = (TEACHERSDTO)session.getAttribute("login");
+				String teacher_id = t_dto.getTeacher_id();
 				
 				TEACHERSDAO t_dao = new TEACHERSDAO();
-				int cnt = t_dao.update(pw, tel);
+				int cnt = t_dao.update(pw, tel, teacher_id);
 				
 				if(cnt>0){
 					System.out.println("회원 정보 수정 성공");

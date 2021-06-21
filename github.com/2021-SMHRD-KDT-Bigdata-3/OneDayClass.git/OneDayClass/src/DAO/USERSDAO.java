@@ -107,14 +107,14 @@ public class USERSDAO {
 				}	
 
 				//업데이트	
-				public int update(String pw,String address) {
+				public int update(String pw,String address, String id) {
 					
 					//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 					try{
 						conn();
 						
 						//sql 작성
-						String sql="update USERS set pw=?, address=?";
+						String sql="update USERS set pw=?, address=? where id = ?";
 							
 						
 						//PreparedStatement 객체 생성
@@ -123,6 +123,7 @@ public class USERSDAO {
 						//바인드 변수(?) 채우기					
 						pst.setString(1,pw);
 						pst.setString(2,address);
+						pst.setString(3,id);
 						
 						
 						//sql문 실행
@@ -166,6 +167,40 @@ public class USERSDAO {
 						close();
 					}
 					return cnt;
+				}
+				
+				//설문조사	
+				public int survey(String id,String result) {
+					
+					//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
+					try{
+						conn();
+						
+						//sql 작성
+						String sql="update USERS set recomm=?  where id=?";
+							
+						
+						//PreparedStatement 객체 생성
+						pst = conn.prepareStatement(sql);
+						
+						//바인드 변수(?) 채우기					
+						pst.setString(1,result);
+						pst.setString(2,id);
+						
+						
+						//sql문 실행
+						cnt = pst.executeUpdate();
+						
+						//insert 성공했을 경우에는 main.jsp로 이동, 실패했을 경우에는 join.jsp로 이동
+						
+					}catch(Exception e){
+						e.printStackTrace();
+						
+					}finally{
+						close();
+					}
+					return cnt;
+					
 				}
 						
 	

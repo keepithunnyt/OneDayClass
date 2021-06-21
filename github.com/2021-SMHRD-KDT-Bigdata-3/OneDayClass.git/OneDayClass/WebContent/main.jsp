@@ -243,11 +243,9 @@
 					
 				</div>
 				<%} %>
-<<<<<<< HEAD
 				<!-- course -->
-=======
+
 				<!-- course -->
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
