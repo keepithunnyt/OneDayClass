@@ -30,9 +30,10 @@ public class USERS_update extends HttpServlet {
 						//수정해야할 사용자의 정보를 알기위해 세션값 가져오기
 						HttpSession session = request.getSession();
 						USERSDTO u_dto = (USERSDTO)session.getAttribute("login");
+						String id = u_dto.getId();
 						
 						USERSDAO u_dao = new USERSDAO();
-						int cnt = u_dao.update(pw, address);
+						int cnt = u_dao.update(pw, address, id);
 						
 						if(cnt>0){
 							System.out.println("회원 정보 수정 성공");
