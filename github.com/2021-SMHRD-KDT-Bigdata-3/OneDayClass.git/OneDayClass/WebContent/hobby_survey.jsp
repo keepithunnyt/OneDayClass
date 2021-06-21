@@ -399,8 +399,6 @@ text-align:left;
 	//let arr = ['gender', 'age', 'job', 'experience',  'non_give_up', 'hobby_time',
 	//	'Participants', 'hobby_money', 'obstacle'];
 		
-
-
 </script>
 	
 </body>
