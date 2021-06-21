@@ -1,3 +1,5 @@
+<%@page import="DTO.TEACHERSDTO"%>
+<%@page import="DAO.TEACHERSDAO"%>
 <%@page import="DTO.CLASSDTO"%>
 <%@page import="DAO.CLASSDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
@@ -53,7 +55,7 @@
 <% 
 	CLASSDAO c_dao =  new CLASSDAO();
 	int class_id = Integer.parseInt(request.getParameter("class_id"));
-	
+	TEACHERSDAO t_dao = new TEACHERSDAO();
 	CLASSDTO c_dto = c_dao.allselect(class_id);
 	//CLASSDTO c_dto = new CLASSDTO(1, "1", "안현진", "내용", "시간", "비용", "카테고리", "이미지");
 	
@@ -86,7 +88,7 @@
 	
 	<tr align="right" bgcolor="white">
 		
-		<td class = 'teacher' colspan = '2' ><%=c_dto.getTeacher_id() %> 강사</td> 
+		<td class = 'teacher' colspan = '2' ><%=t_dao.who(c_dto.getTeacher_id()) %> 강사</td> 
 	</tr>
 	<tr>
 	<td colspan = "2"><hr style = "border: 1px solid #FEA698;"></td>
@@ -116,9 +118,6 @@
 	</table>
 </div>
 
-<<<<<<< HEAD
-</form>
-=======
 </form>
 	<script>
 		// 클래스 신청버튼 클릭-> 로그인중이면 DB에 강의 집어넣기 아니면 로그인하게하기
@@ -128,6 +127,5 @@
 	</script>
 
 
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 </body>
 </html>
