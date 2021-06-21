@@ -143,21 +143,21 @@ public class TEACHERSDAO {
 				}
 				// delect 메소드
 
-				public int delete(String id) {
+				public int delete(String id, String pw) {
 					
 					//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 					try{
 						conn();
 						
 						//sql 작성
-						String sql="delete from TEACHERS where id = ?";
+						String sql="delete from TEACHERS where teacher_id = ? and teacher_pw = ?";
 						
 						//PreparedStatement 객체 생성
 						pst = conn.prepareStatement(sql);
 						
 						//바인드 변수(?) 채우기
 						pst.setString(1,id);
-						
+						pst.setString(2,pw);
 						//sql문 실행
 						cnt = pst.executeUpdate();
 							
