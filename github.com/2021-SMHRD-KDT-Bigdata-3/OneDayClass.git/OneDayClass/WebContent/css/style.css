@@ -10,10 +10,14 @@ HEAD
 /* Template default CSS
 /*----------------------------------------*/
 
+font-face{
+	font-family:'NanumSquareRoundB';
+	src:url(C:\Users\smhrd\Desktop\2차프로젝트\NanumFontSetup_TTF_SQUARE_ROUND);
+}
 html,
 body {
 	height: 100%;
-	font-family: 'Raleway', sans-serif;
+	font-family: NanumSquareRoundB;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased; 
 }
