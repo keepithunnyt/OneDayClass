@@ -220,28 +220,32 @@
 				<li class="control" data-filter=".certificate">자격증</li>
 				<li class="control" data-filter=".finance">제테크</li>
 				<li class="control" data-filter=".beautys">뷰티</li>
-			</ul>                                       
+			</ul>   
+			                                   
 			<div class="row course-items-area" >
 				<%for(int i = 0; i < arr.size(); i++){  %>
+				<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr.get(i).getId());%> 
 				<!-- course -->
 				 
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
 					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
+						<a href=<%=url %> ><div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
 						</div>
+						</a>
 						<div class="course-info">
 							<div class="course-text">
-							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr.get(i).getId());%>
+							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>
 							
 							
 								
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>
+							
 							<div class="course-author">
 								
-								<div  class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+								<div></div>
 								
 								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>
@@ -249,9 +253,11 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
 				<%} %>
 				<!-- course -->
+<<<<<<< HEAD
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
@@ -431,6 +437,9 @@
 			</div>
 		</div>
 	</section>
+=======
+
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 	<!-- course section end -->
 
 

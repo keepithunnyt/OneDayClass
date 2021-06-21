@@ -17,19 +17,15 @@
 		.tabletwo > table tr{
 			height: 30px;
 		} 
-		.tabletwo > table{
-			width:600px;
+
+		.table_content{
+			
 			border: 3px solid #FEA698;
 			border-collapse: separate;
 			border-radius: 12px;
 			padding:10px;
-			position:absolute;
-			
-			left : 35%;
-			
-		}
-		.table_content{
 			max-width : 30%;
+			margin: auto;
 		
 		}
 		th {
@@ -63,7 +59,7 @@
 	
 %>
 
-<form>
+<form action='#' method="post">
 <br>
 <div class="home">
 <a href="main.jsp"><img style="width:60px; height:60px;" class = "home-logo" src="img/home_btn.png"></a>
@@ -115,7 +111,10 @@
 		<td><%=c_dto.getPrice() %></td>
 	</tr>
 	<tr></tr>
-	<!-- <tr><td colspan = "2" align = "center" style = "color: #FEA698; font-weight: bold;"><a href="#">문의하기</a></td></tr> -->
+	<tr><td colspan = "2" align = "center">
+	<input type="submit" class="site-btn" name="apply" value="클래스 신청하기" >
+	
+	</td></tr> 
 	</table>
 </div>
 
