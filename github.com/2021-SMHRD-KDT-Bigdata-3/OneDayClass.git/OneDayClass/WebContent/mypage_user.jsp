@@ -41,8 +41,12 @@
 							<input type="text" class="class_date"
 								onfocus="(this.type = 'date')" placeholder="강의 날짜 표출 코드">
 							<input type="button" class="site-btn4" id="main" value="메인으로"
-								onClick="location.href='main.jsp'">
+								onClick="location.href='main.jsp'">							
 						</form>
+							<form action="delete_page.jsp" method="post">
+							<input type="submit" class="site-btn4" value="회원탈퇴">
+								</form>
+							
 					</div>
 				</div>
 	</section>
