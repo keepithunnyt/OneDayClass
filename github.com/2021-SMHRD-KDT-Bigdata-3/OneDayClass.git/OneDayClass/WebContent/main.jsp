@@ -189,17 +189,21 @@
 						<br><br>
 						<table style = "margin:auto;">
 						<tr><td>
-						<form action="main_recomm.jsp" method="get" class="course-search-form"">
-						<select name="search1" style="width: 150px; height: 40px;">
+						<form action="main_recomm.jsp" method="get" class="course-search-form">
+						<select name="search1" style="width: 150px; height: 50px;">
 								<option value="select">항목 선택</option>
 								<option value="title" >제목</option>
 								<option value="content" >내용</option>
 								<option value="teacher" >강사</option>
 						</select>
-						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 40px;">
+<<<<<<< HEAD
+						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 50px;">
+=======
+						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search">
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
 						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
-						<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 40px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
+						<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
 						</form>
 						</td></tr>
 						</table>

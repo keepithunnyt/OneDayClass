@@ -349,7 +349,7 @@
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1" style="text-align:center;">
 						<!-- search form -->
-						<h2><span>다양한 강좌를 찾아보세요</span></h2>
+						<h2><span>"${param.search2 }"(으)로 입력한 결과입니다</span></h2>
 						<br><br>
 						<table style = "margin:auto;">
 						<tr><td>
@@ -360,7 +360,7 @@
 								<option value="content">내용</option>
 								<option value="teacher" >강사</option>
 							</select>
-							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 40px;" value="${param.search2 }"/>
+							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 40px;" value="${param.search2 }" class = "search"/>
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->
 							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
 							<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 40px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
