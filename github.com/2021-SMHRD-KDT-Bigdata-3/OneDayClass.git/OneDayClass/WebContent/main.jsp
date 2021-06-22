@@ -62,6 +62,7 @@
       30% {opacity:0;}
       100% {opacity:0;}
     }
+
 	</style>
 
 </head>
@@ -197,6 +198,9 @@
 								<option value="teacher" >강사</option>
 						</select>
 						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search">
+			
+						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search" >
+
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
 						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
 						<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
@@ -248,17 +252,17 @@
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
 							<div class="course-author">								
-								<div></div>								
+								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
 							</div>
 						</div>
 					</div>					
 				</div>
 				<%} %>
+				</div>
 				
-				<!-- course -->
-
-				<!-- course -->
+				<!--  sample course 
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
@@ -277,7 +281,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/3.jpg">
@@ -296,7 +300,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/4.jpg">
@@ -315,7 +319,7 @@
 						</div> 
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 beautys">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/5.jpg">
@@ -334,7 +338,7 @@
 						</div> 
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 medias">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/6.jpg">
@@ -353,7 +357,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/7.jpg">
@@ -372,7 +376,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
@@ -390,8 +394,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div>-->
+			
 
 			<div class="featured-courses">
 				<div class="featured-course course-item">

@@ -102,9 +102,10 @@ public class ENROLMENTDAO {
 							String get_price = rs.getString("price");
 							String get_category = rs.getString("category");
 							String get_image = rs.getString("image");
+							String get_icon = rs.getString("icon");
 
 							c_dto = new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
-									get_image);
+									get_image, get_icon);
 							ClassArray.add(c_dto);
 						}
 					} catch (Exception e) {

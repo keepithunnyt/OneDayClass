@@ -7,6 +7,21 @@
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
+<style>
+.tableone{
+border:2px solid #FEA698;
+}
+.tableone> table th{
+font-family:'NanumSquareRound';
+color:#0D3B66;
+}
+.tableone> table td{
+font-family:'NanumSquareRound';
+color:#0D3B66;
+}
+
+
+</style>
 <head>
 	<meta charset="EUC-KR">
 	<title>Insert title here</title>
@@ -33,19 +48,21 @@
 							<h2>개인정보 수정</h2>
 							<p>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</p>
 						</div>
+				<form action="delete_page.jsp" method="post">
+				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:80%">
+				</form>
+				<br>
 						<form action="USERS_update" class="contact-form"> 
 							<h3>수강생 정보</h3>
 							<br> <input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id">
 							<input type="password" class="pw" value=<%=user.getPw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name"> 
 							<input type="text" class="address" value=<%=user.getAddress() %> name="address"> 
-							 <input type="submit" class="site-btn4" id="edit" value="수정 완료">
-							 <input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'">
 							 <br><br> 
 							<h3>수강 중인 강좌</h3>
 							<br>
 					<div class="tableone">
-					<table width="600px">
+					<table width="567px">
                    	<thead>
                     <tr align="center" bgcolor="white" style="font-size: 15px;">
                     <th>강사 이름</th>
@@ -76,10 +93,13 @@
                 </tbody>
        			</table>
 				</form>
+				</div>
 				<br>
-				<form action="delete_page.jsp" method="post">
-				<input type="submit" class="site-btn4" value="회원탈퇴">
-				</form>
+				<div style="margin: auto; width: 50%;">
+				<input type="submit" class="site-btn4" id="edit" value="수정 완료">
+				&nbsp;
+				<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'">
+				</div>
 				</section>
 </body>
 </html>
