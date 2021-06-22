@@ -19,7 +19,7 @@
 	
 	<style>
 		.tableone > table tr{
-			height: 30px;
+			height: 20px;
 		}
 		.tableone > table{
 			width:578px;
@@ -44,7 +44,8 @@
 						<div class="section-title text-white" >
 							<h2>개인정보 수정</h2>
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
-						<form action="delete_teacher.jsp" method="post" style="margin: auto; left:50%;">
+							<br><br>
+						<form action="delete_teacher.jsp" method="post" style="margin: auto; left:80%;">
 						<input type="submit" class="site-btn4" value="회원탈퇴">
 						</form>
 						</div>
@@ -97,9 +98,10 @@
                 <%} }%>
             </tbody>
         </table>
-        <br><br><br>
+        <br><br><br><br>
         </div>
 		</form>
+		<br><br><br>
 		<div style="text-align: center;">
         <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">&nbsp;
 							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> &nbsp;
