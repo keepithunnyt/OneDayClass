@@ -56,7 +56,7 @@
 						<br><br> 
 					<h4>강좌 정보</h4>
 					<br>
-					<table style="width:600px;">
+					<table style="width:660px;">
                     <thead>
                     <tr align="center" bgcolor="white" style="font-size:16px;">
                     <th style="width:50px;">아이디</th>
