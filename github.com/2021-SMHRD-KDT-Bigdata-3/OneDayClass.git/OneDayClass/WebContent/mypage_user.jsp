@@ -59,7 +59,7 @@ color:#0D3B66;
 							<h5>아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호</h5>
-							<input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id" style="width:290px;">
+							<input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id" style="width:290px;"> 
 							&nbsp;
 							<input type="password" class="pw" value=<%=user.getPw() %> name="pw" style="width:290px;">
 							<h5>이름</h5>
