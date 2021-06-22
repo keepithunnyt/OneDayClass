@@ -215,7 +215,6 @@
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".recomm">추천</li>
 				<li class="control" data-filter=".arts">공예</li>
 				<li class="control" data-filter=".medias">사진</li>
 				<li class="control" data-filter=".sport">운동</li>
@@ -224,6 +223,13 @@
 				<li class="control" data-filter=".certificate">자격증</li>
 				<li class="control" data-filter=".finance">제테크</li>
 				<li class="control" data-filter=".beautys">뷰티</li>
+				<%if(user != null){ %>
+					<%if(user.getRecomm() == null){ %>
+					<li class="control" data-filter=".recomm" id="recomm" onclick='beforeRecomm()'>추천</li>
+					<%}else{ %>
+					<% String recomm = "." + user.getRecomm(); %>
+					<li class="control" data-filter=<%=recomm %>>추천</li>
+				<%}} %>
 			</ul>   
 			                                   
 			<div class="row course-items-area" >
@@ -524,5 +530,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		function beforeRecomm(){
+			alert('마이페이지 > 성향분석 을 먼저 완료해주세요!')
+		}
+	</script>
 </body>
 </html>
