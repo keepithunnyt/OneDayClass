@@ -604,6 +604,9 @@ ol {
 }
 .search-section> .container> .row {  justify-content: center;
 }
+.search::placeholder{
+	text-align: center;
+}
 /*------------------
   Course section
 ---------------------*/
