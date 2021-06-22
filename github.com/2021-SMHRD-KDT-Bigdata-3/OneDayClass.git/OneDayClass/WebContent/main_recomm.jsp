@@ -222,7 +222,7 @@
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-							<select name="search1" style="width: 150px; height: 50px;">
+							<select name="search1" style="width: 160px; height: 50px;">
 								<option value="항목 선택">항목 선택</option>
 								<option value="제목">제목</option>
 								<option value="내용">내용</option>
@@ -248,7 +248,6 @@
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".recomm">추천</li>
 				<li class="control" data-filter=".arts">공예</li>
 				<li class="control" data-filter=".medias">사진</li>
 				<li class="control" data-filter=".sport">운동</li>
@@ -257,6 +256,7 @@
 				<li class="control" data-filter=".certificate">자격증</li>
 				<li class="control" data-filter=".finance">제테크</li>
 				<li class="control" data-filter=".beautys">뷰티</li>
+				<li class="control" data-filter=".recomm">추천</li>
 			</ul>                                       
 			<div class="row course-items-area" >
 			<%if(arr2 != null){ %>
@@ -264,15 +264,15 @@
 				
 				
 				<!-- course -->
-				 
+				 <%String url = "class_detail.jsp?class_id=" + Integer.toString(arr2.get(i).getId());%>
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr2.get(i).getCategory() %>">
 					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg=<%=arr2.get(i).getImage() %>>
+						<a href=<%=url %> ><div class="course-thumb set-bg" data-setbg=<%=arr2.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
-						</div>
+						</div></a>
 						<div class="course-info">
 							<div class="course-text">
-							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr2.get(i).getId());%>
+							
 							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
 							
 							
