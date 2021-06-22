@@ -264,15 +264,15 @@
 				
 				
 				<!-- course -->
-				 
+				 <%String url = "class_detail.jsp?class_id=" + Integer.toString(arr2.get(i).getId());%>
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr2.get(i).getCategory() %>">
 					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg=<%=arr2.get(i).getImage() %>>
+						<a href=<%=url %> ><div class="course-thumb set-bg" data-setbg=<%=arr2.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
-						</div>
+						</div></a>
 						<div class="course-info">
 							<div class="course-text">
-							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr2.get(i).getId());%>
+							
 							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
 							
 							
