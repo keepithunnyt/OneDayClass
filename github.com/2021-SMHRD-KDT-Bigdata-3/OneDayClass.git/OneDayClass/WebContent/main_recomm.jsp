@@ -281,7 +281,7 @@
 							</div>
 							<div class="course-author">
 								
-								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div></div>
+								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>
 								
 								
 								<p><%=t_dao.who(arr2.get(i).getTeacher_id()) %><br> <span><%=arr2.get(i).getTime() %></span></p>
@@ -292,7 +292,8 @@
 				</div>
 				<%} %>
 				<%} %>
-
+			</div>
+			</div>
 			
 	
 	</section>
