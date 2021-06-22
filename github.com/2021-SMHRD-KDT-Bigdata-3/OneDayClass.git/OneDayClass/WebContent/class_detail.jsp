@@ -33,21 +33,25 @@
 		th {
         color : #0D3B66;
         font-size : 20px;
+        font-family:'NanumSquareRound'
         
       }
       td.teacher {
         color : #0D3B66;
         font-size : 16px;
         font-weight: bold;
+        font-family:'NanumSquareRound'
       }
       td {
         color : #0D3B66;
         font-size : 16px;
+        font-family:'NanumSquareRound'
         
       }
       th.title{
       	font-size : 24px;
       	color: indianred;
+      	font-family:'NanumSquareRound'
       }
 	</style>
 </head>

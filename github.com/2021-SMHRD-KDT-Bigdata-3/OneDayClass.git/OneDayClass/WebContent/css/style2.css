@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family:sans-serif;
+   
    
   }
   
@@ -21,6 +21,7 @@
     left:50%;
     transform: translate(-50%,-50%);
     border-radius: 15px;
+    font-family:'NanumSquareRound';
   }
   
   .loginForm h2{
@@ -28,6 +29,7 @@
     margin: 50px;
     color: #0D3B66;
     font-size:50px;
+    font-family:'NanumSquareRound';
   }
   
   .division{
@@ -85,6 +87,7 @@
     transition: 0.4s;
     display:inline;
     border-radius: 12px;
+    font-family:'NanumSquareRound';
   }
   
   .submit:hover {

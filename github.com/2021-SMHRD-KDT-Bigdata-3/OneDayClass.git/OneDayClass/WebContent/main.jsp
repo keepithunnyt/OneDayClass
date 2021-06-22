@@ -25,12 +25,11 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="font/NanumFontSetup_TTF_SQUARE_ROUND.css"/>
+	<link rel="stylesheet" href="css/font.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/style3.css"/>
 
- 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -52,6 +51,9 @@
     .slide li:nth-child(2){background:#ffa;animation-delay:5s}
     .slide li:nth-child(3){background:#9ee4da;animation-delay:10s}
     .slide li:nth-child(4){background:#b8b8ff;animation-delay:15s}
+    span{
+    	font-family:'NanumSquareRound';
+    }
      /* 100 / 8 = 12.5 */
     @keyframes fade {
       0% {opacity:0;}
@@ -176,27 +178,26 @@
 	<br>
 	<br>
 	<section class="search-section ss-other-page">
-		<div class="container"style="text-align: center;">
+		<div class="container">
 			<div class="search-warp">
-				<div class="section-title text-white" style="text-align: center;">
+				<div class="section-title text-white">
 				</div>
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
 						<!-- search form -->
 						<h2><span>다양한 강좌를 찾아보세요</span></h2>
 						<br><br>
-						<form action="main_recomm.jsp" method="get" class="course-search-form"></form>
-						<select name="search1" style="width: 100px; height: 40px;">
+						<form action="main_recomm.jsp" method="get" class="course-search-form"">
+						<select name="search1" style="width: 150px; height: 40px;">
 								<option value="select">항목 선택</option>
 								<option value="title" >제목</option>
 								<option value="content" >내용</option>
 								<option value="teacher" >강사</option>
 						</select>
 						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 40px;">
-						&emsp;
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
 						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
-						<input type="submit" class="site-btn4" id="search" value="과정 찾아보기"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
+						<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 40px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
 						</form>
 					</div>
 				</div>
