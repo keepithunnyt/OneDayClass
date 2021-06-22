@@ -123,9 +123,10 @@ color:#0D3B66;
 				<input type="button" class="site-btn4" id="main" value="¸ÞÀÎÀ¸·Î" onClick="location.href='main.jsp'" style="margin: auto;">
 				<input type="submit" class="site-btn4" value="È¸¿ø Å»Åð" style="margin: auto;">
 				</form>
-				
-				<br>
+				</div>
+				</div>
+				</div>
+				</div>
 				</section>
 </body>
-</html>
 </html>

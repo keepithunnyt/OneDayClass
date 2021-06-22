@@ -41,10 +41,6 @@
 						<div class="section-title text-white" >
 							<h2>개인정보 수정</h2>
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
-							<br><br>
-						<form action="delete_teacher.jsp" method="post" style="margin: auto; left:80%;">
-						<input type="submit" class="site-btn4" value="회원탈퇴">
-						</form>
 						</div>
 						<form action="TEACHERS_update" class="contact-form" style="width:680px;"> 
 							<table class="table1" style="width: 500px">
@@ -65,6 +61,10 @@
 							<tr height="10px"></tr>
 							<tr><td colspan='2'><input type="text" class="address" value="<%=teacher.getTel() %>" name="address" style="width:595px;"></td></tr>
 							</table>
+							<div style="margin: auto; width: 50%;">
+								<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto;">
+								<input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'" style="margin: auto;">
+							</div>
 						</form>
 						<br><br>
 					<h4>강좌 정보</h4>
@@ -108,15 +108,16 @@
                 <%} }%>
             </tbody>
         </table>
-        </div>
-		<div style="text-align: center;">
-        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">&nbsp;
-							 <input type="submit" class="site-btn3" id="edit" value="수정 완료"> &nbsp;
-							 <input type="button" class="site-btn3" id="main" value="메인으로" onClick="location.href='main.jsp'">
-					</div>
-					</div>
-				</div>
-				</div>
-				</section>
+        <br>
+		<form action="delete_page.jsp" method="post">
+		<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto; left:180px;">
+		<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:180px;">
+		</form>
+		</div>
+		</div>
+		</div>
+		</div>
+		</section>
+		
 </body>
 </html>
