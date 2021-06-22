@@ -359,13 +359,13 @@ text-align:left;
 							</tr>
 							</table>
 
-						</form>
 						<br>
 								<div class="btn" style="site-btn4: center;">
 								<input type="submit" class="site-btn4" id="write" value="작성 완료" align="center"> &nbsp;
 								<input type="button" class="site-btn4" id="main" value="메인으로" align="center" onClick="location.href='main.jsp'">
 
 							</div> 	 
+						</form>
 
 					</div>
 			 </div>

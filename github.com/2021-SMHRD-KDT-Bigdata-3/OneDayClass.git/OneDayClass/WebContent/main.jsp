@@ -183,10 +183,12 @@
 				<div class="section-title text-white">
 				</div>
 				<div class="row">
-					<div class="col-lg-10 offset-lg-1">
+					<div class="col-lg-10 offset-lg-1" style="text-align:center;">
 						<!-- search form -->
 						<h2><span>다양한 강좌를 찾아보세요</span></h2>
 						<br><br>
+						<table style = "margin:auto;">
+						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form"">
 						<select name="search1" style="width: 150px; height: 40px;">
 								<option value="select">항목 선택</option>
@@ -199,6 +201,8 @@
 						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
 						<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 40px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
 						</form>
+						</td></tr>
+						</table>
 					</div>
 				</div>
 			</div>
@@ -211,7 +215,6 @@
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".recomm">추천</li>
 				<li class="control" data-filter=".arts">공예</li>
 				<li class="control" data-filter=".medias">사진</li>
 				<li class="control" data-filter=".sport">운동</li>
@@ -220,6 +223,13 @@
 				<li class="control" data-filter=".certificate">자격증</li>
 				<li class="control" data-filter=".finance">제테크</li>
 				<li class="control" data-filter=".beautys">뷰티</li>
+				<%if(user != null){ %>
+					<%if(user.getRecomm() == null){ %>
+					<li class="control" data-filter=".recomm" id="recomm" onclick='beforeRecomm()'>추천</li>
+					<%}else{ %>
+					<% String recomm = "." + user.getRecomm(); %>
+					<li class="control" data-filter=<%=recomm %>>추천</li>
+				<%}} %>
 			</ul>   
 			                                   
 			<div class="row course-items-area" >
@@ -520,5 +530,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		function beforeRecomm(){
+			alert('마이페이지 > 성향분석 을 먼저 완료해주세요!')
+		}
+	</script>
 </body>
 </html>

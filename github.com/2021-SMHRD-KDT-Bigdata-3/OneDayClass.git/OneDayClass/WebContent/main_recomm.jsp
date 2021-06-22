@@ -252,7 +252,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<a href="main.jsp"><img class = 'logo' src="img/test2.png"></a> 
+						<a href="main.jsp"><img class = 'logo' src="img/Logo.png"></a> 
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -347,10 +347,12 @@
 				<div class="section-title text-white">
 				</div>
 				<div class="row">
-					<div class="col-lg-10 offset-lg-1">
+					<div class="col-lg-10 offset-lg-1" style="text-align:center;">
 						<!-- search form -->
 						<h2><span>다양한 강좌를 찾아보세요</span></h2>
 						<br><br>
+						<table style = "margin:auto;">
+						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
 							<select name="search1" style="width: 150px; height: 40px;">
 								<option value="select">항목 선택</option>
@@ -361,8 +363,10 @@
 							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 40px;" value="${param.search2 }"/>
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->
 							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
-							<input type="submit" class="site-btn" id="search" value="과정 찾아보기" style="width: 150px; height: 40px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
+							<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 40px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
 						</form>
+						</td></tr>
+						</table>
 					</div>
 				</div>
 			</div>
