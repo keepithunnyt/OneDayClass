@@ -18,10 +18,7 @@
 	<link rel="stylesheet" href="css/style3.css" />
 	
 	<style>
-		.tableone > table tr{
-			height: 30px;
-		}
-		.tableone > table{
+		table{
 			width:578px;
 			border: 2px solid #FEA698;
 			border-collapse: separate;
@@ -57,13 +54,12 @@
 								<br><br>
 					<h4>강좌 정보</h4>
 					<br>
-					<div class="tableone">
-					<table>
+					<table style="width:600px;">
                     <thead>
-                    <tr align="center" bgcolor="white" color="">
-                    <th>아이디</th>
+                    <tr align="center" bgcolor="white" style="font-size:16px;">
+                    <th style="width:50px;">아이디</th>
                     <th>제목</th>
-                    <th>카테고리</th>
+                    <th style="width:80px;">카테고리</th>
                     <th>가격</th>
                     <th></th>
                		</tr>
@@ -87,7 +83,7 @@
                 <%if(classArray != null) {%>
                 <%for(int i = 0; i < classArray.size(); i++){ %>
                 	
-               		<tr align="center" bgcolor="white">
+               		<tr align="center" bgcolor="white" style="font-size:18px;">
                     <td> <%=classArray.get(i).getId() %> </td>
                     <td> <%=classArray.get(i).getTitle() %> </td>
                     <td> <%=classArray.get(i).getCategory() %></td> 
@@ -98,7 +94,6 @@
             </tbody>
         </table>
         <br><br><br>
-        </div>
 		</form>
 		<div style="text-align: center;">
         <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">&nbsp;
