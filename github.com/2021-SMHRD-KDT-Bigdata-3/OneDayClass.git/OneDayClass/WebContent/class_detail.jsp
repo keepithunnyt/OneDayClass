@@ -41,19 +41,18 @@
       }
       td.teacher {
         color : #0D3B66;
-        font-size : 16px;
-        font-weight: bold;
+        font-size : 18px;
         font-family:'NanumSquareRound'
       }
       td {
         color : #0D3B66;
-        font-size : 16px;
+        font-size : 18px;
         font-family:'NanumSquareRound'
         
       }
       th.title{
       	font-size : 24px;
-      	color: indianred;
+      	color: #3A2618;
       	font-family:'NanumSquareRound'
       }
 	</style>
@@ -87,7 +86,7 @@
 	<td colspan = '2'>
 	<img alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
 	</tr>
-
+	
 	<tr bgcolor="white">
 	<th colspan = '2'><%=c_dto.getCategory() %></th>
 	</tr>
@@ -114,18 +113,18 @@
 	</tr>
 	
 	<tr align="center" bgcolor="white">
-		<td colspan = "2" style = "font-weight: bold;">강좌 소개</td>
+		<td colspan = "2" style = "font-weight: 800;">강좌 소개</td>
 		
 	</tr>
 	<tr><td colspan = "2"><%=content %></td></tr>
 
-	<tr align="center" bgcolor="white">
-		<td style = "font-weight: bold;">시간</td>
+	<tr align="center" bgcolor="white" style = "font-weight: 800;">
+		<td >시간</td>
 		<td><%=c_dto.getTime() %></td>
 	</tr>
 
-	<tr align="center" bgcolor="white">
-		<td style = "font-weight: bold;">비용</td>
+	<tr align="center" bgcolor="white" style = "font-weight: 800;">
+		<td>비용</td>
 		<td><%=c_dto.getPrice() %></td>
 	</tr>
 	<tr></tr>

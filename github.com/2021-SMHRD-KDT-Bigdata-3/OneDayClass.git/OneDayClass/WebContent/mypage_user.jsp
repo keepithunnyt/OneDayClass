@@ -46,7 +46,7 @@ color:#0D3B66;
 					<div class="contact-form-warp">
 						<div class="section-title text-white text-left">
 							<h2>개인정보 수정</h2>
-							<p>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</p>
+							<p><h6>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</h6></p>
 						</div>
 				<form action="delete_page.jsp" method="post">
 				<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto; left:60%">
@@ -54,7 +54,7 @@ color:#0D3B66;
 				</form>
 				<br>
 						<form action="USERS_update" class="contact-form" style="width:680px;"> 
-							<h3>수강생 정보</h3>
+							<div style="font-weight:800"><h4>수강생 정보</h4></div>
 							<br>
 							<h5>아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -72,13 +72,13 @@ color:#0D3B66;
 							<h5>주소</h5>
 							<input type="text" class="address" value=<%=user.getAddress() %> name="address" style="width:595px;">  <br> 
 							 <div style="margin: auto; width: 50%;">
-				<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:25%">
+				<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:25%; font-weight:800;">
 				&nbsp;
 				
 				</div>
 								</form>
 								<br>
-							<h3>수강 중인 강좌</h3>
+							<h4>수강 중인 강좌</h4>
 							<br>
 					<div class="tableone">
 					<table width="567px">
