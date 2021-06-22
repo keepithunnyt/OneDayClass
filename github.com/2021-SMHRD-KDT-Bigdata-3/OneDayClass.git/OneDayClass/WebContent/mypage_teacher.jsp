@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="css/style3.css" />
 	
 	<style>
-		table{
+		.table2{
 			width:578px;
 			border: 2px solid #FEA698;
 			border-collapse: separate;
@@ -46,16 +46,30 @@
 						<input type="submit" class="site-btn4" value="회원탈퇴">
 						</form>
 						</div>
-						<form action="TEACHERS_update" class="contact-form">
-							<h5>아이디</h5><input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id">
-							<h5>비밀번호</h5><input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
-							<h5>이름</h5><input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
-							<h5>전화번호</h5><input type="text" class="tel" value=<%= teacher.getTel() %> name="tel"> 
+						<form action="TEACHERS_update" class="contact-form" style="width:680px;"> 
+							<table class="table1" style="width: 500px">
+							<tr><td colspan='2'><h3>수강생 정보</h3></td></tr>
+							<tr height="20px"></tr>
+							<tr><td><h5>아이디</h5></td><td><h5>비밀번호</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td><input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id" style="width:290px;"> </td>
+								<td><input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw" style="width:290px;"></td>
+							</tr>
+							<tr></tr>	
+							<tr><td><h5>이름</h5></td><td><h5>전화번호</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td><input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name" style="width:290px;"></td>
+								<td><input disabled="disabled" type="text" class="name" value=<%=teacher.getTel() %> name="name" style="width:290px;"></td>
+							</tr>
+							<tr><td colspan='2'><h5>주소</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td colspan='2'><input type="text" class="address" value="<%=teacher.getTel() %>" name="address" style="width:595px;"></td></tr>
+							</table>
 						</form>
 						<br><br>
 					<h4>강좌 정보</h4>
 					<br>
-					<table style="width:660px;">
+					<table class="table2" style="width:660px;">
                     <thead>
                     <tr align="center" bgcolor="white" style="font-size:16px;">
                     <th style="width:50px;">아이디</th>
