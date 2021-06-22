@@ -9,9 +9,10 @@ public class CLASSDTO {
 	private String price;
 	private String category;
 	private String image;
+	private String icon;
 	
 	public CLASSDTO(int id, String teacher_id, String title, String content, String time, String place,
-			String category, String image) {
+			String category, String image, String icon) {
 		this.class_id = id;
 		this.teacher_id = teacher_id;
 		this.title = title;
@@ -20,6 +21,7 @@ public class CLASSDTO {
 		this.price = place;
 		this.category = category;
 		this.image = image;
+		this.icon = icon;
 	}
 
 	public int getId() {
@@ -84,6 +86,14 @@ public class CLASSDTO {
 
 	public void setImage(String image) {
 		this.image = image;
+	}
+
+	public String getIcon() {
+		return icon;
+	}
+
+	public void setIcon(String icon) {
+		this.icon = icon;
 	}
 	
 	
