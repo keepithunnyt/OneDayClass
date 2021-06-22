@@ -62,8 +62,13 @@ color:#0D3B66;
 							<input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id" style="width:290px;"> 
 							&nbsp;
 							<input type="password" class="pw" value=<%=user.getPw() %> name="pw" style="width:290px;">
-							<h5>이름</h5>
-							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:595px;"> 
+							<h5>이름&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;전화번호</h5>
+							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;">
+							&nbsp;
+							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;">
 							<h5>주소</h5>
 							<input type="text" class="address" value=<%=user.getAddress() %> name="address" style="width:595px;">  <br> 
 							 <div style="margin: auto; width: 50%;">
