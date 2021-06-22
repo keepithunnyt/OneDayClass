@@ -1990,7 +1990,7 @@ h6 {
 
 p {
 	font-size: 14.1px;
-	color: #0D3B66;
+	color: #878787;
 	line-height: 2.2;
 	font-weight: 500;
 }
@@ -2500,7 +2500,7 @@ ol {
 }
 
 .course-item .course-info .course-author {
-	border-top: 1px solid #FEA698;
+	border-top: 1px solid #d4dee1;
 	padding: 14px 33px;
 	overflow: hidden;
 }
@@ -2554,7 +2554,7 @@ ol {
 	padding: 4px 15px;
 	margin-bottom: 20px;
 	 border-radius: 12px;
-	 border : 3px solid #FEA698;
+	 border : 2px solid #FEA698;
 	 font-family:'NanumSquareRound';
 }
 
@@ -2863,7 +2863,7 @@ ol {
 =======================*/
 
 .page-info-section {
-	height: 300px;
+	height: 250px;
 }
 
 .site-breadcrumb {
