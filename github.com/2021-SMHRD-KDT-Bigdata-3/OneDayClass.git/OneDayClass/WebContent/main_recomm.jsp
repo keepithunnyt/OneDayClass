@@ -36,8 +36,6 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -277,7 +275,6 @@
 							<div class="course-author">
 								
 								<div class="ca-pic set-bg" data-setbg= <%=arr2.get(i).getIcon() %>></div>
-								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>
 								
 								<p><%=t_dao.who(arr2.get(i).getTeacher_id()) %><br> <span><%=arr2.get(i).getTime() %></span></p>
 								
