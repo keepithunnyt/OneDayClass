@@ -47,13 +47,12 @@
 						</form>
 						</div>
 						<form action="TEACHERS_update" class="contact-form">
-							<h4>개인 정보</h4>
-							<br> <input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id">
-							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
-							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
-							<input type="text" class="tel" value=<%= teacher.getTel() %> name="tel"> 
+							<h5>아이디</h5><input disabled="disabled" type="text" class="id" value=<%=teacher.getTeacher_id() %> name="id">
+							<h5>비밀번호</h5><input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
+							<h5>이름</h5><input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
+							<h5>전화번호</h5><input type="text" class="tel" value=<%= teacher.getTel() %> name="tel"> 
 						</form>
-						<br><br> 
+						<br><br>
 					<h4>강좌 정보</h4>
 					<br>
 					<table style="width:660px;">
@@ -96,14 +95,14 @@
             </tbody>
         </table>
         </div>
-
 		<div style="text-align: center;">
         <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">&nbsp;
-							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> &nbsp;
-							 <input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
+							 <input type="submit" class="site-btn3" id="edit" value="수정 완료"> &nbsp;
+							 <input type="button" class="site-btn3" id="main" value="메인으로" onClick="location.href='main.jsp'">
 					</div>
 					</div>
 				</div>
-	</section>
+				</div>
+				</section>
 </body>
 </html>
