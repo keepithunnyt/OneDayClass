@@ -380,7 +380,6 @@
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".recomm">추천</li>
 				<li class="control" data-filter=".arts">공예</li>
 				<li class="control" data-filter=".medias">사진</li>
 				<li class="control" data-filter=".sport">운동</li>

@@ -69,7 +69,7 @@
 	
 %>
 
-<form action="ENROL_insert">
+<form action="main.jsp" method="post">
 <br>
 <div class="home">
 <a href="main.jsp"><img style="width:60px; height:60px;" class = "home-logo" src="img/home_btn.png"></a>
@@ -128,15 +128,30 @@
 	</tr>
 	<tr></tr>
 	<tr><td colspan = "2" align = "center">
-	<input type="submit" class="site-btn" name="apply" value="클래스 신청하기" >
+	<input type="button" class="site-btn" name="apply" value="클래스 신청하기" >
 	
 	</td></tr> 
 	</table>
 </div>
 
 </form>
+	<script src="js/jquery-3.6.0.js"></script>
 	<script>
-		// 클래스 신청버튼 클릭-> 로그인중이면 DB에 강의 집어넣기 아니면 로그인하게하기
+		$('input:button').on('click', function(){
+			
+			$.ajax({
+				url:"ENROL_insert",
+				type : 'POST',
+				data : {
+					'class_id' : <%=class_id %>
+				},
+				success : function(){
+					alert('수강신청 완료');
+					window.location.href =  'main.jsp';
+				}
+			});
+			
+		});
 	</script>
 </body>
 </html>

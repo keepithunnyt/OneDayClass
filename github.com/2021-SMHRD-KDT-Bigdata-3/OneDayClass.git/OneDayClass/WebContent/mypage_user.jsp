@@ -101,6 +101,7 @@ color:#0D3B66;
 				<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'">
 				</div>
 				</section>
+				
 </body>
 </html>
 </html>
