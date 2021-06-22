@@ -116,6 +116,7 @@
 		<td colspan = "2" style = "font-weight: 800;">°­ÁÂ ¼Ò°³</td>
 		
 	</tr>
+	<br>
 	<tr><td colspan = "2"><%=content %></td></tr>
 
 	<tr align="center" bgcolor="white" style = "font-weight: 800;">

@@ -62,7 +62,8 @@
       30% {opacity:0;}
       100% {opacity:0;}
     }
-
+.course-item .course-info .course-author {
+border-top:1px solid #FEA698;
 	</style>
 
 </head>
@@ -87,10 +88,6 @@
 
 		ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
 	
-		
-
-
-
 	%>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -245,12 +242,12 @@
 							<%--<div class="price" ></div> --%>
 						</div>
 						</a>
-						<div class="course-info">
-							<div class="course-text">							
+						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white">
+							<div class="course-text"  style="background: white;">							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
-							<div class="course-author">								
+							<div class="course-author"  style="background: white;">								
 								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
 							</div>
@@ -402,8 +399,8 @@
 						<div class="price"></div>
 					</div>
 					<div class="row">
-						<div class="col-lg-6 offset-lg-6 pl-0">
-							<div class="course-info">
+						<div class="col-lg-6 offset-lg-6 pl-0" >
+							<div class="course-info" style="background: white; border:3px solid #FEA698; border-left:1px solid white;">
 								<div class="course-text">
 									<div class="fet-note">추천 강좌</div>
 									<h5>하형이와 함께하는 즐거운 크롤링</h5>
@@ -424,7 +421,7 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-6 pr-0">
-							<div class="course-info">
+							<div class="course-info" style="background: white; border:3px solid #FEA698; border-right:1px solid white;  border-bottom:none;">
 								<div class="course-text">
 									<div class="fet-note">추천 강좌</div>
 									<h5>현진이와 함께하는 하드 코딩</h5>
