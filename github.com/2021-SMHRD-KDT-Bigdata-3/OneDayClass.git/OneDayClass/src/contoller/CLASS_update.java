@@ -31,7 +31,7 @@ public class CLASS_update extends HttpServlet {
 				String place = request.getParameter("place");
 				String category = request.getParameter("category");
 				String image = request.getParameter("image");
-				
+				String icon =  request.getParameter("icon");
 				
 				
 				//수정해야할 사용자의 정보를 알기위해 세션값 가져오기
@@ -43,7 +43,7 @@ public class CLASS_update extends HttpServlet {
 				
 				if(cnt>0){
 					System.out.println("클래스 수정 성공");
-					CLASSDTO c_dto2 =new CLASSDTO(c_dto.getId(),c_dto.getTeacher_id(), title, content,time, place,  category, image);
+					CLASSDTO c_dto2 =new CLASSDTO(c_dto.getId(),c_dto.getTeacher_id(), title, content,time, place,  category, image, icon);
 					session.setAttribute("CLASS", c_dto2);				
 					response.sendRedirect("main.jsp");
 					

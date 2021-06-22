@@ -8,12 +8,15 @@
 <html>
 <head>
 <meta charset="EUC-KR">
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style2.css" />
+	<link rel="stylesheet" href="css/style3.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/owl.carousel.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/style2.css" />
-	<link rel="stylesheet" href="css/style3.css" />
+	
 <title>Insert title here</title>
 <style>
 		.tabletwo > table tr{
@@ -61,6 +64,7 @@
 	int class_id = Integer.parseInt(request.getParameter("class_id"));
 	TEACHERSDAO t_dao = new TEACHERSDAO();
 	CLASSDTO c_dto = c_dao.allselect(class_id);
+	
 	//CLASSDTO c_dto = new CLASSDTO(1, "1", "안현진", "내용", "시간", "비용", "카테고리", "이미지");
 	request.setAttribute("class_id", c_dto.getId());
 %>
@@ -88,6 +92,14 @@
 
 	<tr>
 	<th class ='title' colspan = '2'><%=c_dto.getTitle() %></th>
+	</tr>
+	<tr>
+	<td style="width: 300px;"></td>
+	
+	<td><div align="right" class="ca-pic set-bg" data-setbg= <%=c_dto.getIcon() %> style="width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-image: url(<%=c_dto.getIcon() %>); display: inilne; margin-left:auto"></div></td>
 	</tr>
 	
 	<tr align="right" bgcolor="white">

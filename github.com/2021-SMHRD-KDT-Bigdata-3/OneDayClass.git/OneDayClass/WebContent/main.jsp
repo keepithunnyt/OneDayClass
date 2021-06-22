@@ -251,7 +251,7 @@
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
 							<div class="course-author">								
-								<div></div>								
+								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
 							</div>
 						</div>

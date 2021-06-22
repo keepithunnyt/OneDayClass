@@ -174,7 +174,8 @@ public class CLASSDAO {
 						rs.getString("time"),
 						rs.getString("price"),
 						rs.getString("category"),
-						rs.getString("image"));
+						rs.getString("image"),
+						rs.getString("icon"));
 				classArray.add(classDto);
 			}
 
@@ -209,9 +210,10 @@ public class CLASSDAO {
 				String get_price = rs.getString("price");
 				String get_category = rs.getString("category");
 				String get_image = rs.getString("image");
+				String get_icon = rs.getString("icon");
 
 				dto = new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
-						get_image);
+						get_image, get_icon);
 			}
 		} catch (Exception e) {
 			System.out.println("클래스 정보 가져오기 실패");
@@ -243,8 +245,11 @@ public class CLASSDAO {
 				String get_category = rs.getString("category");
 				String get_image = rs.getString("image");
 
+				String get_icon = rs.getString("icon");
+
+
 				arr.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
-						get_image));
+						get_image, get_icon));
 			}
 		} catch (Exception e) {
 			System.out.println("못가져옴");
@@ -281,9 +286,9 @@ public class CLASSDAO {
 					String get_price = rs.getString("price");
 					String get_category = rs.getString("category");
 					String get_image = rs.getString("image");
-
+					String get_icon = rs.getString("image");
 					arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
-							get_image));
+							get_image, get_icon));
 				}
 			} catch (Exception e) {
 				System.out.println("가져오기 실패");
@@ -320,9 +325,9 @@ public class CLASSDAO {
 							String get_price = rs.getString("price");
 							String get_category = rs.getString("category");
 							String get_image = rs.getString("image");
-
+							String get_icon = rs.getString("icon");
 							arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
-									get_image));
+									get_image, get_icon));
 						}
 					} catch (Exception e) {
 						System.out.println("가져오기 실패");
@@ -358,9 +363,9 @@ public class CLASSDAO {
 							String get_price = rs.getString("price");
 							String get_category = rs.getString("category");
 							String get_image = rs.getString("image");
-
+							String get_icon = rs.getString("icon");
 							arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
-									get_image));
+									get_image,get_icon));
 						}
 					} catch (Exception e) {
 						System.out.println("가져오기 실패");
@@ -396,9 +401,9 @@ public class CLASSDAO {
 							String get_price = rs.getString("price");
 							String get_category = rs.getString("category");
 							String get_image = rs.getString("image");
-
+							String get_icon = rs.getString("icon");
 							arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
-									get_image));
+									get_image, get_icon));
 						}
 					} catch (Exception e) {
 						System.out.println("가져오기 실패");
