@@ -121,7 +121,7 @@ color:#0D3B66;
             </tbody>
         </table>
         <br>
-		<form action="delete_page.jsp" method="post">
+		<form action="delete_teacher.jsp" method="post">
 		<input type="button" class="site-btn4" id="main" value="¸ÞÀÎÀ¸·Î" onClick="location.href='main.jsp'" style="margin: auto; left:180px;">
 		<input type="submit" class="site-btn4" value="È¸¿ø Å»Åð" style="margin: auto; left:180px;">
 		</form>
