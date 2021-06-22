@@ -483,9 +483,9 @@ left: 50%;
 							</tr>
 							<br>
 							</table>
-							<div class="btn" style="margin: auto; left:50%;">
-							<input type="submit" class="site-btn4" id="write" value="작성 완료" align="center"> &nbsp;
+							<div class="btn" style="margin: auto;">
 							<input type="button" class="site-btn4" id="main" value="메인으로" align="center" onClick="location.href='main.jsp'">
+							<input type="submit" class="site-btn4" id="write" value="작성 완료" align="center">
 							</div> 	 
 							</form>
 							 

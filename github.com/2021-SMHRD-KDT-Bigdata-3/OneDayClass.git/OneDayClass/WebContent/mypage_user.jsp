@@ -48,11 +48,6 @@ color:#0D3B66;
 							<h2>개인정보 수정</h2>
 							<p>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</p>
 						</div>
-				<form action="delete_page.jsp" method="post">
-				<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto; left:60%">
-				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:60%">
-				</form>
-				<br>
 						<form action="USERS_update" class="contact-form" style="width:680px;"> 
 							<h3>수강생 정보</h3>
 							<br>
@@ -72,10 +67,9 @@ color:#0D3B66;
 							<h5>주소</h5>
 							<input type="text" class="address" value="<%=user.getAddress() %>" name="address" style="width:595px;">  <br> 
 							 <div style="margin: auto; width: 50%;">
-				<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:25%">
-				&nbsp;
-				
-				</div>
+							 <input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto;">
+							<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto;">
+							</div>
 								</form>
 								<br>
 							<h3>수강 중인 강좌</h3>
@@ -113,7 +107,11 @@ color:#0D3B66;
        			</table>
 				</div>
 				<br>
-				<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
+				<form action="delete_page.jsp" method="post">
+				<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto;">
+				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto;">
+				</form>
+				
 				<br>
 				</section>
 </body>
