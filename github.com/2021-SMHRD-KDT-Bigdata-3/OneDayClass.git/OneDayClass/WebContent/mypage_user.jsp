@@ -48,6 +48,7 @@ color:#0D3B66;
 							<h2>개인정보 수정</h2>
 							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
 						</div>
+
 				<form action="delete_page.jsp" method="post">
 				<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto; left:60%">
 				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:60%">
@@ -80,6 +81,8 @@ color:#0D3B66;
 					
 							</div>
 					</form>
+
+
 								<br>
 							<h3>수강 중인 강좌</h3>
 							<br>
@@ -114,13 +117,15 @@ color:#0D3B66;
                 </tr>
                 </tbody>
        			</table>
-       			
-
 				</div>
 				<br>
-
-				</section>
+				<form action="delete_page.jsp" method="post">
+				<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto;">
+				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto;">
+				</form>
 				
+				<br>
+				</section>
 </body>
 </html>
 </html>
