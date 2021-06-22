@@ -19,7 +19,13 @@ color:#0D3B66;
 font-family:'NanumSquareRound';
 color:#0D3B66;
 }
-
+		.table2{
+			width:578px;
+			border: 2px solid #FEA698;
+			border-collapse: separate;
+			border-radius: 12px;
+			padding:10px;
+		}
 
 </style>
 <head>
@@ -46,6 +52,7 @@ color:#0D3B66;
 					<div class="contact-form-warp">
 						<div class="section-title text-white text-left">
 							<h2>개인정보 수정</h2>
+<<<<<<< HEAD
 							<p><h6>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</h6></p>
 						</div>
 				<form action="delete_page.jsp" method="post">
@@ -79,9 +86,41 @@ color:#0D3B66;
 								</form>
 								<br>
 							<h4>수강 중인 강좌</h4>
+=======
+							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
+							</div>
+							<form action="USERS_update" class="contact-form" style="width:680px;"> 
+							<table class="table1" style="width: 500px">
+							<tr><td colspan='2'><h3>수강생 정보</h3></td></tr>
+							<tr height="20px"></tr>
+							<tr><td><h5>아이디</h5></td><td><h5>비밀번호</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td><input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id" style="width:290px;"> </td>
+								<td><input type="password" class="pw" value=<%=user.getPw() %> name="pw" style="width:290px;"></td>
+							</tr>
+							<tr></tr>	
+							<tr><td><h5>이름</h5></td><td><h5>전화번호</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td><input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;"></td>
+								<td><input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;"></td>
+							</tr>
+							<tr><td colspan='2'><h5>주소</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td colspan='2'><input type="text" class="address" value="<%=user.getAddress() %>" name="address" style="width:595px;"></td></tr>
+															
+
+							</table>
+							<div style="margin: auto; width: 50%;">
+								<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:20px;">
+								<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto; left:20px;">
+					
+							</div>
+					</form>
+					<br>
+							<h3>수강 중인 강좌</h3>
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 							<br>
-					<div class="tableone">
-					<table width="567px">
+					<table class="table2" style="width:660px;">
                    	<thead>
                     <tr align="center" bgcolor="white" style="font-size: 15px;">
                     <th>강사 이름</th>
@@ -111,13 +150,15 @@ color:#0D3B66;
                 </tr>
                 </tbody>
        			</table>
-       			
-
+       			<br>
+				<form action="delete_page.jsp" method="post">
+				<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto; left:210px;">
+				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:210px;">
+				</form>
 				</div>
-				<br>
-
+				</div>
+				</div>
+				</div>
 				</section>
-				
 </body>
-</html>
 </html>

@@ -23,7 +23,7 @@
 							<br> <input type="password" class="pw" name="id" value=<%=teacher.getTeacher_id() %>>
 							<h3>비밀번호를 입력해주세요</h3>
 							<br> <input type="password" class="pw" name="pw">
-							<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
+							<input type="button" class="site-btn4" id="main" value="뒤로 가기" onClick="location.href='mypage_teacher.jsp'">
 							<input type="submit" class="site-btn4"  value="회원 탈퇴">
 							<br><br> 	
 						</form>							

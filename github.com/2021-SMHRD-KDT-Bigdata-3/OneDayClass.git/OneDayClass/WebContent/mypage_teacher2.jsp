@@ -30,7 +30,7 @@
 						<br>
 						<select name="category" style="width:250px; height:50px;">
                         <option value="category">개설할 강좌 종류</option>
-                        <option value="sports">운동</option>
+                        <option value="sport">운동</option>
                         <option value="food">요리</option>
                         <option value="certification">자격증</option>
                         <option value="music">음악</option>

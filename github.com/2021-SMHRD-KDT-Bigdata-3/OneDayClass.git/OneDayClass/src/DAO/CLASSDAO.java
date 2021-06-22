@@ -51,13 +51,13 @@ public class CLASSDAO {
 
 	// 회원가입
 	public int insert_class(String teacher_id, String title, String content, String time, String price, String category,
-			String image) {
+			String image, String icon) {
 
 		// 런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 		try {
 			conn();
 			// sql 작성
-			String sql = "insert into class values(CLASS_CID_SEQ.Nextval,?,?,?,?,?,?,?)";
+			String sql = "insert into class values(CLASS_CID_SEQ.Nextval,?,?,?,?,?,?,?,?)";
 
 			// PreparedStatement 객체 생성
 			pst = conn.prepareStatement(sql);
@@ -70,6 +70,7 @@ public class CLASSDAO {
 			pst.setString(5, price);
 			pst.setString(6, category);
 			pst.setString(7, image);
+			pst.setString(8, icon);
 
 			// sql문 실행
 			cnt = pst.executeUpdate();
