@@ -18,11 +18,8 @@
 	<link rel="stylesheet" href="css/style3.css" />
 	
 	<style>
-		.tableone > table tr{
-			height: 30px;
-		}
-		.tableone > table{
-			width:600px;
+		table{
+			width:578px;
 			border: 2px solid #FEA698;
 			border-collapse: separate;
 			border-radius: 12px;
@@ -44,6 +41,10 @@
 						<div class="section-title text-white" >
 							<h2>개인정보 수정</h2>
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
+							<br><br>
+						<form action="delete_teacher.jsp" method="post" style="margin: auto; left:80%;">
+						<input type="submit" class="site-btn4" value="회원탈퇴">
+						</form>
 						</div>
 						<form action="TEACHERS_update" class="contact-form">
 							<h4>개인 정보</h4>
@@ -51,18 +52,16 @@
 							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
 							<input type="text" class="tel" value=<%= teacher.getTel() %> name="tel"> 
-							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> 
-							 <input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
-								<br><br><br><br>
+						</form>
+						<br><br> 
 					<h4>강좌 정보</h4>
 					<br>
-					<div class="tableone">
-					<table>
+					<table style="width:660px;">
                     <thead>
-                    <tr align="center" bgcolor="white" color="">
-                    <th>아이디</th>
+                    <tr align="center" bgcolor="white" style="font-size:16px;">
+                    <th style="width:50px;">아이디</th>
                     <th>제목</th>
-                    <th>카테고리</th>
+                    <th style="width:80px;">카테고리</th>
                     <th>가격</th>
                     <th></th>
                		</tr>
@@ -86,26 +85,23 @@
                 <%if(classArray != null) {%>
                 <%for(int i = 0; i < classArray.size(); i++){ %>
                 	
-               		<tr align="center" bgcolor="white">
+               		<tr align="center" bgcolor="white" style="font-size:18px;">
                     <td> <%=classArray.get(i).getId() %> </td>
                     <td> <%=classArray.get(i).getTitle() %> </td>
                     <td> <%=classArray.get(i).getCategory() %></td> 
               	    <td> <%=classArray.get(i).getPrice() %></td>
                     <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
                 </tr>
-                	
                 <%} }%>
             </tbody>
         </table>
         </div>
-         <br>
-        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">
-     
-							
-						</form>
-						<form action="delete_teacher.jsp" method="post">
-						<input type="submit" class="site-btn4" value="회원탈퇴">
-						</form>
+
+		<div style="text-align: center;">
+        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">&nbsp;
+							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> &nbsp;
+							 <input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
+					</div>
 					</div>
 				</div>
 	</section>
