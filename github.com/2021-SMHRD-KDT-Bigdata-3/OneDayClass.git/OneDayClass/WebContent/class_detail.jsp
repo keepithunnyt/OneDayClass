@@ -84,7 +84,7 @@
 </colgroup>
 	<tr>
 	<td colspan = '2'>
-	<img alt="¹º°¡ ¾ÈµÆÀ½" src=<%=c_dto.getImage() %>></td>
+	<img style="border:2px solid indianred;" alt="¹º°¡ ¾ÈµÆÀ½" src=<%=c_dto.getImage() %>></td>
 	</tr>
 
 	<tr bgcolor="white">
