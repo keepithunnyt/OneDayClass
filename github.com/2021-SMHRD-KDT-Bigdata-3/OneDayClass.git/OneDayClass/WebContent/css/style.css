@@ -600,7 +600,7 @@ ol {
 .search-section.ss-other-page .course-search-form input[type=text]:focus,
 .search-section.ss-other-page .course-search-form select[name=search1]:focus,
 .search-section.ss-other-page .course-search-form input[type=submit] {
-	border-bottom: none;
+	/*border-bottom: none;*/
 }
 .search-section> .container> .row {  justify-content: center;
 }
