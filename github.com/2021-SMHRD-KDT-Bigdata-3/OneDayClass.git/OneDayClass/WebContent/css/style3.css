@@ -146,7 +146,9 @@
   }
   
   .tableone{
-  border-radius:9px;
+  border-radius:12px;
+  border:2px solid #FEA698;
+  font-family:'NanumSquareRound';
   }
   
   .input-file-btn{
