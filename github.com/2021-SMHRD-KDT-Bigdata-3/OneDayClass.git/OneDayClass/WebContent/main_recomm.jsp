@@ -36,8 +36,6 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -261,8 +259,6 @@
 			<div class="row course-items-area" >
 			<%if(arr2 != null){ %>
 				<%for(int i = 0; i < arr2.size(); i++){  %>
-				
-				
 				<!-- course -->
 				 <%String url = "class_detail.jsp?class_id=" + Integer.toString(arr2.get(i).getId());%>
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr2.get(i).getCategory() %>">
@@ -274,15 +270,11 @@
 							<div class="course-text">
 							
 							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
-							
-							
-								
 								<div class="students"><%=arr2.get(i).getPrice() %></div>
 							</div>
 							<div class="course-author">
 								
-								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>
-								
+								<div class="ca-pic set-bg" data-setbg= <%=arr2.get(i).getIcon() %>></div>
 								
 								<p><%=t_dao.who(arr2.get(i).getTeacher_id()) %><br> <span><%=arr2.get(i).getTime() %></span></p>
 								
@@ -293,6 +285,7 @@
 				<%} %>
 				<%} %>
 			</div>
+	</div>
 			</div>
 			
 	
