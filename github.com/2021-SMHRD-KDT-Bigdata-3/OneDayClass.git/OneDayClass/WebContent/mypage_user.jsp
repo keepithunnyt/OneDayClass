@@ -111,13 +111,11 @@ color:#0D3B66;
                 </tr>
                 </tbody>
        			</table>
-       			
-
 				</div>
 				<br>
-
+				<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
+				<br>
 				</section>
-				
 </body>
 </html>
 </html>
