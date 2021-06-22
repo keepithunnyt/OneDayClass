@@ -4,8 +4,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style2.css" />
+	<link rel="stylesheet" href="css/style3.css" />
 </head>
 <body> 
 <% TEACHERSDTO teacher = (TEACHERSDTO)session.getAttribute("login"); %>
