@@ -192,10 +192,10 @@
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
 						<select name="search1" style="width: 150px; height: 50px;">
-								<option value="select">항목 선택</option>
-								<option value="title" >제목</option>
-								<option value="content" >내용</option>
-								<option value="teacher" >강사</option>
+								<option value="항목 선택">항목 선택</option>
+								<option value="제목">제목</option>
+								<option value="내용">내용</option>
+								<option value="강사">강사</option>
 						</select>
 			
 						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search" >

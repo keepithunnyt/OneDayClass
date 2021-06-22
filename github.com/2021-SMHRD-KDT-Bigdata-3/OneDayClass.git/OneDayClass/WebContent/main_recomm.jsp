@@ -229,13 +229,13 @@
 					search2_ = search2;
 				System.out.println(search2_);
 				
-		if(search1_.equals("title")){			
+		if(search1_.equals("제목")){			
 			arr2 = c_dao.title_select(search2_);			
-		}else if(search1_.equals("content")){
+		}else if(search1_.equals("내용")){
 			arr2 = c_dao.content_select(search2_);			
-		}else if(search1_.equals("teacher")){
+		}else if(search1_.equals("강사")){
 			arr2 = c_dao.teacher_select(search2_);			
-		}else if(search1_.equals("select")){
+		}else if(search1_.equals("항목 선택")){
 			response.sendRedirect("main.jsp");
 			System.out.println("메인페이지로 이동됨");
 		}
@@ -350,21 +350,21 @@
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1" style="text-align:center;">
 						<!-- search form -->
-						<h2><span>"${param.search2 }"(으)로 입력한 결과입니다</span></h2>
+						<h2><span>"${param.search1 }" / "${param.search2 }"(으)로 입력한 결과입니다</span></h2>
 						<br><br>
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-							<select name="search1" style="width: 150px; height: 40px;">
-								<option value="select">항목 선택</option>
-								<option value="title">제목</option>
-								<option value="content">내용</option>
-								<option value="teacher" >강사</option>
+							<select name="search1" style="width: 150px; height: 50px;">
+								<option value="항목 선택">항목 선택</option>
+								<option value="제목">제목</option>
+								<option value="내용">내용</option>
+								<option value="강사" >강사</option>
 							</select>
-							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 40px;" value="${param.search2 }" class = "search"/>
+							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 50px;" value="${param.search2 }" class = "search"/>
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->
 							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
-							<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 40px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
+							<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
 						</form>
 						</td></tr>
 						</table>

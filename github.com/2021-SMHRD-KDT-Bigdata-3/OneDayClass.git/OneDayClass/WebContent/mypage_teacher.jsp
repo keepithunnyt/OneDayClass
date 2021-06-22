@@ -97,8 +97,8 @@
         </div>
 		<div style="text-align: center;">
         <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">&nbsp;
-							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> &nbsp;
-							 <input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
+							 <input type="submit" class="site-btn3" id="edit" value="수정 완료"> &nbsp;
+							 <input type="button" class="site-btn3" id="main" value="메인으로" onClick="location.href='main.jsp'">
 					</div>
 					</div>
 				</div>
