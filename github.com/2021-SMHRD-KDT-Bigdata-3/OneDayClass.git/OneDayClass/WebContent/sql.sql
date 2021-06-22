@@ -80,3 +80,9 @@ N_CONTENT VARCHAR(2000),
 DATES DATE DEFAULT SYSDATE,
 CONSTRAINT notice_nnum_pk PRIMARY KEY(NUM)
 )
+
+
+
+select * from class;
+select * from users;
+select * from REVIEW;

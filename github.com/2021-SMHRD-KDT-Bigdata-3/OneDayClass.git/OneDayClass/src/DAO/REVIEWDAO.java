@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 import DTO.REVIEWDTO;
 
@@ -47,21 +48,22 @@ public class REVIEWDAO {
 		}//메소드끝		
 		
 		//회원가입 
-		public int insert_review(String id, int rating, String comm) {
+		public int insert_review(String id,int class_id , int rating, String comm) {
 		
 			//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 			try{
 				conn();
 				//sql 작성
-				String sql="insert into review(ID, rating, comm) values (?,CLASS_CID_SEQ.Nextval,?,?,sysdate)";
+				String sql="insert into review values (?,?,?,?,sysdate)";
 				
 				//PreparedStatement 객체 생성
 				pst = conn.prepareStatement(sql);
 				
 				//바인드 변수(?) 채우기
 				pst.setString(1,id);
-				pst.setInt(2,rating);
-				pst.setString(3,comm);
+				pst.setInt(2,class_id);
+				pst.setInt(3,rating);				
+				pst.setString(4,comm);
 				
 				
 				//sql문 실행
@@ -77,37 +79,38 @@ public class REVIEWDAO {
 		}// 메소드끝		
 		
 		// 로그인 리뷰 보기 나중
-//				public REVIEWDTO login(String id, String pw) {
-//
-//					try {
-//						conn();
-//
-//						String sql = "select * from REVIEW where id=? and pw=?";
-//
-//						pst = conn.prepareStatement(sql);
-//
-//						pst.setString(1, id);
-//						pst.setString(2, pw);
-//
-//						rs = pst.executeQuery();
-//						if (rs.next()) {
-//							String get_id = rs.getString("id");
-//							String get_pw = rs.getString("pw");
-//							String get_name = rs.getString("name");
-//							String get_address = rs.getString("address");
-//							String get_recomm = rs.getString("recomm");
-//							
-//							
-//							dto = new USERSDTO(get_id, get_pw, get_name, get_address ,get_recomm);
-//						}
-//					} catch (Exception e) {
-//						System.out.println("로그인 실패");
-//						e.printStackTrace();
-//					} finally {
-//						close();
-//					}
-//					return dto;
-//				}	
+				public ArrayList<REVIEWDTO> review_select(int class_id) {
+					ArrayList<REVIEWDTO> arr = new ArrayList<REVIEWDTO>();
+					try {
+						conn();
+
+						String sql = "select * from REVIEW where class_id=? ";
+
+						pst = conn.prepareStatement(sql);
+
+						pst.setInt(1, class_id);
+						
+
+						rs = pst.executeQuery();
+						while (rs.next()) {
+							String get_id = rs.getString("id");
+							int get_class_id = rs.getInt("class_id");
+							int get_rating = rs.getInt("rating");
+							String get_comm = rs.getString("comm");
+							String get_dates = rs.getString("dates");
+							
+							
+							dto = new REVIEWDTO(get_id, get_class_id, get_rating, get_comm, get_dates);
+							arr.add(dto);
+						}
+					} catch (Exception e) {
+						System.out.println("로그인 실패");
+						e.printStackTrace();
+					} finally {
+						close();
+					}
+					return arr;
+				}	
 
 				
 				// 리뷰 삭제 delect 메소드

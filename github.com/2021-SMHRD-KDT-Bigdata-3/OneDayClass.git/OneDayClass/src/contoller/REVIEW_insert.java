@@ -17,22 +17,32 @@ import DAO.REVIEWDAO;
 public class REVIEW_insert extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("euc-kr");
+//		request.setCharacterEncoding("euc-kr");
+		request.setCharacterEncoding("utf-8");
 
 		String id = request.getParameter("id");
+		System.out.println(id);
 		int rating = Integer.parseInt(request.getParameter("rating"));
+		//int rating = Integer.parseInt(request.getParameter("rating"));
+		System.out.println(rating);
 		String comm = request.getParameter("comm");
+		System.out.println(comm);
+		int class_id = Integer.parseInt(request.getParameter("class_id"));
+		System.out.println(class_id);
+		
+		
 		
 		
 		int cnt = 0;
 
 		
 		REVIEWDAO r_dao = new REVIEWDAO();
-		cnt = r_dao.insert_review(id, rating, comm);
+		cnt = r_dao.insert_review(id,class_id ,rating, comm);
 
 		if (cnt > 0) {
-			System.out.println("회원가입 성공!");
+			//System.out.println("회원가입 성공!");
 			request.setAttribute("id", id);
+			request.setAttribute("class_id", class_id);
 			request.setAttribute("rating", rating);
 			request.setAttribute("comm", comm);
 			
@@ -40,12 +50,13 @@ public class REVIEW_insert extends HttpServlet {
 
 			// 로그인 페이지로 이동
 			//등록한페이지로 이동해야함
-			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
-			rd.forward(request, response);
-
+			RequestDispatcher rd = request.getRequestDispatcher("star.jsp");
+			//rd.forward(request, response);
+			System.out.println("db에 들어감");
 		}else {
 			//등록실패한 페이지로 이동해야함
-			response.sendRedirect("main.jsp");
+			response.sendRedirect("star.jsp");
+			System.out.println("안들감");
 		}
 	}
 
