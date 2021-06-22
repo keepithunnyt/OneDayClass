@@ -95,7 +95,6 @@
     background-position: left;
     background-size: 200%;
     color:#0D3B66;
-    font-weight: bold;
     border:3px solid #FEA698;
     cursor:pointer;
     transition: 0.4s;
@@ -103,7 +102,7 @@
     border-radius: 12px;
     font-family:'NanumSquareRound';
    	font-size:16px;
-   	font-weight:600;
+   	font-weight:800;
   }
   
   .submit:hover {

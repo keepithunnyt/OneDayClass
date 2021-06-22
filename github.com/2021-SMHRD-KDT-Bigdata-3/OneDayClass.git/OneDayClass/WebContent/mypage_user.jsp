@@ -15,11 +15,7 @@ color:#0D3B66;
 font-family:'NanumSquareRound';
 color:#0D3B66;
 }
-.div{
-margin: auto;
 
-   width: 50%;
-}
 
 </style>
 <head>

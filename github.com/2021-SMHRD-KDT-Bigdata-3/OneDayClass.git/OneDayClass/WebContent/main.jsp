@@ -62,6 +62,7 @@
       30% {opacity:0;}
       100% {opacity:0;}
     }
+
 	</style>
 
 </head>
@@ -196,8 +197,8 @@
 								<option value="content" >내용</option>
 								<option value="teacher" >강사</option>
 						</select>
-
-						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search">
+			
+						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search" >
 
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
 						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
