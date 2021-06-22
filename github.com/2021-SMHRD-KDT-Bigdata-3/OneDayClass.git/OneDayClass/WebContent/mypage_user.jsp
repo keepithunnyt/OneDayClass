@@ -46,37 +46,40 @@ color:#0D3B66;
 					<div class="contact-form-warp">
 						<div class="section-title text-white text-left">
 							<h2>개인정보 수정</h2>
-							<p>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</p>
+							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
 						</div>
 				<form action="delete_page.jsp" method="post">
 				<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto; left:60%">
 				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:60%">
 				</form>
 				<br>
-						<form action="USERS_update" class="contact-form" style="width:680px;"> 
-							<h3>수강생 정보</h3>
-							<br>
-							<h5>아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호</h5>
-							<input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id" style="width:290px;"> 
-							&nbsp;
-							<input type="password" class="pw" value=<%=user.getPw() %> name="pw" style="width:290px;">
-							<h5>이름&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							&nbsp;&nbsp;&nbsp;전화번호</h5>
-							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;">
-							&nbsp;
-							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;">
-							<h5>주소</h5>
-							<input type="text" class="address" value="<%=user.getAddress() %>" name="address" style="width:595px;">  <br> 
-							 <div style="margin: auto; width: 50%;">
-				<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:25%">
-				&nbsp;
-				
-				</div>
-								</form>
+					<form action="USERS_update" class="contact-form" style="width:680px;"> 
+							<table style="width: 500px">
+							<tr><td colspan='2'><h3>수강생 정보</h3></td></tr>
+							<tr height="20px"></tr>
+							<tr><td><h5>아이디</h5></td><td><h5>비밀번호</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td><input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id" style="width:290px;"> </td>
+								<td><input type="password" class="pw" value=<%=user.getPw() %> name="pw" style="width:290px;"></td>
+							</tr>
+							<tr></tr>	
+							<tr><td><h5>이름</h5></td><td><h5>전화번호</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td><input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;"></td>
+								<td><input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;"></td>
+							</tr>
+							<tr><td colspan='2'><h5>주소</h5></td></tr>
+							<tr height="10px"></tr>
+							<tr><td colspan='2'><input type="text" class="address" value="<%=user.getAddress() %>" name="address" style="width:595px;"></td></tr>
+															
+
+							</table>
+							<div style="margin: auto; width: 50%;">
+								<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:25%">
+					
+					
+							</div>
+					</form>
 								<br>
 							<h3>수강 중인 강좌</h3>
 							<br>
