@@ -18,10 +18,7 @@
 	<link rel="stylesheet" href="css/style3.css" />
 	
 	<style>
-		.tableone > table tr{
-			height: 20px;
-		}
-		.tableone > table{
+		table{
 			width:578px;
 			border: 2px solid #FEA698;
 			border-collapse: separate;
@@ -55,16 +52,16 @@
 							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
 							<input type="text" class="tel" value=<%= teacher.getTel() %> name="tel"> 
-								<br><br>
+						</form>
+						<br><br> 
 					<h4>강좌 정보</h4>
 					<br>
-					<div class="tableone">
-					<table>
+					<table style="width:660px;">
                     <thead>
-                    <tr align="center" bgcolor="white" color="">
-                    <th>아이디</th>
+                    <tr align="center" bgcolor="white" style="font-size:16px;">
+                    <th style="width:50px;">아이디</th>
                     <th>제목</th>
-                    <th>카테고리</th>
+                    <th style="width:80px;">카테고리</th>
                     <th>가격</th>
                     <th></th>
                		</tr>
@@ -88,7 +85,7 @@
                 <%if(classArray != null) {%>
                 <%for(int i = 0; i < classArray.size(); i++){ %>
                 	
-               		<tr align="center" bgcolor="white">
+               		<tr align="center" bgcolor="white" style="font-size:18px;">
                     <td> <%=classArray.get(i).getId() %> </td>
                     <td> <%=classArray.get(i).getTitle() %> </td>
                     <td> <%=classArray.get(i).getCategory() %></td> 
@@ -98,10 +95,8 @@
                 <%} }%>
             </tbody>
         </table>
-        <br><br><br><br>
         </div>
-		</form>
-		<br><br><br>
+
 		<div style="text-align: center;">
         <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">&nbsp;
 							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> &nbsp;
