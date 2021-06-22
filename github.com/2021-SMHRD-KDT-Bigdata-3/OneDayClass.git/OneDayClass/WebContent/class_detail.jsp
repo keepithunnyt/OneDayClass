@@ -86,7 +86,7 @@
 	<td colspan = '2'>
 	<img alt="¹º°¡ ¾ÈµÆÀ½" src=<%=c_dto.getImage() %>></td>
 	</tr>
-	
+
 	<tr bgcolor="white">
 	<th colspan = '2'><%=c_dto.getCategory() %></th>
 	</tr>
