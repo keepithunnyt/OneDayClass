@@ -67,6 +67,9 @@
 	
 	//CLASSDTO c_dto = new CLASSDTO(1, "1", "안현진", "내용", "시간", "비용", "카테고리", "이미지");
 	request.setAttribute("class_id", c_dto.getId());
+	String content = c_dto.getContent();
+	content = content.replaceAll("\n", "<br>");
+	
 %>
 
 <form action='ENROL_insert' method="post">
@@ -115,7 +118,7 @@
 		<td colspan = "2" style = "font-weight: bold;">강좌 소개</td>
 		
 	</tr>
-	<tr><td colspan = "2"><% out.print(c_dto.getContent()); %></td></tr>
+	<tr><td colspan = "2"><%=content %></td></tr>
 
 	<tr align="center" bgcolor="white">
 		<td style = "font-weight: bold;">시간</td>
