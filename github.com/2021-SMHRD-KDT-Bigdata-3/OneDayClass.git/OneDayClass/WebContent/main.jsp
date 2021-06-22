@@ -258,10 +258,10 @@
 					</div>					
 				</div>
 				<%} %>
+				</div>
 				
-				<!-- course -->
-
-				<!-- course -->
+				<!--  sample course 
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 sports">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
@@ -280,7 +280,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/3.jpg">
@@ -299,7 +299,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 arts">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/4.jpg">
@@ -318,7 +318,7 @@
 						</div> 
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 beautys">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/5.jpg">
@@ -337,7 +337,7 @@
 						</div> 
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 medias">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/6.jpg">
@@ -356,7 +356,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/7.jpg">
@@ -375,7 +375,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- course -->
+				
 				<div class="mix col-lg-3 col-md-4 col-sm-6 etc">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
@@ -393,8 +393,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div>-->
+			
 
 			<div class="featured-courses">
 				<div class="featured-course course-item">
