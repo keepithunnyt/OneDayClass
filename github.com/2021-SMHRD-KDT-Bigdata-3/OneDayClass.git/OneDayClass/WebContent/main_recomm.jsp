@@ -393,10 +393,7 @@
 			<div class="row course-items-area" >
 			<%if(arr2 != null){ %>
 				<%for(int i = 0; i < arr2.size(); i++){  %>
-				
-				
 				<!-- course -->
-				 
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr2.get(i).getCategory() %>">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg=<%=arr2.get(i).getImage() %>>
@@ -406,14 +403,11 @@
 							<div class="course-text">
 							<%String url = "class_detail.jsp?class_id=" + Integer.toString(arr2.get(i).getId());%>
 							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
-							
-							
-								
 								<div class="students"><%=arr2.get(i).getPrice() %></div>
 							</div>
 							<div class="course-author">
 								
-								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div></div>
+								<div class="ca-pic set-bg" data-setbg= <%=arr2.get(i).getIcon() %>></div>
 								
 								
 								<p><%=t_dao.who(arr2.get(i).getTeacher_id()) %><br> <span><%=arr2.get(i).getTime() %></span></p>
@@ -424,9 +418,8 @@
 				</div>
 				<%} %>
 				<%} %>
-
-			
-	
+			</div>
+	</div>
 	</section>
 	<!-- course section end -->
 

@@ -197,8 +197,6 @@
 								<option value="content" >내용</option>
 								<option value="teacher" >강사</option>
 						</select>
-						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search">
-			
 						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search" >
 
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
@@ -242,7 +240,8 @@
 				<!-- course -->				 
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
 					<div class="course-item">
-						<a href=<%=url %> ><div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
+						<a href=<%=url %> >
+						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
 						</div>
 						</a>
