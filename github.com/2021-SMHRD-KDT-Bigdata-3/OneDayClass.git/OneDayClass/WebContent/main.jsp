@@ -163,10 +163,38 @@
 	<div id="slide">
 	<div class="slide">
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><div><table style="max-width: 100%"><tr height="30px"></tr>
+      	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>[원데이/1:1,1:2]거북목,허리통증 언제까지 갖고있을래? 연예인운동 #SNPE</h3></td>
+      	<td width="20%"></td>
+      	<td width="30%"><img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      	<tr height="30px"></tr>
+      </table></div></li>
+      <li><div><table><tr height="30px"></tr>
+      	<tr height="340px"><td></td><td></td><td></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div><table><tr height="30px"></tr>
+       	<tr height="340px"><td></td><td></td><td></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div><table><tr height="30px"></tr>
+      	<tr height="340px"><td></td><td></td><td></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
     </ul>
   </div>
   </div>
