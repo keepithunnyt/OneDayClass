@@ -44,13 +44,13 @@
 	<style>
 	 *{margin:0;padding:0;}
     ul,li{list-style:none;}
-    .slide{height:300px;overflow:hidden;}
+    .slide{height:400px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
     .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
-    .slide li:nth-child(1){background:#faa;animation-delay:0s}
-    .slide li:nth-child(2){background:#ffa;animation-delay:5s}
-    .slide li:nth-child(3){background:#9ee4da;animation-delay:10s}
-    .slide li:nth-child(4){background:#b8b8ff;animation-delay:15s}
+    .slide li:nth-child(1){background: linear-gradient(#05FBFF, #1D62F0); animation-delay:0s}
+    .slide li:nth-child(2){background: linear-gradient(#E4FF14, #FF0000);animation-delay:5s}
+    .slide li:nth-child(3){background: linear-gradient(#B9E609, #00D5FF);animation-delay:10s}
+    .slide li:nth-child(4){background: linear-gradient(#E60909, #B000FF);animation-delay:15s}
     span{
     	font-family:'NanumSquareRound';
     }
