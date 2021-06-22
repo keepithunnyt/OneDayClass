@@ -49,16 +49,30 @@ color:#0D3B66;
 							<p>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</p>
 						</div>
 				<form action="delete_page.jsp" method="post">
-				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:80%">
+				<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto; left:60%">
+				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:60%">
 				</form>
 				<br>
-						<form action="USERS_update" class="contact-form"> 
+						<form action="USERS_update" class="contact-form" style="width:680px;"> 
 							<h3>수강생 정보</h3>
-							<br> <input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id">
-							<input type="password" class="pw" value=<%=user.getPw() %> name="pw">
-							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name"> 
-							<input type="text" class="address" value=<%=user.getAddress() %> name="address"> 
-							 <br><br> 
+							<br>
+							<h5>아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호</h5>
+							<input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id" style="width:290px;">
+							&nbsp;
+							<input type="password" class="pw" value=<%=user.getPw() %> name="pw" style="width:290px;">
+							<h5>이름</h5>
+							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:595px;"> 
+							<h5>주소</h5>
+							<input type="text" class="address" value=<%=user.getAddress() %> name="address" style="width:595px;">  <br> 
+							 <div style="margin: auto; width: 50%;">
+				<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:25%">
+				&nbsp;
+				
+				</div>
+								</form>
+								<br>
 							<h3>수강 중인 강좌</h3>
 							<br>
 					<div class="tableone">
@@ -92,14 +106,11 @@ color:#0D3B66;
                 </tr>
                 </tbody>
        			</table>
-				</form>
+       			
+
 				</div>
 				<br>
-				<div style="margin: auto; width: 50%;">
-				<input type="submit" class="site-btn4" id="edit" value="수정 완료">
-				&nbsp;
-				<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'">
-				</div>
+
 				</section>
 				
 </body>
