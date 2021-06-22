@@ -121,8 +121,13 @@ color:#0D3B66;
             </tbody>
         </table>
         <br>
+<<<<<<< HEAD
 		<form action="delete_page.jsp" method="post">
 		<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto; left:180px;">&nbsp;
+=======
+		<form action="delete_teacher.jsp" method="post">
+		<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto; left:180px;">
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 		<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:180px;">
 		</form>
 		</div>
