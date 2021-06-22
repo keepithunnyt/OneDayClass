@@ -44,7 +44,7 @@ margin: auto;
 							<p>맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요</p>
 						</div>
 				<form action="delete_page.jsp" method="post">
-				<input type="submit" class="site-btn4" value="회원탈퇴" style="margin: auto; left:80%">
+				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:80%">
 				</form>
 				<br>
 						<form action="USERS_update" class="contact-form"> 
