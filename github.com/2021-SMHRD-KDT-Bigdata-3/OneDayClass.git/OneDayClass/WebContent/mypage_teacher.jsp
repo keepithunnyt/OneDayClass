@@ -22,7 +22,7 @@
 			height: 30px;
 		}
 		.tableone > table{
-			width:600px;
+			width:578px;
 			border: 2px solid #FEA698;
 			border-collapse: separate;
 			border-radius: 12px;
@@ -44,6 +44,9 @@
 						<div class="section-title text-white" >
 							<h2>개인정보 수정</h2>
 							<p>맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요</p>
+						<form action="delete_teacher.jsp" method="post" style="margin: auto; left:50%;">
+						<input type="submit" class="site-btn4" value="회원탈퇴">
+						</form>
 						</div>
 						<form action="TEACHERS_update" class="contact-form">
 							<h4>개인 정보</h4>
@@ -51,9 +54,7 @@
 							<input type="password" class="pw" value=<%=teacher.getTeacher_pw() %> name="pw">
 							<input disabled="disabled" type="text" class="name" value=<%=teacher.getTeacher_name() %> name="name"> 
 							<input type="text" class="tel" value=<%= teacher.getTel() %> name="tel"> 
-							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> 
-							 <input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
-								<br><br><br><br>
+								<br><br>
 					<h4>강좌 정보</h4>
 					<br>
 					<div class="tableone">
@@ -93,19 +94,17 @@
               	    <td> <%=classArray.get(i).getPrice() %></td>
                     <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
                 </tr>
-                	
                 <%} }%>
             </tbody>
         </table>
+        <br><br><br>
         </div>
-         <br>
-        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">
-     
-							
-						</form>
-						<form action="delete_teacher.jsp" method="post">
-						<input type="submit" class="site-btn4" value="회원탈퇴">
-						</form>
+		</form>
+		<div style="text-align: center;">
+        <input type="button" class="site-btn4" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'">&nbsp;
+							 <input type="submit" class="site-btn4" id="edit" value="수정 완료"> &nbsp;
+							 <input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'">
+					</div>
 					</div>
 				</div>
 	</section>
