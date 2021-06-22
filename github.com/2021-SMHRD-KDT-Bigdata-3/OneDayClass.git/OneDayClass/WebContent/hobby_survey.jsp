@@ -484,6 +484,7 @@ left: 50%;
 							<br>
 							</table>
 							<div class="btn" style="margin: auto;">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<input type="button" class="site-btn4" id="main" value="메인으로" align="center" onClick="location.href='main.jsp'">
 							<input type="submit" class="site-btn4" id="write" value="작성 완료" align="center">
 							</div> 	 
