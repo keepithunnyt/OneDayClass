@@ -24,8 +24,7 @@
     font-family:'NanumSquareRound';
   }
   .loginForm select{
-  
-  	height: 56px;
+  	height: 40px;
 	width: 250px;
 	padding: 0 30px;
 	margin-right: 18px;

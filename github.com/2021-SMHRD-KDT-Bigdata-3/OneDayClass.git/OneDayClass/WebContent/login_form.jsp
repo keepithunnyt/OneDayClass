@@ -7,7 +7,12 @@
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="./css/style2.css">
 <link rel="stylesheet" href="css/font.css"/>
- 
+<style>
+.selcet division{
+height:40px;
+width:250px;
+}
+</style>
 </head>
 
 <body width="100%" height="100%">
