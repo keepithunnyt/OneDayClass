@@ -103,7 +103,7 @@
 		<td colspan = "2" style = "font-weight: bold;">강좌 소개</td>
 		
 	</tr>
-	<tr><td colspan = "2"><%=c_dto.getContent() %></td></tr>
+	<tr><td colspan = "2"><% out.print(c_dto.getContent()); %></td></tr>
 
 	<tr align="center" bgcolor="white">
 		<td style = "font-weight: bold;">시간</td>

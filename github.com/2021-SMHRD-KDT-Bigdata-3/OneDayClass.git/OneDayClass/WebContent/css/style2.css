@@ -23,7 +23,18 @@
     border-radius: 15px;
     font-family:'NanumSquareRound';
   }
+  .loginForm select{
   
+  	height: 56px;
+	width: 250px;
+	padding: 0 30px;
+	margin-right: 18px;
+	float: left;
+	border: 3px solid #FEA698;
+	font-size: 14px;
+	background: white;
+	border-radius: 12px;
+  }
   .loginForm h2{
     text-align: center;
     margin: 50px;

@@ -11,7 +11,7 @@
 </head>
 
 <body width="100%" height="100%">
-	<form action="login" method="post" class="loginForm">
+	<form action="login" method="post" class="loginForm" name = "search1">
 		<h2>로그인</h2>
 		<select class="division" name="op">
 			<option value="user" class="user">로그인 형태를 선택하세요</option>
