@@ -62,10 +62,10 @@
 	TEACHERSDAO t_dao = new TEACHERSDAO();
 	CLASSDTO c_dto = c_dao.allselect(class_id);
 	//CLASSDTO c_dto = new CLASSDTO(1, "1", "안현진", "내용", "시간", "비용", "카테고리", "이미지");
-	
+	request.setAttribute("class_id", c_dto.getId());
 %>
 
-<form action='#' method="post">
+<form action='ENROL_insert' method="post">
 <br>
 <div class="home">
 <a href="main.jsp"><img style="width:60px; height:60px;" class = "home-logo" src="img/home_btn.png"></a>
