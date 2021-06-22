@@ -34,23 +34,41 @@
 							 <input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'">
 							 <br><br> 
 							<h3>수강 중인 강좌</h3>
-							<br> <input type="text" class="class_id"
-								placeholder="강의 아이디 표출 코드"> <input type="text"
-								class="class_name" placeholder="강의 이름 표출 코드"> <input
-								type="text" class="class_title" placeholder="강의 제목 표출 코드">
-							<input type="text" class="class_date"
-								onfocus="(this.type = 'date')" placeholder="강의 날짜 표출 코드">
-							<input type="button" class="site-btn4" id="main" value="메인으로"
-								onClick="location.href='main.jsp'">							
-						</form>
-							<form action="delete_page.jsp" method="post">
-							<br><br>
-							<input type="submit" class="site-btn4" value="회원탈퇴">
-							</form>
-							
-					</div>
-				</div>
-	</section>
+							<br>
+					<div class="tableone">
+					<table width="600px">
+                   	<thead>
+                    <tr align="center" bgcolor="white" style="font-size: 15px;">
+                    <th>강사 이름</th>
+                    <th>강의 제목</th>
+                    <th>강의 내용</th>
+                    <th>강의 날짜</th>
+                    <th></th>
+               		</tr>
+           		    </thead>
+		            <tbody>
+       	   			<tr align="center" bgcolor="white" style=>
+                    <td>smart</td>
+                    <td>빅데이터 분석서비스 <br> 개발자과정</td>
+                    <td>파이썬 활용한 데이터 <br> 크롤링 및 머신러닝</td>
+                    <td>2021/06/22</td>
+                    <td> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
+            		</tr>
+               		<tr align="center" bgcolor="white">
+                    <td>develop</td>
+                    <td>인공지능 융합서비스 <br> 개발자과정</td>
+                    <td>파이썬 활용한 데이터 <br> 크롤링 및 딥러닝 </td>
+                    <td>2021/06/22</td>
+                    <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
+                </tr>
+                </tbody>
+       			</table>
+				</form>
+				<br>
+				<form action="delete_page.jsp" method="post">
+				<input type="submit" class="site-btn4" value="회원탈퇴">
+				</form>
+				</section>
 </body>
 </html>
 </html>

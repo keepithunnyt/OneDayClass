@@ -22,11 +22,11 @@
 					<div class="contact-form-warp">
 						<div class="section-title text-white text-left">
 							<h2>회원 탈퇴</h2>
-							<p>탈퇴하시면 복구 불가능하오니 신중하게 선택하시길바랍니다</p>
+							<h4>※회원 탈퇴 시 회원 정보는 복구가 불가능합니다.※</h4>
 						</div>
 						<form action="USERS_delete" class="contact-form" method="post"> 
 							<h3>아이디를 입력해주세요</h3>
-							<br> <input type="password" class="pw" name="id">
+							<br> <input type="text" class="pw" name="id">
 							<h3>비밀번호를 입력해주세요</h3>
 							<br> <input type="password" class="pw" name="pw">
 				
