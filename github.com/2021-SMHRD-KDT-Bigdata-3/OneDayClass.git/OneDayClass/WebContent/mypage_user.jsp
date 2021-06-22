@@ -65,7 +65,7 @@ color:#0D3B66;
 							<h5>이름</h5>
 							<input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:595px;"> 
 							<h5>주소</h5>
-							<input type="text" class="address" value=<%=user.getAddress() %> name="address" style="width:595px;">  <br> 
+							<input type="text" class="address" value="<%=user.getAddress() %>" name="address" style="width:595px;">  <br> 
 							 <div style="margin: auto; width: 50%;">
 				<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:25%">
 				&nbsp;
