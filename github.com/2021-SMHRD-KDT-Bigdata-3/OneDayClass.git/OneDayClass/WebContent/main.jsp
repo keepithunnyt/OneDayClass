@@ -196,11 +196,7 @@
 								<option value="content" >내용</option>
 								<option value="teacher" >강사</option>
 						</select>
-<<<<<<< HEAD
-						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 50px;">
-=======
 						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
 						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
 						<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 

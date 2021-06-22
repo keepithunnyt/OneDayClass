@@ -1,3 +1,7 @@
+<%@page import="DAO.CLASSDAO"%>
+<%@page import="DTO.CLASSDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="DAO.ENROLMENTDAO"%>
 <%@page import="DTO.USERSDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -15,6 +19,11 @@
 </head>
 <body> 
 	<% USERSDTO user = (USERSDTO)session.getAttribute("login"); %>	
+	<% 
+		CLASSDAO c_dao = new CLASSDAO();
+		ENROLMENTDAO e_dao = new ENROLMENTDAO();
+		ArrayList<CLASSDTO> c_arr = e_dao.allEnrolment(user.getId());
+	%>
 	<section class="contact-page spad pb-0">
 		<div class="container">
 			<div class="row">
@@ -41,19 +50,22 @@
                     <tr align="center" bgcolor="white" style="font-size: 15px;">
                     <th>강사 이름</th>
                     <th>강의 제목</th>
-                    <th>강의 내용</th>
+                    <th>강의 비용</th>
                     <th>강의 날짜</th>
                     <th></th>
                		</tr>
            		    </thead>
 		            <tbody>
+		            <%if(c_arr != null){  %>
+		            <%for(int i = 0; i < c_arr.size(); i++){ %>
        	   			<tr align="center" bgcolor="white" style=>
-                    <td>smart</td>
-                    <td>빅데이터 분석서비스 <br> 개발자과정</td>
-                    <td>파이썬 활용한 데이터 <br> 크롤링 및 머신러닝</td>
-                    <td>2021/06/22</td>
+                    <td><%=c_dao.findTeacher(c_arr.get(i).getTeacher_id()) %></td>
+                    <td><%=c_arr.get(i).getTitle() %></td>
+                    <td><%=c_arr.get(i).getPrice() %></td>
+                    <td><%=c_arr.get(i).getTime() %></td>
                     <td> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
             		</tr>
+            		<%} } %>
                		<tr align="center" bgcolor="white">
                     <td>develop</td>
                     <td>인공지능 융합서비스 <br> 개발자과정</td>

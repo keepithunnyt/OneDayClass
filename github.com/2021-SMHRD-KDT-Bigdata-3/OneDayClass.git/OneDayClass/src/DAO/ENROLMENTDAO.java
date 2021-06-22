@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 import DTO.CLASSDTO;
 import DTO.ENROLMENTDTO;
@@ -19,6 +20,7 @@ public class ENROLMENTDAO {
 	ENROLMENTDTO dto = null;
 	USERSDTO u_dto = null;
 	CLASSDTO c_dto = null;
+	 ArrayList<CLASSDTO> ClassArray = null;
 	//데이터베이스 연결
 		public void conn() {
 			try {
@@ -78,38 +80,41 @@ public class ENROLMENTDAO {
 			return cnt;
 		}// 메소드끝		
 		
-//		// 로그인
-//				public ENROLMENTDTO login(String id, String pw) {
-//
-//					try {
-//						conn();
-//
-//						String sql = "select * from users where id=? and pw=?";
-//
-//						pst = conn.prepareStatement(sql);
-//
-//						pst.setString(1, id);
-//						pst.setString(2, pw);
-//
-//						rs = pst.executeQuery();
-//						if (rs.next()) {
-//							String get_id = rs.getString("id");
-//							String get_pw = rs.getString("pw");
-//							String get_name = rs.getString("name");
-//							String get_address = rs.getString("address");
-//							String get_recomm = rs.getString("recomm");
-//							
-//							
-//							dto = new USERSDTO(get_id, get_pw, get_name, get_address ,get_recomm);
-//						}
-//					} catch (Exception e) {
-//						System.out.println("로그인 실패");
-//						e.printStackTrace();
-//					} finally {
-//						close();
-//					}
-//					return dto;
-//				}	
+		// 로그인
+				public ArrayList<CLASSDTO> allEnrolment(String id) {
+
+					try {
+						conn();
+
+						String sql = "select * from class where class_id IN (select class_id from enrolment where id = ?)";
+
+						pst = conn.prepareStatement(sql);
+
+						pst.setString(1, id);
+
+						rs = pst.executeQuery();
+						if (rs.next()) {
+							int get_id = rs.getInt("class_id");
+							String get_teacher_id = rs.getString("teacher_id");
+							String get_title = rs.getString("title");
+							String get_content = rs.getString("content");
+							String get_time = rs.getString("time");
+							String get_price = rs.getString("price");
+							String get_category = rs.getString("category");
+							String get_image = rs.getString("image");
+
+							c_dto = new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
+									get_image);
+							ClassArray.add(c_dto);
+						}
+					} catch (Exception e) {
+						System.out.println("수강신청 리스트 실패!");
+						e.printStackTrace();
+					} finally {
+						close();
+					}
+					return ClassArray;
+				}	
 
 				//업데이트	
 				public int update(int Class_id) {
