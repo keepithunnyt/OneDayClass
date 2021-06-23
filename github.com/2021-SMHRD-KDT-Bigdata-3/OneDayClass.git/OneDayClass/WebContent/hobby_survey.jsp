@@ -43,12 +43,16 @@ function deselect() {
 		flex-wrap:wrap;
 	}
 	.box{
-		border:1px solid;
-		width: 100px;
-		height: 100px;
+		border:1px solid white;
+		width: 70px;
+		height: 70px;
 		justify-content: space-between;
 		text-align: center;
 		line-height: 100px;
+		font-family:'NanumSquareRound';
+		color:#0D3B66;
+		font-weight:800;
+		
 	}
 </style>
 </head>
@@ -112,7 +116,7 @@ function deselect() {
 							<br>
 							</tr>
 							<tr>
-							<p><h5>⊙원데이클래스를 접해보셨나요?<br>그렇다면 몇 회 참여해보셨나요?</h5></p>
+							<p><h5>⊙원데이클래스를 접해보셨나요?&nbsp;그렇다면 몇 회 참여해보셨나요?</h5></p>
 							<div>
 							<input type="radio" value="1" name="experience">1회
 							&emsp;
@@ -265,248 +269,251 @@ function deselect() {
 							<p><h5>※ 아래 문항은 1~5점 척도로 선택해주세요. ※</h5></p>
 							<br>
 							</div>
-							</div>
-							<div class="container">
-		<div class="box"></div>
-		<div class="box">1</div>
-		<div class="box">2</div>
-		<div class="box">3</div>
-		<div class="box">4</div>
-		<div class="box">5</div>
-		<div class="box"></div>
-		<div class="box">그렇지않다</div>
-		<div class="box">1</div>
-		<div class="box">2</div>
-		<div class="box">3</div>
-		<div class="box">4</div>
-		<div class="box">5</div>
-		<div class="box">그렇다</div>
-	</div>
-</body>
-</html>
 							<tr>
 							<p><h5>⊙다른사람들에게 자신을 소개하는 것을 어려워 하나요?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti1">
-							&emsp;
-							<input type="radio" value="2" name="mbti1">
-							&emsp;
-							<input type="radio" value="3" name="mbti1">
-							&emsp;
-							<input type="radio" value="4" name="mbti1">
-							&emsp;
-							<input type="radio" value="5" name="mbti1">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							</div>
-							<br>
 							<br>
 							</tr>
 							<tr>
 							<p><h5>⊙대게 의욕적이고 활동적인가요?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti2">
-							&emsp;
-							<input type="radio" value="2" name="mbti2">
-							&emsp;
-							<input type="radio" value="3" name="mbti2">
-							&emsp;
-							<input type="radio" value="4" name="mbti2">
-							&emsp;
-							<input type="radio" value="5" name="mbti2">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙친분이 없는 사람과 쉽게 친해지나요?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti3">
-							&emsp;
-							<input type="radio" value="2" name="mbti3">
-							&emsp;
-							<input type="radio" value="3" name="mbti3">
-							&emsp;
-							<input type="radio" value="4" name="mbti3">
-							&emsp;
-							<input type="radio" value="5" name="mbti3">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙호기심이 많으시나요?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti4">
-							&emsp;
-							<input type="radio" value="2" name="mbti4">
-							&emsp;
-							<input type="radio" value="3" name="mbti4">
-							&emsp;
-							<input type="radio" value="4" name="mbti4">
-							&emsp;
-							<input type="radio" value="5" name="mbti4">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙대체로 상상보다는 경험에 더 의존하는 편입니까?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti5">
-							&emsp;
-							<input type="radio" value="2" name="mbti5">
-							&emsp;
-							<input type="radio" value="3" name="mbti5">
-							&emsp;
-							<input type="radio" value="4" name="mbti5">
-							&emsp;
-							<input type="radio" value="5" name="mbti5">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙책, 예술 또는 영화 등 색다르고 다양한 해석이 <br> 가능한 것에 관심이 있습니까?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti6">
-							&emsp;
-							<input type="radio" value="2" name="mbti6">
-							&emsp;
-							<input type="radio" value="3" name="mbti6">
-							&emsp;
-							<input type="radio" value="4" name="mbti6">
-							&emsp;
-							<input type="radio" value="5" name="mbti6">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙상대방이 메신저를 재빨리 회신하지 않을 경우, <br> 본인이 말실수를 했는지 걱정하나요?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti7">
-							&emsp;
-							<input type="radio" value="2" name="mbti7">
-							&emsp;
-							<input type="radio" value="3" name="mbti7">
-							&emsp;
-							<input type="radio" value="4" name="mbti7">
-							&emsp;
-							<input type="radio" value="5" name="mbti7">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙친구가 어떤 일로 슬퍼할 경우, 문제해결책을 <br> 제시하기보단 위로를 해주는 편이신가요?</h5></p>
-							<div >
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti8">
-							&emsp;
-							<input type="radio" value="2" name="mbti8">
-							&emsp;
-							<input type="radio" value="3" name="mbti8">
-							&emsp;
-							<input type="radio" value="4" name="mbti8">
-							&emsp;
-							<input type="radio" value="5" name="mbti8">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙다른사람의 참견을 싫어하나요?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti9">
-							&emsp;
-							<input type="radio" value="2" name="mbti9">
-							&emsp;
-							<input type="radio" value="3" name="mbti9">
-							&emsp;
-							<input type="radio" value="4" name="mbti9">
-							&emsp;
-							<input type="radio" value="5" name="mbti9">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙구체적인 계획을 갖고 시간을 보내기보다는 <br> 즉흥적으로 움직이나요?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti10">
-							&emsp;
-							<input type="radio" value="2" name="mbti10">
-							&emsp;
-							<input type="radio" value="3" name="mbti10">
-							&emsp;
-							<input type="radio" value="4" name="mbti10">
-							&emsp;
-							<input type="radio" value="5" name="mbti10">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
-							<br>
-							<br>
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙자유를 즐기며 새로운 경험에 대해 개방적이신가요?</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti11">
-							&emsp;
-							<input type="radio" value="2" name="mbti11">
-							&emsp;
-							<input type="radio" value="3" name="mbti11">
-							&emsp;
-							<input type="radio" value="4" name="mbti11">
-							&emsp;
-							<input type="radio" value="5" name="mbti11">
-							&nbsp;그렇다
-							</div>
-							<br>
-							<br>
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
+							</div>							
 							</tr>
+							<br>
 							<tr>
 							<p><h5>⊙일정표를 만들어 잘 지킵니다.</h5></p>
-							<div>
-							그렇지 않다&nbsp;
-							<input type="radio" value="1" name="mbti12">
-							&emsp;
-							<input type="radio" value="2" name="mbti12">
-							&emsp;
-							<input type="radio" value="3" name="mbti12">
-							&emsp;
-							<input type="radio" value="4" name="mbti12">
-							&emsp;
-							<input type="radio" value="5" name="mbti12">
-							&nbsp;그렇다
+							<div class="container">
+							<div class="box"></div>
+							<div class="box">1</div>
+							<div class="box">2</div>
+							<div class="box">3</div>
+							<div class="box">4</div>
+							<div class="box">5</div>
+							<div class="box"></div>
+							<div class="box">비동의</div>
+							<div class="box"><input type="radio" value="1" name="mbti1"></div>
+							<div class="box"><input type="radio" value="2" name="mbti1"></div>
+							<div class="box"><input type="radio" value="3" name="mbti1"></div>
+							<div class="box"><input type="radio" value="4" name="mbti1"></div>
+							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box">동의</div>
 							</div>
 							</tr>
 							<br>
 							</table>
-							<div class="btn" style="margin: auto;">
+							<div class="btn" style="margin: auto; right:50px;">
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="button" class="site-btn4" id="main" value="뒤로 가기" align="center" onClick="location.href='mypage_user.jsp'">
-							<input type="submit" class="site-btn4" id="write" value="작성 완료" align="center">
+							<input type="button" class="site-btn4" id="main" value="뒤로 가기" style="margin: auto; right:80px;" onClick="location.href='mypage_user.jsp'">
+							<input type="submit" class="site-btn4" id="write" value="작성 완료" style="margin: auto; right:80px;">
 							</div> 	 
 							</form>
 							 
