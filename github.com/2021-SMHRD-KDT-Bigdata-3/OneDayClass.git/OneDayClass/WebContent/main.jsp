@@ -66,7 +66,6 @@
 border-top:1px solid #FEA698;}
 
 
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 	.bg1{
 		background-image: url("img/banner1.png");
 	}
@@ -79,7 +78,6 @@ border-top:1px solid #FEA698;}
 	.bg4{
 		background-image: url("img/banner2.png");
 	}
-<<<<<<< HEAD
 
 
 
@@ -88,8 +86,7 @@ border-top:1px solid #FEA698;
 }
 =======
 	
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
-	</style>
+</style>
 <script>
 const all = ele => document.querySelectorAll(ele)
 const one = ele => document.querySelector(ele)
