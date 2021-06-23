@@ -85,14 +85,14 @@ public class CLASSDAO {
 	}// 메소드끝
 
 	// 업데이트
-	public int update(String title, String content, String time, String price, String category, String image) {
+	public int update(String title, String content, String time, String price, String category, String image, String icon) {
 
 		// 런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
 		try {
 			conn();
 
 			// sql 작성
-			String sql = "update USERS set title=?, content=?, time=?, place=?" + "category=? , image=?";
+			String sql = "update USERS set title=?, content=?, time=?, place=?" + "category=? , image=?,icon=?";
 
 			// PreparedStatement 객체 생성
 			pst = conn.prepareStatement(sql);
@@ -104,7 +104,7 @@ public class CLASSDAO {
 			pst.setString(4, price);
 			pst.setString(5, category);
 			pst.setString(6, image);
-
+			pst.setString(7, icon);
 			// sql문 실행
 			cnt = pst.executeUpdate();
 
@@ -287,7 +287,7 @@ public class CLASSDAO {
 					String get_price = rs.getString("price");
 					String get_category = rs.getString("category");
 					String get_image = rs.getString("image");
-					String get_icon = rs.getString("image");
+					String get_icon = rs.getString("icon");
 					arr2.add(new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
 							get_image, get_icon));
 				}
