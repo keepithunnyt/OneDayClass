@@ -85,20 +85,19 @@
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;}
 
-/*
-.bg1{
-		background-image: url("img/banner1.png");
+	.bg1{
+		background-image: url("img/banner_arts2.png");
 	}
 	.bg2{
-		background-image: url("img/banner2.png");
+		background-image: url("img/banner_sports2.png");
 	}
 	.bg3{
-		background-image: url("img/banner1.png");
+		background-image: url("img/banner_food2.png");
 	}
 	.bg4{
-		background-image: url("img/banner2.png");
-	} 
-*/
+		background-image: url("img/banner_music2.png");
+	}
+	
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
 }
@@ -261,15 +260,15 @@ window.onload = function () {
 	</div>
 	<!-- Page info end -->
 	
-	<!-- Page info 2 -->
+	<!-- Page info 2  배너 -->
 	<div id="slide">
 	<div class="slide">
     <ul>
       <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><!--  <h3>거북목 + 허리통증! 언제까지 가지고 있을래? #연예인운동 #SNPE</h3>--></td>
+      	<td width="30%"><h3></h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg"></td>
+      	<td width="30%"><!--  <img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg">--></td>
       	<td width="20%"></td></tr>
       
       
@@ -278,9 +277,9 @@ window.onload = function () {
       </table></div></li>
       <li><div class = "bg2"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><!-- <h3>'뭘' 바르냐가 아니라 '어떻게'바르냐의 차이?!</h3> --></td>
+      	<td width="30%"><h3></h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"></td>
+      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
       	<td width="20%"></td></tr>
       
       
@@ -289,23 +288,19 @@ window.onload = function () {
       </table></div></li>
       <li><div class = "bg3"><table><tr height="30px"></tr>
        	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><!--  <h3>현 청담동 연예인 메이크업 아티스트에게 <br>배우는 맞춤형 원데이클래스~</h3>--></td>
+      	<td width="30%"><h3></h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg"></td>
+      	<td width="30%"><!--<img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg">--></td>
       	<td width="20%"></td></tr>
-      
-      
       
       <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg4"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><!-- <h3>3시간 만에 배우는 꽃에 대한 모든 것!</h3> --></td>
+      	<td width="30%"><h3></h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg"></td>
+      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg">--></td>
       	<td width="20%"></td></tr>
-      
-      
       
       <tr height="30px"></tr>
       </table></div></li>
