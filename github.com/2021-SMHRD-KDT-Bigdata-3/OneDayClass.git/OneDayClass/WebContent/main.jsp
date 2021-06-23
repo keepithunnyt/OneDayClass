@@ -46,33 +46,18 @@
     ul,li{list-style:none;}
     .slide{height:400px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
     .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;}
     .slide li:nth-child(1){background: linear-gradient(#d3fbfb,#fbf7b8);}
     .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
     .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
     .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
-<<<<<<< HEAD
 
-    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
-    .slide li:nth-child(1){; animation-delay:0s} /*background: linear-gradient(#05FBFF, #1D62F0)*/
-    .slide li:nth-child(2){background: linear-gradient(#E4FF14, #FF0000);animation-delay:5s}
-    .slide li:nth-child(3){background: linear-gradient(#B9E609, #00D5FF);animation-delay:10s}
-    .slide li:nth-child(4){background: linear-gradient(#E60909, #B000FF);animation-delay:15s}
-=======
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
     span{
     	font-family:'NanumSquareRound';
     }
-<<<<<<< HEAD
 
-=======
 
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
-     /* 100 / 8 = 12.5 */
     @keyframes fade {
       0% {opacity:0;}
       5% {opacity:1;}
@@ -80,29 +65,8 @@
       30% {opacity:0;}
       100% {opacity:0;}
     }
-<<<<<<< HEAD
-
-	.bg1{
-		background-image: url("img/sample_banner1.jpg");
-	}
-	.bg2{
-		background-image: url("img/sample_banner2.jpg");
-	}
-	.bg3{
-		background-image: url("img/sample_banner1.jpg");
-	}
-	.bg4{
-		background-image: url("img/sample_banner2.jpg");
-	}
-
-=======
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 .course-item .course-info .course-author {
-<<<<<<< HEAD
-border-top:1px solid #FEA698;
-=======
 border-top:1px solid #FEA698;}
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 	</style>
 <script>
 const all = ele => document.querySelectorAll(ele)
