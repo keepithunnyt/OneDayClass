@@ -46,7 +46,7 @@
 	
 	.header-section {
     position: fixed;
-    width: 100%;
+    max-width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -85,7 +85,7 @@
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;}
 
-
+/*
 .bg1{
 		background-image: url("img/banner1.png");
 	}
@@ -98,7 +98,7 @@ border-top:1px solid #FEA698;}
 	.bg4{
 		background-image: url("img/banner2.png");
 	} 
-
+*/
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
 }
@@ -332,7 +332,7 @@ window.onload = function () {
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-							<select name="search1" style="width: 160px; height: 50px;">
+							<select name="search1" style="width: 160px; height: 50px; padding: 0px 20px;">
 								<option value="항목 선택">항목 선택</option>
 								<option value="제목">제목</option>
 								<option value="내용">내용</option>
