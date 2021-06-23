@@ -42,6 +42,7 @@
 <!-- 메인 배경 -->
 	
 	<style>
+
 	 *{margin:0;padding:0;}
     ul,li{list-style:none;}
     .slide{height:400px;overflow:hidden;}
@@ -138,7 +139,7 @@ window.onload = function () {
 		<div class="loader"></div>
 	</div>
 	<!-- Header section -->
-	<header class="header-section">
+	<header class="header-section" >
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-3">

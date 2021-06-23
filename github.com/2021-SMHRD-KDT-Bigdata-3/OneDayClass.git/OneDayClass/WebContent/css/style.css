@@ -367,11 +367,15 @@ ol {
 ---------------------*/
 
 .header-section {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	padding-top: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right:0;
+    padding-top: 60px;
+    z-index: 5;
+    background-color: white;
+    height: 200px;
 }
 
 .site-logo {
