@@ -39,7 +39,7 @@ public class CLASS_update extends HttpServlet {
 				CLASSDTO c_dto = (CLASSDTO)session.getAttribute("CLASS");
 				
 				CLASSDAO c_dao = new CLASSDAO();
-				int cnt = c_dao.update(title, content, time, place, category, image);
+				int cnt = c_dao.update(title, content, time, place, category, image, icon);
 				
 				if(cnt>0){
 					System.out.println("클래스 수정 성공");

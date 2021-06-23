@@ -25,9 +25,7 @@
   }
   .loginForm select{
   	height: 40px;
-	width: 250px;
-	padding: 0 30px;
-	margin-right: 18px;
+	padding: 0 20px;
 	float: left;
 	border: 3px solid #FEA698;
 	font-size: 14px;

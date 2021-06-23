@@ -725,7 +725,7 @@ ol {
 .course-filter {
 	list-style: none;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 10px;
 	margin-bottom: 60px;
 }
 
@@ -2574,7 +2574,6 @@ ol {
 .course-filter {
 	list-style: none;
 	text-align: center;
-	padding-top: 50px;
 	margin-bottom: 60px;
 }
 
@@ -2720,7 +2719,7 @@ ol {
 ---------------------*/
 
 .footer-section {
-	border-top: 3px solid #FEA698;
+	border-top: 1px solid #FEA698;
 }
 
 .footer-warp {
