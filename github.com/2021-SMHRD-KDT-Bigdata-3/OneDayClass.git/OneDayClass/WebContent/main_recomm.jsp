@@ -399,9 +399,10 @@ window.onload = function () {
 	</section> -->
 	<!-- banner section end -->
 
-
+	<div style="height: 50px"></div>
 	<!-- footer section -->
-	<footer class="footer-section spad pb-0" style="border-top:1px solid white;">
+	
+	<footer class="footer-section spad pb-0" style="border-top:1px solid #FEA698;">
 		<div class="footer-top">
 			<div class="footer-warp">
 				<div class="row">
