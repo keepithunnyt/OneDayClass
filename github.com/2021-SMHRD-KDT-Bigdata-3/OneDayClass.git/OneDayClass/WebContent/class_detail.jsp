@@ -154,11 +154,15 @@
 		
 	</table>
 </div>
-
+</form>
 <!--  리뷰 작성 부분 -->
 <%if(user != null){ %>
 <br>
+<<<<<<< HEAD
 <h6 align="center" >리뷰 댓글 작성 부분</h6>
+=======
+<h1 align="center" >※리뷰를 작성해 보세요※</h1>
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 <div class="starRev" name="rating" align="center">
   <span class="starR on" name="star1">1</span>
   <span class="starR" name="star2">2</span>
@@ -168,19 +172,33 @@
 
 </div >
 <div align="center"> 
+<<<<<<< HEAD
 <input tpye="text" id="comm" class = "search" placeholder="리뷰할 내용을 입력하세요">
 <input type="button" value="작성하기" id="btnjj"  class="site-btn" style="width:70px; height:50px;">
+=======
+<input tpye="text" id="comm" class = "search" placeholder="리뷰할 내용을 입력하세요" style="width: 300px; height: 50px; ">
+<input type="button" value="작성하기" id="btnjj"  class="site-btn">
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 </div>
 <%} %>
 <!--  리뷰 출력 부분 -->
-<div class="tabletwo">
-<table align="center">
+
+<!--  리뷰디자인 -->
+<div class = "tabletwo">
+<table class = 'table_content'>
+<colgroup>
+<col style="width:30%;">
+<col style="width:70%;">
+</colgroup>
 <%if(review != null){ %>
-	<%for(int i = 0; i < review.size(); i++){ %>
-	<tr> 
-		<td><%=review.get(i).getId() %> </td>
-		
-		<td><%if (review.get(i).getRating() == 1){%>
+	<tr>
+	<th class ='title' colspan = '2' >리뷰 확인</th>
+	</tr>
+<%for(int i = 0; i < review.size(); i++){ %>
+	<tr>
+	<td style="width: 300px;"><%=review.get(i).getId() %></td>
+	
+	<td><%if (review.get(i).getRating() == 1){%>
 			<% stars = "★☆☆☆☆"; %>
 				<%=stars %>
 			<% }else if(review.get(i).getRating() == 2){%>
@@ -195,17 +213,26 @@
 			<% }else if(review.get(i).getRating() == 5){%>
 			<% stars = "★★★★★"; %>
 				<%=stars %>	
-				<% }%>
-			 </td>
+				<% }%></td>
+	</tr>
+	
+	<tr><td colspan = "2" align = "center"><%=review.get(i).getComm() %> </td></tr> 
+	<tr align="right" bgcolor="white">
 		
-		<td><%=review.get(i).getComm() %> </td>
-		<td><%=review.get(i).getDates() %> </td>
+		<td class = 'teacher' colspan = '2' > <%=review.get(i).getDates() %> </td> 
 	</tr>
 	<%} %>
+<<<<<<< HEAD
 <%} %>
 </table>
 </div>
 </form>
+=======
+<%} %>	
+	</table>
+</div>
+<!--  리뷰디자인 -->
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 	<script src="js/jquery-3.6.0.js"></script>
 	<script>
 		$('#btn1').on('click', function(){

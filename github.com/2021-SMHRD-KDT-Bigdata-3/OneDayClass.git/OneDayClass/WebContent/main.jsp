@@ -52,7 +52,7 @@
     padding-top: 60px;
     z-index: 5;
     background-color: white;
-    height: 300px;
+    height: 250px;
     box-shadow: inset 0 -1px 0 0 #white;
 	}
 	
@@ -63,10 +63,10 @@
     .slide{height:400px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
     .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;}
-    .slide li:nth-child(1){background: linear-gradient(#d3fbfb,#fbf7b8);}
-    .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
-    .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
-    .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
+    .slide li:nth-child(1){}/*background: linear-gradient(#d3fbfb,#fbf7b8);*/
+    .slide li:nth-child(2){}/*background: linear-gradient(#fbf7b8,#facfd9);*/
+    .slide li:nth-child(3){}/*background: linear-gradient(#ffcfc5, #d3fbfb);*/
+    .slide li:nth-child(4){}/*background: linear-gradient(#fbfcdb, #e9defa);*/
 
     span{
     	font-family:'NanumSquareRound';
@@ -77,16 +77,16 @@ border-top:1px solid #FEA698;}
 
 
 	.bg1{
-		background-image: url("img/banner1.png");
+		background-image: url("img/banner_arts.png");
 	}
 	.bg2{
-		background-image: url("img/banner2.png");
+		background-image: url("img/banner_sports.png");
 	}
 	.bg3{
-		background-image: url("img/banner1.png");
+		background-image: url("img/banner_food.png");
 	}
 	.bg4{
-		background-image: url("img/banner2.png");
+		background-image: url("img/banner_music.png");
 	}
 
 .course-item .course-info .course-author {
