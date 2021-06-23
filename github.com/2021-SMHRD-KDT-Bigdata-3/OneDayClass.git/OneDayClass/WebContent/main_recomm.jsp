@@ -364,7 +364,7 @@ window.onload = function () {
 							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
 								<div class="students"><%=arr2.get(i).getPrice() %></div>
 							</div>
-							<div class="course-author">
+							<div class="course-author style="border-top:1px solid #FEA698;">
 								
 								<div class="ca-pic set-bg" data-setbg= <%=arr2.get(i).getIcon() %>></div>
 								
@@ -444,9 +444,9 @@ window.onload = function () {
 					<div class="widget-item">
 						<h4>소식지</h4>
 						<form class="footer-newslatter">
-							<input type="email" placeholder="이메일을 입력해주세요">
+							<input type="email" placeholder="이메일을 입력해주세요" style="background:white; border:3px solid #FEA698; border-radius: 12px; color:#0D3B66">
 							<button class="site-btn">구독하기</button>
-							<p>메일이 수신되지 않을 경우 스팸 메일함을 확인해주세요</p>
+							<p style="color:darkgray;">메일이 수신되지 않을 경우 스팸 메일함을 확인해주세요</p>
 						</form>
 					</div>
 				</div>

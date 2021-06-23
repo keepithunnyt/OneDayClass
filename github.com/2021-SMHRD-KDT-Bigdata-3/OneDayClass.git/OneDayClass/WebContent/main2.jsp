@@ -330,14 +330,17 @@ window.onload = function () {
 						</div>
 						</a>
 						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white">
+							
+							<!-- OneDay Class Card View -->
 							<div class="course-text" >							
-							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
+							<h5><a href="<%=url %>"> <%=arr.get(i).getTitle().substring(0, 20) %>¡¤¡¤¡¤</a></h5>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
 							<div class="course-author"  style="border-top:1px solid solid #FEA698;">								
 								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
 							</div>
+							
 						</div>
 					</div>					
 				</div>
