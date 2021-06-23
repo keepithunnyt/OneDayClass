@@ -44,13 +44,13 @@
 	<style>
 	 *{margin:0;padding:0;}
     ul,li{list-style:none;}
-    .slide{height:300px;overflow:hidden;}
+    .slide{height:400px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
     .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
-    .slide li:nth-child(1){background:#faa;animation-delay:0s}
-    .slide li:nth-child(2){background:#ffa;animation-delay:5s}
-    .slide li:nth-child(3){background:#9ee4da;animation-delay:10s}
-    .slide li:nth-child(4){background:#b8b8ff;animation-delay:15s}
+    .slide li:nth-child(1){; animation-delay:0s} /*background: linear-gradient(#05FBFF, #1D62F0)*/
+    .slide li:nth-child(2){background: linear-gradient(#E4FF14, #FF0000);animation-delay:5s}
+    .slide li:nth-child(3){background: linear-gradient(#B9E609, #00D5FF);animation-delay:10s}
+    .slide li:nth-child(4){background: linear-gradient(#E60909, #B000FF);animation-delay:15s}
     span{
     	font-family:'NanumSquareRound';
     }
@@ -62,7 +62,23 @@
       30% {opacity:0;}
       100% {opacity:0;}
     }
-
+<<<<<<< HEAD
+	.bg1{
+		background-image: url("img/sample_banner1.jpg");
+	}
+	.bg2{
+		background-image: url("img/sample_banner2.jpg");
+	}
+	.bg3{
+		background-image: url("img/sample_banner1.jpg");
+	}
+	.bg4{
+		background-image: url("img/sample_banner2.jpg");
+	}
+=======
+.course-item .course-info .course-author {
+border-top:1px solid #FEA698;
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 	</style>
 
 </head>
@@ -87,10 +103,6 @@
 
 		ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
 	
-		
-
-
-
 	%>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -163,10 +175,50 @@
 	<div id="slide">
 	<div class="slide">
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
+      	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>거북목 + 허리통증! 언제까지 가지고 있을래? #연예인운동 #SNPE</h3></td>
+      	<td width="10%"></td>
+      	<td width="30%"><img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      	<tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg2"><table><tr height="30px"></tr>
+      	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>'뭘' 바르냐가 아니라 '어떻게'바르냐의 차이?!</h3></td>
+      	<td width="10%"></td>
+      	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg3"><table><tr height="30px"></tr>
+       	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>현 청담동 연예인 메이크업 아티스트에게 <br>배우는 맞춤형 원데이클래스~</h3></td>
+      	<td width="10%"></td>
+      	<td width="30%"><img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg4"><table><tr height="30px"></tr>
+      	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>3시간 만에 배우는 꽃에 대한 모든 것!</h3></td>
+      	<td width="10%"></td>
+      	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
     </ul>
   </div>
   </div>
@@ -175,9 +227,6 @@
 		<!-- Page info end -->
 
 	<!-- search section -->
-	<br>
-	<br>
-	<br>
 	<section class="search-section ss-other-page">
 		<div class="container">
 			<div class="search-warp">
@@ -191,13 +240,12 @@
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-						<select name="search1" style="width: 150px; height: 50px;">
-								<option value="select">항목 선택</option>
-								<option value="title" >제목</option>
-								<option value="content" >내용</option>
-								<option value="teacher" >강사</option>
+						<select name="search1" style="width: 160px; height: 50px;">
+								<option value="항목 선택">항목 선택</option>
+								<option value="제목">제목</option>
+								<option value="내용">내용</option>
+								<option value="강사">강사</option> 
 						</select>
-			
 						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search" >
 
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
@@ -241,16 +289,17 @@
 				<!-- course -->				 
 				<div class="mix col-lg-3 col-md-4 col-sm-6 <%=arr.get(i).getCategory() %>">
 					<div class="course-item">
-						<a href=<%=url %> ><div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
+						<a href=<%=url %> >
+						<div class="course-thumb set-bg" data-setbg=<%=arr.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
 						</div>
 						</a>
-						<div class="course-info">
-							<div class="course-text">							
+						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white">
+							<div class="course-text"  style="background: white;">							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
-							<div class="course-author">								
+							<div class="course-author"  style="background: white;">								
 								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
 							</div>
@@ -402,8 +451,8 @@
 						<div class="price"></div>
 					</div>
 					<div class="row">
-						<div class="col-lg-6 offset-lg-6 pl-0">
-							<div class="course-info">
+						<div class="col-lg-6 offset-lg-6 pl-0" >
+							<div class="course-info" style="background: white; border:3px solid #FEA698; border-left:1px solid white;">
 								<div class="course-text">
 									<div class="fet-note">추천 강좌</div>
 									<h5>하형이와 함께하는 즐거운 크롤링</h5>
@@ -424,7 +473,7 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-6 pr-0">
-							<div class="course-info">
+							<div class="course-info" style="background: white; border:3px solid #FEA698; border-right:1px solid white;  border-bottom:none;">
 								<div class="course-text">
 									<div class="fet-note">추천 강좌</div>
 									<h5>현진이와 함께하는 하드 코딩</h5>

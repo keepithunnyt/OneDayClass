@@ -35,11 +35,12 @@ public class CLASS_insert extends HttpServlet {
 		String price = request.getParameter("price");
 		String category = request.getParameter("category");
 		String image = "img/" + request.getParameter("img");
+		String icon = "img/" + request.getParameter("img");
 		System.out.println(id + " " + title + " " + content + " " + time + " " + price + " " + category + " " + image);
 		int cnt = 0;
 
 		CLASSDAO c_dao = new CLASSDAO();
-		cnt = c_dao.insert_class(id, title, content, time, price, category, image);
+		cnt = c_dao.insert_class(id, title, content, time, price, category, image, icon);
 
 		if (cnt > 0) {
 			System.out.println("글 작성 성공!");

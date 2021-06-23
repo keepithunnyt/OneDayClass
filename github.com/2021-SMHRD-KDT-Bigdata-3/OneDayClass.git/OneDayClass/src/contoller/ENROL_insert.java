@@ -31,7 +31,7 @@ public class ENROL_insert extends HttpServlet {
 		USERSDTO user = (USERSDTO)session.getAttribute("login");
 		
 		String id = user.getId();
-		String class_id = request.getParameter("class_id");
+		String class_id = (String)request.getParameter("class_id");
 		
 		ENROLMENTDAO e_dao = new ENROLMENTDAO();
 		int cnt = 0;

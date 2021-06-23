@@ -40,14 +40,32 @@
 int class_id = 196;
 ArrayList<REVIEWDTO> review = null;
 review = r_dao.review_select(class_id);
-
+String stars = null;
 %>
 <table>
 <%if(review != null){ %>
 	<%for(int i = 0; i < review.size(); i++){ %>
 	<tr> 
 		<td><%=review.get(i).getId() %> </td>
-		<td><%=review.get(i).getRating() %> </td>
+		
+		<td><%if (review.get(i).getRating() == 1){%>
+			<% stars = "�ڡ١١١�"; %>
+				<%=stars %>
+			<% }else if(review.get(i).getRating() == 2){%>
+			<% stars = "�ڡڡ١١�"; %>
+				<%=stars %>
+			<% }else if(review.get(i).getRating() == 3){%>
+			<% stars = "�ڡڡڡ١�"; %>
+				<%=stars %>
+			<% }else if(review.get(i).getRating() == 4){%>
+			<% stars = "�ڡڡڡڡ�"; %>
+				<%=stars %>
+			<% }else if(review.get(i).getRating() == 5){%>
+			<% stars = "�ڡڡڡڡ�"; %>
+				<%=stars %>	
+				<% }%>
+			 </td>
+		
 		<td><%=review.get(i).getComm() %> </td>
 		<td><%=review.get(i).getDates() %> </td>
 	</tr>

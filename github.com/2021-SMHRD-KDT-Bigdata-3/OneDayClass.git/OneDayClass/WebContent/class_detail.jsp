@@ -1,3 +1,7 @@
+<%@page import="DTO.USERSDTO"%>
+<%@page import="DTO.REVIEWDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="DAO.REVIEWDAO"%>
 <%@page import="DTO.TEACHERSDTO"%>
 <%@page import="DAO.TEACHERSDAO"%>
 <%@page import="DTO.CLASSDTO"%>
@@ -41,22 +45,37 @@
       }
       td.teacher {
         color : #0D3B66;
-        font-size : 16px;
-        font-weight: bold;
+        font-size : 18px;
         font-family:'NanumSquareRound'
       }
       td {
         color : #0D3B66;
-        font-size : 16px;
+        font-size : 18px;
         font-family:'NanumSquareRound'
         
       }
       th.title{
       	font-size : 24px;
-      	color: indianred;
+      	color: #3A2618;
       	font-family:'NanumSquareRound'
       }
-	</style>
+      
+   
+.starR{
+  background: url('http://miuu227.godohosting.com/images/icon/ico_review.png') no-repeat right 0;
+  background-size: auto 100%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.starR.on{background-position:0 0;}    
+      
+      
+      
+      
+</style>
 </head>
 <body>
 <% 
@@ -64,12 +83,17 @@
 	int class_id = Integer.parseInt(request.getParameter("class_id"));
 	TEACHERSDAO t_dao = new TEACHERSDAO();
 	CLASSDTO c_dto = c_dao.allselect(class_id);
-	
-	//CLASSDTO c_dto = new CLASSDTO(1, "1", "안현진", "내용", "시간", "비용", "카테고리", "이미지");
+	REVIEWDAO r_dao = new REVIEWDAO();
+	ArrayList<REVIEWDTO> review = null;
+	review = r_dao.review_select(class_id);
+	String stars = null;
 	request.setAttribute("class_id", c_dto.getId());
+	String content = c_dto.getContent();
+	content = content.replaceAll("\n", "<br>");
+	USERSDTO user = (USERSDTO)session.getAttribute("login");
 %>
 
-<form action='ENROL_insert' method="post">
+<form action="main.jsp" method="post">
 <br>
 <div class="home">
 <a href="main.jsp"><img style="width:60px; height:60px;" class = "home-logo" src="img/home_btn.png"></a>
@@ -83,7 +107,7 @@
 </colgroup>
 	<tr>
 	<td colspan = '2'>
-	<img alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
+	<img style="border:2px solid indianred;" alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
 	</tr>
 
 	<tr bgcolor="white">
@@ -112,31 +136,151 @@
 	</tr>
 	
 	<tr align="center" bgcolor="white">
-		<td colspan = "2" style = "font-weight: bold;">강좌 소개</td>
+		<td colspan = "2" style = "font-weight: 800;">강좌 소개</td>
 		
 	</tr>
-	<tr><td colspan = "2"><% out.print(c_dto.getContent()); %></td></tr>
+	<tr><td colspan = "2"><%=content %></td></tr>
 
-	<tr align="center" bgcolor="white">
-		<td style = "font-weight: bold;">시간</td>
+	<tr align="center" bgcolor="white" style = "font-weight: 800;">
+		<td >시간</td>
 		<td><%=c_dto.getTime() %></td>
 	</tr>
 
-	<tr align="center" bgcolor="white">
-		<td style = "font-weight: bold;">비용</td>
+	<tr align="center" bgcolor="white" style = "font-weight: 800;">
+		<td>비용</td>
 		<td><%=c_dto.getPrice() %></td>
 	</tr>
 	<tr></tr>
 	<tr><td colspan = "2" align = "center">
-	<input type="submit" class="site-btn" name="apply" value="클래스 신청하기" >
+	<input type="button" class="site-btn" name="apply" value="클래스 신청하기" id="btn1">
 	
 	</td></tr> 
 	</table>
 </div>
 
+<!--  리뷰 작성 부분 -->
+<%if(user != null){ %>
+<div class="starRev" name="rating" align="center">
+  <span class="starR on" name="star1">1</span>
+  <span class="starR" name="star2">2</span>
+  <span class="starR" name="star3">3</span>
+  <span class="starR" name="star4">4</span>
+  <span class="starR" name="star5">5</span>
+
+</div >
+<div align="center"> 
+<input tpye="text" id="comm" >
+<input type="button" value="작성하기" id="btnjj"  class="site-btn">
+</div>
+<%} %>
+<!--  리뷰 출력 부분 -->
+<table align="center">
+<%if(review != null){ %>
+	<%for(int i = 0; i < review.size(); i++){ %>
+	<tr> 
+		<td><%=review.get(i).getId() %> </td>
+		
+		<td><%if (review.get(i).getRating() == 1){%>
+			<% stars = "★☆☆☆☆"; %>
+				<%=stars %>
+			<% }else if(review.get(i).getRating() == 2){%>
+			<% stars = "★★☆☆☆"; %>
+				<%=stars %>
+			<% }else if(review.get(i).getRating() == 3){%>
+			<% stars = "★★★☆☆"; %>
+				<%=stars %>
+			<% }else if(review.get(i).getRating() == 4){%>
+			<% stars = "★★★★☆"; %>
+				<%=stars %>
+			<% }else if(review.get(i).getRating() == 5){%>
+			<% stars = "★★★★★"; %>
+				<%=stars %>	
+				<% }%>
+			 </td>
+		
+		<td><%=review.get(i).getComm() %> </td>
+		<td><%=review.get(i).getDates() %> </td>
+	</tr>
+	<%} %>
+<%} %>
+</table>
+
+
+
+
+
+
+
+
+
+
 </form>
+	<script src="js/jquery-3.6.0.js"></script>
 	<script>
-		// 클래스 신청버튼 클릭-> 로그인중이면 DB에 강의 집어넣기 아니면 로그인하게하기
-	</script>
+		$('#btn1').on('click', function(){
+			
+			$.ajax({
+				url:"ENROL_insert",
+				type : 'POST',
+				data : {
+					'class_id' : <%=class_id %>
+				},
+				success : function(){
+					alert('수강신청 완료');
+					window.location.href =  'main.jsp';
+				}
+			});
+			
+		});
+		</script>	
+		<script>
+		<!-- 리뷰 스크립트-->
+		<%if(user != null){ %>		
+		let dataset = {};
+		let arr = [];
+		$('.starRev span').click(function(){
+			  $(this).parent().children('span').removeClass('on');
+			  $(this).addClass('on').prevAll('span').addClass('on');
+			  arr = $('.on');
+			  
+			  console.log($(arr[arr.length - 1]).html());
+			
+		});
+			
+			
+		$('#btnjj').on('click', function(){
+			if($(arr[arr.length - 1]).html() == null){
+				dataset = {
+						'comm' : $('#comm').val(),
+						'rating' : 1,
+						'id' : <%=user.getId() %>,
+						'class_id' : <%=class_id %>
+						
+				}
+			}else{
+				dataset = {
+						'comm' : $('#comm').val(),
+						'rating' : $(arr[arr.length - 1]).html(),
+						'id' : <%=user.getId() %>,
+						'class_id' : <%=class_id %>
+				}
+			}
+			$.ajax({
+				url : 'REVIEW_insert',
+				data : dataset,
+				type : 'post',
+				contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+				success : function(){
+					alert('보냄');
+					
+				}
+			})
+		})
+<%}%>
+	</script>		
+		
+		
+		
+	
 </body>
 </html>

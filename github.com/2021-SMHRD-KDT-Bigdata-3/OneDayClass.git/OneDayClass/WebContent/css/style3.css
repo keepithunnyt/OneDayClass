@@ -127,13 +127,13 @@
     background-position: left;
     background-size: 200%;
     color:#0D3B66;
-    font-weight: bold;
     border:3px solid #FEA698;
     cursor:pointer;
     transition: 0.4s;
     display:inline;
     border-radius: 12px;
     font-family:'NanumSquareRound';
+   
   }
   
   .select:hover {

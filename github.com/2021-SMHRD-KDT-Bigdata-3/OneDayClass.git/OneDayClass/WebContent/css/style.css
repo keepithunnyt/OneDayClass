@@ -274,7 +274,7 @@ ol {
 	text-align: center;
 	border: 3px solid #FEA698;
 	padding: 10px 10px;
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 14px;
 	position: relative;
 	color: #0D3B66;
@@ -2108,7 +2108,7 @@ ol {
 	text-align: center;
 	border: 3px solid #FEA698;
 	padding: 15px 10px;
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 16px;
 	position: relative;
 	color: #0D3B66;
@@ -2116,6 +2116,7 @@ ol {
 	background: white; 
 	justify-content: center;
 	font-family:'NanumSquareRound';
+	font-weight:700;
 }
 
 .site-btn:hover {
@@ -2862,7 +2863,7 @@ ol {
 =======================*/
 
 .page-info-section {
-	height: 300px;
+	height: 250px;
 }
 
 .site-breadcrumb {
