@@ -162,7 +162,7 @@ window.onload = function () {
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<a href="main.jsp"><img src="img/Logo.png"></a>   
+						<a href="main.jsp"><img src="img/Logo3.png"></a>   
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
