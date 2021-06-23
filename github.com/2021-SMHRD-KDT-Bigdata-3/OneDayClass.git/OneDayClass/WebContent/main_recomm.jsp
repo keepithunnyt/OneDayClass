@@ -318,6 +318,7 @@ window.onload = function () {
 
 	<!-- course section -->
 	<section class="course-section spad pb-0">
+		<div><h3 align="center">Category</h3></div>
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
