@@ -366,17 +366,7 @@ ol {
   Header section
 ---------------------*/
 
-.header-section {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right:0;
-    padding-top: 60px;
-    z-index: 5;
-    background-color: white;
-    height: 200px;
-}
+
 
 .site-logo {
 	position: relative;
@@ -2237,13 +2227,7 @@ ol {
   Header section
 ---------------------*/
 
-.header-section {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	padding-top: 60px;
-}
+
 
 .site-logo {
 	position: relative;
@@ -2392,7 +2376,7 @@ ol {
 .course-search-form input[type=submit] {
 	height: 56px;
 	width: 36.6%;
-	padding: 0 30px;
+	padding: 0px;
 	margin-right: 18px;
 	float: left;
 	border: 3px solid #FEA698;

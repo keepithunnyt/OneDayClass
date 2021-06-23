@@ -42,7 +42,22 @@
 <!-- 메인 배경 -->
 	
 	<style>
-
+	
+	.header-section {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right:0;
+    padding-top: 60px;
+    z-index: 5;
+    background-color: white;
+    height: 300px;
+    box-shadow: inset 0 -1px 0 0 #eaeaea;
+	}
+	
+	
+	
 	 *{margin:0;padding:0;}
     ul,li{list-style:none;}
     .slide{height:400px;overflow:hidden;}
@@ -66,7 +81,6 @@
 border-top:1px solid #FEA698;}
 
 
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 	.bg1{
 		background-image: url("img/banner1.png");
 	}
@@ -79,7 +93,6 @@ border-top:1px solid #FEA698;}
 	.bg4{
 		background-image: url("img/banner2.png");
 	}
-<<<<<<< HEAD
 
 
 
@@ -88,8 +101,7 @@ border-top:1px solid #FEA698;
 }
 =======
 	
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
-	</style>
+</style>
 <script>
 const all = ele => document.querySelectorAll(ele)
 const one = ele => document.querySelector(ele)
@@ -150,7 +162,7 @@ window.onload = function () {
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<a href="main.jsp"><img src="img/Logo.png"></a>   
+						<a href="main.jsp"><img src="img/Logo3.png"></a>   
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -276,7 +288,7 @@ window.onload = function () {
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-						<select name="search1" style="width: 160px; height: 50px;">
+						<select name="search1" style="width: 160px; height: 50px; padding: 0px 20px;">
 								<option value="항목 선택">항목 선택</option>
 								<option value="제목">제목</option>
 								<option value="내용">내용</option>
