@@ -82,7 +82,11 @@ public class ENROLMENTDAO {
 		
 		// ·Î±×ÀÎ
 				public ArrayList<CLASSDTO> allEnrolment(String id) {
+
+					
+
 						ClassArray = new ArrayList<CLASSDTO>();
+
 					try {
 						conn();
 
@@ -93,7 +97,11 @@ public class ENROLMENTDAO {
 						pst.setString(1, id);
 
 						rs = pst.executeQuery();
+
+						
+
 						while(rs.next()) {
+
 							int get_id = rs.getInt("class_id");
 							String get_teacher_id = rs.getString("teacher_id");
 							String get_title = rs.getString("title");

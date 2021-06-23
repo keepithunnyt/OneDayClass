@@ -79,7 +79,16 @@ N_TITLE VARCHAR2(100),
 N_CONTENT VARCHAR(2000),
 DATES DATE DEFAULT SYSDATE,
 CONSTRAINT notice_nnum_pk PRIMARY KEY(NUM)
+<<<<<<< HEAD
+)
 
+
+
+select * from class ;
+select * from users;
+select * from REVIEW;
+=======
+select * from class where class_id = 196;
 select * from USERS
 
 
@@ -91,3 +100,4 @@ select * from USERS
 
 
 )
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git

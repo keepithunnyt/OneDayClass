@@ -5,7 +5,25 @@ public class REVIEWDTO {
 	private int Class_id;
 	private int rating;	
 	private String comm;
+	private String dates;
 	
+	public String getDates() {
+		return dates;
+	}
+
+	public void setDates(String dates) {
+		this.dates = dates;
+	}
+
+	public REVIEWDTO(String id, int class_id, int rating, String comm, String dates) {
+		super();
+		this.id = id;
+		Class_id = class_id;
+		this.rating = rating;
+		this.comm = comm;
+		this.dates = dates;
+	}
+
 	public REVIEWDTO(String id, int class_id, int rating, String comm) {
 		this.id = id;
 		Class_id = class_id;
