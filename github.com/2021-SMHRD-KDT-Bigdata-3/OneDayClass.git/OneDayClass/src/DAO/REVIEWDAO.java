@@ -84,7 +84,7 @@ public class REVIEWDAO {
 					try {
 						conn();
 
-						String sql = "select * from REVIEW where class_id=? ";
+						String sql = "select * from REVIEW where class_id=? order by dates";
 
 						pst = conn.prepareStatement(sql);
 

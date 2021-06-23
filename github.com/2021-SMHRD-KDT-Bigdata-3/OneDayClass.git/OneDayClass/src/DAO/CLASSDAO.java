@@ -421,7 +421,7 @@ public class CLASSDAO {
 					try {
 						conn();
 
-						String sql = "select teacher_name from teachers where teacher_id = (select techer_id from class where class_id=?)";
+						String sql = "select teacher_name from teachers where teacher_id = (select teacher_id from class where class_id=?)";
 
 						pst = conn.prepareStatement(sql);
 						pst.setString(1, class_id);

@@ -160,6 +160,8 @@
 
 <!--  리뷰 작성 부분 -->
 <%if(user != null){ %>
+<br>
+<h1 align="center" >리뷰 댓글 작성 부분</h1>
 <div class="starRev" name="rating" align="center">
   <span class="starR on" name="star1">1</span>
   <span class="starR" name="star2">2</span>
@@ -169,11 +171,12 @@
 
 </div >
 <div align="center"> 
-<input tpye="text" id="comm" >
+<input tpye="text" id="comm" class = "search" placeholder="리뷰할 내용을 입력하세요">
 <input type="button" value="작성하기" id="btnjj"  class="site-btn">
 </div>
 <%} %>
 <!--  리뷰 출력 부분 -->
+<div class="tabletwo">
 <table align="center">
 <%if(review != null){ %>
 	<%for(int i = 0; i < review.size(); i++){ %>
@@ -204,7 +207,7 @@
 	<%} %>
 <%} %>
 </table>
-
+</div>
 
 
 
@@ -253,7 +256,7 @@
 				dataset = {
 						'comm' : $('#comm').val(),
 						'rating' : 1,
-						'id' : <%=user.getId() %>,
+						'id' : '<%=user.getId() %>',
 						'class_id' : <%=class_id %>
 						
 				}
@@ -261,7 +264,7 @@
 				dataset = {
 						'comm' : $('#comm').val(),
 						'rating' : $(arr[arr.length - 1]).html(),
-						'id' : <%=user.getId() %>,
+						'id' : '<%=user.getId() %>',
 						'class_id' : <%=class_id %>
 				}
 			}
@@ -271,7 +274,16 @@
 				type : 'post',
 				contentType: "application/x-www-form-urlencoded; charset=UTF-8",
 				success : function(){
-					alert('보냄');
+					//여기가 페이지 이동
+					window.location = "class_detail.jsp?class_id=<%=class_id%>"
+					
+					//이게 클레스아이디값
+					
+					
+					
+					alert('리뷰 작성완료');
+					
+					
 					
 				}
 			})

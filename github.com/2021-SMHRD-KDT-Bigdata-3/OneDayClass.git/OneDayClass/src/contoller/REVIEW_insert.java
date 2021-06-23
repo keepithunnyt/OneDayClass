@@ -50,12 +50,12 @@ public class REVIEW_insert extends HttpServlet {
 
 			// 로그인 페이지로 이동
 			//등록한페이지로 이동해야함
-			RequestDispatcher rd = request.getRequestDispatcher("star.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("class_detail.jsp");
 			//rd.forward(request, response);
 			System.out.println("db에 들어감");
 		}else {
 			//등록실패한 페이지로 이동해야함
-			response.sendRedirect("star.jsp");
+			response.sendRedirect("class_detail.jsp");
 			System.out.println("안들감");
 		}
 	}
