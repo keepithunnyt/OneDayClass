@@ -54,11 +54,6 @@
     .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
     .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
 
-    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
-    .slide li:nth-child(1){; animation-delay:0s} /*background: linear-gradient(#05FBFF, #1D62F0)*/
-    .slide li:nth-child(2){background: linear-gradient(#E4FF14, #FF0000);animation-delay:5s}
-    .slide li:nth-child(3){background: linear-gradient(#B9E609, #00D5FF);animation-delay:10s}
-    .slide li:nth-child(4){background: linear-gradient(#E60909, #B000FF);animation-delay:15s}
     span{
     	font-family:'NanumSquareRound';
     }
@@ -72,22 +67,10 @@
       100% {opacity:0;}
     }
 
-	.bg1{
-		background-image: url("img/sample_banner1.jpg");
-	}
-	.bg2{
-		background-image: url("img/sample_banner2.jpg");
-	}
-	.bg3{
-		background-image: url("img/sample_banner1.jpg");
-	}
-	.bg4{
-		background-image: url("img/sample_banner2.jpg");
-	}
 
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
-
+}
 
 	</style>
 <script>
@@ -335,6 +318,7 @@ window.onload = function () {
 
 	<!-- course section -->
 	<section class="course-section spad pb-0">
+		<div><h3 align="center">Category</h3></div>
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
@@ -399,9 +383,10 @@ window.onload = function () {
 	</section> -->
 	<!-- banner section end -->
 
-
+	<div style="height: 50px"></div>
 	<!-- footer section -->
-	<footer class="footer-section spad pb-0" style="border-top:1px solid white;">
+	
+	<footer class="footer-section spad pb-0" style="border-top:1px solid #FEA698;">
 		<div class="footer-top">
 			<div class="footer-warp">
 				<div class="row">

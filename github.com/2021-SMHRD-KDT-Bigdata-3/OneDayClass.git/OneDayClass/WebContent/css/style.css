@@ -367,11 +367,15 @@ ol {
 ---------------------*/
 
 .header-section {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	padding-top: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right:0;
+    padding-top: 60px;
+    z-index: 5;
+    background-color: white;
+    height: 200px;
 }
 
 .site-logo {
@@ -725,7 +729,7 @@ ol {
 .course-filter {
 	list-style: none;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 10px;
 	margin-bottom: 60px;
 }
 
@@ -2574,7 +2578,6 @@ ol {
 .course-filter {
 	list-style: none;
 	text-align: center;
-	padding-top: 50px;
 	margin-bottom: 60px;
 }
 
