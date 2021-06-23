@@ -232,16 +232,28 @@ window.onload = function () {
 	<div id="slide">
 	<div class="slide">
     <ul>
-      <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
+      <%-- <li><div class="bg1"> --%>
+      <% String src = "http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"; %>
+      <li><div>
+      <table style="max-width: 100%">
+      <tr height="10px"></tr>
+      	<tr height="380px">
+      	<td width="1%"><!--1번 구역--> <img alt="" src="img/icon.jpg"> </td>
+      	<td width="40%"><!--2번 구역--> <div> <h1>나를 위한 추천서비스!</h1> <br> <a href="register_main.html"> <button>설문하기</button> </a> </div> </td>
+      	<td width="1%"><!--3번 구역--></td>
+      	<td width="10%"><!--4번 구역--></td>
+      	<td width="50%"><img alt="" src=<%=src %>></td>
+      	</tr>
+      	<tr height="10px"></tr>
+      </table>
+      </div></li>
+      <li><div class = "bg1"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
       	<td width="30%"><h3></h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><!--  <img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg">--></td>
+      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
       	<td width="20%"></td></tr>
-      
-      
-      
-      	<tr height="30px"></tr>
+      <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg2"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
@@ -249,9 +261,6 @@ window.onload = function () {
       	<td width="10%"></td>
       	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
       	<td width="20%"></td></tr>
-      
-      
-      
       <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg3"><table><tr height="30px"></tr>
