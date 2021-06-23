@@ -33,7 +33,7 @@
          border-collapse: separate;
          border-radius: 12px;
          padding:10px;
-         max-width : 30%;
+         max-width : 40%;
          margin: auto;
       
       }
