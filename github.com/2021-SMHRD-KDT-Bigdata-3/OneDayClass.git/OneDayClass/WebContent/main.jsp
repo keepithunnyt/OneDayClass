@@ -86,16 +86,16 @@ border-top:1px solid #FEA698;}
 
 
 	.bg1{
-		background-image: url("img/banner1.png");
+		background-image: url("img/banner_arts.png");
 	}
 	.bg2{
-		background-image: url("img/banner2.png");
+		background-image: url("img/banner_sports.png");
 	}
 	.bg3{
-		background-image: url("img/banner1.png");
+		background-image: url("img/banner_food.png");
 	}
 	.bg4{
-		background-image: url("img/banner2.png");
+		background-image: url("img/banner_music.png");
 	}
 
 .course-item .course-info .course-author {
