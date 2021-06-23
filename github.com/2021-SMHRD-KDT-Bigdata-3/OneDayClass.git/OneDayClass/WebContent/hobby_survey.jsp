@@ -490,7 +490,7 @@ function deselect() {
 							</tr>
 							<br>
 							<tr>
-							<p><h5>⊙일정표를 만들어 잘 지킵니다.</h5></p>
+							<h5>⊙일정표를 만들어 잘 지킵니다.</h5>
 							<div class="container">
 							<div class="box"></div>
 							<div class="box">1</div>
