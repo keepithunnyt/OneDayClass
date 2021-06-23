@@ -187,7 +187,7 @@ public class TEACHERSDAO {
 							get_id = rs.getString("teacher_name"); 
 						}
 					} catch (Exception e) {
-						System.out.println("로그인 실패");
+						System.out.println("이름 가져오기 실패");
 						e.printStackTrace();
 					} finally {
 						close();
