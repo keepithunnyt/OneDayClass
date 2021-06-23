@@ -28,13 +28,13 @@
       } 
 
       .table_content{
-         
          border: 3px solid #FEA698;
          border-collapse: separate;
          border-radius: 12px;
          padding:10px;
          max-width : 30%;
          margin: auto;
+        
       
       }
       th {
@@ -55,9 +55,11 @@
         
       }
       th.title{
-         font-size : 24px;
-         color: #3A2618;
+         font-size : 15px;
+         color: #0D3B66;
          font-family:'NanumSquareRound'
+
+         height:30px;
       }
       
    
@@ -107,27 +109,22 @@
 </colgroup>
    <tr>
    <td colspan = '2'>
-   <img style="border:2px solid indianred;" alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
+   <img alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
    </tr>
-
    <tr bgcolor="white">
    <th colspan = '2'><%=c_dto.getCategory() %></th>
    </tr>
-
    <tr>
    <th class ='title' colspan = '2'><%=c_dto.getTitle() %></th>
    </tr>
    <tr>
    <td style="width: 300px;"></td>
-   
    <td><div align="right" class="ca-pic set-bg" data-setbg= <%=c_dto.getIcon() %> style="width: 50px;
    height: 50px;
    border-radius: 50%;
    background-image: url(<%=c_dto.getIcon() %>); display: inilne; margin-left:auto"></div></td>
    </tr>
-   
    <tr align="right" bgcolor="white">
-      
       <td class = 'teacher' colspan = '2' ><%=t_dao.who(c_dto.getTeacher_id()) %> 강사</td> 
    </tr>
    <tr>
@@ -137,7 +134,6 @@
    
    <tr align="center" bgcolor="white">
       <td colspan = "2" style = "font-weight: 800;">강좌 소개</td>
-       
    </tr>
    <tr><td colspan = "2"><%=content %></td></tr>
 
@@ -153,7 +149,6 @@
    <tr></tr>
    <tr><td colspan = "2" align = "center">
    <input type="button" class="site-btn" name="apply" value="클래스 신청하기" id="btn1">
-   
    </td></tr> 
    </table>
 </div>
@@ -161,17 +156,17 @@
 <!--  리뷰 작성 부분 -->
 <%if(user != null){ %>
 <br>
-<h1 align="center" >※리뷰를 작성해 보세요※</h1>
+<h4 align="center" style="font-family:'NanumSquareRound'; color:#0D3B66; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
 <div class="starRev" name="rating" align="center">
-  <span class="starR on" name="star1">1</span>
-  <span class="starR" name="star2">2</span>
-  <span class="starR" name="star3">3</span>
-  <span class="starR" name="star4">4</span>
-  <span class="starR" name="star5">5</span>
+  <span class="starR on" name="star1"></span>
+  <span class="starR" name="star2"></span>
+  <span class="starR" name="star3"></span>
+  <span class="starR" name="star4"></span>
+  <span class="starR" name="star5"></span>
 
 </div >
 <div align="center"> 
-<input tpye="text" id="comm" class = "search" placeholder="리뷰할 내용을 입력하세요" style="width: 300px; height: 50px; ">
+<input tpye="text" id="comm" class = "search" placeholder="리뷰할 내용을 입력하세요" style="width: 300px; height: 50px; border:3px solid #FEA698; border-radius:12px;">&nbsp; 
 <input type="button" value="작성하기" id="btnjj"  class="site-btn">
 </div>
 <%} %>
