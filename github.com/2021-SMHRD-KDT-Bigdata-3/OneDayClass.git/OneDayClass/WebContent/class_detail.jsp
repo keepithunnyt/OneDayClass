@@ -71,10 +71,7 @@
   cursor: pointer;
 }
 .starR.on{background-position:0 0;}    
-      
-      
-      
-      
+
 </style>
 </head>
 <body>
@@ -107,7 +104,7 @@
 </colgroup>
 	<tr>
 	<td colspan = '2'>
-	<img style="border:2px solid indianred;" alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
+	<img alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
 	</tr>
 
 	<tr bgcolor="white">
@@ -132,36 +129,36 @@
 	</tr>
 	<tr>
 	<td colspan = "2"><hr style = "border: 1px solid #FEA698;"></td>
-
 	</tr>
-	
-	<tr align="center" bgcolor="white">
-		<td colspan = "2" style = "font-weight: 800;">강좌 소개</td>
+
+			<tr align="center" bgcolor="white">
+				<td colspan = "2" style = "font-weight: 800;">강좌 소개</td>
 		 
-	</tr>
-	<tr><td colspan = "2"><%=content %></td></tr>
+			</tr>
+			<tr><td colspan = "2"><%=content %></td></tr>
 
-	<tr align="center" bgcolor="white" style = "font-weight: 800;">
-		<td >시간</td>
-		<td><%=c_dto.getTime() %></td>
-	</tr>
+			<tr align="center" bgcolor="white" style = "font-weight: 800;">
+				<td >시간</td>
+				<td><%=c_dto.getTime() %></td>
+			</tr>
 
-	<tr align="center" bgcolor="white" style = "font-weight: 800;">
-		<td>비용</td>
-		<td><%=c_dto.getPrice() %></td>
-	</tr>
-	<tr></tr>
-	<tr><td colspan = "2" align = "center">
-	<input type="button" class="site-btn" name="apply" value="클래스 신청하기" id="btn1">
-	
-	</td></tr> 
+			<tr align="center" bgcolor="white" style = "font-weight: 800;">
+				<td>비용</td>
+				<td><%=c_dto.getPrice() %></td>
+			</tr>
+			<tr></tr>
+			<tr><td colspan = "2" align = "center">
+			<input type="button" class="site-btn" name="apply" value="클래스 신청하기" id="btn1">
+			</td></tr>
+			</div>
+		
 	</table>
 </div>
 
 <!--  리뷰 작성 부분 -->
 <%if(user != null){ %>
 <br>
-<h1 align="center" >리뷰 댓글 작성 부분</h1>
+<h6 align="center" >리뷰 댓글 작성 부분</h6>
 <div class="starRev" name="rating" align="center">
   <span class="starR on" name="star1">1</span>
   <span class="starR" name="star2">2</span>
@@ -172,7 +169,7 @@
 </div >
 <div align="center"> 
 <input tpye="text" id="comm" class = "search" placeholder="리뷰할 내용을 입력하세요">
-<input type="button" value="작성하기" id="btnjj"  class="site-btn">
+<input type="button" value="작성하기" id="btnjj"  class="site-btn" style="width:70px; height:50px;">
 </div>
 <%} %>
 <!--  리뷰 출력 부분 -->
@@ -208,15 +205,6 @@
 <%} %>
 </table>
 </div>
-
-
-
-
-
-
-
-
-
 </form>
 	<script src="js/jquery-3.6.0.js"></script>
 	<script>
@@ -290,9 +278,5 @@
 		})
 <%}%>
 	</script>		
-		
-		
-		
-	
 </body>
 </html>

@@ -22,22 +22,20 @@ color:#0D3B66;
 		.table2{
 			width:680px;
 			border: 4px solid #FEA698;
-			border-collapse: separate;
+			border-collapse: collapse;
 			border-radius: 12px;
 			padding:10px;
 			
 		}
-		.table2>table2 th{
+		.table2>table2 th td{
+		border:1px solid #FEA698;
 		font-family:'NanumSquareRound';
-		color:#0D3B66;
-		}
-		.table2>table2 td{
-		font-family:'NanumSquareRound';
-		color:#0D3B66;
+		padding:2px;
 		}
 		.table2>table2 input{
 		font-family:'NanumSquareRound';
 		color:#0D3B66;
+		
 		}
 
 </style>
@@ -95,11 +93,11 @@ color:#0D3B66;
 							</div>
 					</form>
 					<br>
-							<h3>수강 중인 강좌</h3>
+							<h4>수강 중인 강좌</h4>
 							<br>
-					<table class="table2" style="width:660px;">
+					<table class="table2" style="width:660px; border:2px solid #FEA698; border-collapse: collapse; border-radius:12px;">
                    	<thead>
-                    <tr align="center" bgcolor="white" style="font-size: 15px;">
+                    <tr bgcolor="white" style="font-size: 15px; color:#0D3B66; text-align: center;">
                     <th>강사 이름</th>
                     <th>강의 제목</th>
                     <th>강의 비용</th>
@@ -110,20 +108,20 @@ color:#0D3B66;
 		            <tbody>
 		            <%if(c_arr != null){  %>
 		            <%for(int i = 0; i < c_arr.size(); i++){ %>
-       	   			<tr align="center" bgcolor="white" style=>
+       	   			<tr align="center" bgcolor="white" style="color:#0D3B66; font-weight:600;">
                     <td><%=c_dao.findTeacher(c_arr.get(i).getId())  %></td>
                     <td><%=c_arr.get(i).getTitle() %></td>
                     <td><%=c_arr.get(i).getPrice() %></td>
                     <td><%=c_arr.get(i).getTime() %></td>
-                    <td> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
+                    <td style="color:#0D3B66; font-weight:800;"> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
             		</tr>
             		<%} } %>
-               		<tr align="center" bgcolor="white">
+               		<tr align="center" bgcolor="white" style="color:#0D3B66; font-weight:600;">
                     <td>develop</td>
                     <td>인공지능 융합서비스 <br> 개발자과정</td>
                     <td>파이썬 활용한 데이터 <br> 크롤링 및 딥러닝 </td>
                     <td>2021/06/22</td>
-                    <td><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
+                    <td style="color:#0D3B66; font-weight:800;"><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
                 </tr>
                 </tbody>
        			</table>
