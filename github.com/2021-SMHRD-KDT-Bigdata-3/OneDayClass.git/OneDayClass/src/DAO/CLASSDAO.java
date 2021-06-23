@@ -416,20 +416,21 @@ public class CLASSDAO {
 				}
 				
 				
-				public String findTeacher(String class_id) {
+				public String findTeacher(int class_id) {
 					String get_teacher_name = "";
-					try {
+					System.out.println(class_id);
+					try { 
 						conn();
 
-						String sql = "select teacher_name from teachers where teacher_id = (select techer_id from class where class_id=?)";
+						String sql = "select teacher_name from teachers where teacher_id = (select teacher_id from class where class_id=?)";
 
 						pst = conn.prepareStatement(sql);
-						pst.setString(1, class_id);
+						pst.setInt(1, class_id);
 
 						rs = pst.executeQuery();
 						while (rs.next()) {
 							get_teacher_name = rs.getString("teacher_name");
-
+							System.out.println(get_teacher_name);
 						}
 					} catch (Exception e) {
 						System.out.println(" ½ÜÀÌ¸§ ¸ø°¡Á®¿È");
