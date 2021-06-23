@@ -300,11 +300,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti2"></div>
+							<div class="box"><input type="radio" value="2" name="mbti2"></div>
+							<div class="box"><input type="radio" value="3" name="mbti2"></div>
+							<div class="box"><input type="radio" value="4" name="mbti2"></div>
+							<div class="box"><input type="radio" value="5" name="mbti2"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -320,11 +320,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti3"></div>
+							<div class="box"><input type="radio" value="2" name="mbti3"></div>
+							<div class="box"><input type="radio" value="3" name="mbti3"></div>
+							<div class="box"><input type="radio" value="4" name="mbti3"></div>
+							<div class="box"><input type="radio" value="5" name="mbti3"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -340,11 +340,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti4"></div>
+							<div class="box"><input type="radio" value="2" name="mbti4"></div>
+							<div class="box"><input type="radio" value="3" name="mbti4"></div>
+							<div class="box"><input type="radio" value="4" name="mbti4"></div>
+							<div class="box"><input type="radio" value="5" name="mbti4"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -360,11 +360,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti5"></div>
+							<div class="box"><input type="radio" value="2" name="mbti5"></div>
+							<div class="box"><input type="radio" value="3" name="mbti5"></div>
+							<div class="box"><input type="radio" value="4" name="mbti5"></div>
+							<div class="box"><input type="radio" value="5" name="mbti5"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -380,11 +380,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti6"></div>
+							<div class="box"><input type="radio" value="2" name="mbti6"></div>
+							<div class="box"><input type="radio" value="3" name="mbti6"></div>
+							<div class="box"><input type="radio" value="4" name="mbti6"></div>
+							<div class="box"><input type="radio" value="5" name="mbti6"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -400,11 +400,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti7"></div>
+							<div class="box"><input type="radio" value="2" name="mbti7"></div>
+							<div class="box"><input type="radio" value="3" name="mbti7"></div>
+							<div class="box"><input type="radio" value="4" name="mbti7"></div>
+							<div class="box"><input type="radio" value="5" name="mbti7"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -420,11 +420,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti8"></div>
+							<div class="box"><input type="radio" value="2" name="mbti8"></div>
+							<div class="box"><input type="radio" value="3" name="mbti8"></div>
+							<div class="box"><input type="radio" value="4" name="mbti8"></div>
+							<div class="box"><input type="radio" value="5" name="mbti8"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -440,11 +440,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti9"></div>
+							<div class="box"><input type="radio" value="2" name="mbti9"></div>
+							<div class="box"><input type="radio" value="3" name="mbti9"></div>
+							<div class="box"><input type="radio" value="4" name="mbti9"></div>
+							<div class="box"><input type="radio" value="5" name="mbti9"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -460,11 +460,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti10"></div>
+							<div class="box"><input type="radio" value="2" name="mbti10"></div>
+							<div class="box"><input type="radio" value="3" name="mbti10"></div>
+							<div class="box"><input type="radio" value="4" name="mbti10"></div>
+							<div class="box"><input type="radio" value="5" name="mbti10"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
@@ -480,11 +480,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti11"></div>
+							<div class="box"><input type="radio" value="2" name="mbti11"></div>
+							<div class="box"><input type="radio" value="3" name="mbti11"></div>
+							<div class="box"><input type="radio" value="4" name="mbti11"></div>
+							<div class="box"><input type="radio" value="5" name="mbti11"></div>
 							<div class="box">동의</div>
 							</div>							
 							</tr>
@@ -500,11 +500,11 @@ function deselect() {
 							<div class="box">5</div>
 							<div class="box"></div>
 							<div class="box">비동의</div>
-							<div class="box"><input type="radio" value="1" name="mbti1"></div>
-							<div class="box"><input type="radio" value="2" name="mbti1"></div>
-							<div class="box"><input type="radio" value="3" name="mbti1"></div>
-							<div class="box"><input type="radio" value="4" name="mbti1"></div>
-							<div class="box"><input type="radio" value="5" name="mbti1"></div>
+							<div class="box"><input type="radio" value="1" name="mbti12"></div>
+							<div class="box"><input type="radio" value="2" name="mbti12"></div>
+							<div class="box"><input type="radio" value="3" name="mbti12"></div>
+							<div class="box"><input type="radio" value="4" name="mbti12"></div>
+							<div class="box"><input type="radio" value="5" name="mbti12"></div>
 							<div class="box">동의</div>
 							</div>
 							</tr>
