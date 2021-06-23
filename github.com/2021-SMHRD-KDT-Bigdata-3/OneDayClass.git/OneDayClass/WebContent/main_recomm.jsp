@@ -82,7 +82,6 @@
       100% {opacity:0;}
     }
 
-
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
 }
@@ -358,12 +357,12 @@ window.onload = function () {
 							<%--<div class="price" ></div> --%>
 						</div></a>
 						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white;">
-							<div class="course-text">
+							<div class="course-text" style="height: 180px;">
 							
 							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
 								<div class="students"><%=arr2.get(i).getPrice() %></div>
 							</div>
-							<div class="course-author style="border-top:1px solid #FEA698;">
+							<div class="course-author style="border-top:1px solid #FEA698; height: 85px;">
 								
 								<div class="ca-pic set-bg" data-setbg= <%=arr2.get(i).getIcon() %>></div>
 								

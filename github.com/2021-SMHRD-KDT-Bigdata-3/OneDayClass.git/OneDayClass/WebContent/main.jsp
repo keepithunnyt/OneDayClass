@@ -53,7 +53,7 @@
     z-index: 5;
     background-color: white;
     height: 300px;
-    box-shadow: inset 0 -1px 0 0 #eaeaea;
+    box-shadow: inset 0 -1px 0 0 #white;
 	}
 	
 	
@@ -67,11 +67,6 @@
     .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
     .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
     .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
-
-    .slide li:nth-child(1){}/*background: linear-gradient(#d3fbfb,#fbf7b8);*/
-    .slide li:nth-child(2){}/*background: linear-gradient(#fbf7b8,#facfd9);*/
-    .slide li:nth-child(3){}/*background: linear-gradient(#ffcfc5, #d3fbfb);*/
-    .slide li:nth-child(4){}/*background: linear-gradient(#fbfcdb, #e9defa);*/
 
     span{
     	font-family:'NanumSquareRound';
@@ -94,13 +89,10 @@ border-top:1px solid #FEA698;}
 		background-image: url("img/banner2.png");
 	}
 
-
-
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
 }
-=======
-	
+
 </style>
 <script>
 const all = ele => document.querySelectorAll(ele)
@@ -252,8 +244,6 @@ window.onload = function () {
       	<td width="30%"><!--<img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg">--></td>
       	<td width="20%"></td></tr>
       
-      
-      
       <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg4"><table><tr height="30px"></tr>
@@ -262,8 +252,6 @@ window.onload = function () {
       	<td width="10%"></td>
       	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg">--></td>
       	<td width="20%"></td></tr>
-      
-      
       
       <tr height="30px"></tr>
       </table></div></li>
@@ -344,11 +332,11 @@ window.onload = function () {
 						</div>
 						</a>
 						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white">
-							<div class="course-text" >							
+							<div class="course-text" style="height: 180px;">							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
-							<div class="course-author"  style="border-top:1px solid solid #FEA698;">								
+							<div class="course-author"  style="height:85px;">								
 								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
 							</div>
