@@ -195,11 +195,11 @@ function deselect() {
 							<div>
 							<input type="radio" value="1" name="hobby_time">1시간 미만
 							&emsp;
-							<input type="radio" value="1.5" name="hobby_time">1시간~2시간 미만
+							<input type="radio" value="2" name="hobby_time">1시간~2시간 미만
 							&emsp;
-							<input type="radio" value="2" name="hobby_time">2시간~3시만 미만
+							<input type="radio" value="3" name="hobby_time">2시간~3시만 미만
 							&emsp;
-							<input type="radio" value="3" name="hobby_time">3시간 이상
+							<input type="radio" value="4" name="hobby_time">3시간 이상
 							<br>
 							<input type="button" class="site-btn3" value="선택 해제" onclick="deselect()">
 							</div>
