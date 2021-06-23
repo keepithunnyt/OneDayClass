@@ -20,11 +20,24 @@ font-family:'NanumSquareRound';
 color:#0D3B66;
 }
 		.table2{
-			width:578px;
-			border: 2px solid #FEA698;
+			width:680px;
+			border: 4px solid #FEA698;
 			border-collapse: separate;
 			border-radius: 12px;
 			padding:10px;
+			
+		}
+		.table2>table2 th{
+		font-family:'NanumSquareRound';
+		color:#0D3B66;
+		}
+		.table2>table2 td{
+		font-family:'NanumSquareRound';
+		color:#0D3B66;
+		}
+		.table2>table2 input{
+		font-family:'NanumSquareRound';
+		color:#0D3B66;
 		}
 
 </style>
