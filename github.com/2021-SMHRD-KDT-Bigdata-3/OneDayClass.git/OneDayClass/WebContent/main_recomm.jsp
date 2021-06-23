@@ -40,21 +40,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-
-
+<!-- 메인 배경 -->
+	
 	<style>
 	 *{margin:0;padding:0;}
     ul,li{list-style:none;}
-    .slide{height:300px;overflow:hidden;}
+    .slide{height:400px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
+
+    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;}
+    .slide li:nth-child(1){background: linear-gradient(#d3fbfb,#fbf7b8);}
+    .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
+    .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
+    .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
+
     .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
-    .slide li:nth-child(1){background:#faa;animation-delay:0s}
-    .slide li:nth-child(2){background:#ffa;animation-delay:5s}
-    .slide li:nth-child(3){background:#9ee4da;animation-delay:10s}
-    .slide li:nth-child(4){background:#b8b8ff;animation-delay:15s}
+    .slide li:nth-child(1){; animation-delay:0s} /*background: linear-gradient(#05FBFF, #1D62F0)*/
+    .slide li:nth-child(2){background: linear-gradient(#E4FF14, #FF0000);animation-delay:5s}
+    .slide li:nth-child(3){background: linear-gradient(#B9E609, #00D5FF);animation-delay:10s}
+    .slide li:nth-child(4){background: linear-gradient(#E60909, #B000FF);animation-delay:15s}
     span{
     	font-family:'NanumSquareRound';
     }
+
      /* 100 / 8 = 12.5 */
     @keyframes fade {
       0% {opacity:0;}
@@ -63,10 +71,55 @@
       30% {opacity:0;}
       100% {opacity:0;}
     }
+
+	.bg1{
+		background-image: url("img/sample_banner1.jpg");
+	}
+	.bg2{
+		background-image: url("img/sample_banner2.jpg");
+	}
+	.bg3{
+		background-image: url("img/sample_banner1.jpg");
+	}
+	.bg4{
+		background-image: url("img/sample_banner2.jpg");
+	}
+
+.course-item .course-info .course-author {
+border-top:1px solid #FEA698;
+
+
 	</style>
+<script>
+const all = ele => document.querySelectorAll(ele)
+const one = ele => document.querySelector(ele)
+const slide = _ => {
+  const wrap = one('.slide')
+  const target = wrap.children[0]
+  const len = target.children.length
+  const liStyle = `
+    position:absolute;
+    left:0;right:0;top:0;bottom:0;transition:1s;opacity:0
+  `
+  target.style.cssText = `position:relative;`
+  Array.from(target.children)
+  .forEach(ele => ele.style.cssText = liStyle)
+  target.children[0].style.opacity = 1
+  let pos = 0
+  setInterval(_ => {
+    target.children[pos].style.opacity = 0
+    pos = (pos + 1) % len 
+    target.children[pos].style.opacity = 1
+  }, 1500)
+}
+window.onload = function () {
+  slide()
+}
+</script>
 
 </head>
 <body>
+
 
 	<% 
 		USERSDTO user = null;
@@ -190,16 +243,55 @@
 	<div id="slide">
 	<div class="slide">
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
+      	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>거북목 + 허리통증! 언제까지 가지고 있을래? #연예인운동 #SNPE</h3></td>
+      	<td width="10%"></td>
+      	<td width="30%"><img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      	<tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg2"><table><tr height="30px"></tr>
+      	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>'뭘' 바르냐가 아니라 '어떻게'바르냐의 차이?!</h3></td>
+      	<td width="10%"></td>
+      	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg3"><table><tr height="30px"></tr>
+       	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>현 청담동 연예인 메이크업 아티스트에게 <br>배우는 맞춤형 원데이클래스~</h3></td>
+      	<td width="10%"></td>
+      	<td width="30%"><img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg4"><table><tr height="30px"></tr>
+      	<tr height="340px"><td width="20%"></td>
+      	<td width="30%"><h3>3시간 만에 배우는 꽃에 대한 모든 것!</h3></td>
+      	<td width="10%"></td>
+      	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg"></td>
+      	<td width="20%"></td></tr>
+      
+      
+      
+      <tr height="30px"></tr>
+      </table></div></li>
     </ul>
   </div>
   </div>
 </body>
 </html>
-	
 		<!-- Page info end -->
 
 
@@ -266,7 +358,7 @@
 						<a href=<%=url %> ><div class="course-thumb set-bg" data-setbg=<%=arr2.get(i).getImage() %>>
 							<%--<div class="price" ></div> --%>
 						</div></a>
-						<div class="course-info">
+						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white;">
 							<div class="course-text">
 							
 							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
@@ -309,7 +401,7 @@
 
 
 	<!-- footer section -->
-	<footer class="footer-section spad pb-0">
+	<footer class="footer-section spad pb-0" style="border-top:1px solid white;">
 		<div class="footer-top">
 			<div class="footer-warp">
 				<div class="row">
