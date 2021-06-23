@@ -110,6 +110,10 @@ body{
 	height: 600%;
 
 }
+#goServey{
+	position:absolute;
+	z-index: 1;
+}
 </style>
 <script>
 const all = ele => document.querySelectorAll(ele)
@@ -232,14 +236,15 @@ window.onload = function () {
 	<div id="slide">
 	<div class="slide">
     <ul>
+      <%if(user != null && user.getRecomm()==null){ %>
       <%-- <li><div class="bg1"> --%>
       <% String src = "http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"; %>
       <li><div>
       <table style="max-width: 100%">
       <tr height="10px"></tr>
       	<tr height="380px">
-      	<td width="1%"><!--1번 구역--> <img alt="" src="img/icon.jpg"> </td>
-      	<td width="40%"><!--2번 구역--> <div> <h1>나를 위한 추천서비스!</h1> <br> <a href="register_main.html"> <button>설문하기</button> </a> </div> </td>
+      	<td width="15%"><!--1번 구역--> </td>
+      	<td width="30%"><!--2번 구역--> <div> <h2>나를 위한 추천서비스!</h2> <a id="goServey" href="hobby_survey.jsp"><img src="img/icon.jpg"></a> </div> </td>
       	<td width="1%"><!--3번 구역--></td>
       	<td width="10%"><!--4번 구역--></td>
       	<td width="50%"><img alt="" src=<%=src %>></td>
@@ -247,6 +252,7 @@ window.onload = function () {
       	<tr height="10px"></tr>
       </table>
       </div></li>
+      <%} %>
       <li><div class = "bg1"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
       	<td width="30%"><h3></h3></td>
