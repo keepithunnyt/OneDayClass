@@ -48,12 +48,21 @@
     width: 100%;
     top: 0;
     left: 0;
-    right:0;
-    padding-top: 60px;
+    right: 0;
+    padding-top: 20px;
     z-index: 5;
     background-color: white;
-    height: 300px;
-    box-shadow: inset 0 -1px 0 0 #white;
+    height: 100px;
+    box-shadow: inset 0 -1px 0 0 #eaeaea;
+	}
+	.sticky{
+		position: sticky;
+		top: 99px;
+		left: 0;
+        right: 0;
+		z-index: 5;
+		background-color: white;
+		box-shadow: inset 0 -1px 0 0 #eaeaea;
 	}
 	
 	
@@ -92,7 +101,15 @@ border-top:1px solid #FEA698;}
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
 }
+.search-section.ss-other-page .search-warp {
+	position: relative;
+	padding: 20px 0;
+	box-shadow: inset 0 -1px 0 0 #eaeaea;
+}
+body{
+	height: 600%;
 
+}
 </style>
 <script>
 const all = ele => document.querySelectorAll(ele)
@@ -154,7 +171,7 @@ window.onload = function () {
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<a href="main.jsp"><img src="img/Logo3.png"></a>   
+						<a href="main.jsp"><img src="img/Logo3.png" style="max-width: 150px;"></a>   
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -258,12 +275,12 @@ window.onload = function () {
     </ul>
   </div>
   </div>
-</body>
-</html>
+
 		<!-- Page info end -->
 
 	<!-- search section -->
-	<section class="search-section ss-other-page">
+	<h2 align="center" style="margin-top: 100px"><span>다양한 강좌를 찾아보세요</span></h2>
+	<section class="search-section ss-other-page sticky">
 		<div class="container">
 			<div class="search-warp">
 				<div class="section-title text-white">
@@ -271,8 +288,7 @@ window.onload = function () {
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1" style="text-align:center;">
 						<!-- search form -->
-						<h2><span>다양한 강좌를 찾아보세요</span></h2>
-						<br><br>
+						
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">

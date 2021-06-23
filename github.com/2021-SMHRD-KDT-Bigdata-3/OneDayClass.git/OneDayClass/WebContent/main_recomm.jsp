@@ -49,20 +49,29 @@
     width: 100%;
     top: 0;
     left: 0;
-    right:0;
-    padding-top: 60px;
+    right: 0;
+    padding-top: 20px;
     z-index: 5;
     background-color: white;
-    height: 300px;
+    height: 100px;
     box-shadow: inset 0 -1px 0 0 #eaeaea;
 	}
+	.sticky{
+		position: sticky;
+		top: 99px;
+		left: 0;
+        right: 0;
+		z-index: 5;
+		background-color: white;
+		box-shadow: inset 0 -1px 0 0 #eaeaea;
+	}
+	
 	
 	
 	 *{margin:0;padding:0;}
     ul,li{list-style:none;}
     .slide{height:400px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
-
     .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;}
     .slide li:nth-child(1){background: linear-gradient(#d3fbfb,#fbf7b8);}
     .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
@@ -73,19 +82,35 @@
     	font-family:'NanumSquareRound';
     }
 
-     /* 100 / 8 = 12.5 */
-    @keyframes fade {
-      0% {opacity:0;}
-      5% {opacity:1;}
-      25% {opacity:1;}
-      30% {opacity:0;}
-      100% {opacity:0;}
-    }
+.course-item .course-info .course-author {
+border-top:1px solid #FEA698;}
+
+
+.bg1{
+		background-image: url("img/banner1.png");
+	}
+	.bg2{
+		background-image: url("img/banner2.png");
+	}
+	.bg3{
+		background-image: url("img/banner1.png");
+	}
+	.bg4{
+		background-image: url("img/banner2.png");
+	} 
 
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
 }
+.search-section.ss-other-page .search-warp {
+	position: relative;
+	padding: 20px 0;
+	box-shadow: inset 0 -1px 0 0 #eaeaea;
+}
+body{
+	height: 600%;
 
+}
 	</style>
 <script>
 const all = ele => document.querySelectorAll(ele)
@@ -178,7 +203,7 @@ window.onload = function () {
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<a href="main.jsp"><img class = 'logo' src="img/Logo3.png"></a> 
+						<a href="main.jsp"><img class = 'logo' src="img/Logo3.png" style="max-width: 150px;"></a> 
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -242,7 +267,7 @@ window.onload = function () {
     <ul>
       <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3>거북목 + 허리통증! 언제까지 가지고 있을래? #연예인운동 #SNPE</h3></td>
+      	<td width="30%"><!--  <h3>거북목 + 허리통증! 언제까지 가지고 있을래? #연예인운동 #SNPE</h3>--></td>
       	<td width="10%"></td>
       	<td width="30%"><img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg"></td>
       	<td width="20%"></td></tr>
@@ -253,7 +278,7 @@ window.onload = function () {
       </table></div></li>
       <li><div class = "bg2"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3>'뭘' 바르냐가 아니라 '어떻게'바르냐의 차이?!</h3></td>
+      	<td width="30%"><!-- <h3>'뭘' 바르냐가 아니라 '어떻게'바르냐의 차이?!</h3> --></td>
       	<td width="10%"></td>
       	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"></td>
       	<td width="20%"></td></tr>
@@ -264,7 +289,7 @@ window.onload = function () {
       </table></div></li>
       <li><div class = "bg3"><table><tr height="30px"></tr>
        	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3>현 청담동 연예인 메이크업 아티스트에게 <br>배우는 맞춤형 원데이클래스~</h3></td>
+      	<td width="30%"><!--  <h3>현 청담동 연예인 메이크업 아티스트에게 <br>배우는 맞춤형 원데이클래스~</h3>--></td>
       	<td width="10%"></td>
       	<td width="30%"><img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg"></td>
       	<td width="20%"></td></tr>
@@ -275,7 +300,7 @@ window.onload = function () {
       </table></div></li>
       <li><div class = "bg4"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3>3시간 만에 배우는 꽃에 대한 모든 것!</h3></td>
+      	<td width="30%"><!-- <h3>3시간 만에 배우는 꽃에 대한 모든 것!</h3> --></td>
       	<td width="10%"></td>
       	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg"></td>
       	<td width="20%"></td></tr>
@@ -287,16 +312,14 @@ window.onload = function () {
     </ul>
   </div>
   </div>
-</body>
-</html>
+
 		<!-- Page info end -->
 
 
 	<!-- search section -->
-	<br>
-	<br>
-	<br>
-	<section class="search-section ss-other-page">
+
+	<h3 align="center" style="margin-top: 100px"><span>"${param.search1 }" / "${param.search2 }"(으)로 입력한 결과입니다</span></h3>
+	<section class="search-section ss-other-page sticky">
 		<div class="container">
 			<div class="search-warp">
 				<div class="section-title text-white">
@@ -304,8 +327,8 @@ window.onload = function () {
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1" style="text-align:center;">
 						<!-- search form -->
-						<h3><span>"${param.search1 }" / "${param.search2 }"(으)로 입력한 결과입니다</span></h3>
-						<br><br>
+						
+						
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
@@ -362,7 +385,7 @@ window.onload = function () {
 							<a href=<%=url %> ><h5> <%=arr2.get(i).getTitle() %></h5></a>
 								<div class="students"><%=arr2.get(i).getPrice() %></div>
 							</div>
-							<div class="course-author style="border-top:1px solid #FEA698; height: 85px;">
+							<div class="course-author" style="border-top:1px solid #FEA698; height: 85px;">
 								
 								<div class="ca-pic set-bg" data-setbg= <%=arr2.get(i).getIcon() %>></div>
 								
@@ -376,7 +399,7 @@ window.onload = function () {
 				<%} %>
 			</div>
 	</div>
-			</div>
+			
 			
 	
 	</section>
