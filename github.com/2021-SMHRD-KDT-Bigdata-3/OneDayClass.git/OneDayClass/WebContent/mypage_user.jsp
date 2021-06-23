@@ -98,7 +98,7 @@ color:#0D3B66;
 		            <%if(c_arr != null){  %>
 		            <%for(int i = 0; i < c_arr.size(); i++){ %>
        	   			<tr align="center" bgcolor="white" style=>
-                    <td><%=c_dao.findTeacher(c_arr.get(i).getId()) %></td>
+                    <td><%=c_dao.findTeacher(c_arr.get(i).getId())  %></td>
                     <td><%=c_arr.get(i).getTitle() %></td>
                     <td><%=c_arr.get(i).getPrice() %></td>
                     <td><%=c_arr.get(i).getTime() %></td>

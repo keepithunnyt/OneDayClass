@@ -419,7 +419,7 @@ public class CLASSDAO {
 				public String findTeacher(int class_id) {
 					String get_teacher_name = "";
 					System.out.println(class_id);
-					try {
+					try { 
 						conn();
 
 						String sql = "select teacher_name from teachers where teacher_id = (select teacher_id from class where class_id=?)";
