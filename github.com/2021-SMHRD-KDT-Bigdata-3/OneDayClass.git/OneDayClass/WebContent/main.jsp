@@ -45,7 +45,7 @@
 	
 	.header-section {
     position: fixed;
-    width: 100%;
+    max-width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -86,16 +86,16 @@ border-top:1px solid #FEA698;}
 
 
 	.bg1{
-		background-image: url("img/banner_arts.png");
+		background-image: url("img/banner_arts2.png");
 	}
 	.bg2{
-		background-image: url("img/banner_sports.png");
+		background-image: url("img/banner_sports2.png");
 	}
 	.bg3{
-		background-image: url("img/banner_food.png");
+		background-image: url("img/banner_food2.png");
 	}
 	.bg4{
-		background-image: url("img/banner_music.png");
+		background-image: url("img/banner_music2.png");
 	}
 
 .course-item .course-info .course-author {
@@ -109,6 +109,10 @@ border-top:1px solid #FEA698;
 body{
 	height: 600%;
 
+}
+#goServey{
+	position:absolute;
+	z-index: 1;
 }
 </style>
 <script>
@@ -232,16 +236,15 @@ window.onload = function () {
 	<div id="slide">
 	<div class="slide">
     <ul>
-      <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
+     
+      <%if(user == null){ %>
+      <li><div class = "bg1"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
       	<td width="30%"><h3></h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><!--  <img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg">--></td>
+      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
       	<td width="20%"></td></tr>
-      
-      
-      
-      	<tr height="30px"></tr>
+      <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg2"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
@@ -249,9 +252,6 @@ window.onload = function () {
       	<td width="10%"></td>
       	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
       	<td width="20%"></td></tr>
-      
-      
-      
       <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg3"><table><tr height="30px"></tr>
@@ -272,6 +272,29 @@ window.onload = function () {
       
       <tr height="30px"></tr>
       </table></div></li>
+      <%} else if(user.getRecomm()==null){ %>
+      <%-- <li><div class="bg1"> --%>
+      <% String src = "http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"; %>
+      <li><div>
+      <table style="max-width: 100%">
+      <tr height="10px"></tr>
+      	<tr height="380px">
+      	<td width="15%"><!--1번 구역--> </td>
+      	<td width="30%"><!--2번 구역--> 
+      		<div> 
+      			<h2>나를 위한 추천서비스!</h2> 
+      			<a id="goServey" href="test3.jsp?class_id=<%= 3%>"><img src="img/icon.jpg"></a> 
+      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
+      		</div> 
+      	</td>
+      	<td width="1%"><!--3번 구역--></td>
+      	<td width="10%"><!--4번 구역--></td>
+      	<td width="50%"><img alt="" src=<%=src %>></td>
+      	</tr>
+      	<tr height="10px"></tr>
+      </table>
+      </div></li>
+      <%} %>
     </ul>
   </div>
   </div>
