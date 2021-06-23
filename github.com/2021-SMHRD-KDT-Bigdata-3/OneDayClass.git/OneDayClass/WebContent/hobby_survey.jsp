@@ -37,21 +37,23 @@ function deselect() {
 			}
 		});-->
 <style>
-
-div{
-color: #0D3B66;
-font-weight: bold;
-text-align:left;
-}
-.div btn{
-margin: auto;
-left: 50%;
-
-}
-
+	.container{
+		display:flex;
+		width: 720px;
+		flex-wrap:wrap;
+	}
+	.box{
+		border:1px solid;
+		width: 100px;
+		height: 100px;
+		justify-content: space-between;
+		text-align: center;
+		line-height: 100px;
+	}
 </style>
 </head>
 <body>
+
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/font.css" />
 	<link rel="stylesheet" href="css/owl.carousel.css" />
@@ -264,6 +266,24 @@ left: 50%;
 							<br>
 							</div>
 							</div>
+							<div class="container">
+		<div class="box"></div>
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+		<div class="box">4</div>
+		<div class="box">5</div>
+		<div class="box"></div>
+		<div class="box">그렇지않다</div>
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+		<div class="box">4</div>
+		<div class="box">5</div>
+		<div class="box">그렇다</div>
+	</div>
+</body>
+</html>
 							<tr>
 							<p><h5>⊙다른사람들에게 자신을 소개하는 것을 어려워 하나요?</h5></p>
 							<div>
@@ -338,7 +358,7 @@ left: 50%;
 							<br>
 							</tr>
 							<tr>
-							<p><h5>⊙대체로 대상보다는 경험에 더 의존하는 편입니까?</h5></p>
+							<p><h5>⊙대체로 상상보다는 경험에 더 의존하는 편입니까?</h5></p>
 							<div>
 							그렇지 않다&nbsp;
 							<input type="radio" value="1" name="mbti5">
@@ -468,7 +488,7 @@ left: 50%;
 							<tr>
 							<p><h5>⊙일정표를 만들어 잘 지킵니다.</h5></p>
 							<div>
-							비동의&nbsp;
+							그렇지 않다&nbsp;
 							<input type="radio" value="1" name="mbti12">
 							&emsp;
 							<input type="radio" value="2" name="mbti12">

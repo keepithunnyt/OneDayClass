@@ -82,7 +82,11 @@ public class ENROLMENTDAO {
 		
 		// ·Î±×ÀÎ
 				public ArrayList<CLASSDTO> allEnrolment(String id) {
-					ClassArray = new ArrayList();
+
+					
+
+						ClassArray = new ArrayList<CLASSDTO>();
+
 					try {
 						conn();
 
@@ -93,7 +97,11 @@ public class ENROLMENTDAO {
 						pst.setString(1, id);
 
 						rs = pst.executeQuery();
-						while (rs.next()) {
+
+						
+
+						while(rs.next()) {
+
 							int get_id = rs.getInt("class_id");
 							String get_teacher_id = rs.getString("teacher_id");
 							String get_title = rs.getString("title");
@@ -106,6 +114,7 @@ public class ENROLMENTDAO {
 
 							c_dto = new CLASSDTO(get_id, get_teacher_id, get_title, get_content, get_time, get_price, get_category,
 									get_image, get_icon);
+							System.out.println(get_id);
 							ClassArray.add(c_dto);
 						}
 					} catch (Exception e) {

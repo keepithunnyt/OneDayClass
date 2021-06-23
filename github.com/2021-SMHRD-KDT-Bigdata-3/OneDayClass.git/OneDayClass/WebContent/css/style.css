@@ -367,11 +367,15 @@ ol {
 ---------------------*/
 
 .header-section {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	padding-top: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right:0;
+    padding-top: 60px;
+    z-index: 5;
+    background-color: white;
+    height: 200px;
 }
 
 .site-logo {
@@ -1990,7 +1994,7 @@ h6 {
 
 p {
 	font-size: 14.1px;
-	color: #878787;
+	color: darkgray;
 	line-height: 2.2;
 	font-weight: 500;
 }
@@ -2554,7 +2558,7 @@ ol {
 	padding: 4px 15px;
 	margin-bottom: 20px;
 	 border-radius: 12px;
-	 border : 2px solid #FEA698;
+	 border : 3px solid #FEA698;
 	 font-family:'NanumSquareRound';
 }
 
@@ -2791,7 +2795,7 @@ ol {
 	float: left;
 	border: none;
 	font-size: 14px;
-	background: #edf4f6;
+	background: white;
 }
 
 .footer-newslatter .site-btn {

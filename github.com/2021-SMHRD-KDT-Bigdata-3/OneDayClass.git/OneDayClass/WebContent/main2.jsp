@@ -42,7 +42,6 @@
 <!-- 메인 배경 -->
 	
 	<style>
-
 	 *{margin:0;padding:0;}
     ul,li{list-style:none;}
     .slide{height:400px;overflow:hidden;}
@@ -53,30 +52,35 @@
     .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
     .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
 
-    .slide li:nth-child(1){}/*background: linear-gradient(#d3fbfb,#fbf7b8);*/
-    .slide li:nth-child(2){}/*background: linear-gradient(#fbf7b8,#facfd9);*/
-    .slide li:nth-child(3){}/*background: linear-gradient(#ffcfc5, #d3fbfb);*/
-    .slide li:nth-child(4){}/*background: linear-gradient(#fbfcdb, #e9defa);*/
-
+    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
+    .slide li:nth-child(1){; animation-delay:0s} /*background: linear-gradient(#05FBFF, #1D62F0)*/
+    .slide li:nth-child(2){background: linear-gradient(#E4FF14, #FF0000);animation-delay:5s}
+    .slide li:nth-child(3){background: linear-gradient(#B9E609, #00D5FF);animation-delay:10s}
+    .slide li:nth-child(4){background: linear-gradient(#E60909, #B000FF);animation-delay:15s}
     span{
     	font-family:'NanumSquareRound';
     }
-
-.course-item .course-info .course-author {
-border-top:1px solid #FEA698;}
+     /* 100 / 8 = 12.5 */
+    @keyframes fade {
+      0% {opacity:0;}
+      5% {opacity:1;}
+      25% {opacity:1;}
+      30% {opacity:0;}
+      100% {opacity:0;}
+    }
 
 
 	.bg1{
-		background-image: url("img/banner1.png");
+		background-image: url("img/sample_banner1.jpg");
 	}
 	.bg2{
-		background-image: url("img/banner2.png");
+		background-image: url("img/sample_banner2.jpg");
 	}
 	.bg3{
-		background-image: url("img/banner1.png");
+		background-image: url("img/sample_banner1.jpg");
 	}
 	.bg4{
-		background-image: url("img/banner2.png");
+		background-image: url("img/sample_banner2.jpg");
 	}
 
 
@@ -84,9 +88,7 @@ border-top:1px solid #FEA698;}
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
 }
-=======
-	
-</style>
+	</style>
 <script>
 const all = ele => document.querySelectorAll(ele)
 const one = ele => document.querySelector(ele)
@@ -107,7 +109,7 @@ const slide = _ => {
     target.children[pos].style.opacity = 0
     pos = (pos + 1) % len 
     target.children[pos].style.opacity = 1
-  }, 3000)
+  }, 1500)
 }
 window.onload = function () {
   slide()
@@ -142,7 +144,7 @@ window.onload = function () {
 		<div class="loader"></div>
 	</div>
 	<!-- Header section -->
-	<header class="header-section" >
+	<header class="header-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
@@ -210,9 +212,9 @@ window.onload = function () {
     <ul>
       <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3></h3></td>
+      	<td width="30%"><h3>거북목 + 허리통증! 언제까지 가지고 있을래? #연예인운동 #SNPE</h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><!--  <img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg">--></td>
+      	<td width="30%"><img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg"></td>
       	<td width="20%"></td></tr>
       
       
@@ -221,9 +223,9 @@ window.onload = function () {
       </table></div></li>
       <li><div class = "bg2"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3></h3></td>
+      	<td width="30%"><h3>'뭘' 바르냐가 아니라 '어떻게'바르냐의 차이?!</h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
+      	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"></td>
       	<td width="20%"></td></tr>
       
       
@@ -232,9 +234,9 @@ window.onload = function () {
       </table></div></li>
       <li><div class = "bg3"><table><tr height="30px"></tr>
        	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3></h3></td>
+      	<td width="30%"><h3>현 청담동 연예인 메이크업 아티스트에게 <br>배우는 맞춤형 원데이클래스~</h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><!--<img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg">--></td>
+      	<td width="30%"><img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg"></td>
       	<td width="20%"></td></tr>
       
       
@@ -243,9 +245,9 @@ window.onload = function () {
       </table></div></li>
       <li><div class = "bg4"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3></h3></td>
+      	<td width="30%"><h3>3시간 만에 배우는 꽃에 대한 모든 것!</h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg">--></td>
+      	<td width="30%"><img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg"></td>
       	<td width="20%"></td></tr>
       
       
@@ -296,7 +298,6 @@ window.onload = function () {
 
 	<!-- course section -->
 	<section class="course-section spad pb-0">
-		<div><h3 align="center">Category</h3></div>
 		<div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
@@ -329,14 +330,17 @@ window.onload = function () {
 						</div>
 						</a>
 						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white">
+							
+							<!-- OneDay Class Card View -->
 							<div class="course-text" >							
-							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
+							<h5><a href="<%=url %>"> <%=arr.get(i).getTitle().substring(0, 20) %>···</a></h5>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
 							<div class="course-author"  style="border-top:1px solid solid #FEA698;">								
 								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
 							</div>
+							
 						</div>
 					</div>					
 				</div>
