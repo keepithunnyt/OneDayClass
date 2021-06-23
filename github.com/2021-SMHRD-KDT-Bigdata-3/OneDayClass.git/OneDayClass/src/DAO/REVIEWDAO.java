@@ -88,7 +88,7 @@ public class REVIEWDAO {
 
 						pst = conn.prepareStatement(sql);
 
-						pst.setInt(1, class_id);
+						pst.setInt(1, class_id); 
 						
 
 						rs = pst.executeQuery();

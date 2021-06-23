@@ -47,7 +47,7 @@ public class REVIEW_insert extends HttpServlet {
 			request.setAttribute("comm", comm);
 			
 			
-
+ 
 			// 로그인 페이지로 이동
 			//등록한페이지로 이동해야함
 			RequestDispatcher rd = request.getRequestDispatcher("class_detail.jsp");
