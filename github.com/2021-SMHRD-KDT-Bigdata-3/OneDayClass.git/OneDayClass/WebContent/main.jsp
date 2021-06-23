@@ -62,8 +62,12 @@
     ul,li{list-style:none;}
     .slide{height:400px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
-
     .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;}
+    .slide li:nth-child(1){background: linear-gradient(#d3fbfb,#fbf7b8);}
+    .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
+    .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
+    .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
+
     .slide li:nth-child(1){}/*background: linear-gradient(#d3fbfb,#fbf7b8);*/
     .slide li:nth-child(2){}/*background: linear-gradient(#fbf7b8,#facfd9);*/
     .slide li:nth-child(3){}/*background: linear-gradient(#ffcfc5, #d3fbfb);*/
@@ -73,14 +77,6 @@
     	font-family:'NanumSquareRound';
     }
 
-
-    @keyframes fade {
-      0% {opacity:0;}
-      5% {opacity:1;}
-      25% {opacity:1;}
-      30% {opacity:0;}
-      100% {opacity:0;}
-    }
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;}
 
@@ -97,8 +93,15 @@ border-top:1px solid #FEA698;}
 	.bg4{
 		background-image: url("img/banner2.png");
 	}
+
+
+
+.course-item .course-info .course-author {
+border-top:1px solid #FEA698;
+}
+=======
 	
-	</style>
+</style>
 <script>
 const all = ele => document.querySelectorAll(ele)
 const one = ele => document.querySelector(ele)
@@ -341,11 +344,11 @@ window.onload = function () {
 						</div>
 						</a>
 						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white">
-							<div class="course-text"  style="background: white;">							
+							<div class="course-text" >							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
-							<div class="course-author"  style="background: white;">								
+							<div class="course-author"  style="border-top:1px solid solid #FEA698;">								
 								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
 								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
 							</div>
@@ -599,9 +602,9 @@ window.onload = function () {
 					<div class="widget-item">
 						<h4>소식지</h4>
 						<form class="footer-newslatter">
-							<input type="email" placeholder="이메일을 입력해주세요">
+							<input type="email" placeholder="이메일을 입력해주세요" style="background:white; border:3px solid #FEA698; border-radius: 12px; color:#0D3B66">
 							<button class="site-btn">구독하기</button>
-							<p>메일이 수신되지 않을 경우 스팸 메일함을 확인해주세요</p>
+							<p style="color:darkgray;">메일이 수신되지 않을 경우 스팸 메일함을 확인해주세요</p>
 						</form>
 					</div>
 				</div>
