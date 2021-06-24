@@ -380,7 +380,7 @@ window.onload = function () {
 		      			<h5><%=cateArr.get(i).getTime() %></h5> 
 		      			</div>
 		      			<br>
-		      			<a style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><I>내용 보기</I></a> 
+		      			<a style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:black;"class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><I>내용 보기</I></a> 
 		      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
 		      		</div> 
 		      	</td>
@@ -469,8 +469,8 @@ window.onload = function () {
 							<%--<div class="price" ></div> --%>
 						</div>
 						</a>
-						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white; color:black;">
-							<div class="course-text" style="height: 180px;">							
+						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white; ">
+							<div class="course-text" style="height: 180px; color:black;">							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>
 							</div>							
