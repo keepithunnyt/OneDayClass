@@ -105,7 +105,7 @@ border-top:1px solid #FEA698;
 .search-section.ss-other-page .search-warp {
 	position: relative;
 	padding: 20px 0;
-	box-shadow: inset 0 -1px 0 0 #eaeaea;
+	box-shadow: inset 0 -1px 0 0 white;
 }
 body{
 	height: 600%;
@@ -126,6 +126,7 @@ body{
 }
 .copyright {
 	color:darkgray;
+<<<<<<< HEAD
 }
 .content_img{
 	border-radius: 1%;
@@ -133,6 +134,8 @@ body{
 
 }
 
+=======
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 
 </style>
 <script>
@@ -361,7 +364,7 @@ window.onload = function () {
       		}
       	%>
       	<%for(int i = 0; i < cateArr.size() ;i ++){ %>
-      	<li><div>
+      	<li><div class="img-blurred-edge">
 		      <table style="max-width: 100%; height:400px;">
 		      <tr height="10px"></tr>
 		      	<tr height="380px">
@@ -369,13 +372,13 @@ window.onload = function () {
 		      	<td width="30%"><!--2¹ø ±¸¿ª--> 
 		      		<div width="100%" height="100%"> 
 		      			<div>
-		      			<h3>"<%=user.getName()%>" ´ÔÀÇ ÃßÃµ °­ÁÂ</h3> 
+		      			<h4>"<%=user.getName()%>" ´ÔÀÇ ÃßÃµ °­ÁÂ</h4> 
 		      			</div>
 		      			<br>
 		      			<div>
-		      			<h3><%=cateArr.get(i).getTitle() %></h3> 
+		      			<h5><%=cateArr.get(i).getTitle() %></h5> 
 		      			<br>
-		      			<h4><%=cateArr.get(i).getTime() %></h4> 
+		      			<h5><%=cateArr.get(i).getTime() %></h5> 
 		      			</div>
 		      			<br>
 		      			<a style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><I>³»¿ë º¸±â</I></a> 
@@ -467,7 +470,7 @@ window.onload = function () {
 							<%--<div class="price" ></div> --%>
 						</div>
 						</a>
-						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white">
+						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white; color:black;">
 							<div class="course-text" style="height: 180px;">							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>

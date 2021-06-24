@@ -77,7 +77,7 @@ function deselect() {
 						<table>
 						<tr>
 							<p><h5>⊙성별</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="radio" value="man" name="gender" class='gender'>남자
 							&emsp;
 							<input type="radio" value="woman" name="gender" class='gender'>여자
@@ -85,7 +85,7 @@ function deselect() {
 							<br>
 							<br>
 							<p><h5>⊙나이</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="radio" value="10s" name="age">10대
 							&emsp;
 							<input type="radio" value="20s" name="age">20대
@@ -101,7 +101,7 @@ function deselect() {
 							</tr>
 							<tr>
 							<p><h5>⊙직업</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="radio" value="student" name="job">학생
 							&emsp;
 							<input type="radio" value="seeker" name="job">취업준비생
@@ -117,7 +117,7 @@ function deselect() {
 							</tr>
 							<tr>
 							<p><h5>⊙원데이클래스를 접해보셨나요?&nbsp;그렇다면 몇 회 참여해보셨나요?</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="radio" value="1" name="experience">1회
 							&emsp;
 							<input type="radio" value="2" name="experience">2~3회
@@ -171,7 +171,7 @@ function deselect() {
 							</tr>
 							<tr>
 							<p><h5>⊙시간에 쫓겨도 절대 포기 할 수 없는 분야는?</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="checkbox" value="sleep" name="non_give_up">수면
 							&emsp;
 							<input type="checkbox" value="company_work" name="non_give_up">회사업무의 완성도
@@ -192,7 +192,7 @@ function deselect() {
 							</tr>
 							<tr>
 							<p><h5>⊙취미 활동에 얼마나 시간을 들이시나요?</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="radio" value="1" name="hobby_time">1시간 미만
 							&emsp;
 							<input type="radio" value="2" name="hobby_time">1시간~2시간 미만
@@ -208,7 +208,7 @@ function deselect() {
 							</tr>
 							<tr>
 							<p><h5>⊙유료로 취미생활/자기계발 분야시 선호하는 인원은?</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="radio" value="1" name="Participants">혼자
 							&emsp;
 							<input type="radio" value="2" name="Participants">2명
@@ -227,7 +227,7 @@ function deselect() {
 							</tr>
 							<tr>
 							<p><h5>⊙나를 위해 취미생활에 얼마나 비용을 쓸 수 있나요?</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="radio" value="10" name="hobby_money">10만원 이하
 							&emsp;
 							<input type="radio" value="20" name="hobby_money">10~30만원 미만
@@ -244,7 +244,7 @@ function deselect() {
 							</tr>
 							<tr>
 							<p><h5>⊙취미 활동에 가장 걸림돌이 되는 것은 무엇인가요?</h5></p>
-							<div>
+							<div style="font-size: 16px; color: #0D3B66;">
 							<input type="radio" value="10" name="obstacle">업무 등으로 인한 시간부족
 							&emsp;
 							<input type="radio" value="20" name="obstacle">경제적 부담
@@ -265,7 +265,7 @@ function deselect() {
 							</div>
 							</tr>
 							<br>
-							<div  style="text-align:center;">
+							<div style="text-align:center;">
 							<p><h5>※ 아래 문항은 1~5점 척도로 선택해주세요. ※</h5></p>
 							<br>
 							</div>
