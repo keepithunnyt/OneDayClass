@@ -642,7 +642,7 @@ ol {
 .course-item .course-info .course-text .students {
 	font-size: 18px;
 	font-weight: 600;
-	color: indianred;
+	color: 323232;
 }
 
 .course-item .course-info .course-author {
@@ -666,7 +666,7 @@ ol {
 }
 
 .course-item .course-info .course-author p span {
-	color: indianred;
+	color: 323232;
 }
 
 .course-item.featured-course {
@@ -2505,7 +2505,7 @@ ol {
 }
 
 .course-item .course-info .course-author p span {
-	color: indianred;
+	color: 323232;
 }
 
 .course-item.featured-course {
