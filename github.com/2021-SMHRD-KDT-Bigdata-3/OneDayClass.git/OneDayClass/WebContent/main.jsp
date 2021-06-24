@@ -485,12 +485,12 @@ window.onload = function () {
 						</a>
 						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white; ">
 							<div class="course-text" style="height: 180px; color:black;">							
-							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
-								<div class="students"><%=arr.get(i).getPrice() %></div>
+							<a href=<%=url %> ><h5 style="color:black;"> <%=arr.get(i).getTitle() %></h5></a>							
+								<div class="students" style="color:#323232; font-size:15px;"><%=arr.get(i).getPrice() %></div>
 							</div>							
 							<div class="course-author"  style="height:85px;">								
 								<div class="ca-pic set-bg" data-setbg= <%=arr.get(i).getIcon() %>></div>								
-								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span><%=arr.get(i).getTime() %></span></p>								
+								<p><%=t_dao.who(arr.get(i).getTeacher_id()) %><br> <span style="color:black;"><%=arr.get(i).getTime() %></span></p>								
 							</div>
 						</div>
 					</div>					
@@ -643,8 +643,8 @@ window.onload = function () {
 						<div class="col-lg-6 offset-lg-6 pl-0" >
 							<div class="course-info" style="background: white; border:3px solid #FEA698; border-left:1px solid white;">
 								<div class="course-text">
-									<div class="fet-note">추천 강좌</div>
-									<h5>하형이와 함께하는 즐거운 크롤링</h5>
+									<div class="fet-note">인기 강좌</div>
+									<h5 style="color:black;">하형이와 함께하는 즐거운 크롤링</h5>
 									<p>크롤링~ 롤링~ 롤링~ 저절로 노래가 나올 정도의 여유 가득한 데이터 수집의 달인!</p>
 									<div class="students">120 Students</div>
 								</div>
@@ -664,8 +664,8 @@ window.onload = function () {
 						<div class="col-lg-6 pr-0">
 							<div class="course-info" style="background: white; border:3px solid #FEA698; border-right:1px solid white;">
 								<div class="course-text">
-									<div class="fet-note">추천 강좌</div>
-									<h5>현진이와 함께하는 하드 코딩</h5>
+									<div class="fet-note">인기 강좌</div>
+									<h5 style="color:black;">현진이와 함께하는 하드 코딩</h5>
 									<p>코딩이 먹는 거라고요? 먹고 살 수 있는 겁니다! 리얼 생존 코딩의 진수!</p>
 									<div class="students">120 Students</div>
 								</div>
@@ -758,7 +758,7 @@ window.onload = function () {
 					<li><a href="#">Privacy</a></li>
 				</ul>
 			    <div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This webpage is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.smhrd.or.kr" target="_blank">깔맞춤해조(가명)</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This webpage is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.smhrd.or.kr" target="_blank">하루살이</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 			</div>
 		</div>
