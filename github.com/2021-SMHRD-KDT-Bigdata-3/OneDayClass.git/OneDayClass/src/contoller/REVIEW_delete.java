@@ -1,30 +1,34 @@
-package test;
+package contoller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import DTO.USERSDTO;
 
 /**
- * Servlet implementation class testServlet
+ * Servlet implementation class REVIEW_delete
  */
-@WebServlet("/testServlet")
-public class testServlet extends HttpServlet {
+@WebServlet("/REVIEW_delete")
+public class REVIEW_delete extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		
-		String name = request.getParameter("dates");
-		PrintWriter out = response.getWriter();
-		out.print("<h1>" + name + "</h1>");
+		HttpSession session = request.getSession();
+		
+		String id = ((USERSDTO)session.getAttribute("login")).getId();
+		
+		
+		System.out.println();
+	
 	}
 
 }

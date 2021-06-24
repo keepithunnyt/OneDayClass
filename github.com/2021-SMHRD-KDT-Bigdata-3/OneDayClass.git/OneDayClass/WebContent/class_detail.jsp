@@ -162,7 +162,7 @@
  <tr align="center" ><td colspan = "2">
 <%if(user != null){ %>
 <br>
-<h4  style="font-family:'NanumSquareRound'; color:#0D3B66; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
+<h4  style="font-family:'NanumSquareRound'; color:black; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
 <div class="starRev" name="rating" align="center">
   <span class="starR on" name="star1">1</span>
   <span class="starR" name="star2">2</span>
@@ -188,7 +188,7 @@
 </colgroup>
 <%if(review != null){ %>
    <tr>
-   <th class ='title' colspan = '2' ><h5>수강생 후기</h5></th>
+   <th class ='title' colspan = '3' ><h5>수강생 후기</h5></th>
    </tr>
    <tr>
    <td colspan = '2' style="text-align: center; color:#FEA698;"><h4>수강생 여러분의 생생한 후기를 남겨주세요!</h4></td>
@@ -197,6 +197,15 @@
    <tr>
    <td style="width: 300px;"><%=review.get(i).getId() %></td>
    <td rowspan="2" align = "center"><%=review.get(i).getComm() %> </td>
+   
+   <td rowspan="2" align = "center">
+   <%if(user != null){ %>
+   <%if(user.getId().equals(review.get(i).getId())){ %>
+   		<%String data = "?class_id=" + review.get(i).getClass_id() + "&comm=" + review.get(i).getComm(); %>
+		<%String url = "REVIEW_delete.jsp" + data; %>
+		<a href=<%=url %>>X</a>
+   <%}} %>
+   </td>
    
    </tr>
    
@@ -301,6 +310,7 @@
             }
          })
       })
+      
 <%}%>
    </script>      
       

@@ -54,7 +54,7 @@
     z-index: 5;
     background-color: white;
     height: 100px;
-    box-shadow: inset 0 -1px 0 0 #eaeaea;
+    box-shadow: inset 0 -1px 0 0 white;
 	}
 	.sticky{
 		position: sticky;
@@ -63,7 +63,7 @@
         right: 0;
 		z-index: 5;
 		background-color: white;
-		box-shadow: inset 0 -1px 0 0 #eaeaea;
+		box-shadow: inset 0 -1px 0 0 white;
 	}
 	
 	
