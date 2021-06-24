@@ -110,6 +110,12 @@ body{
 	height: 600%;
 
 }
+
+.goServey{
+	position:absolute;
+	z-index: 1;
+}
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 </style>
 <script>
 const all = ele => document.querySelectorAll(ele)
@@ -159,7 +165,7 @@ window.onload = function () {
 		arr = c_dao.alldata();
 
 		ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
-	
+		
 	%>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -232,46 +238,101 @@ window.onload = function () {
 	<div id="slide">
 	<div class="slide">
     <ul>
-      <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
-      	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3></h3></td>
-      	<td width="10%"></td>
-      	<td width="30%"><!--  <img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg">--></td>
-      	<td width="20%"></td></tr>
-      
-      
-      
-      	<tr height="30px"></tr>
+       <%if(user == null){ %>
+      <li><div class = "bg1"><table><tr height="30px"></tr>
+         <tr height="340px"><td width="20%"></td>
+         <td width="30%"><h3></h3></td>
+         <td width="10%"></td>
+         <td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
+         <td width="20%"></td></tr>
+      <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg2"><table><tr height="30px"></tr>
-      	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3></h3></td>
-      	<td width="10%"></td>
-      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
-      	<td width="20%"></td></tr>
-      
-      
-      
+         <tr height="340px"><td width="20%"></td>
+         <td width="30%"><h3></h3></td>
+         <td width="10%"></td>
+         <td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
+         <td width="20%"></td></tr>
       <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg3"><table><tr height="30px"></tr>
-       	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3></h3></td>
-      	<td width="10%"></td>
-      	<td width="30%"><!--<img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg">--></td>
-      	<td width="20%"></td></tr>
+          <tr height="340px"><td width="20%"></td>
+         <td width="30%"><h3></h3></td>
+         <td width="10%"></td>
+         <td width="30%"><!--<img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg">--></td>
+         <td width="20%"></td></tr>
       
       <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg4"><table><tr height="30px"></tr>
-      	<tr height="340px"><td width="20%"></td>
-      	<td width="30%"><h3></h3></td>
-      	<td width="10%"></td>
-      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg">--></td>
-      	<td width="20%"></td></tr>
+         <tr height="340px"><td width="20%"></td>
+         <td width="30%"><h3></h3></td>
+         <td width="10%"></td>
+         <td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg">--></td>
+         <td width="20%"></td></tr>
       
       <tr height="30px"></tr>
       </table></div></li>
+      
+     
+      <%} else if(user.getRecomm()==null){ %>
+      <%-- <li><div class="bg1"> --%>
+      <% String src = "http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"; %>
+      <li><div>
+      <table style="max-width: 100%">
+      <tr height="10px"></tr>
+      	<tr height="380px">
+      	<td width="15%"><!--1번 구역--> </td>
+      	<td width="30%"><!--2번 구역--> 
+      		<div width="100%" height="100%"> 
+      			<h2>나를 위한 추천서비스!</h2> 
+      			<a class="goServey" href="hobby_survey.jsp"><img src="img/icon.jpg"></a> 
+      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
+      		</div> 
+      	</td>
+      	<td width="1%"><!--3번 구역--></td>
+      	<td width="10%"><!--4번 구역--></td>
+      	<td width="50%"><img alt="" src=<%=src %>></td>
+      	</tr>
+      	<tr height="10px"></tr>
+      </table>
+      </div></li>
+      <%}else{ %>
+      	<%
+      		ArrayList<CLASSDTO> cateArr = new ArrayList<CLASSDTO>();
+      		for(int i = 0; i < arr.size(); i++){
+      			if(user.getRecomm().equals(arr.get(i).getCategory())){
+      				cateArr.add(arr.get(i));
+      			}
+      		}
+      	%>
+      	<%for(int i = 0; i < cateArr.size() ;i ++){ %>
+      	<li><div>
+		      <table style="max-width: 100%">
+		      <tr height="10px"></tr>
+		      	<tr height="380px">
+		      	<td width="15%"><!--1번 구역--> </td>
+		      	<td width="30%"><!--2번 구역--> 
+		      		<div width="100%" height="100%"> 
+		      			<div>
+		      			<h3><%=cateArr.get(i).getTitle() %></h3> 
+		      			<br>
+		      			<h4><%=cateArr.get(i).getTime() %></h4> 
+		      			</div>
+		      			<a class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><img src="img/icon.jpg"></a> 
+		      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
+		      		</div> 
+		      	</td>
+		      	<td width="1%"><!--3번 구역--></td>
+		      	<td width="10%"><!--4번 구역--></td>
+		      	<td width="50%"><img alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	</tr>
+		      	<tr height="10px"></tr>
+		      </table>
+	      </div></li>
+      	<%} %>
+      <%} %>
+
     </ul>
   </div>
   </div>
