@@ -78,7 +78,7 @@
     .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
     .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
     .slide li:nth-child(5){background: linear-gradient(#fbf7b8,#facfd9);}
-
+ 
     span{
     	font-family:'NanumSquareRound';
     }
