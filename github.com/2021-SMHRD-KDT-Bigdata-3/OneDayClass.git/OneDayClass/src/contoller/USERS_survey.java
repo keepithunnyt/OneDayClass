@@ -11,18 +11,14 @@ import javax.servlet.http.HttpSession;
 import DAO.USERSDAO;
 import DTO.USERSDTO;
 
-/**
- * Servlet implementation class USERS_survey
- */
+
 @WebServlet("/USERS_survey")
 public class USERS_survey extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.addHeader("Access-control-Allow-Origin", "*");
 		HttpSession session = request.getSession();
 		
 		USERSDTO user = (USERSDTO) session.getAttribute("login");

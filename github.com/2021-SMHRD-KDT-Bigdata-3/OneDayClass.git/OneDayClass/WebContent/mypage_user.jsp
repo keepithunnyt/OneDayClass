@@ -95,7 +95,7 @@ color:#0D3B66;
 					<br>
 							<h4>수강 중인 강좌</h4>
 							<br>
-					<table class="table2" style="width:680px; border:2px solid #FEA698;border-radius:12px;">
+					<table class="table2" style="width:680px; border:2px solid #FEA698; border-radius:12px;">
                    	<thead>
                     <tr bgcolor="white" style="font-size: 15px; color:#0D3B66; text-align: center;">
                     <th>강사 이름</th>
