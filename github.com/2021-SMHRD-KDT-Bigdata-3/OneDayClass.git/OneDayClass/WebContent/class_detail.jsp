@@ -164,7 +164,7 @@
 <br>
 <h4  style="font-family:'NanumSquareRound'; color:black; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
 <div class="starRev" name="rating" align="center">
-  <span class="starR on" name="star1">1</span>
+  <span class="starR" name="star1">1</span>
   <span class="starR" name="star2">2</span>
   <span class="starR" name="star3">3</span>
   <span class="starR" name="star4">4</span>
@@ -209,9 +209,13 @@
    
    </tr>
    
-   <tr><td style="color:#ff9b00;"><%if (review.get(i).getRating() == 1){%>
+   <tr><td style="color:#ff9b00;">
+   		 <%if (review.get(i).getRating() == 1){%>
          <% stars = "★☆☆☆☆"; %>
             <%=stars %>
+         <% }else if(review.get(i).getRating() == 0){%>
+         <% stars = "☆☆☆☆☆"; %>
+         	<%=stars %>
          <% }else if(review.get(i).getRating() == 2){%>
          <% stars = "★★☆☆☆"; %>
             <%=stars %>
@@ -277,7 +281,7 @@
          if($(arr[arr.length - 1]).html() == null){
             dataset = {
                   'comm' : $('#comm').val(),
-                  'rating' : 1,
+                  'rating' : 0,
                   'id' : '<%=user.getId() %>',
                   'class_id' : <%=class_id %>
                   
