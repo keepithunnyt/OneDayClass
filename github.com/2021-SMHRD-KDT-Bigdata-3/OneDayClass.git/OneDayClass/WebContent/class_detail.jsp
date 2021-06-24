@@ -188,12 +188,21 @@
 </colgroup>
 <%if(review != null){ %>
    <tr>
-   <th class ='title' colspan = '2' ><h5>수강생 후기</h5></th>
+   <th class ='title' colspan = '3' ><h5>수강생 후기</h5></th>
    </tr>
 <%for(int i = 0; i < review.size(); i++){ %>
    <tr>
    <td style="width: 300px;"><%=review.get(i).getId() %></td>
    <td rowspan="2" align = "center"><%=review.get(i).getComm() %> </td>
+   
+   <td rowspan="2" align = "center">
+   <%if(user != null){ %>
+   <%if(user.getId().equals(review.get(i).getId())){ %>
+   		<%String data = "?class_id=" + review.get(i).getClass_id() + "&comm=" + review.get(i).getComm(); %>
+		<%String url = "REVIEW_delete.jsp" + data; %>
+		<a href=<%=url %>>X</a>
+   <%}} %>
+   </td>
    
    </tr>
    
@@ -296,6 +305,7 @@
             }
          })
       })
+      
 <%}%>
    </script>      
       

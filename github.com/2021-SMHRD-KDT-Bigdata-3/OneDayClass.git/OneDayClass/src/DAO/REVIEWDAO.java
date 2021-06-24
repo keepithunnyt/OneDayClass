@@ -141,5 +141,34 @@ public class REVIEWDAO {
 					}
 					return cnt;
 				}
+				
+				public int delete_review(String id, int class_id, String comm) {
+					
+					//런타임 오류 : 실행 했을 때 발생하는 오류 -> 예외 처리
+					try{
+						conn();
+						//sql 작성
+						String sql="delete from review where id = ? and  class_id = ? and comm = ?";
+						System.out.println(id + " " + class_id + " " + comm );
+						//PreparedStatement 객체 생성
+						pst = conn.prepareStatement(sql);
+						
+						//바인드 변수(?) 채우기
+						pst.setString(1,id);
+						pst.setInt(2,class_id);
+						pst.setString(3,comm);				
+						
+						
+						//sql문 실행
+						 cnt = pst.executeUpdate();
+						
+					}catch(Exception e){
+						e.printStackTrace();
+						System.out.println("리뷰 삭제 실패");
+					}finally{
+						close();
+					}
+					return cnt;
+				}
 							
 }
