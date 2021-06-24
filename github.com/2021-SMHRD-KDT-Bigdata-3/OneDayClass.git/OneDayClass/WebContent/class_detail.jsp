@@ -55,7 +55,7 @@
         
       }
       th.title{
-         font-size : 15px;
+         font-size : 30px;
          color: #0D3B66;
          font-family:'NanumSquareRound'
 
