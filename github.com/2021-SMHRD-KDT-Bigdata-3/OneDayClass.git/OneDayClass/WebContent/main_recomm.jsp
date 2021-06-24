@@ -46,7 +46,7 @@
 	
 	.header-section {
     position: fixed;
-    max-width: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -73,18 +73,19 @@
     .slide{height:400px;overflow:hidden;}
     .slide ul{position:relative;height:100%;}
     .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;}
-    .slide li:nth-child(1){background: linear-gradient(#d3fbfb,#fbf7b8);}
-    .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
-    .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
-    .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
-    .slide li:nth-child(5){background: linear-gradient(#fbf7b8,#facfd9);}
- 
+    .slide li:nth-child(1){background-image:url("img/banner_image.jpg");}/*background: linear-gradient(#d3fbfb,#fbf7b8);*/
+    .slide li:nth-child(2){background-image:url("img/banner_image.jpg");}/*background: linear-gradient(#fbf7b8,#facfd9);*/
+    .slide li:nth-child(3){background-image:url("img/banner_image.jpg");}/*background: linear-gradient(#ffcfc5, #d3fbfb);*/
+    .slide li:nth-child(4){background-image:url("img/banner_image.jpg");}/*background: linear-gradient(#fbfcdb, #e9defa);*/
+    .slide li:nth-child(5){background-image:url("img/banner_image.jpg");}/*background: linear-gradient(#fbf7b8,#facfd9);*/
+
     span{
     	font-family:'NanumSquareRound';
     }
 
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;}
+
 
 	.bg1{
 		background-image: url("img/banner_arts2.png");
@@ -98,7 +99,7 @@ border-top:1px solid #FEA698;}
 	.bg4{
 		background-image: url("img/banner_music2.png");
 	}
-	
+
 .course-item .course-info .course-author {
 border-top:1px solid #FEA698;
 }
@@ -109,10 +110,16 @@ border-top:1px solid #FEA698;
 }
 body{
 	height: 600%;
-
 }
+
+.goServey{
+	position:absolute;
+	z-index: 1;
+}
+
 .footer-bottom{
 	background:white;
+	
 }
 .footer-menu li a{
 	color:darkgray;
@@ -121,7 +128,13 @@ body{
 .copyright {
 	color:darkgray;
 }
-	</style>
+.content_img{
+	border-radius: 1%;
+	box-shadow: 0px 0px 20px #000;
+
+}
+
+</style>
 <script>
 const all = ele => document.querySelectorAll(ele)
 const one = ele => document.querySelector(ele)
@@ -142,7 +155,7 @@ const slide = _ => {
     target.children[pos].style.opacity = 0
     pos = (pos + 1) % len 
     target.children[pos].style.opacity = 1
-  }, 1500)
+  }, 3000)
 }
 window.onload = function () {
   slide()
@@ -311,28 +324,66 @@ window.onload = function () {
       
       <tr height="30px"></tr>
       </table></div></li>
-      <%} else if(user.getRecomm()==null){ %>
+      
+      
+       <%} else if(user.getRecomm()==null){ %>
       <%-- <li><div class="bg1"> --%>
       <% String src = "img/page-bg/banner.png"; %>
       <li><div>
-      <table style="max-width: 100%">
+      <table style="width:100%; background-image: url('img/banner_image.jpg');">
       <tr height="10px"></tr>
       	<tr height="380px">
       	<td width="15%"><!--1번 구역--> </td>
       	<td width="30%"><!--2번 구역--> 
       		<div width="100%" height="100%"> 
-      			<h2>나를 위한 추천서비스!</h2> 
-      			<a class="goServey" href="hobby_survey.jsp"><img src="img/icon.jpg"></a> 
+      			<h2>원데이클래스 맞춤형 추천 서비스!</h2>
+      			<h4>개인별 성향 조사를 통해 맞춤형 강좌를 추천해드립니다.</h4>
+      			<br>
+      			<a class="goServey" style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
       			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
       		</div> 
       	</td>
       	<td width="5%"><!--3번 구역--></td>
       	<td width="10%"><!--4번 구역--></td>
-      	<td width="40%"><img alt="" src=<%=src %>></td>
+      	<td width="40%"><img class = "content_img" alt="" style = "max-width: 100%;height:340px;" src=<%=src %>></td>
       	</tr>
       	<tr height="10px"></tr>
       </table>
       </div></li>
+          <li><div class = "bg1"><table><tr height="30px"></tr>
+         <tr height="340px"><td width="20%"></td>
+         <td width="30%"><h3></h3></td>
+         <td width="10%"></td>
+         <td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
+         <td width="20%"></td></tr>
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg2"><table><tr height="30px"></tr>
+         <tr height="340px"><td width="20%"></td>
+         <td width="30%"><h3></h3></td>
+         <td width="10%"></td>
+         <td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
+         <td width="20%"></td></tr>
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg3"><table><tr height="30px"></tr>
+          <tr height="340px"><td width="20%"></td>
+         <td width="30%"><h3></h3></td>
+         <td width="10%"></td>
+         <td width="30%"><!--<img width="400px" height="340px" src="http://s3.ap-northeast-2.amazonaws.com/taling.me/Content/Uploads/Cover/c84a49732713812e91ef9481db371338d9185937.jpg">--></td>
+         <td width="20%"></td></tr>
+      
+      <tr height="30px"></tr>
+      </table></div></li>
+      <li><div class = "bg4"><table><tr height="30px"></tr>
+         <tr height="340px"><td width="20%"></td>
+         <td width="30%"><h3></h3></td>
+         <td width="10%"></td>
+         <td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/77001f8bc6aeba3881d4ba52a285f79f3ba11b77.jpg">--></td>
+         <td width="20%"></td></tr>
+      
+      <tr height="30px"></tr>
+      </table></div></li>
       <%}else{ %>
       	<%
       		ArrayList<CLASSDTO> cateArr = new ArrayList<CLASSDTO>();
@@ -366,7 +417,7 @@ window.onload = function () {
 		      	</td>
 		      	<td width="1%"><!--3번 구역--></td>
 		      	<td width="10%"><!--4번 구역--></td>
-		      	<td width="50%"><img style="max-width: 100%; height:380px;" alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	<td width="50%"><img class = "content_img" style="max-width: 100%; height:340px;" alt="" src=<%=cateArr.get(i).getImage() %>></td>
 		      	</tr>
 		      	<tr height="10px"></tr>
 		      </table>

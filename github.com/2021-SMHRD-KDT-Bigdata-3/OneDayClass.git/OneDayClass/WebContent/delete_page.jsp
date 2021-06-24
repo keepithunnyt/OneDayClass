@@ -19,12 +19,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="contact-form-warp">
+					<div class="contact-form-warp" >
+						<div class="contact-form-warp" style=" background-color: #F9EAE9; border-radius: 1%;">
 						<div class="section-title text-white text-left">
 							<h2>회원 탈퇴</h2>
 							<h4>※회원 탈퇴 시 회원 정보는 복구가 불가능합니다.※</h4>
 						</div>
-						<form action="USERS_delete" class="contact-form" method="post"> 
+						<form action="USERS_delete" class="contact-form" method="post" style=" background: #FCF6FD;"> 
 							<h4>아이디를 확인해주세요</h4>
 							<br> <input type="text" class="pw" name="id" value=<%=user.getId() %>>
 							<h4>비밀번호를 입력해주세요</h4>
@@ -33,6 +34,7 @@
 							<input type="submit" class="site-btn4"  value="회원 탈퇴">
 							<br><br>				
 						</form>							
+					</div>
 					</div>
 				</div>
 	</section>

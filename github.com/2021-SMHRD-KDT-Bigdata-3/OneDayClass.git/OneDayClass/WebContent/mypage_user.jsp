@@ -10,6 +10,7 @@
 <style>
 .tableone{
 border:2px solid #FEA698;
+max-width: 100%;
 }
 .tableone> table th{
 font-family:'NanumSquareRound';
@@ -21,10 +22,10 @@ color:#0D3B66;
 }
 		.table2{
 			width:680px;
-			border: 4px solid #FEA698;
-			border-collapse: collapse;
-			border-radius: 12px;
-			padding:10px;
+   			border: 2px solid #FEA698;
+    		border-collapse: separate;
+    		border-radius: 5px;
+    		background-color: #FEA698;
 			
 		}
 		.table2>table2 th td{
@@ -37,6 +38,9 @@ color:#0D3B66;
 		color:#0D3B66;
 		
 		}
+			th, td{
+		background-color: #FCF6FD;
+	}
 
 </style>
 <head>
@@ -59,14 +63,14 @@ color:#0D3B66;
 	<section class="contact-page spad pb-0">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8">
-					<div class="contact-form-warp">
+				<div class="col-lg-8" style="max-width: 100%;">
+					<div class="contact-form-warp" style="margin: auto; background-color: #F9EAE9; border-radius: 1%;">
 						<div class="section-title text-white text-left">
 							<h2>개인정보 수정</h2>
 							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
 							</div>
-							<form action="USERS_update" class="contact-form" style="width:680px;"> 
-							<table class="table1" style="width: 500px">
+							<form action="USERS_update" class="contact-form" style="width:680px; background: #FCF6FD;"> 
+							<table class="table1" style="width: 500px; margin:auto;">
 							<tr><td colspan='2'><h3>수강생 정보</h3></td></tr>
 							<tr height="20px"></tr>
 							<tr><td><h5>아이디</h5></td><td><h5>비밀번호</h5></td></tr>
@@ -95,9 +99,9 @@ color:#0D3B66;
 					<br>
 							<h4>수강 중인 강좌</h4>
 							<br>
-					<table class="table2" style="width:680px; border:2px solid #FEA698; border-radius:12px;">
+					<table class="table2" style="width:680px; border:2px solid #FEA698; border-radius:5px;">
                    	<thead>
-                    <tr bgcolor="white" style="font-size: 15px; color:#0D3B66; text-align: center;">
+                    <tr style="font-size: 15px; color:#0D3B66; text-align: center;">
                     <th>강사 이름</th>
                     <th>강의 제목</th>
                     <th>강의 비용</th>
@@ -108,20 +112,20 @@ color:#0D3B66;
 		            <tbody>
 		            <%if(c_arr != null){  %>
 		            <%for(int i = 0; i < c_arr.size(); i++){ %>
-       	   			<tr align="center" bgcolor="white" style="color:#0D3B66; font-weight:600;">
+       	   			<tr align="center" style="color:#0D3B66; font-weight:600;">
                     <td><%=c_dao.findTeacher(c_arr.get(i).getId())  %></td>
                     <td><%=c_arr.get(i).getTitle() %></td>
                     <td><%=c_arr.get(i).getPrice() %></td>
                     <td><%=c_arr.get(i).getTime() %></td>
-                    <td style="color:#0D3B66; font-weight:800;"> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
+                    <td style="color:#0D3B66; font-weight:800;"> <input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:  #FCF6FD; "></td>   
             		</tr>
             		<%} } %>
-               		<tr align="center" bgcolor="white" style="color:#0D3B66; font-weight:600;">
+               		<tr align="center" style="color:#0D3B66; font-weight:600;">
                     <td>develop</td>
                     <td>인공지능 융합서비스 <br> 개발자과정</td>
                     <td>파이썬 활용한 데이터 <br> 크롤링 및 딥러닝 </td>
                     <td>2021/06/22</td>
-                    <td style="color:#0D3B66; font-weight:800;"><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
+                    <td style="color:#0D3B66; font-weight:800;"><input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:  #FCF6FD; "></td>
                 </tr>
                 </tbody>
        			</table>
