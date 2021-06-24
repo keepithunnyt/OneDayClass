@@ -23,7 +23,6 @@ public class REVIEW_insert extends HttpServlet {
 		String id = request.getParameter("id");
 		System.out.println(id);
 		int rating = Integer.parseInt(request.getParameter("rating"));
-		//int rating = Integer.parseInt(request.getParameter("rating"));
 		System.out.println(rating);
 		String comm = request.getParameter("comm");
 		System.out.println(comm);
