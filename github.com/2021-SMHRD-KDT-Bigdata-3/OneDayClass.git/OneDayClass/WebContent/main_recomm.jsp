@@ -106,13 +106,19 @@ border-top:1px solid #FEA698;
 .search-section.ss-other-page .search-warp {
 	position: relative;
 	padding: 20px 0;
-	box-shadow: inset 0 -1px 0 0 #eaeaea;
+	box-shadow: inset 0 -1px 0 0 white;
 }
 body{
 	height: 600%;
 }
 
 .goServey{
+	position:absolute;
+	left:1200px;
+	top: 30px;
+	z-index: 1;
+}
+.goServey2{
 	position:absolute;
 	z-index: 1;
 }
@@ -127,6 +133,7 @@ body{
 }
 .copyright {
 	color:darkgray;
+	
 }
 .content_img{
 	border-radius: 1%;
@@ -155,7 +162,7 @@ const slide = _ => {
     target.children[pos].style.opacity = 0
     pos = (pos + 1) % len 
     target.children[pos].style.opacity = 1
-  }, 3000)
+  }, 4000)
 }
 window.onload = function () {
   slide()
@@ -339,7 +346,7 @@ window.onload = function () {
       			<h2>원데이클래스 맞춤형 추천 서비스!</h2>
       			<h4>개인별 성향 조사를 통해 맞춤형 강좌를 추천해드립니다.</h4>
       			<br>
-      			<a class="goServey" style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
+      			<a class="goServey2" style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
       			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
       		</div> 
       	</td>
@@ -394,7 +401,7 @@ window.onload = function () {
       		}
       	%>
       	<%for(int i = 0; i < cateArr.size() ;i ++){ %>
-      	<li><div>
+      	<li><div class="img-blurred-edge">
 		      <table style="max-width: 100%; height:400px;">
 		      <tr height="10px"></tr>
 		      	<tr height="380px">
@@ -402,28 +409,30 @@ window.onload = function () {
 		      	<td width="30%"><!--2번 구역--> 
 		      		<div width="100%" height="100%"> 
 		      			<div>
-		      			<h3>"<%=user.getName()%>" 님의 추천 강좌</h3> 
+		      			<h4>"<%=user.getName()%>" 님의 추천 강좌</h4> 
 		      			</div>
 		      			<br>
 		      			<div>
-		      			<h3><%=cateArr.get(i).getTitle() %></h3> 
+		      			<a href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%> " class="goServey2"><I><h3><%=cateArr.get(i).getTitle() %></h3> </I></a>
 		      			<br>
-		      			<h4><%=cateArr.get(i).getTime() %></h4> 
-		      			</div>
 		      			<br>
-		      			<a style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><I>내용 보기</I></a> 
+		      			<h5><%=cateArr.get(i).getTime() %></h5> 
+		      			</div> 
 		      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
 		      		</div> 
 		      	</td>
 		      	<td width="1%"><!--3번 구역--></td>
 		      	<td width="10%"><!--4번 구역--></td>
-		      	<td width="50%"><img class = "content_img" style="max-width: 100%; height:340px;" alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	<td width="50%"><a href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>">
+		      	
+		      	<img style="max-width: 100%; height:340px;" class = "content_img goServey" alt="" src=<%=cateArr.get(i).getImage() %>></a></td>
 		      	</tr>
 		      	<tr height="10px"></tr>
 		      </table>
 	      </div></li>
       	<%} %>
       <%} %>
+
     </ul>
   </div>
   </div>
@@ -447,13 +456,13 @@ window.onload = function () {
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-							<select name="search1" style="width: 160px; height: 50px; padding: 0px 20px;">
+							<select name="search1" style="width: 160px; height: 50px; text-align-last: center;">
 								<option value="항목 선택">항목 선택</option>
 								<option value="제목">제목</option>
 								<option value="내용">내용</option>
 								<option value="강사" >강사</option>
 							</select>
-							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 50px;" value="${param.search2 }" class = "search"/>
+							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 50px; text-align:center;" value="${param.search2 }" class = "search"/>
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->
 							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
 							<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 

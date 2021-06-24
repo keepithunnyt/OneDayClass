@@ -113,6 +113,12 @@ body{
 
 .goServey{
 	position:absolute;
+	left:1200px;
+	top: 30px;
+	z-index: 1;
+}
+.goServey2{
+	position:absolute;
 	z-index: 1;
 }
 
@@ -126,16 +132,13 @@ body{
 }
 .copyright {
 	color:darkgray;
-<<<<<<< HEAD
+
 }
 .content_img{
 	border-radius: 1%;
 	box-shadow: 0px 0px 20px #000;
 
 }
-
-=======
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 
 </style>
 <script>
@@ -158,7 +161,7 @@ const slide = _ => {
     target.children[pos].style.opacity = 0
     pos = (pos + 1) % len 
     target.children[pos].style.opacity = 1
-  }, 3000)
+  }, 4000)
 }
 window.onload = function () {
   slide()
@@ -309,7 +312,7 @@ window.onload = function () {
       			<h2>원데이클래스 맞춤형 추천 서비스!</h2>
       			<h4>개인별 성향 조사를 통해 맞춤형 강좌를 추천해드립니다.</h4>
       			<br>
-      			<a class="goServey" style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
+      			<a class="goServey2" style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
       			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
       		</div> 
       	</td>
@@ -376,18 +379,20 @@ window.onload = function () {
 		      			</div>
 		      			<br>
 		      			<div>
-		      			<h5><%=cateArr.get(i).getTitle() %></h5> 
+		      			<a href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%> " class="goServey2"><I><h3><%=cateArr.get(i).getTitle() %></h3> </I></a>
+		      			<br>
 		      			<br>
 		      			<h5><%=cateArr.get(i).getTime() %></h5> 
 		      			</div>
 		      			<br>
-		      			<a style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><I>내용 보기</I></a> 
 		      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
 		      		</div> 
 		      	</td>
 		      	<td width="1%"><!--3번 구역--></td>
 		      	<td width="10%"><!--4번 구역--></td>
-		      	<td width="50%"><img style="max-width: 100%; height:340px;" class = "content_img" alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	<td width="50%"><a href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>">
+		      	
+		      	<img style="max-width: 100%; height:340px;" class = "content_img goServey" alt="" src=<%=cateArr.get(i).getImage() %>></a></td>
 		      	</tr>
 		      	<tr height="10px"></tr>
 		      </table>
@@ -415,13 +420,13 @@ window.onload = function () {
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-						<select name="search1" style="width: 160px; height: 50px; padding: 0px 20px;">
+						<select name="search1" style="width: 160px; height: 50px; text-align-last: center;">
 								<option value="항목 선택">항목 선택</option>
 								<option value="제목">제목</option>
 								<option value="내용">내용</option>
 								<option value="강사">강사</option> 
 						</select>
-						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; "class = "search" >
+						<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 300px; height: 50px; text-align:center; "class = "search" >
 
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
 						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
