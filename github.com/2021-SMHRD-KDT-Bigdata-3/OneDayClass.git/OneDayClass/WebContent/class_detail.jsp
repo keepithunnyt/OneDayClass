@@ -156,14 +156,13 @@
    <tr></tr>
    <tr><td colspan = "2" align = "center">
    <input type="button" class="site-btn" name="apply" value="클래스 신청하기" id="btn1">
-   </td></tr> 
-   </table>
-</div>
-</form>
-<!--  리뷰 작성 부분 -->
+   </td></tr>
+ <!--  리뷰 작성 부분 -->
+ <td colspan = "2"><hr style = "border: 1px solid #FEA698;"></td>
+ <tr align="center" ><td colspan = "2">
 <%if(user != null){ %>
 <br>
-<h4 align="center" style="font-family:'NanumSquareRound'; color:#0D3B66; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
+<h4  style="font-family:'NanumSquareRound'; color:#0D3B66; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
 <div class="starRev" name="rating" align="center">
   <span class="starR on" name="star1">1</span>
   <span class="starR" name="star2">2</span>
@@ -176,13 +175,13 @@
 <input tpye="text" id="comm" class = "search" placeholder="리뷰할 내용을 입력하세요" style="width: 300px; height: 50px; border:3px solid #FEA698; border-radius:12px;">&nbsp; 
 <input type="button" value="작성하기" id="btnjj"  class="site-btn">
 </div>
-<%} %>
-<!--  리뷰 출력 부분 -->
-
-<!--  리뷰디자인 -->
-<div class = "tabletwo">
-<table class = 'table_content'>
-<colgroup>
+<%} %>  
+ </td></tr>   
+  <!--  리뷰 작성 부분 -->  
+ <td colspan = "2"><hr style = "border: 1px solid #FEA698;"></td>   
+   
+ <!-- 리뷰 디자인 -->  
+   <colgroup>
 <col style="width:30%;">
 <col style="width:70%;">
 </colgroup>
@@ -219,9 +218,12 @@
    </tr>
    <%} %>
 <%} %>   
+ <!-- 리뷰 디자인 -->   
    </table>
 </div>
-<!--  리뷰디자인 -->
+</form>
+
+
    <script src="js/jquery-3.6.0.js"></script>
    <script>
       $('#btn1').on('click', function(){
