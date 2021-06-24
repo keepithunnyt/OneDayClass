@@ -59,14 +59,14 @@ color:#0D3B66;
 	<section class="contact-page spad pb-0">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8">
-					<div class="contact-form-warp">
+				<div class="col-lg-8" style="max-width: 100%;">
+					<div class="contact-form-warp" style="margin: auto; background-color: #F9EAE9; border-radius: 1%;">
 						<div class="section-title text-white text-left">
 							<h2>개인정보 수정</h2>
 							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
 							</div>
-							<form action="USERS_update" class="contact-form" style="width:680px;"> 
-							<table class="table1" style="width: 500px">
+							<form action="USERS_update" class="contact-form" style="width:680px; background: #FCF6FD;"> 
+							<table class="table1" style="width: 500px; margin:auto;">
 							<tr><td colspan='2'><h3>수강생 정보</h3></td></tr>
 							<tr height="20px"></tr>
 							<tr><td><h5>아이디</h5></td><td><h5>비밀번호</h5></td></tr>

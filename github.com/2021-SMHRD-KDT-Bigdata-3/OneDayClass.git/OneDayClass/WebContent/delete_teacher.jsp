@@ -19,12 +19,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="contact-form-warp" style = "background-color: #FCF6FD;border-radius: 1%;">
+					<div class="contact-form-warp" style = "background-color: #F9EAE9;border-radius: 1%;">
 						<div class="section-title text-white text-left">
 							<h2>회원 탈퇴</h2>
 							<h4>※회원 탈퇴 시 회원 정보는 복구가 불가능합니다.※</h4>
 						</div>
-						<form action="TEACHERS_delete" class="contact-form" method="post" style="background-color: #FEE9E7;"> 
+						<form action="TEACHERS_delete" class="contact-form" method="post" style="background-color: #FCF6FD;"> 
 							<h3>아이디를 확인해주세요</h3>
 							<br> <input type="text" class="pw" name="id" value=<%=teacher.getTeacher_id() %>>
 							<h3>비밀번호를 입력해주세요</h3>
