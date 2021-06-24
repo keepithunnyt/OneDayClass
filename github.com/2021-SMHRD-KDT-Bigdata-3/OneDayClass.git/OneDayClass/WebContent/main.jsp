@@ -110,7 +110,7 @@ body{
 	height: 600%;
 
 }
-#goServey{
+.goServey{
 	position:absolute;
 	z-index: 1;
 }
@@ -163,7 +163,7 @@ window.onload = function () {
 		arr = c_dao.alldata();
 
 		ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
-	
+		
 	%>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -281,9 +281,9 @@ window.onload = function () {
       	<tr height="380px">
       	<td width="15%"><!--1번 구역--> </td>
       	<td width="30%"><!--2번 구역--> 
-      		<div> 
+      		<div width="100%" height="100%"> 
       			<h2>나를 위한 추천서비스!</h2> 
-      			<a id="goServey" href="test3.jsp?class_id=<%= 3%>"><img src="img/icon.jpg"></a> 
+      			<a class="goServey" href="hobby_survey.jsp"><img src="img/icon.jpg"></a> 
       			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
       		</div> 
       	</td>
@@ -294,6 +294,40 @@ window.onload = function () {
       	<tr height="10px"></tr>
       </table>
       </div></li>
+      <%}else{ %>
+      	<%
+      		ArrayList<CLASSDTO> cateArr = new ArrayList<CLASSDTO>();
+      		for(int i = 0; i < arr.size(); i++){
+      			if(user.getRecomm().equals(arr.get(i).getCategory())){
+      				cateArr.add(arr.get(i));
+      			}
+      		}
+      	%>
+      	<%for(int i = 0; i < cateArr.size() ;i ++){ %>
+      	<li><div>
+		      <table style="max-width: 100%">
+		      <tr height="10px"></tr>
+		      	<tr height="380px">
+		      	<td width="15%"><!--1번 구역--> </td>
+		      	<td width="30%"><!--2번 구역--> 
+		      		<div width="100%" height="100%"> 
+		      			<div>
+		      			<h3><%=cateArr.get(i).getTitle() %></h3> 
+		      			<br>
+		      			<h4><%=cateArr.get(i).getTime() %></h4> 
+		      			</div>
+		      			<a class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><img src="img/icon.jpg"></a> 
+		      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
+		      		</div> 
+		      	</td>
+		      	<td width="1%"><!--3번 구역--></td>
+		      	<td width="10%"><!--4번 구역--></td>
+		      	<td width="50%"><img alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	</tr>
+		      	<tr height="10px"></tr>
+		      </table>
+	      </div></li>
+      	<%} %>
       <%} %>
     </ul>
   </div>

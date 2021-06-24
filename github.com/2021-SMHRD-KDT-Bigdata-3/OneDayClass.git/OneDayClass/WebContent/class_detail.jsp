@@ -89,10 +89,17 @@
    ArrayList<REVIEWDTO> review = null;
    review = r_dao.review_select(class_id);
    String stars = null;
-   request.setAttribute("class_id", c_dto.getId());
+  // request.setAttribute("class_id", c_dto.getId());
    String content = c_dto.getContent();
    content = content.replaceAll("\n", "<br>");
-   USERSDTO user = (USERSDTO)session.getAttribute("login");
+   USERSDTO user = null;
+   try{
+   	user = (USERSDTO)session.getAttribute("login");
+   }catch(Exception e){
+	   TEACHERSDTO teachers = (TEACHERSDTO)session.getAttribute("login");
+   }
+
+
 %>
 
 <form action="main.jsp" method="post">
@@ -158,11 +165,11 @@
 <br>
 <h4 align="center" style="font-family:'NanumSquareRound'; color:#0D3B66; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
 <div class="starRev" name="rating" align="center">
-  <span class="starR on" name="star1"></span>
-  <span class="starR" name="star2"></span>
-  <span class="starR" name="star3"></span>
-  <span class="starR" name="star4"></span>
-  <span class="starR" name="star5"></span>
+  <span class="starR on" name="star1">1</span>
+  <span class="starR" name="star2">2</span>
+  <span class="starR" name="star3">3</span>
+  <span class="starR" name="star4">4</span>
+  <span class="starR" name="star5">5</span>
 
 </div >
 <div align="center"> 
