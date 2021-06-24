@@ -38,6 +38,9 @@ color:#0D3B66;
 		color:#0D3B66;
 		
 		}
+			th, td{
+		background-color: #FCF6FD;
+	}
 
 </style>
 <head>
@@ -98,7 +101,7 @@ color:#0D3B66;
 							<br>
 					<table class="table2" style="width:680px; border:2px solid #FEA698; border-radius:5px;">
                    	<thead>
-                    <tr bgcolor="white" style="font-size: 15px; color:#0D3B66; text-align: center;">
+                    <tr style="font-size: 15px; color:#0D3B66; text-align: center;">
                     <th>강사 이름</th>
                     <th>강의 제목</th>
                     <th>강의 비용</th>
@@ -109,20 +112,20 @@ color:#0D3B66;
 		            <tbody>
 		            <%if(c_arr != null){  %>
 		            <%for(int i = 0; i < c_arr.size(); i++){ %>
-       	   			<tr align="center" bgcolor="white" style="color:#0D3B66; font-weight:600;">
+       	   			<tr align="center" style="color:#0D3B66; font-weight:600;">
                     <td><%=c_dao.findTeacher(c_arr.get(i).getId())  %></td>
                     <td><%=c_arr.get(i).getTitle() %></td>
                     <td><%=c_arr.get(i).getPrice() %></td>
                     <td><%=c_arr.get(i).getTime() %></td>
-                    <td style="color:#0D3B66; font-weight:800;"> <input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>   
+                    <td style="color:#0D3B66; font-weight:800;"> <input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:  #FCF6FD; "></td>   
             		</tr>
             		<%} } %>
-               		<tr align="center" bgcolor="white" style="color:#0D3B66; font-weight:600;">
+               		<tr align="center" style="color:#0D3B66; font-weight:600;">
                     <td>develop</td>
                     <td>인공지능 융합서비스 <br> 개발자과정</td>
                     <td>파이썬 활용한 데이터 <br> 크롤링 및 딥러닝 </td>
                     <td>2021/06/22</td>
-                    <td style="color:#0D3B66; font-weight:800;"><input type="button" class="site-btn3" id="cancel" value="수강 취소"></td>
+                    <td style="color:#0D3B66; font-weight:800;"><input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:  #FCF6FD; "></td>
                 </tr>
                 </tbody>
        			</table>
