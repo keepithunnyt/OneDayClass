@@ -79,7 +79,6 @@ N_TITLE VARCHAR2(100),
 N_CONTENT VARCHAR(2000),
 DATES DATE DEFAULT SYSDATE,
 CONSTRAINT notice_nnum_pk PRIMARY KEY(NUM)
-<<<<<<< HEAD
 )
 
 
@@ -87,11 +86,10 @@ CONSTRAINT notice_nnum_pk PRIMARY KEY(NUM)
 select * from class ;
 select * from users;
 select * from REVIEW;
-=======
 select * from class where class_id = 196;
 select * from USERS
 
-
+update users set recomm = 'sport' where id='taehee'
 
 
 
