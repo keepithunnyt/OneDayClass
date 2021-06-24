@@ -53,7 +53,7 @@
     z-index: 5;
     background-color: white;
     height: 100px;
-    box-shadow: inset 0 -1px 0 0 white;
+    box-shadow: inset 0 -1px 0 0 #eaeaea;
 	}
 	.sticky{
 		position: sticky;
@@ -62,7 +62,7 @@
         right: 0;
 		z-index: 5;
 		background-color: white;
-		box-shadow: inset 0 -1px 0 0 white;
+		box-shadow: inset 0 -1px 0 0 #eaeaea;
 	}
 	
 	
@@ -105,11 +105,10 @@ border-top:1px solid #FEA698;
 .search-section.ss-other-page .search-warp {
 	position: relative;
 	padding: 20px 0;
-	box-shadow: inset 0 -1px 0 0 white;
+	box-shadow: inset 0 -1px 0 0 #eaeaea;
 }
 body{
-	height: 400px;
-
+	height: 600%;
 }
 
 .goServey{
