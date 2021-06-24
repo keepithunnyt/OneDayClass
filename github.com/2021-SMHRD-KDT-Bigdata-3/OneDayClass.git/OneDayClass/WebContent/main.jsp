@@ -53,7 +53,7 @@
     z-index: 5;
     background-color: white;
     height: 100px;
-    box-shadow: inset 0 -1px 0 0 white;
+    box-shadow: inset 0 -1px 0 0 #eaeaea;
 	}
 	.sticky{
 		position: sticky;
@@ -62,7 +62,7 @@
         right: 0;
 		z-index: 5;
 		background-color: white;
-		box-shadow: inset 0 -1px 0 0 white;
+		box-shadow: inset 0 -1px 0 0 #eaeaea;
 	}
 	
 	
@@ -76,6 +76,7 @@
     .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
     .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
     .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
+    .slide li:nth-child(5){background: linear-gradient(#fbf7b8,#facfd9);} 
 
     span{
     	font-family:'NanumSquareRound';
@@ -104,17 +105,17 @@ border-top:1px solid #FEA698;
 .search-section.ss-other-page .search-warp {
 	position: relative;
 	padding: 20px 0;
-	box-shadow: inset 0 -1px 0 0 white;
+	box-shadow: inset 0 -1px 0 0 #eaeaea;
 }
 body{
 	height: 600%;
-
 }
 
 .goServey{
 	position:absolute;
 	z-index: 1;
 }
+<<<<<<< HEAD
 .footer-bottom{
 	background:white;
 	
@@ -126,6 +127,9 @@ body{
 .copyright {
 	color:darkgray;
 }
+=======
+
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 </style>
 <script>
 const all = ele => document.querySelectorAll(ele)
@@ -287,7 +291,7 @@ window.onload = function () {
      
       <%} else if(user.getRecomm()==null){ %>
       <%-- <li><div class="bg1"> --%>
-      <% String src = "http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg"; %>
+      <% String src = "img/page-bg/banner.png"; %>
       <li><div>
       <table style="max-width: 100%">
       <tr height="10px"></tr>
@@ -300,9 +304,9 @@ window.onload = function () {
       			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
       		</div> 
       	</td>
-      	<td width="1%"><!--3번 구역--></td>
+      	<td width="5%"><!--3번 구역--></td>
       	<td width="10%"><!--4번 구역--></td>
-      	<td width="50%"><img alt="" src=<%=src %>></td>
+      	<td width="40%"><img alt="" src=<%=src %>></td>
       	</tr>
       	<tr height="10px"></tr>
       </table>
@@ -318,24 +322,29 @@ window.onload = function () {
       	%>
       	<%for(int i = 0; i < cateArr.size() ;i ++){ %>
       	<li><div>
-		      <table style="max-width: 100%">
+		      <table style="max-width: 100%; height:400px;">
 		      <tr height="10px"></tr>
 		      	<tr height="380px">
 		      	<td width="15%"><!--1번 구역--> </td>
 		      	<td width="30%"><!--2번 구역--> 
 		      		<div width="100%" height="100%"> 
 		      			<div>
+		      			<h3>"<%=user.getName()%>" 님의 추천 강좌</h3> 
+		      			</div>
+		      			<br>
+		      			<div>
 		      			<h3><%=cateArr.get(i).getTitle() %></h3> 
 		      			<br>
 		      			<h4><%=cateArr.get(i).getTime() %></h4> 
 		      			</div>
-		      			<a class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><img src="img/icon.jpg"></a> 
+		      			<br>
+		      			<a style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><I>내용 보기</I></a> 
 		      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
 		      		</div> 
 		      	</td>
 		      	<td width="1%"><!--3번 구역--></td>
 		      	<td width="10%"><!--4번 구역--></td>
-		      	<td width="50%"><img alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	<td width="50%"><img style="max-width: 100%; height:380px;" alt="" src=<%=cateArr.get(i).getImage() %>></td>
 		      	</tr>
 		      	<tr height="10px"></tr>
 		      </table>
