@@ -10,6 +10,7 @@
 <style>
 .tableone{
 border:2px solid #FEA698;
+max-width: 100%;
 }
 .tableone> table th{
 font-family:'NanumSquareRound';
@@ -21,10 +22,10 @@ color:#0D3B66;
 }
 		.table2{
 			width:680px;
-			border: 4px solid #FEA698;
-			border-collapse: collapse;
-			border-radius: 12px;
-			padding:10px;
+   			border: 2px solid #FEA698;
+    		border-collapse: separate;
+    		border-radius: 5px;
+    		background-color: #FEA698;
 			
 		}
 		.table2>table2 th td{
@@ -95,7 +96,7 @@ color:#0D3B66;
 					<br>
 							<h4>수강 중인 강좌</h4>
 							<br>
-					<table class="table2" style="width:680px; border:2px solid #FEA698; border-radius:12px;">
+					<table class="table2" style="width:680px; border:2px solid #FEA698; border-radius:5px;">
                    	<thead>
                     <tr bgcolor="white" style="font-size: 15px; color:#0D3B66; text-align: center;">
                     <th>강사 이름</th>
