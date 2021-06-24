@@ -162,7 +162,7 @@
  <tr align="center" ><td colspan = "2">
 <%if(user != null){ %>
 <br>
-<h4  style="font-family:'NanumSquareRound'; color:#0D3B66; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
+<h4  style="font-family:'NanumSquareRound'; color:black; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
 <div class="starRev" name="rating" align="center">
   <span class="starR on" name="star1">1</span>
   <span class="starR" name="star2">2</span>

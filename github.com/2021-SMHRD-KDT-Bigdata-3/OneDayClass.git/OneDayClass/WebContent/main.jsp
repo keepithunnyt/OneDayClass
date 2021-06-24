@@ -53,7 +53,7 @@
     z-index: 5;
     background-color: white;
     height: 100px;
-    box-shadow: inset 0 -1px 0 0 #eaeaea;
+    box-shadow: inset 0 -1px 0 0 white;
 	}
 	.sticky{
 		position: sticky;
@@ -62,7 +62,7 @@
         right: 0;
 		z-index: 5;
 		background-color: white;
-		box-shadow: inset 0 -1px 0 0 #eaeaea;
+		box-shadow: inset 0 -1px 0 0 white;
 	}
 	
 	
@@ -126,7 +126,7 @@ body{
 }
 .copyright {
 	color:darkgray;
-<<<<<<< HEAD
+
 }
 .content_img{
 	border-radius: 1%;
@@ -134,8 +134,7 @@ body{
 
 }
 
-=======
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
+
 
 </style>
 <script>
