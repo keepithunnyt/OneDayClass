@@ -38,25 +38,25 @@
       
       }
       th {
-        color : #0D3B66;
+        color : #323232;
         font-size : 20px;
         font-family:'NanumSquareRound'
         
       }
       td.teacher {
-        color : #0D3B66;
+        color : #323232;
         font-size : 18px;
         font-family:'NanumSquareRound'
       }
       td {
-        color : #0D3B66;
+        color : black;
         font-size : 18px;
         font-family:'NanumSquareRound'
         
       }
       th.title{
          font-size : 30px;
-         color: #0D3B66;
+         color: black;
          font-family:'NanumSquareRound'
 
          height:30px;
@@ -116,7 +116,7 @@
 </colgroup>
    <tr>
    <td colspan = '2'>
-   <img alt="뭔가 안됐음" src=<%=c_dto.getImage() %>></td>
+   <img alt="뭔가 안됐음" style="width:100%;" src=<%=c_dto.getImage() %>></td>
    </tr>
    <tr bgcolor="white">
    <th colspan = '2'><%=c_dto.getCategory() %></th>
@@ -140,10 +140,10 @@
    </tr>
    
    <tr align="center" bgcolor="white">
-      <td colspan = "2" style = "font-weight: 800;">강좌 소개</td>
+      <td colspan = "2" style = "font-weight: 800; ">강좌 소개</td>
    </tr>
-   <tr><td colspan = "2"><%=content %></td></tr>
-
+   <tr><td colspan = "2" style="color:#323232; line-height: 1.3;"><%=content %></td></tr>
+	<tr><br></tr>
    <tr align="center" bgcolor="white" style = "font-weight: 800;">
       <td >시간</td>
       <td><%=c_dto.getTime() %></td>
@@ -171,6 +171,7 @@
   <span class="starR" name="star5">5</span>
 
 </div >
+<br>
 <div align="center"> 
 <input tpye="text" id="comm" class = "search" placeholder="리뷰할 내용을 입력하세요" style="width: 300px; height: 50px; border:3px solid #FEA698; border-radius:12px;">&nbsp; 
 <input type="button" value="작성하기" id="btnjj"  class="site-btn">
@@ -187,13 +188,16 @@
 </colgroup>
 <%if(review != null){ %>
    <tr>
-   <th class ='title' colspan = '2' >리뷰 확인</th>
+   <th class ='title' colspan = '2' ><h5>수강생 후기</h5></th>
    </tr>
 <%for(int i = 0; i < review.size(); i++){ %>
    <tr>
    <td style="width: 300px;"><%=review.get(i).getId() %></td>
+   <td rowspan="2" align = "center"><%=review.get(i).getComm() %> </td>
    
-   <td><%if (review.get(i).getRating() == 1){%>
+   </tr>
+   
+   <tr><td ><%if (review.get(i).getRating() == 1){%>
          <% stars = "★☆☆☆☆"; %>
             <%=stars %>
          <% }else if(review.get(i).getRating() == 2){%>
@@ -209,9 +213,7 @@
          <% stars = "★★★★★"; %>
             <%=stars %>   
             <% }%></td>
-   </tr>
-   
-   <tr><td colspan = "2" align = "center"><%=review.get(i).getComm() %> </td></tr> 
+            </tr> 
    <tr align="right" bgcolor="white">
       
       <td class = 'teacher' colspan = '2' > <%=review.get(i).getDates() %> </td> 

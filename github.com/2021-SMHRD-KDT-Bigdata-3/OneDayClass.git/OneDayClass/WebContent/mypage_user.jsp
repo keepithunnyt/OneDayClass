@@ -39,7 +39,7 @@ color:#0D3B66;
 		
 		}
 			th, td{
-		background-color: #FCF6FD;
+		background-color: white;
 	}
 
 </style>
@@ -69,7 +69,7 @@ color:#0D3B66;
 							<h2>개인정보 수정</h2>
 							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
 							</div>
-							<form action="USERS_update" class="contact-form" style="width:680px; background: #FCF6FD;"> 
+							<form action="USERS_update" class="contact-form" style="width:680px; background: white;"> 
 							<table class="table1" style="width: 500px; margin:auto;">
 							<tr><td colspan='2'><h3>수강생 정보</h3></td></tr>
 							<tr height="20px"></tr>
@@ -117,7 +117,7 @@ color:#0D3B66;
                     <td><%=c_arr.get(i).getTitle() %></td>
                     <td><%=c_arr.get(i).getPrice() %></td>
                     <td><%=c_arr.get(i).getTime() %></td>
-                    <td style="color:#0D3B66; font-weight:800;"> <input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:  #FCF6FD; "></td>   
+                    <td style="color:#0D3B66; font-weight:800;"> <input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:white; "></td>   
             		</tr>
             		<%} } %>
                		<tr align="center" style="color:#0D3B66; font-weight:600;">
@@ -125,7 +125,7 @@ color:#0D3B66;
                     <td>인공지능 융합서비스 <br> 개발자과정</td>
                     <td>파이썬 활용한 데이터 <br> 크롤링 및 딥러닝 </td>
                     <td>2021/06/22</td>
-                    <td style="color:#0D3B66; font-weight:800;"><input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:  #FCF6FD; "></td>
+                    <td style="color:#0D3B66; font-weight:800;"><input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:white; "></td>
                 </tr>
                 </tbody>
        			</table>
