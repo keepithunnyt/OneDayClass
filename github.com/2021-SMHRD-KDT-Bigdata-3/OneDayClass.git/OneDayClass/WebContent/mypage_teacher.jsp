@@ -32,18 +32,28 @@ font-family:'NanumSquareRound';
 color:#0D3B66;
 max-width: 100%;
 }
-		.table2{
-			width:578px;
-			border: 2px solid #FEA698;
-			border-collapse: separate;
-			border-radius: 12px;
-			padding:10px;
-			background-color: white;
+		.table2 {
+   			border: 2px solid #FEA698;
+    		border-collapse: separate;
+    		border-radius: 5px;
+    		background-color: #FEA698;
 		}
+
+		
 	.input{
 		max-width: 100%;
 	
 	}
+	.contact-form-warp .contact-form {
+    	padding: 35px 40px 20px;
+    	border: 4px solid #FEA698;
+    	border-radius: 12px;
+   		 background-color: #FCF6FD;
+	}
+	th, td{
+		background-color: #FCF6FD;
+	}
+	
 </style>
 </head>
 <body>	
@@ -56,14 +66,15 @@ max-width: 100%;
 		<div class="container" >
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="contact-form-warp" style="background-color: #F5D5C8;border-radius: 1%;">
+					<div class="contact-form-warp" style=" background-color: #F9EAE9; border-radius: 1%;">
 						<div class="section-title text-white text-left">
 							<h2>개인정보 수정</h2>
 							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요.</p>
 							</div>
+							<h3>수강생 정보</h3>
+							<br>
 							<form action="TEACHERS_update" class="contact-form" style="width:680px; max-width: 100%;"> 
 							<table class="table1" style="width: 500px">
-							<tr><td colspan='2'><h3>수강생 정보</h3></td></tr>
 							<tr height="20px"></tr>
 							<tr><td><h5>아이디</h5></td><td><h5>비밀번호</h5></td></tr>
 							<tr height="10px"></tr>
@@ -117,12 +128,12 @@ max-width: 100%;
                 <%if(classArray != null) {%>
                 <%for(int i = 0; i < classArray.size(); i++){ %>
                 	
-               		<tr align="center" bgcolor="white" style="font-size:18px;">
+               		<tr align="center" bgcolor="white" style="font-size:15px;">
                     <td> <%=classArray.get(i).getId() %> </td>
                     <td> <%=classArray.get(i).getTitle() %> </td>
                     <td> <%=classArray.get(i).getCategory() %></td> 
               	    <td> <%=classArray.get(i).getPrice() %></td>
-                    <td><input type="button" class="site-btn3 input" id="cancel" value="수강 취소"></td>
+                    <td><input type="button" class="site-btn3 input" id="cancel" value="수강 취소" style="background-color:  #FCF6FD; "></td>
                 </tr>
                 <%} }%>
             </tbody>
