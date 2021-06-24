@@ -64,7 +64,7 @@
       
    
 .starR{
-  background: url('http://miuu227.godohosting.com/images/icon/ico_review.png') no-repeat right 0;
+  background: url('img/star_image.png') no-repeat right 0;
   background-size: auto 100%;
   width: 30px;
   height: 30px;
@@ -162,7 +162,7 @@
  <tr align="center" ><td colspan = "2">
 <%if(user != null){ %>
 <br>
-<h4  style="font-family:'NanumSquareRound'; color:#0D3B66; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
+<h4  style="font-family:'NanumSquareRound'; color:black; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
 <div class="starRev" name="rating" align="center">
   <span class="starR on" name="star1">1</span>
   <span class="starR" name="star2">2</span>
@@ -190,6 +190,9 @@
    <tr>
    <th class ='title' colspan = '3' ><h5>수강생 후기</h5></th>
    </tr>
+   <tr>
+   <td colspan = '2' style="text-align: center; color:#FEA698;"><h4>수강생 여러분의 생생한 후기를 남겨주세요!</h4></td>
+   </tr>
 <%for(int i = 0; i < review.size(); i++){ %>
    <tr>
    <td style="width: 300px;"><%=review.get(i).getId() %></td>
@@ -206,7 +209,7 @@
    
    </tr>
    
-   <tr><td ><%if (review.get(i).getRating() == 1){%>
+   <tr><td style="color:#ff9b00;"><%if (review.get(i).getRating() == 1){%>
          <% stars = "★☆☆☆☆"; %>
             <%=stars %>
          <% }else if(review.get(i).getRating() == 2){%>
@@ -220,13 +223,15 @@
             <%=stars %>
          <% }else if(review.get(i).getRating() == 5){%>
          <% stars = "★★★★★"; %>
-            <%=stars %>   
+            <%=stars %>
+           
             <% }%></td>
             </tr> 
    <tr align="right" bgcolor="white">
       
       <td class = 'teacher' colspan = '2' > <%=review.get(i).getDates() %> </td> 
    </tr>
+     <tr><td colspan = "2"><hr style = "border: 1px solid #ffeae6;"></td></tr> 
    <%} %>
 <%} %>   
  <!-- 리뷰 디자인 -->   
