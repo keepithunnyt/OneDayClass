@@ -26,16 +26,32 @@ public class CLASS_insert extends HttpServlet {
 		
 		request.setCharacterEncoding("euc-kr");
 		HttpSession session = request.getSession();
-
+		
+		// img 폴더의 저장경로 얻기
+		String savePath = request.getServletContext().getRealPath("img");
+		
+		// 파일의 최대 크기 지정
+		int maxSize = 5 * 1024 * 1024; // 5Mb
+		
+		// 인코딩 방식 지정
+		String encoding = "euc-kr";
+		
+		MultipartRequest multi = new MultipartRequest(request,
+				savePath, maxSize, encoding, new DefaultFileRenamePolicy());
+		String title = multi.getParameter("title");
+		String file = multi.getFilesystemName("fileName");
+		if(file==null) {
+			file = "X";
+		}
+		String content = multi.getParameter("content");
+		
 		TEACHERSDTO teacher = (TEACHERSDTO) session.getAttribute("login");
 		String id = teacher.getTeacher_id();
-		String title = request.getParameter("title");
-		String content = request.getParameter("content");
-		String time = request.getParameter("time");
-		String price = request.getParameter("price");
-		String category = request.getParameter("category");
-		String image = "img/" + request.getParameter("img");
-		String icon = "img/" + request.getParameter("img");
+		String time = multi.getParameter("time");
+		String price = multi.getParameter("price");
+		String category = multi.getParameter("category");
+		String image = savePath.replace('\\', '/') + '/' + file;
+		String icon = image;
 		System.out.println(id + " " + title + " " + content + " " + time + " " + price + " " + category + " " + image);
 		int cnt = 0;
 

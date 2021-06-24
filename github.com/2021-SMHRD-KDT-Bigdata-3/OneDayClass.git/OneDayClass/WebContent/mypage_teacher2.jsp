@@ -25,7 +25,7 @@
 						<p>원데이클래스 강좌 개설을 위한 정보를 입력해주세요</p>
 						</div>
 						
-						<form action="CLASS_insert" class="contact-form" method="post">
+						<form action="CLASS_insert" class="contact-form" method="post"  enctype="multipart/form-data">
 						<h4>수강 등록</h4>
 						<br>
 						<select name="category" style="width:250px; height:50px;">
@@ -44,14 +44,38 @@
 						<input name="time" type="text" class="class_id" placeholder="시간 입력 : 00월 00일 (요일) 00:00 ~ 00:00" style="width:505px; height:50px;">
 						<input name="price" type="text" class="class_id" placeholder="비용 : 00원 / 총 0회 / 0시간" style="width:505px; height:50px;">
 						<textarea name="content" placeholder="강좌 내용을 입력하세요" style="width:505px; height:300px;"></textarea>
-						<br>
+						<div id="inputFile">
 						<label class="site-btn3" for="input-file">파일 첨부</label>
-						<input type="file" id="input-file" style={{display:"none"}} name="img">
+						<input type="file" id="input-file" name="img">
+						</div>
+						<br>
 						<input type="submit" class="site-btn4" id="enroll2" value="등록 완료">
 						<input type="button" class="site-btn4" id="enroll3" value="등록 취소" onClick="location.href='mypage_teacher.jsp'">
 						</form>
 					</div>
 				</div>
 	</section>
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$('#input-file').change(function(){
+			let img = $(this).val();
+			let imgArr = [ ".jfif", ".bmp", ".gif", ".png", ".jpeg", ".tif", ".tiff", ".jpg"];
+			let result = 0;
+			for(let i = 0; i < imgArr.length; i++){
+				if($(this).val().indexOf(imgArr[i]) != -1){
+					result += 1
+				}
+			}
+			if(result > 0){
+				console.log($(this).val());
+				$('#inputFile').append("<span>" + img + "</span>");
+				console.log(img);
+			}else{
+				alert("이미지 파일만 올려주세요.");
+				$(this).val("");
+			}
+		});
+	</script>
+	
 </body>
 </html>
