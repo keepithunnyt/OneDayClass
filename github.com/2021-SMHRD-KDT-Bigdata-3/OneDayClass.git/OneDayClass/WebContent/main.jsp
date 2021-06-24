@@ -163,7 +163,7 @@ window.onload = function () {
 		arr = c_dao.alldata();
 
 		ArrayList<CLASSDTO> arr2 = new ArrayList<CLASSDTO>();
-	
+		
 	%>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -294,6 +294,19 @@ window.onload = function () {
       	<tr height="10px"></tr>
       </table>
       </div></li>
+      <%}else{ %>
+      	<%
+      		ArrayList<CLASSDTO> cateArr = new ArrayList<CLASSDTO>();
+      		for(int i = 0; i < arr.size(); i++){
+      			if(user.getRecomm().equals(arr.get(i).getCategory())){
+      				cateArr.add(arr.get(i));
+      			}
+      		}
+      	%>
+      	<%for(int i = 0; i < cateArr.size() ;i ++){ %>
+      	
+      	
+      	<%} %>
       <%} %>
     </ul>
   </div>
