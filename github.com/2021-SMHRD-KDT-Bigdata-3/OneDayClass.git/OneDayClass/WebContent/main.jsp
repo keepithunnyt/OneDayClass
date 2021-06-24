@@ -115,7 +115,17 @@ body{
 	position:absolute;
 	z-index: 1;
 }
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
+.footer-bottom{
+	background:white;
+	
+}
+.footer-menu li a{
+	color:darkgray;
+
+}
+.copyright {
+	color:darkgray;
+}
 </style>
 <script>
 const all = ele => document.querySelectorAll(ele)

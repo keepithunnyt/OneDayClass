@@ -110,6 +110,16 @@ body{
 	height: 600%;
 
 }
+.footer-bottom{
+	background:white;
+}
+.footer-menu li a{
+	color:darkgray;
+
+}
+.copyright {
+	color:darkgray;
+}
 	</style>
 <script>
 const all = ele => document.querySelectorAll(ele)
