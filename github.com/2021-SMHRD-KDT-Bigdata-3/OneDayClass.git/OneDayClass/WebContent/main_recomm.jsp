@@ -77,6 +77,7 @@
     .slide li:nth-child(2){background: linear-gradient(#fbf7b8,#facfd9);}
     .slide li:nth-child(3){background: linear-gradient(#ffcfc5, #d3fbfb);}
     .slide li:nth-child(4){background: linear-gradient(#fbfcdb, #e9defa);}
+    .slide li:nth-child(5){background: linear-gradient(#fbf7b8,#facfd9);}
 
     span{
     	font-family:'NanumSquareRound';
@@ -107,7 +108,7 @@ border-top:1px solid #FEA698;
 	box-shadow: inset 0 -1px 0 0 #eaeaea;
 }
 body{
-	height: 600%;
+	height: 400px;
 
 }
 	</style>
@@ -264,16 +265,15 @@ window.onload = function () {
 	<div id="slide">
 	<div class="slide">
     <ul>
-      <li><div class = "bg1"><table style="max-width: 100%"><tr height="30px"></tr>
+     
+      <%if(user == null){ %>
+      <li><div class = "bg1"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
       	<td width="30%"><h3></h3></td>
       	<td width="10%"></td>
-      	<td width="30%"><!--  <img width="400px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/78053dddfbf6c5afa01bab9f7557bfe38e4362c2.jpg">--></td>
+      	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
       	<td width="20%"></td></tr>
-      
-      
-      
-      	<tr height="30px"></tr>
+      <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg2"><table><tr height="30px"></tr>
       	<tr height="340px"><td width="20%"></td>
@@ -281,9 +281,6 @@ window.onload = function () {
       	<td width="10%"></td>
       	<td width="30%"><!--<img width="500px" height="340px" src="http://img.taling.me/Content/Uploads/Cover/55fa208a18b09b2e3c02772346f439b0d4df8409.jpeg">--></td>
       	<td width="20%"></td></tr>
-      
-      
-      
       <tr height="30px"></tr>
       </table></div></li>
       <li><div class = "bg3"><table><tr height="30px"></tr>
@@ -304,6 +301,68 @@ window.onload = function () {
       
       <tr height="30px"></tr>
       </table></div></li>
+      <%} else if(user.getRecomm()==null){ %>
+      <%-- <li><div class="bg1"> --%>
+      <% String src = "img/page-bg/banner.png"; %>
+      <li><div>
+      <table style="max-width: 100%">
+      <tr height="10px"></tr>
+      	<tr height="380px">
+      	<td width="15%"><!--1번 구역--> </td>
+      	<td width="30%"><!--2번 구역--> 
+      		<div width="100%" height="100%"> 
+      			<h2>나를 위한 추천서비스!</h2> 
+      			<a class="goServey" href="hobby_survey.jsp"><img src="img/icon.jpg"></a> 
+      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
+      		</div> 
+      	</td>
+      	<td width="5%"><!--3번 구역--></td>
+      	<td width="10%"><!--4번 구역--></td>
+      	<td width="40%"><img alt="" src=<%=src %>></td>
+      	</tr>
+      	<tr height="10px"></tr>
+      </table>
+      </div></li>
+      <%}else{ %>
+      	<%
+      		ArrayList<CLASSDTO> cateArr = new ArrayList<CLASSDTO>();
+      		for(int i = 0; i < arr.size(); i++){
+      			if(user.getRecomm().equals(arr.get(i).getCategory())){
+      				cateArr.add(arr.get(i));
+      			}
+      		}
+      	%>
+      	<%for(int i = 0; i < cateArr.size() ;i ++){ %>
+      	<li><div>
+		      <table style="max-width: 100%; height:400px;">
+		      <tr height="10px"></tr>
+		      	<tr height="380px">
+		      	<td width="15%"><!--1번 구역--> </td>
+		      	<td width="30%"><!--2번 구역--> 
+		      		<div width="100%" height="100%"> 
+		      			<div>
+		      			<h3>"<%=user.getName()%>" 님의 추천 강좌</h3> 
+		      			</div>
+		      			<br>
+		      			<div>
+		      			<h3><%=cateArr.get(i).getTitle() %></h3> 
+		      			<br>
+		      			<h4><%=cateArr.get(i).getTime() %></h4> 
+		      			</div>
+		      			<br>
+		      			<a style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><I>내용 보기</I></a> 
+		      			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
+		      		</div> 
+		      	</td>
+		      	<td width="1%"><!--3번 구역--></td>
+		      	<td width="10%"><!--4번 구역--></td>
+		      	<td width="50%"><img style="max-width: 100%; height:380px;" alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	</tr>
+		      	<tr height="10px"></tr>
+		      </table>
+	      </div></li>
+      	<%} %>
+      <%} %>
     </ul>
   </div>
   </div>
