@@ -58,7 +58,7 @@
 	}
 	.sticky{
 		position: sticky;
-		top: 99px;
+		top: 100px;
 		left: 0;
         right: 0;
 		z-index: 5;
