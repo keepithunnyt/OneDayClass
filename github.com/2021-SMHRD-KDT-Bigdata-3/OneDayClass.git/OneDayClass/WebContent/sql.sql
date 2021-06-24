@@ -54,16 +54,17 @@ REFERENCES USERS (ID),
 CONSTRAINT review_cid_fk FOREIGN KEY(CLASS_ID)
 REFERENCES CLASS (CLASS_ID)
 )
-
+drop table REVIEW cascade constraint;
+drop table ENROLMENT cascade constraint;
 CREATE TABLE ENROLMENT
 (ID VARCHAR2(20),
 CLASS_ID NUMBER(20),
 DATES DATE DEFAULT SYSDATE,
 STATE VARCHAR2(20),
 CONSTRAINT enrolment_id_fk FOREIGN KEY(ID)
-REFERENCES USERS (ID),
+REFERENCES USERS (ID) on delete cascade,
 CONSTRAINT enrolment_cid_fk FOREIGN KEY(CLASS_ID)
-REFERENCES CLASS (CLASS_ID)
+REFERENCES CLASS (CLASS_ID) on delete cascade
 )
 
 CREATE SEQUENCE NOTICE_NNUM_SEQ
@@ -98,4 +99,4 @@ update users set recomm = 'sport' where id='taehee'
 
 
 )
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
+

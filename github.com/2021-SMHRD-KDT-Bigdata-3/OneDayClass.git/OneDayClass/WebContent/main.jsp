@@ -105,7 +105,7 @@ border-top:1px solid #FEA698;
 .search-section.ss-other-page .search-warp {
 	position: relative;
 	padding: 20px 0;
-	box-shadow: inset 0 -1px 0 0 #eaeaea;
+	box-shadow: inset 0 -1px 0 0 white;
 }
 body{
 	height: 600%;
@@ -126,8 +126,16 @@ body{
 }
 .copyright {
 	color:darkgray;
+<<<<<<< HEAD
+}
+.content_img{
+	border-radius: 1%;
+	box-shadow: 0px 0px 20px #000;
+
 }
 
+=======
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/OneDayClass.git
 
 </style>
 <script>
@@ -307,7 +315,7 @@ window.onload = function () {
       	</td>
       	<td width="5%"><!--3번 구역--></td>
       	<td width="10%"><!--4번 구역--></td>
-      	<td width="40%"><img alt="" src=<%=src %>></td>
+      	<td width="40%"><img class = "content_img" alt="" src=<%=src %> style = "height:340px;"></td>
       	</tr>
       	<tr height="10px"></tr>
       </table>
@@ -356,7 +364,7 @@ window.onload = function () {
       		}
       	%>
       	<%for(int i = 0; i < cateArr.size() ;i ++){ %>
-      	<li><div>
+      	<li><div class="img-blurred-edge">
 		      <table style="max-width: 100%; height:400px;">
 		      <tr height="10px"></tr>
 		      	<tr height="380px">
@@ -364,13 +372,13 @@ window.onload = function () {
 		      	<td width="30%"><!--2번 구역--> 
 		      		<div width="100%" height="100%"> 
 		      			<div>
-		      			<h3>"<%=user.getName()%>" 님의 추천 강좌</h3> 
+		      			<h4>"<%=user.getName()%>" 님의 추천 강좌</h4> 
 		      			</div>
 		      			<br>
 		      			<div>
-		      			<h3><%=cateArr.get(i).getTitle() %></h3> 
+		      			<h5><%=cateArr.get(i).getTitle() %></h5> 
 		      			<br>
-		      			<h4><%=cateArr.get(i).getTime() %></h4> 
+		      			<h5><%=cateArr.get(i).getTime() %></h5> 
 		      			</div>
 		      			<br>
 		      			<a style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%>"><I>내용 보기</I></a> 
@@ -379,7 +387,7 @@ window.onload = function () {
 		      	</td>
 		      	<td width="1%"><!--3번 구역--></td>
 		      	<td width="10%"><!--4번 구역--></td>
-		      	<td width="50%"><img style="max-width: 100%; height:380px;" alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	<td width="50%"><img style="max-width: 100%; height:340px;" class = "content_img" alt="" src=<%=cateArr.get(i).getImage() %>></td>
 		      	</tr>
 		      	<tr height="10px"></tr>
 		      </table>
@@ -462,7 +470,7 @@ window.onload = function () {
 							<%--<div class="price" ></div> --%>
 						</div>
 						</a>
-						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white">
+						<div class="course-info" style="background: white; border:3px solid #FEA698; border-top:1px solid white; color:black;">
 							<div class="course-text" style="height: 180px;">							
 							<a href=<%=url %> ><h5> <%=arr.get(i).getTitle() %></h5></a>							
 								<div class="students"><%=arr.get(i).getPrice() %></div>

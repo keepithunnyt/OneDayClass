@@ -128,7 +128,11 @@ body{
 .copyright {
 	color:darkgray;
 }
+.content_img{
+	border-radius: 1%;
+	box-shadow: 0px 0px 20px #000;
 
+}
 
 </style>
 <script>
@@ -341,7 +345,7 @@ window.onload = function () {
       	</td>
       	<td width="5%"><!--3锅 备开--></td>
       	<td width="10%"><!--4锅 备开--></td>
-      	<td width="40%"><img alt="" src=<%=src %>></td>
+      	<td width="40%"><img class = "content_img" alt="" style = "max-width: 100%;height:340px;" src=<%=src %>></td>
       	</tr>
       	<tr height="10px"></tr>
       </table>
@@ -413,7 +417,7 @@ window.onload = function () {
 		      	</td>
 		      	<td width="1%"><!--3锅 备开--></td>
 		      	<td width="10%"><!--4锅 备开--></td>
-		      	<td width="50%"><img style="max-width: 100%; height:380px;" alt="" src=<%=cateArr.get(i).getImage() %>></td>
+		      	<td width="50%"><img class = "content_img" style="max-width: 100%; height:340px;" alt="" src=<%=cateArr.get(i).getImage() %>></td>
 		      	</tr>
 		      	<tr height="10px"></tr>
 		      </table>
