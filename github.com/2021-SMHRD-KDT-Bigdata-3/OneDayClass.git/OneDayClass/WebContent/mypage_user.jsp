@@ -66,42 +66,42 @@ color:#0D3B66;
 				<div class="col-lg-8" style="max-width: 100%;">
 					<div class="contact-form-warp" style="margin: auto; background-color: #F9EAE9; border-radius: 1%;">
 						<div class="section-title text-white text-left">
-							<h2>개인정보 수정</h2>
-							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
+							<h2 style="color:black;">개인정보 수정</h2>
+							<p style="font-size:20px; color:#323232;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
 							</div>
 							<form action="USERS_update" class="contact-form" style="width:680px; background: white;"> 
 							<table class="table1" style="width: 500px; margin:auto;">
-							<tr><td colspan='2'><h3>수강생 정보</h3></td></tr>
+							<tr><td colspan='2'><h3 style="color:#323232;">수강생 정보</h3></td></tr>
 							<tr height="20px"></tr>
-							<tr><td><h5>아이디</h5></td><td><h5>비밀번호</h5></td></tr>
+							<tr><td><h5 style="color:#323232;">아이디</h5></td><td><h5 style="color:#323232;">비밀번호</h5></td></tr>
 							<tr height="10px"></tr>
 							<tr><td><input disabled="disabled" type="text" class="id" value=<%=user.getId() %> name="id" style="width:290px;"> </td>
 								<td><input type="password" class="pw" value=<%=user.getPw() %> name="pw" style="width:290px;"></td>
 							</tr>
 							<tr></tr>	
-							<tr><td><h5>이름</h5></td><td><h5>전화번호</h5></td></tr>
+							<tr><td><h5 style="color:#323232;">이름</h5></td><td><h5 style="color:#323232;">전화번호</h5></td></tr>
 							<tr height="10px"></tr>
 							<tr><td><input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;"></td>
 								<td><input disabled="disabled" type="text" class="name" value=<%=user.getName() %> name="name" style="width:290px;"></td>
 							</tr>
-							<tr><td colspan='2'><h5>주소</h5></td></tr>
+							<tr><td colspan='2'><h5 style="color:#323232;">주소</h5></td></tr>
 							<tr height="10px"></tr>
 							<tr><td colspan='2'><input type="text" class="address" value="<%=user.getAddress() %>" name="address" style="width:595px;"></td></tr>
 															
 
 							</table>
 							<div style="margin: auto; width: 50%;">
-								<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:20px;">
-								<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto; left:20px;">
+								<input type="submit" class="site-btn4" id="edit" value="수정 완료" style="margin: auto; left:20px; color:#323232;">
+								<input type="button" class="site-btn4" id="survey" value="성향 분석" onClick="location.href='hobby_survey.jsp'" style="margin: auto; left:20px; color:#323232;">
 					
 							</div>
 					</form>
 					<br>
-							<h4>수강 중인 강좌</h4>
+							<h4 style="color:black;">수강 중인 강좌</h4>
 							<br>
 					<table class="table2" style="width:680px; border:2px solid #FEA698; border-radius:5px;">
                    	<thead>
-                    <tr style="font-size: 15px; color:#0D3B66; text-align: center;">
+                    <tr style="font-size: 15px; color:#323232; text-align: center;">
                     <th>강사 이름</th>
                     <th>강의 제목</th>
                     <th>강의 비용</th>
@@ -124,8 +124,8 @@ color:#0D3B66;
        			</table>
        			<br>
 				<form action="delete_page.jsp" method="post">
-				<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto; left:210px;">
-				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:210px;">
+				<input type="button" class="site-btn4" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto; left:210px; color:#323232;">
+				<input type="submit" class="site-btn4" value="회원 탈퇴" style="margin: auto; left:210px; color:#323232;">
 				</form>
 				</div>
 				</div>
