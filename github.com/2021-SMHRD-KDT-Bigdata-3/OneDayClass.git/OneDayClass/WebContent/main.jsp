@@ -219,11 +219,11 @@ window.onload = function () {
 	
 					<% }else if(user != null && op.equals("user")){ %> 
 						<% if(user.getId().equals("admin")){ %>
-							<a href="logout" class="site-btn header-btn">로그아웃</a>
-							<a href="#" class="site-btn2 header-btn">회원관리</a>
+							<a href="logout" class="site-btn header-btn" style="color:#323232;">로그아웃</a>
+							<a href="#" class="site-btn2 header-btn" style="color:#323232;">회원관리</a>
 						<%} else { %>
-							<a href="logout" class="site-btn header-btn">로그아웃</a>
-							<a href="mypage_user.jsp" class="site-btn2 header-btn">마이페이지</a>
+							<a href="logout" class="site-btn header-btn" style="color:#323232;">로그아웃</a>
+							<a href="mypage_user.jsp" class="site-btn2 header-btn" style="color:#323232;">마이페이지</a>
 					
 						<% } %>
 					
@@ -233,7 +233,7 @@ window.onload = function () {
 							<a href="#" class="site-btn2 header-btn">회원관리</a>
 						<%} else { %>
 							<a href="logout" class="site-btn header-btn">로그아웃</a>
-							<a href="mypage_teacher.jsp" class="site-btn2 header-btn">마이페이지</a>
+							<a href="mypage_teacher.jsp" class="site-btn2 header-btn" style="color:#323232;">마이페이지</a>
 						<% } %>
 					<%} %>
 					<!--<nav class="main-menu">
