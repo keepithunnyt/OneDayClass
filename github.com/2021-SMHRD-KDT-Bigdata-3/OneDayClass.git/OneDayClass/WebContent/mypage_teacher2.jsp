@@ -71,7 +71,7 @@
 				$('#inputFile').append("<span>" + img + "</span>");
 				console.log(img);
 			}else{
-				alert("이미지 파일만 올려주세요.");
+				alert("이미지만 첨부 가능합니다.\n" +'(.jfif, .bmp, .gif, .png, .jpeg, .tif, .tiff, .jpg)' );
 				$(this).val("");
 			}
 		});

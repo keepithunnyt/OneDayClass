@@ -130,7 +130,8 @@ max-width: 100%;
                 	
                		<tr align="center" bgcolor="white" style="font-size:15px;">
                     <td> <%=classArray.get(i).getId() %> </td>
-                    <td> <%=classArray.get(i).getTitle() %> </td>
+                    <%String url = "class_detail.jsp?class_id=" + classArray.get(i).getId(); %>
+                    <td> <a href=<%=url %>> <%=classArray.get(i).getTitle() %></a> </td>
                     <td> <%=classArray.get(i).getCategory() %></td> 
               	    <td> <%=classArray.get(i).getPrice() %></td>
                     <td><input type="button" class="site-btn3 input" id="cancel" value="수강 취소" style="background-color:  #FCF6FD; "></td>

@@ -155,7 +155,9 @@
    </tr>
    <tr></tr>
    <tr><td colspan = "2" align = "center">
+   <%if(user != null){ %>
    <input type="button" class="site-btn" name="apply" value="클래스 신청하기" id="btn1">
+   <% } %>
    </td></tr>
  <!--  리뷰 작성 부분 -->
  <td colspan = "2"><hr style = "border: 1px solid #FEA698;"></td>
@@ -164,7 +166,7 @@
 <br>
 <h4  style="font-family:'NanumSquareRound'; color:black; font-weight:800px;">♤리뷰를 작성해 보세요♤</h4>
 <div class="starRev" name="rating" align="center">
-  <span class="starR on" name="star1">1</span>
+  <span class="starR" name="star1">1</span>
   <span class="starR" name="star2">2</span>
   <span class="starR" name="star3">3</span>
   <span class="starR" name="star4">4</span>
@@ -209,9 +211,13 @@
    
    </tr>
    
-   <tr><td style="color:#ff9b00;"><%if (review.get(i).getRating() == 1){%>
+   <tr><td style="color:#ff9b00;">
+   		 <%if (review.get(i).getRating() == 1){%>
          <% stars = "★☆☆☆☆"; %>
             <%=stars %>
+         <% }else if(review.get(i).getRating() == 0){%>
+         <% stars = "☆☆☆☆☆"; %>
+         	<%=stars %>
          <% }else if(review.get(i).getRating() == 2){%>
          <% stars = "★★☆☆☆"; %>
             <%=stars %>
@@ -242,6 +248,7 @@
 
    <script src="js/jquery-3.6.0.js"></script>
    <script>
+      <%if(user != null){%>
       $('#btn1').on('click', function(){
          
          $.ajax({
@@ -257,6 +264,7 @@
          });
          
       });
+      <%}%>
       </script>   
       <script>
       <!-- 리뷰 스크립트-->
@@ -277,7 +285,7 @@
          if($(arr[arr.length - 1]).html() == null){
             dataset = {
                   'comm' : $('#comm').val(),
-                  'rating' : 1,
+                  'rating' : 0,
                   'id' : '<%=user.getId() %>',
                   'class_id' : <%=class_id %>
                   
