@@ -413,7 +413,7 @@ window.onload = function () {
 		      			</div>
 		      			<br>
 		      			<div>
-		      			<a href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%> " class="goServey2"><I><h3 style="color:black;"><%=cateArr.get(i).getTitle() %></h3> </I></a>
+		      			<a href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%> " class="goServey2"><I style="color:black;"><h3 style="color:black;"><%=cateArr.get(i).getTitle() %></h3> </I></a>
 		      			<br>
 		      			<br>
 		      			<h5 style="color:#323232;"><%=cateArr.get(i).getTime() %></h5> 
