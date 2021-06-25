@@ -64,7 +64,7 @@ color:#0D3B66;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8" style="max-width: 100%;">
-					<div class="contact-form-warp" style="margin: auto; background-color: #F9EAE9; border-radius: 1%;">
+					<div class="contact-form-warp" style="margin: auto;">
 						<div class="section-title text-white text-left">
 							<h2 style="color:black;">개인정보 수정</h2>
 							<p style="font-size:20px; color:#323232;">맞춤형 원데이클래스 강좌 추천을 위해 정확한 정보를 입력해주세요.</p>
