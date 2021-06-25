@@ -36,7 +36,7 @@ max-width: 100%;
    			border: 2px solid #FEA698;
     		border-collapse: separate;
     		border-radius: 5px;
-    		background-color: #FEA698;
+    		background-color: white;
 		}
 
 		
@@ -48,10 +48,10 @@ max-width: 100%;
     	padding: 35px 40px 20px;
     	border: 4px solid #FEA698;
     	border-radius: 12px;
-   		 background-color: #FCF6FD;
+   		 background-color: white;
 	}
 	th, td{
-		background-color: #FCF6FD;
+		background-color: white;
 	}
 	
 </style>
@@ -68,44 +68,44 @@ max-width: 100%;
 				<div class="col-lg-8">
 					<div class="contact-form-warp" style=" background-color: #F9EAE9; border-radius: 1%;">
 						<div class="section-title text-white text-left">
-							<h2>개인정보 수정</h2>
-							<p style="font-size:20px;">맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요.</p>
+							<h2 style="color:black;">개인정보 수정</h2>
+							<p style="font-size:20px; color:#323232;">맞춤형 원데이클래스 강좌 개설을 위해 정확한 정보를 입력해주세요.</p>
 							</div>
-							<h3>수강생 정보</h3>
+							<h3 style="color:black;">수강생 정보</h3>
 							<br>
 							<form action="TEACHERS_update" class="contact-form" style="width:680px; max-width: 100%;"> 
 							<table class="table1" style="width: 500px">
 							<tr height="20px"></tr>
-							<tr><td><h5>아이디</h5></td><td><h5>비밀번호</h5></td></tr>
+							<tr><td><h5 style="color:#323232;">아이디</h5></td><td><h5 style="color:#323232;">비밀번호</h5></td></tr>
 							<tr height="10px"></tr>
 							<tr><td><input disabled="disabled" type="text" class="id input" value=<%=teacher.getTeacher_id() %> name="id" style="width:290px; "> </td>
 								<td><input type="password" class="pw input" value=<%=teacher.getTeacher_pw() %> name="pw" style="width:290px;"></td>
 							</tr>
 							<tr></tr>	
-							<tr><td><h5>이름</h5></td><td><h5>전화번호</h5></td></tr>
+							<tr><td><h5 style="color:#323232;">이름</h5></td><td><h5 style="color:#323232;">전화번호</h5></td></tr>
 							<tr height="10px"></tr>
 							<tr><td><input disabled="disabled" type="text" class="name input" value=<%=teacher.getTeacher_name() %> name="name" style="width:290px;"></td>
 								<td><input disabled="disabled" type="text" class="name input" value=<%=teacher.getTel() %> name="name" style="width:290px;"></td>
 							</tr>
-							<tr><td colspan='2'><h5>주소</h5></td></tr>
+							<tr><td colspan='2'><h5 style="color:#323232;">주소</h5></td></tr>
 							<tr height="10px"></tr>
 							<tr><td colspan='2'><input type="text" class="address input" value="<%=teacher.getTel() %>" name="address" style="width:595px;"></td></tr>
 							</table>
 							<div style="margin: auto; width: 50%;">
-								<input type="submit" class="site-btn4 input" id="edit" value="수정 완료" style="margin: auto;">
-								<input type="button" class="site-btn4 input" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'" style="margin: auto;">
+								<input type="submit" class="site-btn4 input" id="edit" value="수정 완료" style="margin: auto; color:#323232;">
+								<input type="button" class="site-btn4 input" id="enroll" value="수강 등록" onClick="location.href='mypage_teacher2.jsp'" style="margin: auto; color:#323232;">
 							</div>
 						</form>
 						<br>
-					<h3>개설 중인 강좌</h3>
+					<h3 style="color:black;">개설 중인 강좌</h3>
 					<br>
 					<table class="table2" style="width:660px; max-width: 100%;">
                     <thead>
-                    <tr align="center" bgcolor="white" style="font-size: 15px;">
-                    <th style="width:50px;">아이디</th>
+                    <tr align="center" bgcolor="white" style="font-size: 15px; color:#323232;">
+                    <th style="width:50px; color:#323232;">아이디</th>
                     <th>제목</th>
-                    <th style="width:80px;">카테고리</th>
-                    <th>가격</th>
+                    <th style="width:80px; color:#323232;">카테고리</th>
+                    <th style="color:#323232;">가격</th>
                     <th></th>
                		</tr>
            		    </thead>
@@ -140,8 +140,8 @@ max-width: 100%;
         </table>
         <br>
 		<form action="delete_teacher.jsp" method="post">
-		<input type="button" class="site-btn4 input" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto; left:180px;">
-		<input type="submit" class="site-btn4 input" value="회원 탈퇴" style="margin: auto; left:180px;">
+		<input type="button" class="site-btn4 input" id="main" value="메인으로" onClick="location.href='main.jsp'" style="margin: auto; left:180px; color:#323232;">
+		<input type="submit" class="site-btn4 input" value="회원 탈퇴" style="margin: auto; left:180px; color:#323232;">
 		</form>
 		</div>
 		</div>

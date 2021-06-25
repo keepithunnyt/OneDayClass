@@ -214,8 +214,8 @@ window.onload = function () {
 				</div>
 				<div class="col-lg-9 col-md-9">
 					<%if (user == null && teacher == null) {%>
-					<a href="login_main.html" class="site-btn header-btn">로그인</a>
-					<a href="register_main.html" class="site-btn2 header-btn">회원가입</a>
+					<a href="login_main.html" class="site-btn header-btn" style="color:#323232;">로그인</a>
+					<a href="register_main.html" class="site-btn2 header-btn" style="color:#323232;">회원가입</a>
 	
 					<% }else if(user != null && op.equals("user")){ %> 
 						<% if(user.getId().equals("admin")){ %>
@@ -415,7 +415,7 @@ window.onload = function () {
 		<!-- Page info end -->
 
 	<!-- search section -->
-	<h2 align="center" style="margin-top: 100px"><span>다양한 강좌를 찾아보세요</span></h2>
+	<h2 align="center" style="margin-top: 100px; color:black;"><span>다양한 강좌를 찾아보세요</span></h2>
 	<section class="search-section ss-other-page sticky">
 		<div class="container">
 			<div class="search-warp">
@@ -428,7 +428,7 @@ window.onload = function () {
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-						<select name="search1" style="width: 160px; height: 50px; text-align-last: center;">
+						<select name="search1" style="width: 160px; height: 50px; text-align-last: center; color:#323232;">
 								<option value="항목 선택">항목 선택</option>
 								<option value="제목">제목</option>
 								<option value="내용">내용</option>
@@ -438,7 +438,7 @@ window.onload = function () {
 
 						<!-- <input type="text" class="last-m" placeholder="분류"> -->
 						<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
-						<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
+						<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px; color:#323232;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
 						</form>
 						</td></tr>
 						</table>
@@ -451,18 +451,18 @@ window.onload = function () {
 
 	<!-- course section -->
 	<section class="course-section spad pb-0">
-		<div><h3 align="center">Category</h3></div>
+		<div><h3 align="center" style="color:black;">Category</h3></div>
 		<div class="course-warp">
 			<ul class="course-filter controls">
-				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".arts">공예</li>
-				<li class="control" data-filter=".medias">사진</li>
-				<li class="control" data-filter=".sport">운동</li>
-				<li class="control" data-filter=".food">요리</li>
-				<li class="control" data-filter=".music">음악</li>
-				<li class="control" data-filter=".certificate">자격증</li>
-				<li class="control" data-filter=".finance">제테크</li>
-				<li class="control" data-filter=".beautys">뷰티</li>
+				<li class="control active" data-filter="all"  style="color:#323232;">All</li>
+				<li class="control" data-filter=".arts"  style="color:#323232;">공예</li>
+				<li class="control" data-filter=".medias"  style="color:#323232;">사진</li>
+				<li class="control" data-filter=".sport"  style="color:#323232;">운동</li>
+				<li class="control" data-filter=".food"  style="color:#323232;">요리</li>
+				<li class="control" data-filter=".music"  style="color:#323232;">음악</li>
+				<li class="control" data-filter=".certificate"  style="color:#323232;">자격증</li>
+				<li class="control" data-filter=".finance"  style="color:#323232;">제테크</li>
+				<li class="control" data-filter=".beautys"  style="color:#323232;">뷰티</li>
 				<%if(user != null){ %>
 					<%if(user.getRecomm() == null){ %>
 					<li class="control" data-filter=".recomm" id="recomm" onclick='beforeRecomm()'>추천</li>
@@ -643,7 +643,7 @@ window.onload = function () {
 						<div class="col-lg-6 offset-lg-6 pl-0" >
 							<div class="course-info" style="background: white; border:3px solid #FEA698; border-left:1px solid white;">
 								<div class="course-text">
-									<div class="fet-note">인기 강좌</div>
+									<div class="fet-note" style="color:#323232;">인기 강좌</div>
 									<h5 style="color:black;">하형이와 함께하는 즐거운 크롤링</h5>
 									<p>크롤링~ 롤링~ 롤링~ 저절로 노래가 나올 정도의 여유 가득한 데이터 수집의 달인!</p>
 									<div class="students">120 Students</div>
@@ -664,7 +664,7 @@ window.onload = function () {
 						<div class="col-lg-6 pr-0">
 							<div class="course-info" style="background: white; border:3px solid #FEA698; border-right:1px solid white;">
 								<div class="course-text">
-									<div class="fet-note">인기 강좌</div>
+									<div class="fet-note" style="color:#323232;">인기 강좌</div>
 									<h5 style="color:black;">현진이와 함께하는 하드 코딩</h5>
 									<p>코딩이 먹는 거라고요? 먹고 살 수 있는 겁니다! 리얼 생존 코딩의 진수!</p>
 									<div class="students">120 Students</div>

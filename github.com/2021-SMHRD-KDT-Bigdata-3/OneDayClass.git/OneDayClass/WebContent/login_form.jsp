@@ -17,27 +17,27 @@ width:250px;
 
 <body width="100%" height="100%">
 	<form action="login" method="post" class="loginForm" name = "search1">
-		<h2>로그인</h2>
+		<h2 style="color:black;">로그인</h2>
 		<select class="division" name="op">
-			<option value="user" class="user">로그인 형태를 선택하세요</option>
+			<option value="user" class="user" style="color:#323232;">로그인 형태를 선택하세요</option>
 			<option value="teacher" class="teacher">강사</option>
 			<option value="user" class="user">일반</option>
 		</select>
 		<div class="idForm">
-			<input type="text" class="id" placeholder="아이디를 입력하세요" name="id" >
+			<input type="text" class="id" placeholder="아이디를 입력하세요" name="id" style="color:#323232;" >
 		</div>
 		<div class="passForm">
-			<input type="password" class="pw" placeholder="비밀번호를 입력하세요" name="pw">
+			<input type="password" class="pw" placeholder="비밀번호를 입력하세요" name="pw" style="color:#323232;">
 		</div>
 		
-		<button type="submit" class="btn">로그인</button>
+		<button type="submit" class="btn" style="color:#323232;">로그인</button>
 		
 		<div class="bottomText">
-			계정이 없다면? <a href="register_main.jsp">회원가입</a>
+			계정이 없다면? <a href="register_main.jsp" style="color:black;">회원가입</a>
 		</div>
 		<br>
 		<div class="bottomText">
-			<a href="main.jsp">메인으로</a>
+			<a href="main.jsp" style="color:black;">메인으로</a>
 		</div>
 	</form>
 	
