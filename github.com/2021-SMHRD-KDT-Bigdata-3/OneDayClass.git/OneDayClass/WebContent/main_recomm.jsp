@@ -343,10 +343,10 @@ window.onload = function () {
       	<td width="15%"><!--1번 구역--> </td>
       	<td width="30%"><!--2번 구역--> 
       		<div width="100%" height="100%"> 
-      			<h2>원데이클래스 맞춤형 추천 서비스!</h2>
-      			<h4>개인별 성향 조사를 통해 맞춤형 강좌를 추천해드립니다.</h4>
+      			<h2 style="color:#323232;">원데이클래스 맞춤형 추천 서비스!</h2>
+      			<h4 style="color:#323232;">개인별 성향 조사를 통해 맞춤형 강좌를 추천해드립니다.</h4>
       			<br>
-      			<a class="goServey2" style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;"class="goServey" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
+      			<a class="goServey2" style="font-weight:bold; border-bottom :2px solid #323232; font-size:20px;  color:#323232;"class="goServey" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
       			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
       		</div> 
       	</td>
@@ -442,7 +442,7 @@ window.onload = function () {
 
 	<!-- search section -->
 
-	<h3 align="center" style="margin-top: 100px"><span>"${param.search1 }" / "${param.search2 }"(으)로 입력한 결과입니다</span></h3>
+	<h3 align="center" style="margin-top: 100px; color:black;"><span>"${param.search1 }" / "${param.search2 }"(으)로 입력한 결과입니다</span></h3>
 	<section class="search-section ss-other-page sticky">
 		<div class="container">
 			<div class="search-warp">
@@ -456,16 +456,16 @@ window.onload = function () {
 						<table style = "margin:auto;">
 						<tr><td>
 						<form action="main_recomm.jsp" method="get" class="course-search-form">
-							<select name="search1" style="width: 160px; height: 50px; text-align-last: center;">
-								<option value="항목 선택">항목 선택</option>
-								<option value="제목">제목</option>
-								<option value="내용">내용</option>
-								<option value="강사" >강사</option>
+							<select name="search1" style="width: 160px; height: 50px; text-align-last: center; color:#323232;">
+								<option value="항목 선택" style="color:#323232;">항목 선택</option>
+								<option value="제목" style="color:#323232;">제목</option>
+								<option value="내용" style="color:#323232;">내용</option>
+								<option value="강사" style="color:#323232;">강사</option>
 							</select>
-							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 50px; text-align:center;" value="${param.search2 }" class = "search"/>
+							<input type="text" placeholder="검색할 내용을 입력하세요" name="search2" style="width: 250px; height: 50px; text-align:center; color:#323232;" value="${param.search2 }" class = "search"/>
 							<!-- <input type="text" class="last-m" placeholder="분류"> -->
 							<!-- <button class="site-btn btn-dark">과정 찾아보기</button> -->
-							<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
+							<input type="submit" class="site-btn3" id="search" value="과정 찾아보기" style="width: 150px; height: 50px; color:#323232;"> <!-- onClick="alert('0건의 과정이 검색되었습니다.')"--> 
 						</form>
 						</td></tr>
 						</table>
@@ -479,19 +479,19 @@ window.onload = function () {
 
 	<!-- course section -->
 	<section class="course-section spad pb-0">
-		<div><h3 align="center">Category</h3></div>
+		<div><h3 align="center" style="color:black;">Category</h3></div>
 		<div class="course-warp">
 			<ul class="course-filter controls">
-				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".arts">공예</li>
-				<li class="control" data-filter=".medias">사진</li>
-				<li class="control" data-filter=".sport">운동</li>
-				<li class="control" data-filter=".food">요리</li>
-				<li class="control" data-filter=".music">음악</li>
-				<li class="control" data-filter=".certificate">자격증</li>
-				<li class="control" data-filter=".finance">제테크</li>
-				<li class="control" data-filter=".beautys">뷰티</li>
-				<li class="control" data-filter=".recomm">추천</li>
+				<li class="control active" data-filter="all" style="color:#323232;">All</li>
+				<li class="control" data-filter=".arts" style="color:#323232;">공예</li>
+				<li class="control" data-filter=".medias" style="color:#323232;">사진</li>
+				<li class="control" data-filter=".sport" style="color:#323232;">운동</li>
+				<li class="control" data-filter=".food" style="color:#323232;">요리</li>
+				<li class="control" data-filter=".music" style="color:#323232;">음악</li>
+				<li class="control" data-filter=".certificate" style="color:#323232;">자격증</li>
+				<li class="control" data-filter=".finance" style="color:#323232;">제테크</li>
+				<li class="control" data-filter=".beautys" style="color:#323232;">뷰티</li>
+				<li class="control" data-filter=".recomm" style="color:#323232;">추천</li>
 			</ul>                                       
 			<div class="row course-items-area" >
 			<%if(arr2 != null){ %>
@@ -513,7 +513,7 @@ window.onload = function () {
 								
 								<div class="ca-pic set-bg" data-setbg= <%=arr2.get(i).getIcon() %>></div>
 								
-								<p><%=t_dao.who(arr2.get(i).getTeacher_id()) %><br> <span><%=arr2.get(i).getTime() %></span></p>
+								<p><%=t_dao.who(arr2.get(i).getTeacher_id()) %><br> <span  style="color:black;"><%=arr2.get(i).getTime() %></span></p>
 								
 							</div>
 						</div>
@@ -552,16 +552,16 @@ window.onload = function () {
 			<div class="footer-warp">
 				<div class="row">
 					<div class="widget-item">
-						<h4>문의하기</h4>
-						<ul class="contact-list">
+						<h4 style="color:black;">문의하기</h4>
+						<ul class="contact-list" style="color:#323232;">
 							<li>광주광역시 남구<br>송암로 60 광주CGI센터 2층</li>
 							<li>080-335-0020</li>
 							<li>test@smhrd.com</li>
 						</ul>
 					</div>
 					<div class="widget-item">
-						<h4>주요 서비스</h4>
-						<ul class="contact-list">
+						<h4 style="color:black;">주요 서비스</h4>
+						<ul class="contact-list" style="color:#323232;">
 							<li>원데이클래스 개인 맞춤형 추천</li>
 							<li>제목/내용/지역/강사 등 검색 기능</li>
 							<li>카테고리별 강좌 조회 및 분류 기능</li>
@@ -588,7 +588,7 @@ window.onload = function () {
 						</ul>
 					</div>-->
 					<div class="widget-item">
-						<h4>소식지</h4>
+						<h4 style="color:black;">소식지</h4>
 						<form class="footer-newslatter">
 							<input type="email" placeholder="이메일을 입력해주세요" style="background:white; border:3px solid #FEA698; border-radius: 12px; color:#0D3B66">
 							<button class="site-btn">구독하기</button>
