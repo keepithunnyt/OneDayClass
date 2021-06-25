@@ -321,7 +321,7 @@ window.onload = function () {
       			<h2>원데이클래스 맞춤형 추천 서비스!</h2>
       			<h4>개인별 성향 조사를 통해 맞춤형 강좌를 추천해드립니다.</h4>
       			<br>
-      			<a class="goServey2" style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#0B2F3A;" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
+      			<a class="goServey2" style="font-weight:bold; border-bottom :2px solid #0B2F3A; font-size:20px;  color:#323232;" href="hobby_survey.jsp"><I>성향 분석 및 추천 받기!</I></a>
       			<%-- 이걸 이용해서 class_id 전달하면 되겟다 --%>
       		</div> 
       	</td>
@@ -384,14 +384,14 @@ window.onload = function () {
 		      	<td width="30%"><!--2번 구역--> 
 		      		<div width="100%" height="100%"> 
 		      			<div>
-		      			<h4>"<%=user.getName()%>" 님의 추천 강좌</h4> 
+		      			<h4 style="color:#323232;">"<%=user.getName()%>" 님의 추천 강좌</h4> 
 		      			</div>
 		      			<br>
 		      			<div>
-		      			<a href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%> " class="goServey2"><I><h3><%=cateArr.get(i).getTitle() %></h3> </I></a>
+		      			<a href="class_detail.jsp?class_id=<%= cateArr.get(i).getId()%> " class="goServey2"><I><h3 style="color:black;"><%=cateArr.get(i).getTitle() %></h3> </I></a>
 		      			<br>
 		      			<br>
-		      			<h5><%=cateArr.get(i).getTime() %></h5> 
+		      			<h5 style="color:black;"><%=cateArr.get(i).getTime() %></h5> 
 		      			</div>
 		      			<br>
 
