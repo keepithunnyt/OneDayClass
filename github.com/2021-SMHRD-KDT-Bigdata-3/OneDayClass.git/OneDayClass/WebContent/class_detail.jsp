@@ -188,10 +188,10 @@
 </colgroup>
 <%if(review != null){ %>
    <tr>
-   <th class ='title' colspan = '3' ><h5>수강생 후기</h5></th>
+   <th class ='title' colspan = '3' style="font-weight:bold; text-align:center; font-size:18px;" >수강생 후기</th>
    </tr>
    <tr>
-   <td colspan = '2' style="text-align: center; color:#FEA698;"><h4>수강생 여러분의 생생한 후기를 남겨주세요!</h4></td>
+   <td colspan = '2' style="text-align: center; color:darkgray; font-size:14px; font-weight:bold;">수강생 여러분의 생생한 후기를 남겨주세요!</td>
    </tr>
 <%for(int i = 0; i < review.size(); i++){ %>
    <tr>

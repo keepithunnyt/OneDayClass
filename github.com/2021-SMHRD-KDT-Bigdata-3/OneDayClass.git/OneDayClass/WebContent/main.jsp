@@ -704,16 +704,16 @@ window.onload = function () {
 			<div class="footer-warp">
 				<div class="row">
 					<div class="widget-item">
-						<h4>문의하기</h4>
-						<ul class="contact-list">
+						<h4 style="color:black;">문의하기</h4>
+						<ul class="contact-list" style="color:#323232;">
 							<li>광주광역시 남구<br>송암로 60 광주CGI센터 2층</li>
 							<li>080-335-0020</li>
 							<li>test@smhrd.com</li>
 						</ul>
 					</div>
 					<div class="widget-item">
-						<h4>주요 서비스</h4>
-						<ul class="contact-list">
+						<h4 style="color:black;">주요 서비스</h4>
+						<ul class="contact-list" style="color:#323232;">
 							<li>원데이클래스 개인 맞춤형 추천</li>
 							<li>제목/내용/지역/강사 등 검색 기능</li>
 							<li>카테고리별 강좌 조회 및 분류 기능</li>
@@ -740,7 +740,7 @@ window.onload = function () {
 						</ul>
 					</div>-->
 					<div class="widget-item">
-						<h4>소식지</h4>
+						<h4 style="color:black;">소식지</h4>
 						<form class="footer-newslatter">
 							<input type="email" placeholder="이메일을 입력해주세요" style="background:white; border:3px solid #FEA698; border-radius: 12px; color:#0D3B66">
 							<button class="site-btn">구독하기</button>
