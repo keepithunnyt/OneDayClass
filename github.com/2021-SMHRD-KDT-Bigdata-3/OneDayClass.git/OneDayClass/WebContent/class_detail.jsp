@@ -155,7 +155,9 @@
    </tr>
    <tr></tr>
    <tr><td colspan = "2" align = "center">
+   <%if(user != null){ %>
    <input type="button" class="site-btn" name="apply" value="클래스 신청하기" id="btn1">
+   <% } %>
    </td></tr>
  <!--  리뷰 작성 부분 -->
  <td colspan = "2"><hr style = "border: 1px solid #FEA698;"></td>
@@ -246,6 +248,7 @@
 
    <script src="js/jquery-3.6.0.js"></script>
    <script>
+      <%if(user != null){%>
       $('#btn1').on('click', function(){
          
          $.ajax({
@@ -261,6 +264,7 @@
          });
          
       });
+      <%}%>
       </script>   
       <script>
       <!-- 리뷰 스크립트-->
