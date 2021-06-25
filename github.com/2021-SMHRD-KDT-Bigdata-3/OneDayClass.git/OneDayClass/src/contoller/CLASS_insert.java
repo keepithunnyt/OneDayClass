@@ -39,7 +39,7 @@ public class CLASS_insert extends HttpServlet {
 		MultipartRequest multi = new MultipartRequest(request,
 				savePath, maxSize, encoding, new DefaultFileRenamePolicy());
 		String title = multi.getParameter("title");
-		String file = multi.getFilesystemName("fileName");
+		String file = multi.getFilesystemName("img");
 		if(file==null) {
 			file = "X";
 		}
@@ -50,7 +50,7 @@ public class CLASS_insert extends HttpServlet {
 		String time = multi.getParameter("time");
 		String price = multi.getParameter("price");
 		String category = multi.getParameter("category");
-		String image = savePath.replace('\\', '/') + '/' + file;
+		String image = "img" + '/' + file;
 		String icon = image;
 		System.out.println(id + " " + title + " " + content + " " + time + " " + price + " " + category + " " + image);
 		int cnt = 0;

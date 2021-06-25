@@ -120,13 +120,6 @@ color:#0D3B66;
                     <td style="color:#0D3B66; font-weight:800;"> <input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:white; "></td>   
             		</tr>
             		<%} } %>
-               		<tr align="center" style="color:#0D3B66; font-weight:600;">
-                    <td>develop</td>
-                    <td>인공지능 융합서비스 <br> 개발자과정</td>
-                    <td>파이썬 활용한 데이터 <br> 크롤링 및 딥러닝 </td>
-                    <td>2021/06/22</td>
-                    <td style="color:#0D3B66; font-weight:800;"><input type="button" class="site-btn3" id="cancel" value="수강 취소" style="background-color:white; "></td>
-                </tr>
                 </tbody>
        			</table>
        			<br>
